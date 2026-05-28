@@ -1,0 +1,407 @@
+[
+  {
+    "tag_id": "wheat_allergen",
+    "name_ja": "小麦アレルゲン",
+    "name_en": "Wheat allergen",
+    "severity": "yellow",
+    "category": "allergen",
+    "description": "小麦アレルギーの原因となる可能性のある成分を含む",
+    "regulatory_basis": "食品表示基準（特定原材料）",
+    "required_actions": [
+      "expert_review",
+      "allergen_labeling"
+    ],
+    "blocked_actions": [],
+    "notes": "小麦アレルギーに安全とは主張できない。セリアック病に安全とも言えない。 (test)"
+  },
+  {
+    "tag_id": "milk_allergen",
+    "name_ja": "乳アレルゲン",
+    "name_en": "Milk allergen",
+    "severity": "yellow",
+    "category": "allergen",
+    "description": "牛乳アレルギーの原因となる可能性のある成分を含む",
+    "regulatory_basis": "食品表示基準（特定原材料）",
+    "required_actions": [
+      "expert_review",
+      "allergen_labeling"
+    ],
+    "blocked_actions": [],
+    "notes": "乳糖不耐症と牛乳アレルギーは異なる。両方について安全と主張してはいけない。"
+  },
+  {
+    "tag_id": "soy_allergen",
+    "name_ja": "大豆アレルゲン",
+    "name_en": "Soy allergen",
+    "severity": "yellow",
+    "category": "allergen",
+    "description": "大豆アレルギーの原因となる可能性のある成分を含む",
+    "regulatory_basis": "食品表示基準（特定原材料）",
+    "required_actions": [
+      "expert_review",
+      "allergen_labeling"
+    ],
+    "blocked_actions": [],
+    "notes": "大豆アレルギーに安全とは主張できない。"
+  },
+  {
+    "tag_id": "egg_allergen",
+    "name_ja": "卵アレルゲン",
+    "name_en": "Egg allergen",
+    "severity": "yellow",
+    "category": "allergen",
+    "description": "卵アレルギーの原因となる可能性のある成分を含む",
+    "regulatory_basis": "食品表示基準（特定原材料）",
+    "required_actions": [
+      "expert_review",
+      "allergen_labeling"
+    ],
+    "blocked_actions": [],
+    "notes": "卵アレルギーに安全とは主張できない。"
+  },
+  {
+    "tag_id": "nut_allergen",
+    "name_ja": "ナッツアレルゲン",
+    "name_en": "Nut allergen",
+    "severity": "yellow",
+    "category": "allergen",
+    "description": "ナッツ類アレルギーの原因となる可能性のある成分を含む",
+    "regulatory_basis": "食品表示基準（特定原材料に準ずるもの含む）",
+    "required_actions": [
+      "expert_review",
+      "allergen_labeling"
+    ],
+    "blocked_actions": [],
+    "notes": "ナッツアレルギーに安全とは主張できない。"
+  },
+  {
+    "tag_id": "gluten_related",
+    "name_ja": "グルテン関連",
+    "name_en": "Gluten-related",
+    "severity": "yellow",
+    "category": "allergen_adjacent",
+    "description": "グルテンまたはグルテン関連ペプチドを含む可能性がある",
+    "regulatory_basis": "食品表示基準・Codex グルテンフリー基準",
+    "required_actions": [
+      "expert_review"
+    ],
+    "blocked_actions": [],
+    "notes": "グルテンフリー表示には分析値が必要。低減≠除去。"
+  },
+  {
+    "tag_id": "celiac_claim_risk",
+    "name_ja": "セリアック病表示リスク",
+    "name_en": "Celiac disease claim risk",
+    "severity": "yellow",
+    "category": "regulatory_claim",
+    "description": "セリアック病への安全性を示唆する表現はリスクが高い",
+    "regulatory_basis": "食品表示基準・医療機器医薬品法",
+    "required_actions": [
+      "expert_review"
+    ],
+    "blocked_actions": [
+      "celiac_safety_claim"
+    ],
+    "notes": "セリアック病に安全とは絶対に言えない。"
+  },
+  {
+    "tag_id": "medical_claim_risk",
+    "name_ja": "医療用途表現リスク",
+    "name_en": "Medical claim risk",
+    "severity": "red",
+    "category": "regulatory_claim",
+    "description": "医療効果・疾病改善・治療・予防を示唆する表現が含まれている可能性",
+    "regulatory_basis": "薬機法・景表法",
+    "required_actions": [
+      "expert_review"
+    ],
+    "blocked_actions": [
+      "product_claim",
+      "marketing_copy"
+    ],
+    "notes": "食品として疾病の治療・予防・改善を標榜してはいけない。"
+  },
+  {
+    "tag_id": "dose_review_required",
+    "name_ja": "用量確認が必要",
+    "name_en": "Dose review required",
+    "severity": "yellow",
+    "category": "safety_review",
+    "description": "用量によって安全性が変わる成分。上限摂取量の確認が必要",
+    "regulatory_basis": "食品安全委員会・各国機関の安全評価",
+    "required_actions": [
+      "dose_calculation",
+      "expert_review"
+    ],
+    "blocked_actions": [],
+    "notes": "用量確認なしに配合量を確定しないこと。"
+  },
+  {
+    "tag_id": "pregnancy_caution",
+    "name_ja": "妊娠中注意",
+    "name_en": "Pregnancy caution",
+    "severity": "yellow",
+    "category": "population_caution",
+    "description": "妊娠中の摂取について注意が必要な成分",
+    "regulatory_basis": "厚生労働省・各国機関の妊婦向けガイドライン",
+    "required_actions": [
+      "expert_review",
+      "labeling_caution"
+    ],
+    "blocked_actions": [],
+    "notes": "妊婦向けを想定した製品には必ず専門家確認を行う。"
+  },
+  {
+    "tag_id": "child_caution",
+    "name_ja": "小児注意",
+    "name_en": "Child caution",
+    "severity": "yellow",
+    "category": "population_caution",
+    "description": "小児への摂取について注意が必要な成分",
+    "regulatory_basis": "各国小児向け食品ガイドライン",
+    "required_actions": [
+      "expert_review",
+      "labeling_caution"
+    ],
+    "blocked_actions": [],
+    "notes": "子ども向けを想定した製品には必ず専門家確認を行う。"
+  },
+  {
+    "tag_id": "high_caffeine",
+    "name_ja": "高カフェイン",
+    "name_en": "High caffeine",
+    "severity": "yellow",
+    "category": "ingredient_risk",
+    "description": "カフェイン含量が高く、摂取量管理が必要",
+    "regulatory_basis": "消費者庁カフェインガイドライン・各国規制",
+    "required_actions": [
+      "dose_calculation",
+      "labeling_caution",
+      "expert_review"
+    ],
+    "blocked_actions": [],
+    "notes": "カフェイン過剰摂取リスクを考慮した表示が必要。"
+  },
+  {
+    "tag_id": "food_additive_review",
+    "name_ja": "食品添加物確認",
+    "name_en": "Food additive review required",
+    "severity": "yellow",
+    "category": "regulatory_review",
+    "description": "食品添加物として規制対象になる可能性のある成分",
+    "regulatory_basis": "食品衛生法・食品添加物公定書",
+    "required_actions": [
+      "regulatory_review",
+      "expert_review"
+    ],
+    "blocked_actions": [],
+    "notes": "添加物として届出・許可が必要かどうか確認すること。"
+  },
+  {
+    "tag_id": "pharmaceutical_borderline",
+    "name_ja": "食薬境界",
+    "name_en": "Pharmaceutical borderline",
+    "severity": "red",
+    "category": "regulatory_classification",
+    "description": "食品と医薬品の境界線上にある可能性のある成分・用途",
+    "regulatory_basis": "薬機法・厚生労働省食薬区分通知",
+    "required_actions": [
+      "regulatory_review",
+      "expert_review"
+    ],
+    "blocked_actions": [
+      "ingredient_sourcing",
+      "process_direction",
+      "productize"
+    ],
+    "notes": "食薬区分専門家の確認なしに前進してはいけない。"
+  },
+  {
+    "tag_id": "toxicology_review_required",
+    "name_ja": "毒性確認が必要",
+    "name_en": "Toxicology review required",
+    "severity": "red",
+    "category": "safety_review",
+    "description": "毒性・安全性についての専門家レビューが必要",
+    "regulatory_basis": "食品安全委員会・EFSA・FDA",
+    "required_actions": [
+      "toxicology_review",
+      "expert_review"
+    ],
+    "blocked_actions": [
+      "ingredient_sourcing",
+      "productize"
+    ],
+    "notes": "毒性確認なしに製造・販売に進んではいけない。"
+  },
+  {
+    "tag_id": "manufacturing_safety_review",
+    "name_ja": "製造安全確認",
+    "name_en": "Manufacturing safety review",
+    "severity": "red",
+    "category": "manufacturing_risk",
+    "description": "製造プロセスにおける安全確認が必要",
+    "regulatory_basis": "食品衛生法・HACCP",
+    "required_actions": [
+      "manufacturing_safety_review",
+      "expert_review"
+    ],
+    "blocked_actions": [
+      "process_direction"
+    ],
+    "notes": "製造安全確認なしに加工手順を提案しない。"
+  },
+  {
+    "tag_id": "fermentation_contamination_risk",
+    "name_ja": "発酵汚染リスク",
+    "name_en": "Fermentation contamination risk",
+    "severity": "yellow",
+    "category": "microbiological_risk",
+    "description": "発酵プロセスにおける微生物汚染リスクがある",
+    "regulatory_basis": "食品衛生法・HACCP",
+    "required_actions": [
+      "microbial_safety_review",
+      "expert_review"
+    ],
+    "blocked_actions": [],
+    "notes": "発酵条件の管理と微生物検査が必要。"
+  },
+  {
+    "tag_id": "microbial_safety_review",
+    "name_ja": "微生物安全確認",
+    "name_en": "Microbial safety review",
+    "severity": "yellow",
+    "category": "microbiological_risk",
+    "description": "使用する微生物の安全性確認が必要",
+    "regulatory_basis": "食品衛生法・厚生労働省",
+    "required_actions": [
+      "strain_identification",
+      "safety_validation",
+      "expert_review"
+    ],
+    "blocked_actions": [],
+    "notes": "株の同定と安全性バリデーションが必要。"
+  },
+  {
+    "tag_id": "claim_requires_evidence",
+    "name_ja": "主張に根拠が必要",
+    "name_en": "Claim requires evidence",
+    "severity": "yellow",
+    "category": "evidence_requirement",
+    "description": "機能性・効果の主張には科学的根拠が必要",
+    "regulatory_basis": "景表法・消費者庁ガイドライン",
+    "required_actions": [
+      "evidence_review",
+      "expert_review"
+    ],
+    "blocked_actions": [],
+    "notes": "根拠なき効果表現は景表法違反になる可能性がある。"
+  },
+  {
+    "tag_id": "insufficient_evidence",
+    "name_ja": "根拠不足",
+    "name_en": "Insufficient evidence",
+    "severity": "yellow",
+    "category": "evidence_requirement",
+    "description": "現時点では科学的根拠が不十分",
+    "regulatory_basis": "景表法・機能性表示食品制度",
+    "required_actions": [
+      "evidence_search",
+      "expert_review"
+    ],
+    "blocked_actions": [],
+    "notes": "追加研究・文献調査が必要。"
+  },
+  {
+    "tag_id": "expert_review_required",
+    "name_ja": "専門家確認必須",
+    "name_en": "Expert review required",
+    "severity": "yellow",
+    "category": "process_requirement",
+    "description": "必ず専門家（食品開発・法規制・薬剤師等）のレビューが必要",
+    "regulatory_basis": "全般",
+    "required_actions": [
+      "expert_review"
+    ],
+    "blocked_actions": [],
+    "notes": "AIの回答だけで判断せず、専門家に確認すること。"
+  },
+  {
+    "tag_id": "fish_allergen",
+    "name_ja": "魚類アレルゲン",
+    "name_en": "Fish allergen",
+    "severity": "yellow",
+    "category": "allergen",
+    "description": "魚類アレルギーの原因となる可能性のある成分を含む（DHA・EPA・コラーゲン等の魚由来成分）",
+    "regulatory_basis": "食品表示基準（特定原材料に準ずるもの）",
+    "required_actions": [
+      "expert_review",
+      "allergen_labeling"
+    ],
+    "blocked_actions": [],
+    "notes": "魚由来成分（魚コラーゲン・魚油等）には表示義務または推奨表示がある。"
+  },
+  {
+    "tag_id": "shellfish_allergen",
+    "name_ja": "甲殻類アレルゲン",
+    "name_en": "Shellfish/crustacean allergen",
+    "severity": "yellow",
+    "category": "allergen",
+    "description": "えび・かになど甲殻類アレルギーの原因となる可能性のある成分を含む",
+    "regulatory_basis": "食品表示基準（特定原材料）",
+    "required_actions": [
+      "expert_review",
+      "allergen_labeling"
+    ],
+    "blocked_actions": [],
+    "notes": "えび・かには特定原材料（表示義務あり）。キトサン等の甲殻類由来成分も確認が必要。"
+  },
+  {
+    "tag_id": "peanut_allergen",
+    "name_ja": "ピーナッツアレルゲン",
+    "name_en": "Peanut allergen",
+    "severity": "yellow",
+    "category": "allergen",
+    "description": "ピーナッツアレルギーの原因となる可能性のある成分を含む",
+    "regulatory_basis": "食品表示基準（特定原材料）",
+    "required_actions": [
+      "expert_review",
+      "allergen_labeling"
+    ],
+    "blocked_actions": [],
+    "notes": "ピーナッツは特定原材料（表示義務あり）。落花生油・ピーナッツ粉等も対象。"
+  },
+  {
+    "tag_id": "sesame_allergen",
+    "name_ja": "ごまアレルゲン",
+    "name_en": "Sesame allergen",
+    "severity": "yellow",
+    "category": "allergen",
+    "description": "ごまアレルギーの原因となる可能性のある成分を含む",
+    "regulatory_basis": "食品表示基準（特定原材料 2025年4月追加）",
+    "required_actions": [
+      "expert_review",
+      "allergen_labeling"
+    ],
+    "blocked_actions": [],
+    "notes": "2025年4月よりごまが特定原材料に追加（表示義務あり）。"
+  },
+  {
+    "tag_id": "drug_interaction_risk",
+    "name_ja": "医薬品相互作用リスク",
+    "name_en": "Drug interaction risk",
+    "severity": "red",
+    "category": "safety_review",
+    "description": "医薬品との相互作用が懸念される成分（抗凝固薬・免疫抑制剤等との干渉）",
+    "regulatory_basis": "薬機法・各国医薬品規制",
+    "required_actions": [
+      "expert_review",
+      "pharmacist_review"
+    ],
+    "blocked_actions": [
+      "productize",
+      "ingredient_sourcing"
+    ],
+    "notes": "DHA・EPA・CoQ10・クルクミン等は抗凝固薬との相互作用リスクがある。専門家確認必須。"
+  }
+]

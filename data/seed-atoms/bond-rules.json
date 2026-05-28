@@ -1,0 +1,809 @@
+[
+  {
+    "bond_rule_id": "bond_protein_protease_degradation",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "enzyme",
+    "source_required_tags": [
+      "protein_source"
+    ],
+    "target_required_tags": [
+      "protein_degradation"
+    ],
+    "bond_type": "degradation",
+    "expected_result": "protein_hydrolysis",
+    "confidence": "medium",
+    "risk_level": "yellow",
+    "explanation": "タンパク質系原材料とプロテアーゼの組み合わせは、タンパク質分解・ペプチド生成・消化性変化の可能性がある。ただし食品安全性やアレルゲン安全性を保証するものではない。",
+    "required_checks": [
+      "allergen_claim_check",
+      "dose_check",
+      "experiment_required"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_lactose_lactase_hydrolysis",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "enzyme",
+    "source_required_tags": [
+      "fermentation_substrate"
+    ],
+    "target_required_tags": [
+      "lactose_degradation"
+    ],
+    "bond_type": "hydrolysis",
+    "expected_result": "lactose_hydrolysis",
+    "confidence": "high",
+    "risk_level": "yellow",
+    "explanation": "乳糖とラクターゼの組み合わせにより乳糖分解が起こる。ただし乳アレルゲンは除去されないため、乳アレルギーに安全とは言えない。",
+    "required_checks": [
+      "allergen_claim_check",
+      "residual_lactose_measurement"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_substrate_microbe_fermentation",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "microbe",
+    "source_required_tags": [],
+    "target_required_tags": [],
+    "bond_type": "fermentation",
+    "expected_result": "metabolite_production",
+    "confidence": "medium",
+    "risk_level": "yellow",
+    "explanation": "原材料と微生物の組み合わせで発酵が起こる可能性がある。代謝産物の種類・量は微生物株・条件・基質によって異なる。",
+    "required_checks": [
+      "strain_identification",
+      "fermentation_condition_validation",
+      "metabolite_analysis"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_microbe_condition_fermentation",
+    "source_atom_type": "microbe",
+    "target_atom_type": "condition",
+    "source_required_tags": [],
+    "target_required_tags": [],
+    "bond_type": "fermentation_optimization",
+    "expected_result": "optimized_fermentation",
+    "confidence": "medium",
+    "risk_level": "yellow",
+    "explanation": "微生物と条件（pH・温度・時間）の組み合わせにより発酵効率・代謝産物が変化する。最適条件は株によって異なる。",
+    "required_checks": [
+      "condition_optimization_experiment",
+      "microbial_safety_monitoring"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_lactobacillus_gaba_production",
+    "source_atom_type": "microbe",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "gaba_production"
+    ],
+    "target_required_tags": [],
+    "bond_type": "gaba_synthesis",
+    "expected_result": "gaba_production",
+    "confidence": "medium",
+    "risk_level": "yellow",
+    "explanation": "乳酸菌（GABA産生株）と基質の組み合わせでGABAが生成される可能性がある。GABA含量は株・条件・時間に依存する。",
+    "required_checks": [
+      "gaba_content_analysis",
+      "strain_gaba_production_validation",
+      "claim_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_ingredient_goal_functional",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "goal",
+    "source_required_tags": [],
+    "target_required_tags": [],
+    "bond_type": "functional_hypothesis",
+    "expected_result": "functional_direction",
+    "confidence": "low",
+    "risk_level": "yellow",
+    "explanation": "原材料と目的の組み合わせで機能的方向性が生まれる可能性がある。ただし効果の確定には科学的根拠が必要。",
+    "required_checks": [
+      "evidence_search",
+      "claim_check",
+      "expert_review"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_enzyme_condition_optimization",
+    "source_atom_type": "enzyme",
+    "target_atom_type": "condition",
+    "source_required_tags": [],
+    "target_required_tags": [],
+    "bond_type": "enzymatic_optimization",
+    "expected_result": "enzyme_activity_change",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "酵素と条件（pH・温度）の組み合わせにより酵素活性が変化する。至適条件は酵素の種類によって異なる。",
+    "required_checks": [
+      "enzyme_activity_measurement"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_ingredient_prebiotic_microbe",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "microbe",
+    "source_required_tags": [
+      "prebiotic"
+    ],
+    "target_required_tags": [],
+    "bond_type": "prebiotic_effect",
+    "expected_result": "microbiome_modulation",
+    "confidence": "low",
+    "risk_level": "yellow",
+    "explanation": "プレバイオティクス成分と微生物の組み合わせで腸内微生物叢への影響の可能性がある。効果の大きさは個人差が大きい。",
+    "required_checks": [
+      "evidence_search",
+      "dose_check",
+      "clinical_evidence_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_starch_amylase_hydrolysis",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "enzyme",
+    "source_required_tags": [],
+    "target_required_tags": [
+      "starch_degradation"
+    ],
+    "bond_type": "starch_hydrolysis",
+    "expected_result": "sugar_production",
+    "confidence": "high",
+    "risk_level": "green",
+    "explanation": "デンプン系原材料とアミラーゼの組み合わせで糖化が起こる。食品加工において広く確立された反応。",
+    "required_checks": [
+      "enzyme_grade_check",
+      "dose_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_ingredient_condition_process",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "condition",
+    "source_required_tags": [],
+    "target_required_tags": [],
+    "bond_type": "process_interaction",
+    "expected_result": "physicochemical_change",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "原材料と加工条件の組み合わせによる物理化学的変化。加熱・冷却・pH変化などが素材特性に影響する。",
+    "required_checks": [
+      "process_condition_validation"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_goal_ingredient_synergy",
+    "source_atom_type": "goal",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [],
+    "target_required_tags": [],
+    "bond_type": "goal_ingredient_match",
+    "expected_result": "functional_hypothesis",
+    "confidence": "low",
+    "risk_level": "yellow",
+    "explanation": "目的と原材料の組み合わせで機能的仮説が生まれる。ただし効果の確定には根拠が必要。",
+    "required_checks": [
+      "evidence_search",
+      "claim_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_microbe_enzyme_synergy",
+    "source_atom_type": "microbe",
+    "target_atom_type": "enzyme",
+    "source_required_tags": [],
+    "target_required_tags": [],
+    "bond_type": "microbial_enzyme_synergy",
+    "expected_result": "enhanced_activity",
+    "confidence": "low",
+    "risk_level": "yellow",
+    "explanation": "微生物由来の酵素と添加酵素の組み合わせで相乗効果の可能性がある。ただし干渉・阻害もありうる。",
+    "required_checks": [
+      "enzyme_interaction_experiment",
+      "activity_measurement"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_vitamin_c_collagen_synergy",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "collagen_synthesis_cofactor"
+    ],
+    "target_required_tags": [
+      "skin_elasticity_support_potential"
+    ],
+    "bond_type": "cofactor_synergy",
+    "expected_result": "enhanced_collagen_synthesis_potential",
+    "confidence": "medium",
+    "risk_level": "yellow",
+    "explanation": "ビタミンCはコラーゲン合成の補酵素として機能する。コラーゲンペプチドとの組み合わせで相乗的な美肌方向が仮説として生まれる。ただし食品からの効果は限定的であり確定はできない。",
+    "required_checks": [
+      "evidence_search",
+      "claim_check",
+      "dose_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_polyphenol_iron_interaction",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "antioxidant"
+    ],
+    "target_required_tags": [
+      "oxygen_transport_support"
+    ],
+    "bond_type": "absorption_inhibition",
+    "expected_result": "non_heme_iron_absorption_reduced",
+    "confidence": "high",
+    "risk_level": "yellow",
+    "explanation": "ポリフェノール（タンニン等）は非ヘム鉄の吸収を阻害することが知られている。組み合わせ配合では鉄の生体利用率が低下する可能性があり、配合設計・摂取タイミングの検討が必要。",
+    "required_checks": [
+      "mineral_absorption_study",
+      "formulation_separation_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_ingredient_goal_skin",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "goal",
+    "source_required_tags": [
+      "skin_elasticity_support_potential"
+    ],
+    "target_required_tags": [],
+    "bond_type": "skin_functional_hypothesis",
+    "expected_result": "skin_beauty_direction",
+    "confidence": "low",
+    "risk_level": "yellow",
+    "explanation": "美肌系素材と美肌ゴールの組み合わせで商品方向性が生まれる。ただし食品による美肌効果の確定には臨床試験が必要。",
+    "required_checks": [
+      "evidence_search",
+      "claim_check",
+      "expert_review"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_antioxidant_ingredient_goal",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "goal",
+    "source_required_tags": [
+      "antioxidant"
+    ],
+    "target_required_tags": [],
+    "bond_type": "antioxidant_functional_hypothesis",
+    "expected_result": "antioxidant_support_direction",
+    "confidence": "low",
+    "risk_level": "yellow",
+    "explanation": "抗酸化素材と抗酸化ゴールの組み合わせで機能的方向性が生まれる。in vitro の抗酸化能が in vivo に直結しないため過度なクレームは不可。",
+    "required_checks": [
+      "orac_measurement",
+      "in_vivo_study_check",
+      "claim_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_protein_goal_sports",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "goal",
+    "source_required_tags": [
+      "protein_source"
+    ],
+    "target_required_tags": [],
+    "bond_type": "sports_functional_hypothesis",
+    "expected_result": "muscle_recovery_direction",
+    "confidence": "medium",
+    "risk_level": "yellow",
+    "explanation": "タンパク質・ペプチド素材とスポーツ回復ゴールの組み合わせは根拠のある方向性を示す。ただし摂取量・タイミング・品質が重要であり、効果の確定には特定の研究デザインが必要。",
+    "required_checks": [
+      "protein_quality_check",
+      "dose_check",
+      "claim_check",
+      "anti_doping_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_probiotic_goal_immune",
+    "source_atom_type": "microbe",
+    "target_atom_type": "goal",
+    "source_required_tags": [
+      "probiotic"
+    ],
+    "target_required_tags": [],
+    "bond_type": "probiotic_immune_hypothesis",
+    "expected_result": "immune_modulation_direction",
+    "confidence": "low",
+    "risk_level": "yellow",
+    "explanation": "プロバイオティクス微生物と免疫サポートゴールの組み合わせは仮説的な方向性を生む。免疫への効果は株特異的かつ個人差が大きく、確定には大規模臨床試験が必要。",
+    "required_checks": [
+      "strain_specific_evidence",
+      "cfu_validation",
+      "clinical_evidence_check",
+      "claim_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_prebiotic_probiotic_synbiotic",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "microbe",
+    "source_required_tags": [
+      "prebiotic"
+    ],
+    "target_required_tags": [
+      "probiotic"
+    ],
+    "bond_type": "synbiotic_bond",
+    "expected_result": "synbiotic_gut_health",
+    "confidence": "high",
+    "risk_level": "green",
+    "explanation": "プレバイオティクス（イヌリン、FOS、GOS等）とプロバイオティクスの組み合わせはシンバイオティクスを形成し、腸内環境改善効果が期待できる。",
+    "required_checks": [
+      "viability_check",
+      "shelf_life_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_mineral_vitamin_d_synergy",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "bone_health"
+    ],
+    "target_required_tags": [
+      "vitamin_d"
+    ],
+    "bond_type": "cofactor_synergy",
+    "expected_result": "calcium_absorption_enhancement",
+    "confidence": "high",
+    "risk_level": "green",
+    "explanation": "カルシウムとビタミンDの組み合わせは、カルシウム吸収を促進し骨密度維持に相乗効果を発揮する。FDA承認ヘルスクレームの根拠となる組み合わせ。",
+    "required_checks": [
+      "dose_check",
+      "upper_limit_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_antioxidant_vitamin_c_e_synergy",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "antioxidant",
+      "vitamin_c"
+    ],
+    "target_required_tags": [
+      "antioxidant"
+    ],
+    "bond_type": "antioxidant_synergy",
+    "expected_result": "enhanced_oxidative_stress_protection",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "ビタミンCとビタミンEは抗酸化の相乗効果を持つ。ビタミンCはビタミンEラジカルを再生し、複合的な酸化ストレス防御を実現する。",
+    "required_checks": [
+      "dose_check",
+      "stability_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_enzyme_substrate_hydrolysis",
+    "source_atom_type": "enzyme",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "polysaccharide_hydrolase"
+    ],
+    "target_required_tags": [
+      "dietary_fiber"
+    ],
+    "bond_type": "hydrolysis",
+    "expected_result": "polysaccharide_breakdown_prebiotic_oligosaccharide",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "セルラーゼ・ペクチナーゼ等の多糖分解酵素は食物繊維を短鎖化し、腸内細菌によりアクセスしやすい発酵基質を生成する。",
+    "required_checks": [
+      "enzyme_activity_check",
+      "temperature_optimization"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_omega3_cognitive_support",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "goal",
+    "source_required_tags": [
+      "omega3",
+      "dha"
+    ],
+    "target_required_tags": [
+      "cognitive",
+      "neurological"
+    ],
+    "bond_type": "functional_hypothesis",
+    "expected_result": "cognitive_function_support",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "DHA・EPAは脳の構成脂質として認知機能との関連が示されている。特にDHAは神経膜流動性に影響し、記憶・学習機能サポートの根拠となる。",
+    "required_checks": [
+      "dose_check",
+      "oxidation_stability_check",
+      "claim_regulatory_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_polyphenol_bioavailability",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "polyphenol"
+    ],
+    "target_required_tags": [
+      "fat_source",
+      "emulsifier"
+    ],
+    "bond_type": "bioavailability_enhancement",
+    "expected_result": "enhanced_polyphenol_absorption",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "ポリフェノール系成分は脂溶性のものが多く、脂質や乳化剤との組み合わせにより腸管吸収率が向上する（クルクミン、レスベラトロール等）。",
+    "required_checks": [
+      "bioavailability_study",
+      "formulation_stability_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_probiotic_goal_gut",
+    "source_atom_type": "microbe",
+    "target_atom_type": "goal",
+    "source_required_tags": [
+      "probiotic"
+    ],
+    "target_required_tags": [
+      "gut_health",
+      "digestion"
+    ],
+    "bond_type": "probiotic_functional_hypothesis",
+    "expected_result": "gut_microbiome_improvement",
+    "confidence": "high",
+    "risk_level": "green",
+    "explanation": "プロバイオティクス菌株は腸内環境の改善・整腸作用において多くの臨床エビデンスを持つ。整腸・消化サポート目的の製品への応用は根拠が明確。",
+    "required_checks": [
+      "viability_check",
+      "strain_identity_check",
+      "dose_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_fiber_blood_sugar",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "goal",
+    "source_required_tags": [
+      "dietary_fiber",
+      "prebiotic"
+    ],
+    "target_required_tags": [
+      "blood_sugar",
+      "glycemic"
+    ],
+    "bond_type": "functional_hypothesis",
+    "expected_result": "postprandial_glucose_reduction",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "食物繊維（特に粘性繊維）は糖質の吸収速度を緩和し、食後血糖値の上昇を抑制する。β-グルカン・サイリウムはFDA承認のヘルスクレーム対象。",
+    "required_checks": [
+      "dose_check",
+      "glycemic_study_required",
+      "drug_interaction_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_microbe_condition_temp",
+    "source_atom_type": "microbe",
+    "target_atom_type": "condition",
+    "source_required_tags": [
+      "lactic_acid_bacteria"
+    ],
+    "target_required_tags": [
+      "temperature"
+    ],
+    "bond_type": "fermentation_optimization",
+    "expected_result": "optimized_lactic_acid_fermentation",
+    "confidence": "high",
+    "risk_level": "green",
+    "explanation": "乳酸菌の最適発酵温度（30〜45℃）条件の選択は菌株特性に依存し、酸度・フレーバー・菌数に直接影響する。",
+    "required_checks": [
+      "strain_temperature_profile_check",
+      "ph_monitoring"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_carotenoid_eye_health",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "goal",
+    "source_required_tags": [
+      "carotenoid"
+    ],
+    "target_required_tags": [
+      "eye_health"
+    ],
+    "bond_type": "functional_hypothesis",
+    "expected_result": "macular_health_support",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "ルテイン・ゼアキサンチン等のカロテノイドは黄斑部に蓄積し、ブルーライト吸収・酸化ストレス防御を通じて目の健康をサポートする。",
+    "required_checks": [
+      "dose_check",
+      "claim_regulatory_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_protein_satiety_weight",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "goal",
+    "source_required_tags": [
+      "protein_source",
+      "slow_release_protein"
+    ],
+    "target_required_tags": [
+      "weight_management",
+      "satiety"
+    ],
+    "bond_type": "functional_hypothesis",
+    "expected_result": "satiety_enhancement_weight_support",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "タンパク質（特にカゼイン・ホエイ等）は満腹感を高めGLP-1等のホルモン分泌を促進する。体重管理目的の製品設計において中心的な素材。",
+    "required_checks": [
+      "dose_check",
+      "caloric_balance_check",
+      "claim_regulatory_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_antimicrobial_preservation",
+    "source_atom_type": "microbe",
+    "target_atom_type": "goal",
+    "source_required_tags": [
+      "bacteriocin_production",
+      "lactic_acid_bacteria"
+    ],
+    "target_required_tags": [
+      "antimicrobial",
+      "preservation"
+    ],
+    "bond_type": "biopreservation_hypothesis",
+    "expected_result": "natural_food_preservation",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "バクテリオシン産生乳酸菌（Pediococcus等）は天然の食品保存効果（バイオプリザベーション）を発揮し、合成保存料の代替として有望。",
+    "required_checks": [
+      "challenge_test_required",
+      "regulatory_status_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_high_dose_vitamin_risk",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "vitamin",
+      "fat_soluble"
+    ],
+    "target_required_tags": [
+      "vitamin",
+      "fat_soluble"
+    ],
+    "bond_type": "synergistic",
+    "expected_result": "potential_hypervitaminosis",
+    "confidence": "medium",
+    "risk_level": "red",
+    "explanation": "脂溶性ビタミン（A・D・E・K）の複数組み合わせは蓄積毒性リスクがある。特にビタミンAとDの高用量複合摂取は過剰症（過剰摂取障害）のリスクがある。",
+    "required_checks": [
+      "dose_check",
+      "upper_limit_check",
+      "toxicology_review",
+      "expert_review_required"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_allergen_enzyme_reduction",
+    "source_atom_type": "enzyme",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "protein_degradation"
+    ],
+    "target_required_tags": [
+      "allergen",
+      "protein_source"
+    ],
+    "bond_type": "allergen_reduction",
+    "expected_result": "epitope_disruption_hypoallergenic",
+    "confidence": "medium",
+    "risk_level": "yellow",
+    "explanation": "プロテアーゼ処理によるアレルゲンタンパク質の加水分解はアレルゲン性低減に使われるが、完全除去は難しく必ず分析的バリデーションが必要。",
+    "required_checks": [
+      "residual_allergen_test_required",
+      "clinical_safety_study",
+      "labeling_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_drug_interaction_warning",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "goal",
+    "source_required_tags": [
+      "drug_interaction_risk"
+    ],
+    "target_required_tags": [
+      "cardiovascular",
+      "blood_pressure",
+      "blood_sugar"
+    ],
+    "bond_type": "functional_hypothesis",
+    "expected_result": "potential_drug_food_interaction",
+    "confidence": "medium",
+    "risk_level": "red",
+    "explanation": "薬物相互作用リスクのある成分（ベルベリン・ナットウキナーゼ・ビタミンK等）と血圧・血糖・心血管目標の組み合わせは服薬中患者に禁忌の可能性がある。",
+    "required_checks": [
+      "drug_interaction_review",
+      "medical_expert_required",
+      "contraindication_labeling"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_uv_vitamin_d_enhancement",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "condition",
+    "source_required_tags": [
+      "vitamin_d"
+    ],
+    "target_required_tags": [
+      "uv",
+      "irradiation"
+    ],
+    "bond_type": "process_enhancement",
+    "expected_result": "vitamin_d_activation_or_production",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "UV照射によってエルゴステロールをビタミンD2に変換（きのこ等）、または既存ビタミンDの活性化を促進できる。食品素材のビタミンD強化に有効な手法。",
+    "required_checks": [
+      "uv_dose_optimization",
+      "vitamin_d_quantification"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_spray_dry_probiotic",
+    "source_atom_type": "microbe",
+    "target_atom_type": "condition",
+    "source_required_tags": [
+      "probiotic"
+    ],
+    "target_required_tags": [
+      "drying",
+      "encapsulation"
+    ],
+    "bond_type": "formulation_bond",
+    "expected_result": "shelf_stable_probiotic_powder",
+    "confidence": "medium",
+    "risk_level": "yellow",
+    "explanation": "プロバイオティクスのスプレードライ造粒は菌数低下リスクがあるが、適切な保護剤（トレハロース・スキムミルク等）を用いることで生存率を維持できる。",
+    "required_checks": [
+      "viability_post_drying_check",
+      "protective_agent_optimization",
+      "shelf_life_test"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_fermented_food_gut_goal",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "goal",
+    "source_required_tags": [
+      "fermented",
+      "organic_acid"
+    ],
+    "target_required_tags": [
+      "gut_health",
+      "digestion"
+    ],
+    "bond_type": "functional_hypothesis",
+    "expected_result": "digestive_health_support_via_fermentation",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "発酵食品由来の有機酸・酵素・微生物代謝産物は腸内pH調整・消化サポートに寄与する。黒酢・乳酸等の組み合わせは消化機能改善の伝統的根拠を持つ。",
+    "required_checks": [
+      "dose_check",
+      "clinical_evidence_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_mineral_deficiency_goal",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "goal",
+    "source_required_tags": [
+      "mineral"
+    ],
+    "target_required_tags": [
+      "energy",
+      "fatigue"
+    ],
+    "bond_type": "functional_hypothesis",
+    "expected_result": "mineral_deficiency_correction_energy",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "鉄・マグネシウム・亜鉛等のミネラル不足は疲労・エネルギー低下の原因となる。不足状態での補給は体調改善の根拠があるが、過剰摂取に注意が必要。",
+    "required_checks": [
+      "dose_check",
+      "deficiency_vs_excess_balance",
+      "upper_limit_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_phytoestrogen_hormone_risk",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "goal",
+    "source_required_tags": [
+      "phytoestrogen",
+      "soy"
+    ],
+    "target_required_tags": [
+      "hormone_sensitive",
+      "menopause"
+    ],
+    "bond_type": "functional_hypothesis",
+    "expected_result": "phytoestrogenic_effect_with_risk",
+    "confidence": "medium",
+    "risk_level": "red",
+    "explanation": "大豆イソフラボン等の植物エストロゲンはホルモン感受性がん（乳がん・子宮がん）患者への摂取に慎重な対応が必要。更年期サポート用途では上限量設定が重要。",
+    "required_checks": [
+      "hormone_sensitive_cancer_contraindication",
+      "dose_upper_limit_check",
+      "expert_review_required"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_algae_heavy_metal_risk",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "goal",
+    "source_required_tags": [
+      "algae"
+    ],
+    "target_required_tags": [
+      "detox",
+      "immune"
+    ],
+    "bond_type": "functional_hypothesis",
+    "expected_result": "algae_health_benefit_with_contamination_risk",
+    "confidence": "low",
+    "risk_level": "red",
+    "explanation": "藻類（スピルリナ・クロレラ等）は解毒・免疫サポートとして訴求されるが、重金属（鉛・水銀・カドミウム）汚染リスクが高く、必ず品質試験が必要。",
+    "required_checks": [
+      "heavy_metal_test_required",
+      "microcystin_test",
+      "supplier_audit_required",
+      "expert_review_required"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_enzyme_goal_blood_sugar",
+    "source_atom_type": "enzyme",
+    "target_atom_type": "goal",
+    "source_required_tags": [
+      "glucoside_hydrolase"
+    ],
+    "target_required_tags": [
+      "blood_sugar",
+      "glycemic"
+    ],
+    "bond_type": "functional_hypothesis",
+    "expected_result": "starch_digestion_modulation_glycemic_control",
+    "confidence": "medium",
+    "risk_level": "yellow",
+    "explanation": "アミラーゼ・グルコシダーゼ阻害を目的とした酵素組み合わせは血糖値コントロールに使われるが、過度な消化酵素阻害は消化不良リスクとなる。",
+    "required_checks": [
+      "dose_check",
+      "gi_side_effect_monitoring",
+      "drug_interaction_check"
+    ]
+  }
+]
