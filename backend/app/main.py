@@ -68,6 +68,20 @@ async def health():
 
     atoms_count = len(get_all_atoms())
 
+    # Supabase 接続を強制試行（キャッシュ無視）
+    sb_error = None
+    if _supabase_available is False and os.getenv("SUPABASE_URL", ""):
+        try:
+            from supabase import create_client as _cc
+            _url = os.getenv("SUPABASE_URL", "")
+            _key = os.getenv("SUPABASE_SERVICE_KEY", "") or os.getenv("SUPABASE_KEY", "")
+            _sb = _cc(_url, _key)
+            _res = _sb.table("atoms").select("atom_id").limit(1).execute()
+            db_status = "connected"
+            sb_error = None
+        except Exception as e:
+            sb_error = str(e)[:120]
+
     return {
         "status": "ok",
         "version": "0.1.0",
@@ -75,6 +89,7 @@ async def health():
             "mode": db_mode,
             "status": db_status,
             "persistent": db_status == "connected",
+            **({"error": sb_error} if sb_error else {}),
         },
         "data": {
             "atoms": atoms_count,
