@@ -15,7 +15,7 @@
 | Bond 可視化（FusionCanvas） | ✅ |
 | Phase 1: PubChem エンリッチ | ⚠️ 35/135 (25%) |
 | Phase 2: UniProt | ⚠️ 19/135 (14%) |
-| Phase 2: PubMed | ⚠️ 126/135 (93%) |
+| Phase 2: PubMed | ⚠️ 127/135 (94%) |
 | Phase 3: FDA GRAS + Safety Gate 強化 | ⚠️ 82/135 (60%) |
 | Phase 4: サプライヤー情報 | ⚠️ 82/135 (60%) |
 | Phase 5: Google Trends | ⚠️ 83/135 (61%) |

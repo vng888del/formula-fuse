@@ -2624,7 +2624,45 @@
         "magnesium_mg": 124.0,
         "zinc_mg": 1.91
       }
-    }
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "36121773",
+        "title": "GABA-enriched rice bran inhibits inflammation in LPS-stimulated macrophages via suppression of TLR4-MAPK/NF-κB signaling cascades.",
+        "authors": [
+          "Ngo DH",
+          "Tran QT",
+          "Kim YS"
+        ],
+        "journal": "Journal of food biochemistry",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36121773/"
+      },
+      {
+        "pmid": "35495911",
+        "title": "Fermentation With Pleurotus Ostreatus Enhances the Prebiotic Properties of Germinated Riceberry Rice.",
+        "authors": [
+          "Soodpakdee K",
+          "Nacha J",
+          "Rattanachart N"
+        ],
+        "journal": "Frontiers in nutrition",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35495911/"
+      },
+      {
+        "pmid": "35662255",
+        "title": "Optimization of the hongqu starter preparation process for the manufacturing of red mold rice with high gamma-aminobutyric acid production by solid-state fermentation.",
+        "authors": [
+          "Wu A",
+          "Li L",
+          "Zhang S"
+        ],
+        "journal": "Biotechnology and applied biochemistry",
+        "year": "2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35662255/"
+      }
+    ]
   },
   {
     "atom_id": "atom_dietary_fiber",
