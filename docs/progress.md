@@ -1,6 +1,6 @@
 # Formula Fuse Studio — 進捗レポート
 
-> 自動生成: 2026-05-29 10:01 UTC
+> 自動生成: 2026-05-29 11:16 UTC
 > `python3 scripts/generate_docs.py` を実行すると再生成されます。
 
 ---
@@ -44,19 +44,21 @@
 | condition | 26 |
 | goal | 27 |
 
-### Atom エンリッチメント状況
+### Atom エンリッチメント状況（対象タイプ別）
 
-| フィールド | 付与済み件数 |
-|---|---:|
-| PubChem 化合物データ (`compound`) | 55 / 153 |
-| UniProt 酵素・微生物データ (`uniprot`) | 19 / 153 |
-| FDA GRAS ステータス (`gras`) | 100 / 153 |
-| USDA 栄養データ (`usda`) | 29 / 153 |
-| PubMed 文献エビデンス (`pubmed_evidence`) | 145 / 153 |
-| サプライヤー・OEM 情報 (`supplier_info`) | 100 / 153 |
-| 特許ランドスケープ (`patent_landscape`) | 0 / 153 |
-| Google Trends 市場需要 (`market_trends`) | 89 / 153 |
-| Open Food Facts 既存製品 (`existing_products`) | 58 / 153 |
+> ⚠️ 分母は「意味のある対象 atom_type」のみ。goal/condition は化合物・栄養データの対象外。
+
+| フィールド | 付与済 / 対象 | カバレッジ | 完了基準 |
+|---|---:|---:|---:|
+| PubChem 化合物データ | 52 / 74 | 70% | ⚠️ ≥80% |
+| UniProt 酵素・微生物データ | 19 / 100 | 19% | ⚠️ ≥70% |
+| FDA GRAS ステータス | 74 / 74 | 100% | ✅ ≥90% |
+| USDA 栄養データ | 29 / 74 | 39% | ⚠️ ≥40% |
+| PubMed 文献エビデンス | 74 / 74 | 100% | ✅ ≥95% |
+| サプライヤー・OEM 情報 | 74 / 74 | 100% | ✅ ≥90% |
+| 特許ランドスケープ | 0 / 100 | 0% | ⬜ ≥50% |
+| Google Trends 市場需要 | 62 / 74 | 84% | ✅ ≥80% |
+| Open Food Facts 既存製品 | 58 / 74 | 78% | ✅ ≥70% |
 
 ### Risk Tags
 
@@ -192,20 +194,21 @@
 
 ---
 
-## データソース フェーズ
+## データソース フェーズ（完了基準付き）
 
-| フェーズ | 状態 |
-|---|---|
-| Phase 1：最初に必ず使う | ✅ 完了 |
-| Phase 2：研究・発酵・酵素を強くする | ✅ 完了 |
-| Phase 3：Safety Gate を強くする | ✅ 完了 |
-| Phase 4：特許・商流を強くする | ✅ 完了 |
-| Phase 5：市場・味・商品データ | ✅ 完了 |
+| Phase | 内容 | 状態 |
+|---|---|---|
+| 0 | 手動シード Atom | ✅ 完了 — シードJSON存在 |
+| 1 | PubChem / MEXT / USDA API 連携 | ⚠️ 進行中 — PubChem 70% / USDA 39%（基準: PubChem ≥ 80%） |
+| 2 | UniProt / PubMed | ✅ 完了 — PubMed 100% / UniProt 19%（基準: PubMed ≥ 95%） |
+| 3 | FDA GRAS / Safety Gate 強化 | ✅ 完了 — GRAS 100%（基準: ingredient ≥ 90%） |
+| 4 | サプライヤー / Lens.org 特許 | ⚠️ 進行中 — Supplier 100% / Patent 0%（基準: Supplier ≥ 90% & Patent ≥ 50%） |
+| 5 | Google Trends / Open Food Facts | ✅ 完了 — Trends 84% / OpenFoodFacts 78%（基準: Trends ≥ 80% & OFF ≥ 70%） |
 
 ---
 
 _このファイルは自動生成です。手動編集しても次回上書きされます。_
 _更新: `python3 scripts/generate_docs.py`　確認: `python3 scripts/generate_docs.py --check`_
 
-<!-- src-hash: 62d2732ddae2 -->
-<!-- file-hashes: {"data/seed-atoms/food-bio-atoms.json":"57fb4c1971f2","data/seed-atoms/risk-tags.json":"29e0b91b265e","data/seed-atoms/bond-rules.json":"4babe428d128","backend/app/routers/atoms.py":"909d1d265ed4","backend/app/routers/formulas.py":"c03f995c9dbd","backend/app/services/ai_router.py":"32fc17b161e8","backend/app/services/fuse_engine.py":"4db7ef8298f6","backend/app/services/risk_gate.py":"97e31176f0dd","backend/app/services/report_generator.py":"9f2ea58f680c","backend/app/db/database.py":"6b2553ce538d","docs/data-sources.md":"f49acaaa1297"} -->
+<!-- src-hash: f36dd81a27ad -->
+<!-- file-hashes: {"data/seed-atoms/food-bio-atoms.json":"57fb4c1971f2","data/seed-atoms/risk-tags.json":"29e0b91b265e","data/seed-atoms/bond-rules.json":"4babe428d128","backend/app/routers/atoms.py":"909d1d265ed4","backend/app/routers/formulas.py":"c03f995c9dbd","backend/app/services/ai_router.py":"32fc17b161e8","backend/app/services/fuse_engine.py":"4db7ef8298f6","backend/app/services/risk_gate.py":"97e31176f0dd","backend/app/services/report_generator.py":"9f2ea58f680c","backend/app/db/database.py":"6b2553ce538d","docs/data-sources.md":"9bdc1c078aa5"} -->
