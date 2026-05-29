@@ -62,4 +62,8 @@ def _evaluate_bond_rules(atoms: list[dict]) -> list[dict]:
 def _tags_match(atom_tags: list[str], required_tags: list[str]) -> bool:
     if not required_tags:
         return True
-    return any(t in atom_tags for t in required_tags)
+    for req in required_tags:
+        for tag in atom_tags:
+            if req == tag or req in tag or tag in req:
+                return True
+    return False
