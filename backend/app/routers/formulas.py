@@ -1,5 +1,4 @@
 from __future__ import annotations
-import os
 from fastapi import APIRouter, HTTPException, Header
 from typing import Optional
 from app.models.formula import (
@@ -30,26 +29,14 @@ async def safety_gate(req: FuseRequest):
     return evaluate_safety_gate(fused.all_risk_tags, atoms=fused.atoms)
 
 
-def _resolve_api_key(provider: str, byok: Optional[str]) -> str:
-    if byok:
-        return byok
-    env_map = {
-        "openai":  os.getenv("OPENAI_API_KEY", ""),
-        "claude":  os.getenv("ANTHROPIC_API_KEY", ""),
-        "gemini":  os.getenv("GOOGLE_API_KEY", ""),
-    }
-    key = env_map.get(provider, "")
-    if not key:
-        raise HTTPException(status_code=400, detail="API key required in X-AI-Provider-Key header")
-    return key
-
-
 @router.post("/analyze")
 async def analyze(
     req: AnalyzeRequest,
     x_ai_provider_key: Optional[str] = Header(None),
 ):
-    api_key = _resolve_api_key(req.ai_provider, x_ai_provider_key)
+    if not x_ai_provider_key:
+        raise HTTPException(status_code=400, detail="API key required in X-AI-Provider-Key header")
+    api_key = x_ai_provider_key
 
     safety = evaluate_safety_gate(req.fused_formula.all_risk_tags, atoms=req.fused_formula.atoms)
 
