@@ -20102,6 +20102,23 @@
       "lead_time_weeks": 4,
       "min_order_qty": "1 kg",
       "notes": "果汁清澄・植物細胞壁分解に使用。最適pH・温度が製品によって異なる。"
+    },
+    "uniprot": {
+      "uniprot_id": "P46130",
+      "protein_name": "Putative acyl-CoA thioester hydrolase YbhC",
+      "gene_names": [
+        "ybhC"
+      ],
+      "organism": "Escherichia coli (strain K12)",
+      "ec_numbers": [
+        "3.1.2.-"
+      ],
+      "function_comment": "Putative thioesterase. Does not bind pectin, and has no pectinesterase activity",
+      "subcellular_location": [
+        "Cell outer membrane"
+      ],
+      "catalytic_activity": [],
+      "uniprot_url": "https://www.uniprot.org/uniprotkb/P46130"
     }
   },
   {
@@ -20244,6 +20261,25 @@
       "lead_time_weeks": 4,
       "min_order_qty": "1 kg",
       "notes": "製パンでのグルテン強化・除酸素剤として使用。過酸化水素が副産物（カタラーゼ併用推奨）。"
+    },
+    "uniprot": {
+      "uniprot_id": "P18173",
+      "protein_name": "Glucose dehydrogenase [FAD, quinone]",
+      "gene_names": [
+        "Gld"
+      ],
+      "organism": "Drosophila melanogaster",
+      "ec_numbers": [
+        "1.1.5.9"
+      ],
+      "function_comment": "Essential for cuticular modification during development",
+      "subcellular_location": [
+        "Secreted"
+      ],
+      "catalytic_activity": [
+        "a quinone + D-glucose = D-glucono-1,5-lactone + a quinol"
+      ],
+      "uniprot_url": "https://www.uniprot.org/uniprotkb/P18173"
     }
   }
 ]
