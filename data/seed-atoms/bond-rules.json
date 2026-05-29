@@ -805,5 +805,224 @@
       "gi_side_effect_monitoring",
       "drug_interaction_check"
     ]
+  },
+  {
+    "bond_rule_id": "bond_calcium_vitamin_d_absorption",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "calcium_vitamin_d_synergy",
+      "bone_mineral_synergy"
+    ],
+    "target_required_tags": [
+      "calcium_absorption",
+      "bone_health"
+    ],
+    "bond_type": "cofactor_synergy",
+    "expected_result": "enhanced_calcium_absorption",
+    "confidence": "high",
+    "risk_level": "green",
+    "explanation": "カルシウムとビタミンD3の組み合わせは腸管でのカルシウム吸収を促進する可能性がある。骨密度維持のための代表的な組み合わせだが、過剰摂取には注意が必要。",
+    "required_checks": [
+      "dose_check",
+      "upper_limit_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_b12_folate_homocysteine",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "homocysteine_metabolism"
+    ],
+    "target_required_tags": [
+      "homocysteine_reduction"
+    ],
+    "bond_type": "cofactor_synergy",
+    "expected_result": "homocysteine_reduction",
+    "confidence": "high",
+    "risk_level": "green",
+    "explanation": "ビタミンB12と葉酸の組み合わせはホモシステイン代謝を相補的に支援する可能性がある。心血管リスク低減の観点から研究されている組み合わせ。",
+    "required_checks": [
+      "dose_check",
+      "medical_claim_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_coq10_carnitine_mitochondria",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "energy_metabolism",
+      "mitochondrial_support"
+    ],
+    "target_required_tags": [
+      "fat_oxidation",
+      "energy_production"
+    ],
+    "bond_type": "functional_hypothesis",
+    "expected_result": "mitochondrial_energy_support",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "CoQ10とL-カルニチンの組み合わせはミトコンドリアでの脂肪酸酸化とエネルギー産生を相補的に支援する可能性がある。スポーツパフォーマンスや疲労感に関する研究がある。",
+    "required_checks": [
+      "dose_check",
+      "experiment_required"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_carotenoid_eye_synergy",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "eye_health_support",
+      "carotenoid_synergy"
+    ],
+    "target_required_tags": [
+      "antioxidant",
+      "carotenoid_synergy"
+    ],
+    "bond_type": "antioxidant_synergy",
+    "expected_result": "macular_protection_enhancement",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "ルテインやアスタキサンチン等のカロテノイド同士の組み合わせは、眼の黄斑部保護や酸化ストレス軽減で相乗的に作用する可能性がある。",
+    "required_checks": [
+      "dose_check",
+      "experiment_required"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_nac_selenium_glutathione",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "antioxidant_synergy"
+    ],
+    "target_required_tags": [
+      "thyroid_support",
+      "antioxidant"
+    ],
+    "bond_type": "antioxidant_synergy",
+    "expected_result": "glutathione_pathway_support",
+    "confidence": "medium",
+    "risk_level": "yellow",
+    "explanation": "N-アセチルシステイン（NAC）とセレンの組み合わせはグルタチオン合成経路を相補的に支援する可能性がある。過剰なセレン摂取は毒性を示すため用量管理が重要。",
+    "required_checks": [
+      "dose_check",
+      "upper_limit_check",
+      "experiment_required"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_omega3_vitamin_e_lipid",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "lipid_oxidation_prevention",
+      "antioxidant_synergy"
+    ],
+    "target_required_tags": [
+      "bioavailability_enhancement",
+      "fat_oxidation"
+    ],
+    "bond_type": "bioavailability_enhancement",
+    "expected_result": "omega3_oxidation_prevention",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "ビタミンEとDHA/EPAの組み合わせは、多価不飽和脂肪酸の酸化を防いで安定性と生体利用能を高める可能性がある。",
+    "required_checks": [
+      "dose_check",
+      "oxidation_stability_test"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_polyphenol_prebiotic_gut",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "antioxidant_synergy",
+      "anti_inflammatory"
+    ],
+    "target_required_tags": [
+      "prebiotic_effect",
+      "cholesterol_binding"
+    ],
+    "bond_type": "functional_hypothesis",
+    "expected_result": "gut_microbiome_modulation",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "ポリフェノール類とプレバイオティクス（βグルカン・イヌリン等）の組み合わせは腸内細菌叢を介した抗炎症・代謝改善効果を相補的に支援する可能性がある。",
+    "required_checks": [
+      "dose_check",
+      "experiment_required"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_berberine_metabolic_synergy",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "energy_metabolism",
+      "fat_oxidation"
+    ],
+    "target_required_tags": [
+      "cholesterol_binding",
+      "blood_sugar_control"
+    ],
+    "bond_type": "functional_hypothesis",
+    "expected_result": "metabolic_syndrome_support",
+    "confidence": "medium",
+    "risk_level": "yellow",
+    "explanation": "ベルベリンと脂質・糖代謝系成分の組み合わせはメタボリックシンドローム関連指標への複合的作用が期待される。薬物相互作用のリスクがあるため専門家確認が必要。",
+    "required_checks": [
+      "drug_interaction_check",
+      "dose_check",
+      "medical_claim_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_lactoferrin_iron_absorption",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "iron_metabolism",
+      "antimicrobial_bond"
+    ],
+    "target_required_tags": [
+      "oxygen_transport_support"
+    ],
+    "bond_type": "cofactor_synergy",
+    "expected_result": "iron_bioavailability_enhancement",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "ラクトフェリンと鉄の組み合わせはラクトフェリンの鉄結合能により鉄の吸収・輸送を助ける可能性がある。乳由来成分であり乳アレルギーへの注意が必要。",
+    "required_checks": [
+      "allergen_claim_check",
+      "dose_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_isoflavone_bone_mineral",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "hormone_modulation",
+      "bone_mineral_synergy"
+    ],
+    "target_required_tags": [
+      "bone_mineral_synergy",
+      "calcium_vitamin_d_synergy"
+    ],
+    "bond_type": "functional_hypothesis",
+    "expected_result": "bone_density_support",
+    "confidence": "medium",
+    "risk_level": "yellow",
+    "explanation": "大豆イソフラボンとカルシウム・ビタミンD3の組み合わせは骨密度維持を相補的に支援する可能性がある。エストロゲン受容体への作用があるため、ホルモン依存性疾患の既往がある場合は要注意。",
+    "required_checks": [
+      "hormone_sensitive_check",
+      "dose_check",
+      "medical_claim_check"
+    ]
   }
 ]

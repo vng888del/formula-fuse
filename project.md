@@ -32,7 +32,7 @@
 ## Bond Counts
 
 <!-- BEGIN:bond-counts -->
-現在 **40 Bond Rules**。Risk Tags **26** 件（red 5 / yellow 21）。
+現在 **50 Bond Rules**。Risk Tags **26** 件（red 5 / yellow 21）。
 <!-- END:bond-counts -->
 
 ## Data Phases

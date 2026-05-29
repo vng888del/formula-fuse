@@ -1,6 +1,6 @@
 # Formula Fuse Studio — 進捗レポート
 
-> 自動生成: 2026-05-29 08:24 UTC
+> 自動生成: 2026-05-29 08:41 UTC
 > `python3 scripts/generate_docs.py` を実行すると再生成されます。
 
 ---
@@ -68,14 +68,16 @@
 
 ### Bond Rules
 
-合計 **40** ルール
+合計 **50** ルール
 
 | bond_type | 件数 |
 |---|---:|
-| functional_hypothesis | 11 |
+| functional_hypothesis | 15 |
+| cofactor_synergy | 5 |
+| antioxidant_synergy | 3 |
 | hydrolysis | 2 |
 | fermentation_optimization | 2 |
-| cofactor_synergy | 2 |
+| bioavailability_enhancement | 2 |
 | degradation | 1 |
 | fermentation | 1 |
 | gaba_synthesis | 1 |
@@ -91,8 +93,6 @@
 | sports_functional_hypothesis | 1 |
 | probiotic_immune_hypothesis | 1 |
 | synbiotic_bond | 1 |
-| antioxidant_synergy | 1 |
-| bioavailability_enhancement | 1 |
 | probiotic_functional_hypothesis | 1 |
 | biopreservation_hypothesis | 1 |
 | synergistic | 1 |
@@ -186,5 +186,5 @@
 _このファイルは自動生成です。手動編集しても次回上書きされます。_
 _更新: `python3 scripts/generate_docs.py`　確認: `python3 scripts/generate_docs.py --check`_
 
-<!-- src-hash: fa8e5b3bee27 -->
-<!-- file-hashes: {"data/seed-atoms/food-bio-atoms.json":"12d4a8e1dd3c","data/seed-atoms/risk-tags.json":"29e0b91b265e","data/seed-atoms/bond-rules.json":"681336aa125a","backend/app/routers/atoms.py":"909d1d265ed4","backend/app/routers/formulas.py":"de884a757921","backend/app/services/ai_router.py":"9570f1dee76e","backend/app/services/fuse_engine.py":"4db7ef8298f6","backend/app/services/risk_gate.py":"8210bbb95a47","backend/app/services/report_generator.py":"21b5e93acd3c","backend/app/db/database.py":"6b2553ce538d","docs/data-sources.md":"f49acaaa1297"} -->
+<!-- src-hash: afd92c8d5fbc -->
+<!-- file-hashes: {"data/seed-atoms/food-bio-atoms.json":"12d4a8e1dd3c","data/seed-atoms/risk-tags.json":"29e0b91b265e","data/seed-atoms/bond-rules.json":"3a0fdd515132","backend/app/routers/atoms.py":"909d1d265ed4","backend/app/routers/formulas.py":"7d0eaf97697a","backend/app/services/ai_router.py":"9570f1dee76e","backend/app/services/fuse_engine.py":"4db7ef8298f6","backend/app/services/risk_gate.py":"8210bbb95a47","backend/app/services/report_generator.py":"21b5e93acd3c","backend/app/db/database.py":"6b2553ce538d","docs/data-sources.md":"f49acaaa1297"} -->
