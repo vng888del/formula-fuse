@@ -135,3 +135,49 @@ class CostEstimateResult(BaseModel):
     estimated_cost_per_serving: str
     cost_tier: str
     notes: list[str]
+
+
+class DoseGuideRequest(BaseModel):
+    atom_ids: list[str]
+    total_daily_g: float = 3.0
+
+
+class AtomDoseGuide(BaseModel):
+    atom_id: str
+    name_ja: str
+    name_en: str
+    suggested_dose_mg: float
+    dose_range_min_mg: float
+    dose_range_max_mg: float
+    dose_basis: str
+    typical_form: str
+    key_notes: list[str]
+
+
+class DoseGuideResult(BaseModel):
+    atom_ids: list[str]
+    total_daily_mg: float
+    atom_guides: list[AtomDoseGuide]
+    serving_summary: str
+    formulation_notes: list[str]
+
+
+class RegulatoryCheckRequest(BaseModel):
+    atom_ids: list[str]
+    target_market: str = "JP"
+
+
+class RegulatoryCheckItem(BaseModel):
+    category: str
+    item: str
+    status: str
+    detail: str
+
+
+class RegulatoryCheckResult(BaseModel):
+    atom_ids: list[str]
+    target_market: str
+    overall_status: str
+    checklist: list[RegulatoryCheckItem]
+    required_actions: list[str]
+    expert_reviews: list[str]

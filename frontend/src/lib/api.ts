@@ -1,6 +1,6 @@
 import type {
   Atom, FusedFormula, AIAnalysisResult, SafetyGateResult, SavedFormula, ApiKeyConfig, BondRule,
-  SuggestResult, CostEstimateResult,
+  SuggestResult, CostEstimateResult, DoseGuideResult, RegulatoryCheckResult,
 } from "@/types";
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
@@ -92,6 +92,18 @@ export const api = {
       request<CostEstimateResult>("/formula/cost-estimate", {
         method: "POST",
         body: JSON.stringify({ atom_ids: atomIds, daily_dose_g: dailyDoseG, batch_size_kg: batchSizeKg }),
+      }),
+
+    doseGuide: (atomIds: string[], totalDailyG = 3.0) =>
+      request<DoseGuideResult>("/formula/dose-guide", {
+        method: "POST",
+        body: JSON.stringify({ atom_ids: atomIds, total_daily_g: totalDailyG }),
+      }),
+
+    regulatoryCheck: (atomIds: string[], targetMarket = "JP") =>
+      request<RegulatoryCheckResult>("/formula/regulatory-check", {
+        method: "POST",
+        body: JSON.stringify({ atom_ids: atomIds, target_market: targetMarket }),
       }),
   },
 };

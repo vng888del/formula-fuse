@@ -255,6 +255,42 @@ export interface CostEstimateResult {
   notes: string[];
 }
 
+export interface AtomDoseGuide {
+  atom_id: string;
+  name_ja: string;
+  name_en: string;
+  suggested_dose_mg: number;
+  dose_range_min_mg: number;
+  dose_range_max_mg: number;
+  dose_basis: string;
+  typical_form: string;
+  key_notes: string[];
+}
+
+export interface DoseGuideResult {
+  atom_ids: string[];
+  total_daily_mg: number;
+  atom_guides: AtomDoseGuide[];
+  serving_summary: string;
+  formulation_notes: string[];
+}
+
+export interface RegulatoryCheckItem {
+  category: string;
+  item: string;
+  status: "pass" | "warn" | "fail" | "info";
+  detail: string;
+}
+
+export interface RegulatoryCheckResult {
+  atom_ids: string[];
+  target_market: string;
+  overall_status: string;
+  checklist: RegulatoryCheckItem[];
+  required_actions: string[];
+  expert_reviews: string[];
+}
+
 export interface BondRule {
   bond_rule_id: string;
   source_atom_type: string;

@@ -13,6 +13,8 @@ import { AnalyticsPanel } from "@/components/AnalyticsPanel";
 import { BondGraphPanel } from "@/components/BondGraphPanel";
 import { SuggestPanel } from "@/components/SuggestPanel";
 import { CostPanel } from "@/components/CostPanel";
+import { DosePanel } from "@/components/DosePanel";
+import { RegulatoryPanel } from "@/components/RegulatoryPanel";
 
 const NAV_ICONS = [
   { icon: "⚛", label: "Studio" },
@@ -20,6 +22,8 @@ const NAV_ICONS = [
   { icon: "🕸", label: "Graph" },
   { icon: "📊", label: "Analytics" },
   { icon: "💰", label: "Cost" },
+  { icon: "📐", label: "Dose" },
+  { icon: "📜", label: "Regs" },
   { icon: "📋", label: "History" },
   { icon: "⚙", label: "Settings" },
 ];
@@ -184,16 +188,16 @@ export default function StudioPage() {
             <button
               key={i}
               onClick={() => {
-                if (i === 5) { setShowHistory(h => !h); return; }
-                if (i === 6) { setShowApiModal(true); return; }
+                if (i === 7) { setShowHistory(h => !h); return; }
+                if (i === 8) { setShowApiModal(true); return; }
                 setActiveNav(n => n === i ? 0 : i);
               }}
               title={item.label}
               className="w-9 h-9 flex items-center justify-center rounded-lg text-sm transition-all"
               style={{
-                background: (i === 5 && showHistory) || activeNav === i ? "rgba(79,195,247,0.12)" : "transparent",
-                color: (i === 5 && showHistory) || activeNav === i ? "var(--blue)" : "var(--text-muted)",
-                border: (i === 5 && showHistory) || activeNav === i ? "1px solid rgba(79,195,247,0.2)" : "1px solid transparent",
+                background: (i === 7 && showHistory) || activeNav === i ? "rgba(79,195,247,0.12)" : "transparent",
+                color: (i === 7 && showHistory) || activeNav === i ? "var(--blue)" : "var(--text-muted)",
+                border: (i === 7 && showHistory) || activeNav === i ? "1px solid rgba(79,195,247,0.2)" : "1px solid transparent",
               }}
             >
               {item.icon}
@@ -239,10 +243,14 @@ export default function StudioPage() {
               />
             </div>
 
-            {/* Right Panel: Cost or AI */}
+            {/* Right Panel */}
             <div className="w-80 shrink-0">
               {activeNav === 4 ? (
                 <CostPanel selectedAtoms={selectedAtoms} onClose={() => setActiveNav(0)} />
+              ) : activeNav === 5 ? (
+                <DosePanel selectedAtoms={selectedAtoms} onClose={() => setActiveNav(0)} />
+              ) : activeNav === 6 ? (
+                <RegulatoryPanel selectedAtoms={selectedAtoms} onClose={() => setActiveNav(0)} />
               ) : (
                 <AIReactionPanel
                   analysis={analysis}
