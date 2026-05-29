@@ -3,6 +3,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "env": {
-    "NEXT_PUBLIC_API_URL": "https://your-railway-app.up.railway.app"
+    "NEXT_PUBLIC_API_URL": "https://formula-fuse.onrender.com"
   }
 }
