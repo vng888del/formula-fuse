@@ -2,6 +2,23 @@
 import type { Atom } from "@/types";
 import { ATOM_TYPE_CONFIG } from "@/lib/atomColors";
 
+interface UsdaData {
+  fdc_id?: number;
+  description?: string;
+  food_category?: string;
+  data_type?: string;
+  usda_url?: string;
+  nutrients?: {
+    energy_kcal?: number;
+    protein_g?: number;
+    fat_g?: number;
+    carb_g?: number;
+    fiber_g?: number;
+    calcium_mg?: number;
+    iron_mg?: number;
+  };
+}
+
 interface Props {
   atom: Atom;
   onClose: () => void;
@@ -69,43 +86,42 @@ export function AtomDetailPanel({ atom, onClose }: Props) {
         )}
 
         {/* USDA Nutritional data */}
-        {atom.usda && (
-          <Section label="USDA 栄養データ" icon="🌾">
-            {(atom.usda as Record<string, unknown>).description && (
-              <Row k="食品名" v={String((atom.usda as Record<string, unknown>).description)} />
-            )}
-            {(atom.usda as Record<string, unknown>).food_category && (
-              <Row k="カテゴリ" v={String((atom.usda as Record<string, unknown>).food_category)} />
-            )}
-            {(atom.usda as Record<string, unknown>).data_type && (
-              <Row k="データ種別" v={String((atom.usda as Record<string, unknown>).data_type)} />
-            )}
-            {(atom.usda as Record<string, unknown>).nutrients && (() => {
-              const n = (atom.usda as Record<string, unknown>).nutrients as Record<string, number>;
-              return (
+        {atom.usda && (() => {
+          const usda = atom.usda as UsdaData;
+          const n = usda.nutrients;
+          const rows: [string, number | undefined, string][] = [
+            ["エネルギー", n?.energy_kcal, "kcal"],
+            ["タンパク質", n?.protein_g, "g"],
+            ["脂質", n?.fat_g, "g"],
+            ["炭水化物", n?.carb_g, "g"],
+            ["カルシウム", n?.calcium_mg, "mg"],
+            ["鉄分", n?.iron_mg, "mg"],
+          ];
+          return (
+            <Section label="USDA 栄養データ" icon="🌾">
+              <Row k="食品名" v={usda.description} />
+              <Row k="カテゴリ" v={usda.food_category} />
+              <Row k="データ種別" v={usda.data_type} />
+              {n && (
                 <div className="grid grid-cols-2 gap-1 mt-1">
-                  {[
-                    ["エネルギー", n.energy_kcal, "kcal"],
-                    ["タンパク質", n.protein_g, "g"],
-                    ["脂質", n.fat_g, "g"],
-                    ["炭水化物", n.carb_g, "g"],
-                    ["カルシウム", n.calcium_mg, "mg"],
-                    ["鉄分", n.iron_mg, "mg"],
-                  ].filter(([, v]) => v != null).map(([label, val, unit]) => (
-                    <div key={String(label)} className="rounded p-1 text-center" style={{ background: "rgba(255,255,255,0.03)", border: "1px solid var(--border)" }}>
+                  {rows.filter(([, v]) => v != null).map(([label, val, unit]) => (
+                    <div key={label} className="rounded p-1 text-center" style={{ background: "rgba(255,255,255,0.03)", border: "1px solid var(--border)" }}>
                       <p className="text-[8px]" style={{ color: "var(--text-muted)" }}>{label}</p>
-                      <p className="text-[10px] font-bold" style={{ color: "rgba(255,255,255,0.75)" }}>{Number(val).toFixed(1)}<span className="text-[8px] ml-0.5" style={{ color: "var(--text-muted)" }}>{unit}</span></p>
+                      <p className="text-[10px] font-bold" style={{ color: "rgba(255,255,255,0.75)" }}>
+                        {Number(val).toFixed(1)}
+                        <span className="text-[8px] ml-0.5" style={{ color: "var(--text-muted)" }}>{unit}</span>
+                      </p>
                     </div>
                   ))}
                 </div>
-              );
-            })()}
-            {(atom.usda as Record<string, unknown>).usda_url && (
-              <a href={String((atom.usda as Record<string, unknown>).usda_url)} target="_blank" rel="noopener noreferrer"
-                className="text-[10px] underline" style={{ color: "var(--blue)" }}>FoodData Central →</a>
-            )}
-          </Section>
-        )}
+              )}
+              {usda.usda_url && (
+                <a href={usda.usda_url} target="_blank" rel="noopener noreferrer"
+                  className="text-[10px] underline" style={{ color: "var(--blue)" }}>FoodData Central →</a>
+              )}
+            </Section>
+          );
+        })()}
 
         {/* UniProt / enzyme data */}
         {atom.uniprot && (
