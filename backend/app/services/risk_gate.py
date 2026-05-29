@@ -8,6 +8,8 @@ RED_TAGS = {
     "toxicology_review_required",
     "pharmaceutical_borderline",
     "manufacturing_safety_review",
+    "liver_toxicity_high_dose",
+    "cancer_risk_theoretical",
 }
 
 YELLOW_TAGS = {
@@ -34,6 +36,17 @@ YELLOW_TAGS = {
     "insufficient_evidence",
     "expert_review_required",
     "drug_interaction_risk",
+    # New tags for functional ingredients / supplements
+    "regulatory_ambiguity",
+    "thyroid_caution",
+    "autoimmune_caution",
+    "bipolar_caution",
+    "stimulant_effect",
+    "blood_thinner_interaction",
+    "blood_sugar_caution",
+    "thiamine_depletion_risk",
+    "iron_absorption_inhibition",
+    "neonatal_caution",
 }
 
 ALL_ACTIONS = [
