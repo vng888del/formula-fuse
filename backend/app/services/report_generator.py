@@ -204,6 +204,26 @@ def generate_markdown_report(
 
         lines += ["---", ""]
 
+    # ── 8a. USDA 栄養データ ────────────────────────────────────────────────────
+    has_usda = any(atom.get("usda") for atom in atoms)
+    if has_usda:
+        lines += ["## USDA 栄養データ", ""]
+        lines += ["| Atom | エネルギー | タンパク質 | 脂質 | 炭水化物 | USDA区分 |"]
+        lines += ["|---|---|---|---|---|---|"]
+        for atom in atoms:
+            usda = atom.get("usda", {})
+            if not usda:
+                continue
+            n = usda.get("nutrients", {})
+            kcal = f"{n.get('energy_kcal', '—')} kcal" if n.get('energy_kcal') else "—"
+            prot = f"{n.get('protein_g', '—')} g" if n.get('protein_g') else "—"
+            fat  = f"{n.get('fat_g', '—')} g" if n.get('fat_g') else "—"
+            carb = f"{n.get('carb_g', '—')} g" if n.get('carb_g') else "—"
+            dtype = usda.get("data_type", "—")
+            name = atom["name_en"][:25]
+            lines.append(f"| {name} | {kcal} | {prot} | {fat} | {carb} | {dtype} |")
+        lines += ["", "---", ""]
+
     # ── 8b. 市場トレンド・既存製品 ────────────────────────────────────────────
     has_market = any(atom.get("market_trends") or atom.get("existing_products") for atom in atoms)
     if has_market:
