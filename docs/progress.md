@@ -1,6 +1,6 @@
 # Formula Fuse Studio — 進捗レポート
 
-> 自動生成: 2026-05-29 08:45 UTC
+> 自動生成: 2026-05-29 09:06 UTC
 > `python3 scripts/generate_docs.py` を実行すると再生成されます。
 
 ---
@@ -33,12 +33,12 @@
 
 | ファイル | 件数 |
 |---|---:|
-| `food-bio-atoms.json` | 145 |
-| **合計** | **145** |
+| `food-bio-atoms.json` | 149 |
+| **合計** | **149** |
 
 | atom_type | 件数 |
 |---|---:|
-| ingredient | 66 |
+| ingredient | 70 |
 | microbe | 16 |
 | enzyme | 10 |
 | condition | 26 |
@@ -48,15 +48,15 @@
 
 | フィールド | 付与済み件数 |
 |---|---:|
-| PubChem 化合物データ (`compound`) | 35 / 145 |
-| UniProt 酵素・微生物データ (`uniprot`) | 19 / 145 |
-| FDA GRAS ステータス (`gras`) | 92 / 145 |
-| USDA 栄養データ (`usda`) | 25 / 145 |
-| PubMed 文献エビデンス (`pubmed_evidence`) | 137 / 145 |
-| サプライヤー・OEM 情報 (`supplier_info`) | 92 / 145 |
-| 特許ランドスケープ (`patent_landscape`) | 0 / 145 |
-| Google Trends 市場需要 (`market_trends`) | 81 / 145 |
-| Open Food Facts 既存製品 (`existing_products`) | 41 / 145 |
+| PubChem 化合物データ (`compound`) | 52 / 149 |
+| UniProt 酵素・微生物データ (`uniprot`) | 19 / 149 |
+| FDA GRAS ステータス (`gras`) | 96 / 149 |
+| USDA 栄養データ (`usda`) | 29 / 149 |
+| PubMed 文献エビデンス (`pubmed_evidence`) | 141 / 149 |
+| サプライヤー・OEM 情報 (`supplier_info`) | 96 / 149 |
+| 特許ランドスケープ (`patent_landscape`) | 0 / 149 |
+| Google Trends 市場需要 (`market_trends`) | 85 / 149 |
+| Open Food Facts 既存製品 (`existing_products`) | 45 / 149 |
 
 ### Risk Tags
 
@@ -68,16 +68,19 @@
 
 ### Bond Rules
 
-合計 **50** ルール
+合計 **63** ルール
 
 | bond_type | 件数 |
 |---|---:|
-| functional_hypothesis | 15 |
+| functional_hypothesis | 19 |
 | cofactor_synergy | 5 |
 | antioxidant_synergy | 3 |
+| bioavailability_enhancement | 3 |
 | hydrolysis | 2 |
 | fermentation_optimization | 2 |
-| bioavailability_enhancement | 2 |
+| skin_functional_hypothesis | 2 |
+| sports_functional_hypothesis | 2 |
+| probiotic_immune_hypothesis | 2 |
 | degradation | 1 |
 | fermentation | 1 |
 | gaba_synthesis | 1 |
@@ -88,10 +91,7 @@
 | goal_ingredient_match | 1 |
 | microbial_enzyme_synergy | 1 |
 | absorption_inhibition | 1 |
-| skin_functional_hypothesis | 1 |
 | antioxidant_functional_hypothesis | 1 |
-| sports_functional_hypothesis | 1 |
-| probiotic_immune_hypothesis | 1 |
 | synbiotic_bond | 1 |
 | probiotic_functional_hypothesis | 1 |
 | biopreservation_hypothesis | 1 |
@@ -99,6 +99,11 @@
 | allergen_reduction | 1 |
 | process_enhancement | 1 |
 | formulation_bond | 1 |
+| adaptogen_stack_synergy | 1 |
+| immune_performance_synergy | 1 |
+| longevity_nad_synergy | 1 |
+| antioxidant_network_synergy | 1 |
+| cognitive_energy_synergy | 1 |
 
 ---
 
@@ -186,5 +191,5 @@
 _このファイルは自動生成です。手動編集しても次回上書きされます。_
 _更新: `python3 scripts/generate_docs.py`　確認: `python3 scripts/generate_docs.py --check`_
 
-<!-- src-hash: 58ca57d93e6f -->
-<!-- file-hashes: {"data/seed-atoms/food-bio-atoms.json":"7f81c377d8a4","data/seed-atoms/risk-tags.json":"29e0b91b265e","data/seed-atoms/bond-rules.json":"3a0fdd515132","backend/app/routers/atoms.py":"909d1d265ed4","backend/app/routers/formulas.py":"7d0eaf97697a","backend/app/services/ai_router.py":"9570f1dee76e","backend/app/services/fuse_engine.py":"4db7ef8298f6","backend/app/services/risk_gate.py":"8210bbb95a47","backend/app/services/report_generator.py":"21b5e93acd3c","backend/app/db/database.py":"6b2553ce538d","docs/data-sources.md":"f49acaaa1297"} -->
+<!-- src-hash: f3b4759ece01 -->
+<!-- file-hashes: {"data/seed-atoms/food-bio-atoms.json":"4ce3b1111103","data/seed-atoms/risk-tags.json":"29e0b91b265e","data/seed-atoms/bond-rules.json":"383901606506","backend/app/routers/atoms.py":"909d1d265ed4","backend/app/routers/formulas.py":"7d0eaf97697a","backend/app/services/ai_router.py":"32fc17b161e8","backend/app/services/fuse_engine.py":"4db7ef8298f6","backend/app/services/risk_gate.py":"8210bbb95a47","backend/app/services/report_generator.py":"21b5e93acd3c","backend/app/db/database.py":"6b2553ce538d","docs/data-sources.md":"f49acaaa1297"} -->

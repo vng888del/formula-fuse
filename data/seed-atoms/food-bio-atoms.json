@@ -1469,6 +1469,14 @@
       "trend_direction": "stable",
       "peak_month_jp": "",
       "retrieved_at": "2026-05-28T12:14:54.244332+00:00"
+    },
+    "compound": {
+      "pubchem_cid": 24763,
+      "molecular_formula": "C228H382O191",
+      "molecular_weight": "6179",
+      "smiles": null,
+      "inchikey": "JYJIGFIDKWBXDU-MNNPPOADSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/24763"
     }
   },
   {
@@ -4882,6 +4890,14 @@
       "lead_time_weeks": 4,
       "min_order_qty": "1 kg",
       "notes": "フィチン酸分解でミネラル吸収を高める。pH 安定性・熱安定性の確認が重要。"
+    },
+    "compound": {
+      "pubchem_cid": 890,
+      "molecular_formula": "C6H18O24P6",
+      "molecular_weight": "660.04",
+      "smiles": null,
+      "inchikey": "IMQLKJBTEOYOSI-UHFFFAOYSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/890"
     }
   },
   {
@@ -5028,6 +5044,14 @@
       "lead_time_weeks": 6,
       "min_order_qty": "1 kg",
       "notes": "アクリルアミド低減目的（ベーカリー・スナック）。EU/US で承認済み。日本は個別許可制。"
+    },
+    "compound": {
+      "pubchem_cid": 5960,
+      "molecular_formula": "C4H7NO4",
+      "molecular_weight": "133.10",
+      "smiles": null,
+      "inchikey": "CKLJMWTZIZZHCS-REOHCLBHSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5960"
     }
   },
   {
@@ -8679,7 +8703,15 @@
         "year": "2023",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37064452/"
       }
-    ]
+    ],
+    "compound": {
+      "pubchem_cid": 5810,
+      "molecular_formula": "C5H9NO3",
+      "molecular_weight": "131.13",
+      "smiles": null,
+      "inchikey": "PMMYEEVYMWASQN-DMTCNVIQSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5810"
+    }
   },
   {
     "atom_id": "atom_fos",
@@ -9886,7 +9918,34 @@
         "year": "2021",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34696778/"
       }
-    ]
+    ],
+    "compound": {
+      "pubchem_cid": 65315,
+      "molecular_formula": "C19H28N8O16P2",
+      "molecular_weight": "686.4",
+      "smiles": null,
+      "inchikey": "SDYIDXSXVMJNAE-FBGCOTALSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/65315"
+    },
+    "usda": {
+      "fdc_id": 171281,
+      "description": "Whey, acid, dried",
+      "food_category": "Dairy and Egg Products",
+      "data_type": "SR Legacy",
+      "usda_url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/171281/nutrients",
+      "nutrients": {
+        "energy_kcal": 339.0,
+        "protein_g": 11.73,
+        "fat_g": 0.54,
+        "carb_g": 73.45,
+        "sugar_g": 73.45,
+        "calcium_mg": 2054.0,
+        "iron_mg": 1.24,
+        "magnesium_mg": 199.0,
+        "zinc_mg": 6.31,
+        "vitamin_c_mg": 0.9
+      }
+    }
   },
   {
     "atom_id": "atom_astaxanthin",
@@ -16020,6 +16079,14 @@
         "vitamin_c_mg": 0.9,
         "vitamin_e_mg": 0.49
       }
+    },
+    "compound": {
+      "pubchem_cid": 5460341,
+      "molecular_formula": "Ca",
+      "molecular_weight": "40.08",
+      "smiles": null,
+      "inchikey": "OYPRJOBELJOOCE-UHFFFAOYSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5460341"
     }
   },
   {
@@ -16598,6 +16665,14 @@
         "vitamin_c_mg": 5.0,
         "vitamin_e_mg": 0.26
       }
+    },
+    "compound": {
+      "pubchem_cid": 5281654,
+      "molecular_formula": "C16H12O7",
+      "molecular_weight": "316.26",
+      "smiles": null,
+      "inchikey": "IZQSVPBOUDKVDZ-UHFFFAOYSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281654"
     }
   },
   {
@@ -20651,7 +20726,15 @@
         "year": "2024",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39102266/"
       }
-    ]
+    ],
+    "compound": {
+      "pubchem_cid": 53477765,
+      "molecular_formula": "C28H38O6",
+      "molecular_weight": "470.6",
+      "smiles": null,
+      "inchikey": "SASUFNRGCZMRFD-LYOLWDNZSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/53477765"
+    }
   },
   {
     "atom_id": "atom_lions_mane",
@@ -20771,7 +20854,23 @@
         "year": "2025",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41695889/"
       }
-    ]
+    ],
+    "usda": {
+      "fdc_id": 1999626,
+      "description": "Mushroom, lion's mane",
+      "food_category": "Vegetables and Vegetable Products",
+      "data_type": "Foundation",
+      "usda_url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/1999626/nutrients",
+      "nutrients": {
+        "protein_g": 2.5,
+        "fat_g": 0.256,
+        "carb_g": 7.59,
+        "fiber_g": 4.376,
+        "iron_mg": 0.688,
+        "magnesium_mg": 11.72,
+        "zinc_mg": 0.745
+      }
+    }
   },
   {
     "atom_id": "atom_creatine",
@@ -20903,7 +21002,15 @@
         "year": "2025",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40371844/"
       }
-    ]
+    ],
+    "compound": {
+      "pubchem_cid": 80116,
+      "molecular_formula": "C4H11N3O3",
+      "molecular_weight": "149.15",
+      "smiles": null,
+      "inchikey": "MEJYXFHCRXAUIL-UHFFFAOYSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/80116"
+    }
   },
   {
     "atom_id": "atom_phosphatidylserine",
@@ -21032,7 +21139,15 @@
         "year": "2025",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41017573/"
       }
-    ]
+    ],
+    "compound": {
+      "pubchem_cid": 9547096,
+      "molecular_formula": "C42H82NO10P",
+      "molecular_weight": "792.1",
+      "smiles": null,
+      "inchikey": "TZCPCKNHXULUIY-RGULYWFUSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/9547096"
+    }
   },
   {
     "atom_id": "atom_melatonin",
@@ -21162,7 +21277,15 @@
         "year": "2024",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39125311/"
       }
-    ]
+    ],
+    "compound": {
+      "pubchem_cid": 896,
+      "molecular_formula": "C13H16N2O2",
+      "molecular_weight": "232.28",
+      "smiles": null,
+      "inchikey": "DRLFMBDRBRZALE-UHFFFAOYSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/896"
+    }
   },
   {
     "atom_id": "atom_choline",
@@ -21294,7 +21417,15 @@
         "year": "2016",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/27273168/"
       }
-    ]
+    ],
+    "compound": {
+      "pubchem_cid": 305,
+      "molecular_formula": "C5H14NO+",
+      "molecular_weight": "104.17",
+      "smiles": null,
+      "inchikey": "OEYIOHPDSNJKLS-UHFFFAOYSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/305"
+    }
   },
   {
     "atom_id": "atom_mct_oil",
@@ -21429,7 +21560,25 @@
         "year": "2025",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40362908/"
       }
-    ]
+    ],
+    "compound": {
+      "pubchem_cid": 379,
+      "molecular_formula": "C8H16O2",
+      "molecular_weight": "144.21",
+      "smiles": null,
+      "inchikey": "WWZKQHOCKIZLMA-UHFFFAOYSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/379"
+    },
+    "usda": {
+      "fdc_id": 748278,
+      "description": "Oil, canola",
+      "food_category": "Fats and Oils",
+      "data_type": "Foundation",
+      "usda_url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/748278/nutrients",
+      "nutrients": {
+        "vitamin_e_mg": 17.3
+      }
+    }
   },
   {
     "atom_id": "atom_reishi",
@@ -21563,7 +21712,32 @@
         "year": "2024",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39241163/"
       }
-    ]
+    ],
+    "compound": {
+      "pubchem_cid": 73554535,
+      "molecular_formula": "C30H44O7",
+      "molecular_weight": "516.7",
+      "smiles": null,
+      "inchikey": "DYOKDAQBNHPJFD-PMVVSAHYSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/73554535"
+    },
+    "usda": {
+      "fdc_id": 2003603,
+      "description": "Mushroom, beech",
+      "food_category": "Vegetables and Vegetable Products",
+      "data_type": "Foundation",
+      "usda_url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/2003603/nutrients",
+      "nutrients": {
+        "protein_g": 2.18,
+        "fat_g": 0.449,
+        "carb_g": 6.759,
+        "fiber_g": 3.139,
+        "calcium_mg": 0.432,
+        "iron_mg": 0.739,
+        "magnesium_mg": 10.49,
+        "zinc_mg": 0.498
+      }
+    }
   },
   {
     "atom_id": "atom_butyrate",
@@ -21694,7 +21868,15 @@
         "year": "2024",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38377332/"
       }
-    ]
+    ],
+    "compound": {
+      "pubchem_cid": 104775,
+      "molecular_formula": "C4H7O2-",
+      "molecular_weight": "87.10",
+      "smiles": null,
+      "inchikey": "FERIUCNNQQJTOY-UHFFFAOYSA-M",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/104775"
+    }
   },
   {
     "atom_id": "atom_pterostilbene",
@@ -21824,6 +22006,624 @@
         "year": "2025",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40888265/"
       }
-    ]
+    ],
+    "compound": {
+      "pubchem_cid": 5281727,
+      "molecular_formula": "C16H16O3",
+      "molecular_weight": "256.30",
+      "smiles": null,
+      "inchikey": "VLEUZFDZJKSGMX-ONEGZZNKSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281727"
+    }
+  },
+  {
+    "atom_id": "atom_rhodiola",
+    "name_ja": "ロディオラ（ロサビン）",
+    "name_en": "Rhodiola rosea",
+    "atom_type": "ingredient",
+    "category": "adaptogen",
+    "domain": "food_bio",
+    "known_actions": [
+      "stress_reduction",
+      "fatigue_relief",
+      "adaptogenic",
+      "cognitive_support",
+      "mood_support"
+    ],
+    "possible_bonds": [
+      "anti_stress_synergy",
+      "cognitive_support",
+      "energy_metabolism"
+    ],
+    "risk_tags": [
+      "drug_interaction_risk",
+      "bipolar_caution"
+    ],
+    "evidence_keywords": [
+      "rhodiola rosea adaptogen",
+      "rhodiola stress fatigue",
+      "salidroside rosavin"
+    ],
+    "regulatory_notes": [
+      "双極性障害患者は要注意。MAO阻害薬との相互作用の可能性あり。"
+    ],
+    "process_keywords": [
+      "root extract",
+      "SHR-5",
+      "rosavin standardized",
+      "salidroside"
+    ],
+    "supplier_keywords": [
+      "Rhodiola rosea extract",
+      "SHR-5",
+      "rosavin 3%"
+    ],
+    "gras": {
+      "status": "unknown",
+      "notes": "Not FDA GRAS. Sold as dietary supplement in US/EU. 機能性表示食品実績あり（日本）."
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Layn Natural Ingredients",
+        "Martin Bauer Group",
+        "Alchem International"
+      ],
+      "japan_suppliers": [
+        "丸善製薬",
+        "ナチュラルプロセスフーズ",
+        "長谷川香料"
+      ],
+      "oem_forms": [
+        "capsule",
+        "tablet",
+        "powder",
+        "extract"
+      ],
+      "typical_grade": "Botanical / Standardized Extract",
+      "certifications": [
+        "Non-GMO",
+        "Organic"
+      ],
+      "price_tier": "high",
+      "lead_time_weeks": 6,
+      "min_order_qty": "1 kg",
+      "notes": "ロサビン3%・サリドロシド1%規格品が標準。SHR-5が主要臨床試験エビデンス持ちブランド。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "35311615",
+        "title": "Clinician guidelines for the treatment of psychiatric disorders with nutraceuticals and phytoceuticals: The World Federation of Societies of Biological Psychiatry (WFSBP) and Canadian Network for Mood",
+        "authors": [
+          "Sarris J",
+          "Ravindran A",
+          "Yatham LN"
+        ],
+        "journal": "World J Biol Psychiatry",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35311615/"
+      },
+      {
+        "pmid": "29568244",
+        "title": "Herbal medicine for sports: a review.",
+        "authors": [
+          "Sellami M",
+          "Slimeni O",
+          "Pokrywka A"
+        ],
+        "journal": "J Int Soc Sports Nutr",
+        "year": "2018",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29568244/"
+      },
+      {
+        "pmid": "38182079",
+        "title": "Hormesis determines lifespan.",
+        "authors": [
+          "Calabrese EJ",
+          "Nascarella M",
+          "Pressman P"
+        ],
+        "journal": "Ageing Res Rev",
+        "year": "2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38182079/"
+      },
+      {
+        "pmid": "40418260",
+        "title": "Dietary Protocols to Promote and Improve Restful Sleep: A Narrative Review.",
+        "authors": [
+          "Conti F"
+        ],
+        "journal": "Nutr Rev",
+        "year": "2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40418260/"
+      },
+      {
+        "pmid": "33078636",
+        "title": "Effects of Concurrent Training and a Multi-Ingredient Performance Supplement Containing Rhodiola rosea and Cordyceps sinensis on Body Composition, Performance, and Health in Active Men.",
+        "authors": [
+          "Kreipke PhD VC",
+          "Moffatt PhD RJ",
+          "Tanner Ma CJ"
+        ],
+        "journal": "J Diet Suppl",
+        "year": "2021",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33078636/"
+      }
+    ],
+    "existing_products": {
+      "total_count": 800,
+      "top_categories": [
+        "supplements",
+        "energy drinks",
+        "stress support"
+      ]
+    },
+    "market_trends": {
+      "keyword": "Rhodiola rosea",
+      "avg_interest_jp": 35,
+      "avg_interest_us": 52,
+      "trend_direction": "rising"
+    }
+  },
+  {
+    "atom_id": "atom_panax_ginseng",
+    "name_ja": "高麗人参（紅参）",
+    "name_en": "Panax ginseng (Korean red ginseng)",
+    "atom_type": "ingredient",
+    "category": "adaptogen",
+    "domain": "food_bio",
+    "known_actions": [
+      "adaptogenic",
+      "cognitive_support",
+      "immune_support",
+      "energy_boost",
+      "anti_fatigue"
+    ],
+    "possible_bonds": [
+      "anti_stress_synergy",
+      "cognitive_support",
+      "immune_support",
+      "energy_metabolism"
+    ],
+    "risk_tags": [
+      "drug_interaction_risk",
+      "blood_thinner_interaction",
+      "stimulant_effect"
+    ],
+    "evidence_keywords": [
+      "panax ginseng ginsenoside",
+      "korean red ginseng adaptogen",
+      "ginseng cognitive"
+    ],
+    "regulatory_notes": [
+      "抗凝固薬（ワーファリン等）との相互作用要注意。高血圧患者は慎重に。"
+    ],
+    "process_keywords": [
+      "red ginseng extract",
+      "ginsenoside Rg1 Rb1",
+      "steaming extraction",
+      "6-year-old root"
+    ],
+    "supplier_keywords": [
+      "Korean red ginseng extract",
+      "ginsenoside standardized",
+      "KGC"
+    ],
+    "gras": {
+      "status": "unknown",
+      "notes": "Generally recognized as safe at food levels. 食薬区分：医薬品（原材料として使用可能な場合あり）. 機能性表示食品実績あり。"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Korea Ginseng Corp (KGC)",
+        "Amorpha Biologics",
+        "SK Bioland"
+      ],
+      "japan_suppliers": [
+        "韓国人参公社 日本法人",
+        "日本薬品工業",
+        "東洋新薬"
+      ],
+      "oem_forms": [
+        "capsule",
+        "tablet",
+        "liquid extract",
+        "powder",
+        "gummy"
+      ],
+      "typical_grade": "Food / Standardized Extract",
+      "certifications": [
+        "Non-GMO",
+        "GMP"
+      ],
+      "price_tier": "high",
+      "lead_time_weeks": 8,
+      "min_order_qty": "1 kg",
+      "notes": "ジンセノサイドRg1+Rb1+Rg3の合計含量で品質規格。KGCが最大手で最多エビデンス保有。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "29568244",
+        "title": "Herbal medicine for sports: a review.",
+        "authors": [
+          "Sellami M",
+          "Slimeni O",
+          "Pokrywka A"
+        ],
+        "journal": "J Int Soc Sports Nutr",
+        "year": "2018",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29568244/"
+      },
+      {
+        "pmid": "30000873",
+        "title": "Ginseng.",
+        "authors": [],
+        "journal": "",
+        "year": "2006",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30000873/"
+      },
+      {
+        "pmid": "41399799",
+        "title": "Potential of Panax ginseng for bone health and osteoporosis management.",
+        "authors": [
+          "Fang W",
+          "Huang K",
+          "Hu J"
+        ],
+        "journal": "Chin Herb Med",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41399799/"
+      },
+      {
+        "pmid": "38139116",
+        "title": "Therapeutic Applications of Ginseng Natural Compounds for Health Management.",
+        "authors": [
+          "Ahmad SS",
+          "Ahmad K",
+          "Hwang YC"
+        ],
+        "journal": "Int J Mol Sci",
+        "year": "2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38139116/"
+      },
+      {
+        "pmid": "33871063",
+        "title": "Ginseng for erectile dysfunction.",
+        "authors": [
+          "Lee HW",
+          "Lee MS",
+          "Kim TH"
+        ],
+        "journal": "Cochrane Database Syst Rev",
+        "year": "2021",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33871063/"
+      }
+    ],
+    "existing_products": {
+      "total_count": 5000,
+      "top_categories": [
+        "supplements",
+        "energy drinks",
+        "functional food",
+        "cosmetics"
+      ]
+    },
+    "market_trends": {
+      "keyword": "Panax ginseng",
+      "avg_interest_jp": 68,
+      "avg_interest_us": 55,
+      "trend_direction": "stable"
+    }
+  },
+  {
+    "atom_id": "atom_cordyceps",
+    "name_ja": "コルディセプス（冬虫夏草）",
+    "name_en": "Cordyceps militaris",
+    "atom_type": "ingredient",
+    "category": "functional_mushroom",
+    "domain": "food_bio",
+    "known_actions": [
+      "athletic_performance",
+      "oxygen_utilization",
+      "immune_support",
+      "anti_fatigue",
+      "adaptogenic"
+    ],
+    "possible_bonds": [
+      "immune_support",
+      "energy_metabolism",
+      "anti_stress_synergy"
+    ],
+    "risk_tags": [
+      "drug_interaction_risk",
+      "autoimmune_caution"
+    ],
+    "evidence_keywords": [
+      "cordyceps militaris cordycepin",
+      "cordyceps athletic performance",
+      "cordyceps immune"
+    ],
+    "regulatory_notes": [
+      "自己免疫疾患患者は要注意。免疫抑制剤との相互作用の可能性あり。"
+    ],
+    "process_keywords": [
+      "fruiting body extract",
+      "mycelium extract",
+      "cordycepin",
+      "beta-glucan"
+    ],
+    "supplier_keywords": [
+      "Cordyceps militaris extract",
+      "cordycepin standardized",
+      "beta-glucan"
+    ],
+    "gras": {
+      "status": "unknown",
+      "notes": "Sold as dietary supplement in US/EU. 食薬区分確認が必要（日本）."
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Nammex",
+        "Real Mushrooms",
+        "Hokkaido Reishi Co",
+        "Fungusnectarin"
+      ],
+      "japan_suppliers": [
+        "北海道霊芝株式会社",
+        "日本バイオコン",
+        "ヤマトエスビー食品"
+      ],
+      "oem_forms": [
+        "capsule",
+        "powder",
+        "extract",
+        "coffee blend"
+      ],
+      "typical_grade": "Botanical / Standardized Extract",
+      "certifications": [
+        "Organic",
+        "Non-GMO",
+        "GMP"
+      ],
+      "price_tier": "high",
+      "lead_time_weeks": 6,
+      "min_order_qty": "1 kg",
+      "notes": "子実体由来品と菌糸体由来品でコルジセピン含量が大きく異なる。β-グルカン含量も品質指標。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "29568244",
+        "title": "Herbal medicine for sports: a review.",
+        "authors": [
+          "Sellami M",
+          "Slimeni O",
+          "Pokrywka A"
+        ],
+        "journal": "J Int Soc Sports Nutr",
+        "year": "2018",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29568244/"
+      },
+      {
+        "pmid": "37373268",
+        "title": "Anti-Cancer Potential of Edible/Medicinal Mushrooms in Breast Cancer.",
+        "authors": [
+          "Gariboldi MB",
+          "Marras E",
+          "Ferrario N"
+        ],
+        "journal": "Int J Mol Sci",
+        "year": "2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37373268/"
+      },
+      {
+        "pmid": "32288795",
+        "title": "Bioactive principles from Cordyceps sinensis: A potent food supplement - A review.",
+        "authors": [
+          "Shashidhar MG",
+          "Giridhar P",
+          "Udaya Sankar K"
+        ],
+        "journal": "J Funct Foods",
+        "year": "2013",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32288795/"
+      },
+      {
+        "pmid": "36304597",
+        "title": "Dietary supplements and bleeding.",
+        "authors": [
+          "Hatfield J",
+          "Saad S",
+          "Housewright C"
+        ],
+        "journal": "Proc (Bayl Univ Med Cent)",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36304597/"
+      },
+      {
+        "pmid": "40081908",
+        "title": "The Inhibitory Effects of Cordyceps militaris ARA301 Extract on Lipopolysaccharide-Induced Lung Injury in vivo.",
+        "authors": [
+          "Seong HK",
+          "Kim MJ",
+          "Fauziah AN"
+        ],
+        "journal": "J Microbiol Biotechnol",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40081908/"
+      }
+    ],
+    "existing_products": {
+      "total_count": 1200,
+      "top_categories": [
+        "supplements",
+        "functional mushroom blends",
+        "sports nutrition"
+      ]
+    },
+    "market_trends": {
+      "keyword": "Cordyceps mushroom",
+      "avg_interest_jp": 28,
+      "avg_interest_us": 62,
+      "trend_direction": "rising"
+    }
+  },
+  {
+    "atom_id": "atom_nmn",
+    "name_ja": "ニコチンアミドモノヌクレオチド（NMN）",
+    "name_en": "Nicotinamide mononucleotide (NMN)",
+    "atom_type": "ingredient",
+    "category": "longevity_compound",
+    "domain": "food_bio",
+    "known_actions": [
+      "nad_precursor",
+      "longevity_support",
+      "energy_metabolism",
+      "dna_repair_support"
+    ],
+    "possible_bonds": [
+      "mitochondrial_support",
+      "longevity_synergy",
+      "energy_metabolism"
+    ],
+    "risk_tags": [
+      "regulatory_ambiguity",
+      "cancer_risk_theoretical"
+    ],
+    "evidence_keywords": [
+      "NMN nicotinamide mononucleotide NAD+",
+      "NMN longevity aging",
+      "NMN clinical trial"
+    ],
+    "regulatory_notes": [
+      "米国FDAが2023年にサプリメントとしての販売を禁止（NDI申請中）。日本では機能性表示食品実績あり。"
+    ],
+    "process_keywords": [
+      "enzymatic synthesis",
+      "yeast fermentation",
+      "sublingual tablet",
+      "liposomal NMN"
+    ],
+    "supplier_keywords": [
+      "NMN powder",
+      "β-NMN",
+      "stabilized NMN"
+    ],
+    "gras": {
+      "status": "unknown",
+      "jp_status": "機能性表示食品実績あり（2020年〜）",
+      "notes": "FDA禁止（2023年）。日本・EU・カナダでは販売可。規制動向要確認。"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "ChromaDex",
+        "Effepharm",
+        "GeneHarbor",
+        "Bontac Bio-Engineering"
+      ],
+      "japan_suppliers": [
+        "オリザ油化",
+        "丸善製薬",
+        "シンバイオ製薬"
+      ],
+      "oem_forms": [
+        "capsule",
+        "tablet",
+        "sublingual tablet",
+        "powder",
+        "liposomal"
+      ],
+      "typical_grade": "Food Grade / Pharmaceutical Grade",
+      "certifications": [
+        "GMP",
+        "Non-GMO",
+        "Third-party tested"
+      ],
+      "price_tier": "very_high",
+      "lead_time_weeks": 8,
+      "min_order_qty": "500 g",
+      "notes": "純度99%以上品が必要。安定性確保のため遮光・低温保存。米国での規制リスクに要注意。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "35499054",
+        "title": "Nicotinamide mononucleotide (NMN) as an anti-aging health product - Promises and safety concerns.",
+        "authors": [
+          "Nadeeshani H",
+          "Li J",
+          "Ying T"
+        ],
+        "journal": "J Adv Res",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35499054/"
+      },
+      {
+        "pmid": "36482258",
+        "title": "The efficacy and safety of β-nicotinamide mononucleotide (NMN) supplementation in healthy middle-aged adults: a randomized, multicenter, double-blind, placebo-controlled, parallel-group, dose-dependen",
+        "authors": [
+          "Yi L",
+          "Maier AB",
+          "Tao R"
+        ],
+        "journal": "Geroscience",
+        "year": "2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36482258/"
+      },
+      {
+        "pmid": "37068054",
+        "title": "Dietary Supplementation With NAD+-Boosting Compounds in Humans: Current Knowledge and Future Directions.",
+        "authors": [
+          "Freeberg KA",
+          "Udovich CC",
+          "Martens CR"
+        ],
+        "journal": "J Gerontol A Biol Sci Med Sci",
+        "year": "2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37068054/"
+      },
+      {
+        "pmid": "38340651",
+        "title": "The therapeutic perspective of NAD(+) precursors in age-related diseases.",
+        "authors": [
+          "Iqbal T",
+          "Nakagawa T"
+        ],
+        "journal": "Biochem Biophys Res Commun",
+        "year": "2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38340651/"
+      },
+      {
+        "pmid": "36914909",
+        "title": "NAD(+) precursor supplementation prevents mtRNA/RIG-I-dependent inflammation during kidney injury.",
+        "authors": [
+          "Doke T",
+          "Mukherjee S",
+          "Mukhi D"
+        ],
+        "journal": "Nat Metab",
+        "year": "2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36914909/"
+      }
+    ],
+    "existing_products": {
+      "total_count": 3000,
+      "top_categories": [
+        "anti-aging supplements",
+        "longevity products",
+        "NAD+ boosters"
+      ]
+    },
+    "market_trends": {
+      "keyword": "NMN supplement",
+      "avg_interest_jp": 82,
+      "avg_interest_us": 71,
+      "trend_direction": "rising"
+    },
+    "compound": {
+      "pubchem_cid": 14180,
+      "molecular_formula": "C11H15N2O8P",
+      "molecular_weight": "334.22",
+      "smiles": null,
+      "inchikey": "DAYLJWODMCOQEW-TURQNECASA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/14180"
+    }
   }
 ]

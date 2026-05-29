@@ -183,12 +183,63 @@ export function AIReactionPanel({ analysis, safety, fused, formulaId, onSave, sa
             </Section>
           )}
 
+          {/* Bond Interpretation */}
+          {analysis.bond_interpretation && analysis.bond_interpretation.length > 0 && (
+            <Section icon="🔗" label={`BOND SYNERGIES (${analysis.bond_interpretation.length})`}>
+              <div className="space-y-1.5">
+                {analysis.bond_interpretation.slice(0, 4).map((b, i) => (
+                  <div key={i} className="rounded-lg px-2 py-1.5" style={{ background: "rgba(79,195,247,0.04)", border: "1px solid rgba(79,195,247,0.12)" }}>
+                    <p className="text-[9px] font-semibold mb-0.5" style={{ color: "var(--blue)" }}>
+                      {b.bond_type.replace(/^bond_/, "").replace(/_/g, " ")}
+                    </p>
+                    <p className="text-[10px] leading-relaxed" style={{ color: "rgba(255,255,255,0.5)" }}>
+                      {b.explanation.slice(0, 120)}{b.explanation.length > 120 ? "…" : ""}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </Section>
+          )}
+
           {/* Mechanism */}
           {analysis.mechanism_hypothesis && (
             <Section icon="⚗️" label="MECHANISM">
               <p className="text-xs leading-relaxed" style={{ color: "rgba(255,255,255,0.55)" }}>
                 {analysis.mechanism_hypothesis}
               </p>
+            </Section>
+          )}
+
+          {/* Product Direction */}
+          {analysis.product_direction && analysis.product_direction.length > 0 && (
+            <Section icon="🛍️" label="PRODUCT DIRECTION">
+              <ul className="space-y-1">
+                {analysis.product_direction.slice(0, 3).map((p, i) => (
+                  <li key={i} className="text-xs leading-relaxed" style={{ color: "rgba(105,240,174,0.75)" }}>• {p}</li>
+                ))}
+              </ul>
+            </Section>
+          )}
+
+          {/* Process Direction */}
+          {analysis.process_direction && analysis.process_direction.length > 0 && (
+            <Section icon="🏭" label="PROCESS DIRECTION">
+              <ul className="space-y-1">
+                {analysis.process_direction.slice(0, 3).map((p, i) => (
+                  <li key={i} className="text-xs leading-relaxed" style={{ color: "rgba(255,255,255,0.55)" }}>• {p}</li>
+                ))}
+              </ul>
+            </Section>
+          )}
+
+          {/* Supplier Requirements */}
+          {analysis.supplier_requirements && analysis.supplier_requirements.length > 0 && (
+            <Section icon="📦" label="SUPPLIER REQUIREMENTS">
+              <ul className="space-y-1">
+                {analysis.supplier_requirements.slice(0, 3).map((s, i) => (
+                  <li key={i} className="text-xs leading-relaxed" style={{ color: "rgba(255,255,255,0.55)" }}>• {s}</li>
+                ))}
+              </ul>
             </Section>
           )}
 

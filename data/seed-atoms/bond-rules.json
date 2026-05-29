@@ -1024,5 +1024,282 @@
       "dose_check",
       "medical_claim_check"
     ]
+  },
+  {
+    "bond_rule_id": "bond_adaptogen_stress_synergy",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "anti_stress_synergy",
+      "sleep_support"
+    ],
+    "target_required_tags": [
+      "cortisol_reduction",
+      "anti_stress_synergy"
+    ],
+    "bond_type": "functional_hypothesis",
+    "expected_result": "stress_resilience_enhancement",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "アシュワガンダ・ホスファチジルセリン等のストレス関連成分同士の組み合わせは、コルチゾール調節を相補的に支援する可能性がある。",
+    "required_checks": [
+      "dose_check",
+      "drug_interaction_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_cognitive_stack_synergy",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "cognitive_support",
+      "neuroprotective"
+    ],
+    "target_required_tags": [
+      "cognitive_support",
+      "neuroprotective"
+    ],
+    "bond_type": "functional_hypothesis",
+    "expected_result": "cognitive_function_support",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "認知機能系成分（ライオンズメイン・ホスファチジルセリン・コリン等）の組み合わせは、異なる作用機序を通じて認知機能を多角的に支援する可能性がある。",
+    "required_checks": [
+      "dose_check",
+      "experiment_required"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_creatine_sports_stack",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "sports_synergy",
+      "energy_metabolism"
+    ],
+    "target_required_tags": [
+      "fat_oxidation",
+      "energy_production"
+    ],
+    "bond_type": "sports_functional_hypothesis",
+    "expected_result": "athletic_performance_enhancement",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "クレアチン・L-カルニチン・CoQ10等のエネルギー代謝系成分の組み合わせはスポーツパフォーマンスを多面的に支援する可能性がある。",
+    "required_checks": [
+      "dose_check",
+      "experiment_required"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_gut_brain_axis",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "gut_microbiome_support",
+      "prebiotic_effect"
+    ],
+    "target_required_tags": [
+      "cognitive_support",
+      "anti_stress_synergy"
+    ],
+    "bond_type": "functional_hypothesis",
+    "expected_result": "gut_brain_axis_modulation",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "酪酸・プレバイオティクス等の腸内環境改善成分と認知機能成分の組み合わせは、腸脳相関を介した精神・認知機能への影響が期待される。",
+    "required_checks": [
+      "dose_check",
+      "experiment_required"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_mct_polyphenol_bioavailability",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "fat_source",
+      "bioavailability_enhancement"
+    ],
+    "target_required_tags": [
+      "antioxidant_synergy",
+      "bioavailability_enhancement"
+    ],
+    "bond_type": "bioavailability_enhancement",
+    "expected_result": "fat_soluble_nutrient_absorption",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "MCTオイル等の脂質とポリフェノール・脂溶性栄養素の組み合わせは、脂溶性成分の吸収率を高める可能性がある。",
+    "required_checks": [
+      "dose_check",
+      "stability_test"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_skin_beauty_stack",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "skin_functional_hypothesis",
+      "collagen_synthesis_cofactor"
+    ],
+    "target_required_tags": [
+      "skin_functional_hypothesis",
+      "anti_aging"
+    ],
+    "bond_type": "skin_functional_hypothesis",
+    "expected_result": "skin_beauty_comprehensive",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "コラーゲンペプチド・ヒアルロン酸・プテロスチルベン等のスキンケア系成分の組み合わせは、皮膚の弾力・保湿・抗酸化を多面的に支援する可能性がある。",
+    "required_checks": [
+      "dose_check",
+      "experiment_required"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_mushroom_immune_synergy",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "immune_support",
+      "anti_stress_synergy"
+    ],
+    "target_required_tags": [
+      "immune_support",
+      "antioxidant_synergy"
+    ],
+    "bond_type": "probiotic_immune_hypothesis",
+    "expected_result": "immune_system_modulation",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "ライオンズメイン・霊芝等のきのこ系成分と抗酸化成分の組み合わせは、免疫調節を多面的に支援する可能性がある。",
+    "required_checks": [
+      "dose_check",
+      "drug_interaction_check"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_choline_omega3_brain",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "cognitive_support",
+      "neuroprotective"
+    ],
+    "target_required_tags": [
+      "bioavailability_enhancement",
+      "fat_source"
+    ],
+    "bond_type": "functional_hypothesis",
+    "expected_result": "brain_membrane_support",
+    "confidence": "medium",
+    "risk_level": "green",
+    "explanation": "コリン・DHA等の脳構造成分の組み合わせは、神経膜の構造と機能維持を相補的に支援する可能性がある。",
+    "required_checks": [
+      "dose_check",
+      "experiment_required"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_adaptogen_ginseng_rhodiola",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "adaptogenic"
+    ],
+    "target_required_tags": [
+      "stress_reduction"
+    ],
+    "bond_type": "adaptogen_stack_synergy",
+    "expected_result": "HPA軸（視床下部-下垂体-副腎軸）を多角的に調節し、ストレス耐性と疲労軽減を相乗的にサポート",
+    "confidence": 0.72,
+    "risk_level": "low",
+    "explanation": "アシュワガンダ・ロディオラ・高麗人参などのアダプトゲンは異なる作用機序（コルチゾール抑制・HPA軸調整）を持ち、組み合わせることで多角的なストレス耐性効果が期待できる",
+    "required_checks": [
+      "薬物相互作用確認（MAO阻害薬・抗凝固薬等）",
+      "長期安全性エビデンス確認"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_mushroom_immune_performance",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "immune_support"
+    ],
+    "target_required_tags": [
+      "athletic_performance"
+    ],
+    "bond_type": "immune_performance_synergy",
+    "expected_result": "免疫サポートと運動パフォーマンスの両立。コルディセプスの酸素利用効率改善と免疫機能の相乗効果",
+    "confidence": 0.65,
+    "risk_level": "low",
+    "explanation": "冬虫夏草（コルディセプス）はATP産生促進と免疫調節を同時に担い、他の免疫サポート素材（レイシ・ライオンズメイン等）と組み合わせることで免疫×パフォーマンスの複合訴求が可能",
+    "required_checks": [
+      "自己免疫疾患患者への禁忌確認",
+      "β-グルカン含量の品質規格確認"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_nmn_longevity_stack",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "nad_precursor"
+    ],
+    "target_required_tags": [
+      "mitochondrial_support"
+    ],
+    "bond_type": "longevity_nad_synergy",
+    "expected_result": "NAD+レベルの回復とミトコンドリア機能の相乗的な改善。細胞エネルギー産生と抗老化作用をサポート",
+    "confidence": 0.68,
+    "risk_level": "medium",
+    "explanation": "NMN（NAD+前駆体）はCoQ10・αリポ酸・レスベラトロル等のミトコンドリアサポート成分と組み合わせると、NAD+依存性サーチュイン経路の活性化とミトコンドリア生合成の両方を促進できる可能性がある",
+    "required_checks": [
+      "米国FDA規制リスク（NMN）",
+      "癌患者への使用禁忌確認",
+      "高用量での安全性データ"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_ala_antioxidant_network",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "antioxidant"
+    ],
+    "target_required_tags": [
+      "mitochondrial_support"
+    ],
+    "bond_type": "antioxidant_network_synergy",
+    "expected_result": "αリポ酸による抗酸化ネットワークの再生サイクル促進。ビタミンC・E・グルタチオンの再利用効率を高める",
+    "confidence": 0.78,
+    "risk_level": "low",
+    "explanation": "αリポ酸は水溶性・脂溶性の両方に作用でき、ビタミンC・E・CoQ10・グルタチオンを酸化型から還元型に再生する抗酸化ネットワークの要。インスリン感受性改善との相乗効果も期待できる",
+    "required_checks": [
+      "糖尿病薬との相互作用確認",
+      "高用量（600mg以上）での低血糖リスク確認"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_ginseng_cognitive_stack",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "cognitive_support"
+    ],
+    "target_required_tags": [
+      "energy_boost"
+    ],
+    "bond_type": "cognitive_energy_synergy",
+    "expected_result": "認知機能サポートとエネルギー代謝の相乗効果。集中力・記憶力・精神的疲労回復を多角的にサポート",
+    "confidence": 0.7,
+    "risk_level": "low",
+    "explanation": "高麗人参のジンセノサイドは神経保護・記憶形成・エネルギー代謝を同時に調節する。αGPC・ホスファチジルセリン・テアニン等の認知機能素材との組み合わせで認知機能×エネルギーの複合訴求が可能",
+    "required_checks": [
+      "抗凝固薬との相互作用確認",
+      "高血圧患者への慎重投与"
+    ]
   }
 ]

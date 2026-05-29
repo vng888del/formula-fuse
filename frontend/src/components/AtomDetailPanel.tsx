@@ -68,6 +68,45 @@ export function AtomDetailPanel({ atom, onClose }: Props) {
           </Section>
         )}
 
+        {/* USDA Nutritional data */}
+        {atom.usda && (
+          <Section label="USDA 栄養データ" icon="🌾">
+            {(atom.usda as Record<string, unknown>).description && (
+              <Row k="食品名" v={String((atom.usda as Record<string, unknown>).description)} />
+            )}
+            {(atom.usda as Record<string, unknown>).food_category && (
+              <Row k="カテゴリ" v={String((atom.usda as Record<string, unknown>).food_category)} />
+            )}
+            {(atom.usda as Record<string, unknown>).data_type && (
+              <Row k="データ種別" v={String((atom.usda as Record<string, unknown>).data_type)} />
+            )}
+            {(atom.usda as Record<string, unknown>).nutrients && (() => {
+              const n = (atom.usda as Record<string, unknown>).nutrients as Record<string, number>;
+              return (
+                <div className="grid grid-cols-2 gap-1 mt-1">
+                  {[
+                    ["エネルギー", n.energy_kcal, "kcal"],
+                    ["タンパク質", n.protein_g, "g"],
+                    ["脂質", n.fat_g, "g"],
+                    ["炭水化物", n.carb_g, "g"],
+                    ["カルシウム", n.calcium_mg, "mg"],
+                    ["鉄分", n.iron_mg, "mg"],
+                  ].filter(([, v]) => v != null).map(([label, val, unit]) => (
+                    <div key={String(label)} className="rounded p-1 text-center" style={{ background: "rgba(255,255,255,0.03)", border: "1px solid var(--border)" }}>
+                      <p className="text-[8px]" style={{ color: "var(--text-muted)" }}>{label}</p>
+                      <p className="text-[10px] font-bold" style={{ color: "rgba(255,255,255,0.75)" }}>{Number(val).toFixed(1)}<span className="text-[8px] ml-0.5" style={{ color: "var(--text-muted)" }}>{unit}</span></p>
+                    </div>
+                  ))}
+                </div>
+              );
+            })()}
+            {(atom.usda as Record<string, unknown>).usda_url && (
+              <a href={String((atom.usda as Record<string, unknown>).usda_url)} target="_blank" rel="noopener noreferrer"
+                className="text-[10px] underline" style={{ color: "var(--blue)" }}>FoodData Central →</a>
+            )}
+          </Section>
+        )}
+
         {/* UniProt / enzyme data */}
         {atom.uniprot && (
           <Section label="UniProt / 酵素情報" icon="🧬">

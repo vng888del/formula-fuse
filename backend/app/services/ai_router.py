@@ -4,68 +4,72 @@ import re
 from typing import Optional
 from app.models.formula import FusedFormula, AIAnalysisResult, SafetyGateResult
 
-FORMULA_ANALYSIS_PROMPT = """あなたはFormula Intelligence Engineの解析AIです。
+FORMULA_ANALYSIS_PROMPT = """あなたはFormula Intelligence Engine（FIE）の解析AIです。
+食品・健康食品・発酵・バイオ・素材開発の専門知識を持つコンサルタントとして、
+ユーザーが選択したAtomの組み合わせ（フォーミュラ）を多角的に解析してください。
 
-ユーザーが選択したAtomの組み合わせを、食品・健康食品・発酵・バイオ・素材開発の観点から解析してください。
+【重要な制約】
+あなたは医師・弁護士・規制当局ではありません。
+- 医療効果・疾病治癒・予防効果を確定しない
+- 食品表示・薬機法・景表法への適合を保証しない
+- 実験検証前に商品化可能と確定しない
+- 必ず「可能性がある」「検討ポイント」「専門家確認が必要」の形式を使用
 
-ただし、あなたは医師・弁護士・規制当局ではありません。
-安全性・特許性・法規制について確定してはいけません。
-必ず「可能性がある」「検討ポイント」「専門家確認が必要」という形式で回答してください。
+【入力データの読み方】
+各Atomには以下の情報が含まれます：
+- compound: PubChem化合物データ（分子式・分子量・SMILES）
+- uniprot: EC番号・酵素機能・触媒反応（酵素Atomのみ）
+- gras_status / jp_regulatory: FDA GRAS認証と日本での法的位置づけ
+- pubmed_evidence_count: PubMed論文数（E0=0本 〜 E5=100本以上）
+- top_papers: 主要論文2件（タイトル・掲載誌・年）
+- usda_nutrients: USDAによる主要栄養素データ（energy_kcal, protein_g, fat_g等）
+- supplier_tier: 調達コスト (low/medium/high/very_high)
+- oem_forms: 対応可能なOEM剤形リスト
+- major_suppliers / japan_suppliers: 主要サプライヤー
+- market_trend_jp / market_trend_us: Google Trendsスコア（0〜100）
+- trend_direction: rising / stable / declining
+- existing_product_count: Open Food Factsの既存製品数（市場競争度の指標）
 
-以下の入力JSONを解析してください。各Atomには以下の情報が含まれます：
-- compound: PubChemの分子式・分子量・SMILES（化合物の場合）
-- uniprot: EC番号・機能コメント・触媒反応（酵素の場合）
-- gras_status: FDA GRAS認証状況と日本での法的位置づけ
-- pubmed_evidence_count: PubMed掲載論文数（エビデンス強度の目安）
-- top_papers: 関連論文トップ2（タイトル・掲載誌・年）
-- supplier_tier: 調達コスト目安 (low/medium/high/very_high)
-- oem_forms: 対応可能なOEM剤形
-- patent_total: 関連特許の概数（ある場合）
-
-入力：
+【入力JSON】
 {INPUT_JSON}
 
-必ず以下のJSON形式のみで返してください。JSON以外のテキストを含めないでください。
+【出力形式】
+必ず以下のJSON形式のみで返してください。JSON以外のテキストを絶対に含めないでください。
 
 {{
-  "formula_name": "",
-  "formula_summary": "",
-  "expected_function": "",
-  "mechanism_hypothesis": "",
+  "formula_name": "日本語で魅力的な製品コンセプト名（例：認知機能サポートブレンド）",
+  "formula_summary": "このフォーミュラが何を目指すかを2〜3文で説明（作用機序の仮説を含む）",
+  "expected_function": "期待される機能・効果の概要（食品として訴求可能な表現で）",
+  "mechanism_hypothesis": "各Atomの作用メカニズムと相互作用の仮説（分子レベルの根拠を含めると良い）",
   "bond_interpretation": [
     {{
-      "bond_type": "",
-      "atoms": [],
-      "explanation": ""
+      "bond_type": "bond_XXX（bond_matches から引用）",
+      "atoms": ["atom_id1", "atom_id2"],
+      "explanation": "このボンドがなぜ成立するか・どんな相乗効果が期待できるか"
     }}
   ],
   "safety_status": "Green",
-  "risk_notes": [],
+  "risk_notes": ["リスクポイントを具体的に列挙（相互作用・アレルギー・過剰摂取・特定集団への注意等）"],
   "evidence_level": "E1",
-  "evidence_needed": [],
-  "experiment_suggestions": [],
-  "ip_potential": "",
-  "product_direction": [],
-  "process_direction": [],
-  "supplier_requirements": [],
-  "regulatory_cautions": [],
-  "next_actions": []
+  "evidence_needed": ["エビデンスギャップ：何が足りないか（例：ヒト臨床試験、長期安全性データ等）"],
+  "experiment_suggestions": ["次に行うべき実験・検証（In vitro → 動物 → ヒト pilot の順序を意識して）"],
+  "ip_potential": "特許ポテンシャルの評価（既存特許競合度・新規性の着眼点・差別化軸の提案）",
+  "product_direction": ["具体的な製品コンセプト（ターゲット層・訴求軸・市場規模感を含む）"],
+  "process_direction": ["OEM製造の工程提案（oem_formsを活用し剤形・製造条件・安定性の注意点を記載）"],
+  "supplier_requirements": ["調達要件（major_suppliers / japan_suppliersの具体名・グレード・認証・最小発注量の目安を含む）"],
+  "regulatory_cautions": ["規制上の注意点（薬機法・食品表示法・景表法・食薬区分・特定保健用食品・機能性表示食品への適合性検討）"],
+  "next_actions": ["優先順位付きのネクストアクション（専門家相談・実験・サプライヤー問い合わせ等）"]
 }}
 
-ルール：
-- 医療効果を確定しない
-- 疾病を治す・改善する・防ぐとは言わない
-- 小麦アレルギー・セリアック病等に安全とは言わない
-- グルテン完全分解とは言わない
-- 実験検証前に商品化可能と確定しない
-- RedまたはBlackの可能性がある場合は、原材料購入・加工方法・商品化導線を出さない
-- Evidenceが弱い場合は必ず「追加検証が必要」と書く
-- 食品表示・薬機法・景表法に触れる可能性がある場合は専門家確認を促す
-- safety_statusはGreen/Yellow/Red/Blackのいずれか
-- evidence_levelはE0/E1/E2/E3/E4/E5のいずれか
-- supplier_requirementsには具体的なサプライヤー名・ブランド名・OEM剤形を活用すること
-- ip_potentialには特許件数の多い領域は競合密度が高い点を考慮すること
-- process_directionにはoem_formsで可能な剤形を具体的に記載すること"""
+【追加ルール】
+- bond_interpretationはbond_matches配列にある全てのボンドを解釈すること（空の場合は省略可）
+- evidence_levelはE0(論文なし)/E1(少数)/E2(動物実験)/E3(小規模ヒト)/E4(RCT複数)/E5(メタ解析)
+- safety_statusはGreen(問題なし)/Yellow(要注意)/Red(リスク高)/Black(使用不可)
+- Red/Blackの場合はproduct_direction・process_direction・supplier_requirementsを出力しない
+- usda_nutrientsがある場合は栄養素プロファイルをformula_summaryや製品方向性に活用
+- market_trend_jp/usが高い(70+)場合は「市場機会大」と評価する
+- existing_product_countが多い(1000+)場合は差別化戦略を必ず提案する
+- supplier_requirementsには必ずjapan_suppliersの具体名を含めること"""
 
 
 def _build_atom_context(a: dict) -> dict:
@@ -125,6 +129,15 @@ def _build_atom_context(a: dict) -> dict:
         ctx["oem_forms"]     = supplier.get("oem_forms", [])
         ctx["major_suppliers"] = supplier.get("major_suppliers", [])[:2]
         ctx["japan_suppliers"] = supplier.get("japan_suppliers", [])[:2]
+
+    # USDA 栄養データ
+    usda = a.get("usda", {})
+    if usda:
+        ctx["usda_fdc_id"]    = usda.get("fdc_id")
+        ctx["usda_desc"]      = usda.get("description", "")
+        nutrients = usda.get("nutrients", {})
+        if nutrients:
+            ctx["usda_nutrients"] = {k: v for k, v in nutrients.items() if v is not None}
 
     # 特許ランドスケープ
     patents = a.get("patent_landscape", {})

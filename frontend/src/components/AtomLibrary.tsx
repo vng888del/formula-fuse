@@ -34,6 +34,14 @@ export function AtomLibrary({ atoms, selectedIds, onToggle }: Props) {
     });
   }, [atoms, category, query]);
 
+  const counts = useMemo(() => {
+    const c: Record<string, number> = { all: atoms.length };
+    for (const a of atoms) {
+      c[a.atom_type] = (c[a.atom_type] || 0) + 1;
+    }
+    return c;
+  }, [atoms]);
+
   if (detailAtom) {
     return <AtomDetailPanel atom={detailAtom} onClose={() => setDetailAtom(null)} />;
   }
@@ -79,7 +87,7 @@ export function AtomLibrary({ atoms, selectedIds, onToggle }: Props) {
           <button
             key={f.value}
             onClick={() => setCategory(f.value)}
-            className="px-2 py-0.5 rounded-full text-[10px] font-medium transition-all"
+            className="px-2 py-0.5 rounded-full text-[10px] font-medium transition-all flex items-center gap-1"
             style={{
               background: category === f.value ? "rgba(79,195,247,0.15)" : "transparent",
               border: `1px solid ${category === f.value ? "rgba(79,195,247,0.4)" : "var(--border)"}`,
@@ -87,6 +95,9 @@ export function AtomLibrary({ atoms, selectedIds, onToggle }: Props) {
             }}
           >
             {f.label}
+            {counts[f.value] != null && (
+              <span className="text-[8px] opacity-60">{counts[f.value]}</span>
+            )}
           </button>
         ))}
       </div>
