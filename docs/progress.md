@@ -1,6 +1,6 @@
 # Formula Fuse Studio — 進捗レポート
 
-> 自動生成: 2026-05-29 06:44 UTC
+> 自動生成: 2026-05-29 07:37 UTC
 > `python3 scripts/generate_docs.py` を実行すると再生成されます。
 
 ---
@@ -49,9 +49,9 @@
 | フィールド | 付与済み件数 |
 |---|---:|
 | PubChem 化合物データ (`compound`) | 35 / 135 |
-| UniProt 酵素・微生物データ (`uniprot`) | 17 / 135 |
+| UniProt 酵素・微生物データ (`uniprot`) | 19 / 135 |
 | FDA GRAS ステータス (`gras`) | 82 / 135 |
-| USDA 栄養データ (`usda`) | 11 / 135 |
+| USDA 栄養データ (`usda`) | 25 / 135 |
 | PubMed 文献エビデンス (`pubmed_evidence`) | 126 / 135 |
 | サプライヤー・OEM 情報 (`supplier_info`) | 80 / 135 |
 | 特許ランドスケープ (`patent_landscape`) | 0 / 135 |
@@ -186,5 +186,5 @@
 _このファイルは自動生成です。手動編集しても次回上書きされます。_
 _更新: `python3 scripts/generate_docs.py`　確認: `python3 scripts/generate_docs.py --check`_
 
-<!-- src-hash: 28c2281ae402 -->
-<!-- file-hashes: {"data/seed-atoms/food-bio-atoms.json":"b7c131d0b562","data/seed-atoms/risk-tags.json":"29e0b91b265e","data/seed-atoms/bond-rules.json":"681336aa125a","backend/app/routers/atoms.py":"909d1d265ed4","backend/app/routers/formulas.py":"de884a757921","backend/app/services/ai_router.py":"9570f1dee76e","backend/app/services/fuse_engine.py":"fafd2eea8625","backend/app/services/risk_gate.py":"8210bbb95a47","backend/app/services/report_generator.py":"21b5e93acd3c","backend/app/db/database.py":"3815f9c214c9","docs/data-sources.md":"f49acaaa1297"} -->
+<!-- src-hash: 1ed9aa2e6484 -->
+<!-- file-hashes: {"data/seed-atoms/food-bio-atoms.json":"f5f940afb039","data/seed-atoms/risk-tags.json":"29e0b91b265e","data/seed-atoms/bond-rules.json":"681336aa125a","backend/app/routers/atoms.py":"909d1d265ed4","backend/app/routers/formulas.py":"de884a757921","backend/app/services/ai_router.py":"9570f1dee76e","backend/app/services/fuse_engine.py":"4db7ef8298f6","backend/app/services/risk_gate.py":"8210bbb95a47","backend/app/services/report_generator.py":"21b5e93acd3c","backend/app/db/database.py":"6b2553ce538d","docs/data-sources.md":"f49acaaa1297"} -->
