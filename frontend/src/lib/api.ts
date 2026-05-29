@@ -1,5 +1,6 @@
 import type {
-  Atom, FusedFormula, AIAnalysisResult, SafetyGateResult, SavedFormula, ApiKeyConfig, BondRule
+  Atom, FusedFormula, AIAnalysisResult, SafetyGateResult, SavedFormula, ApiKeyConfig, BondRule,
+  SuggestResult, CostEstimateResult,
 } from "@/types";
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
@@ -80,5 +81,17 @@ export const api = {
     history: () => request<SavedFormula[]>("/formula/history"),
     get: (id: string) => request<SavedFormula>(`/formula/history/${id}`),
     reportUrl: (id: string) => `${BASE_URL}/formula/history/${id}/report`,
+
+    suggest: (goal: string, maxAtoms = 6) =>
+      request<SuggestResult>("/formula/suggest", {
+        method: "POST",
+        body: JSON.stringify({ goal, max_atoms: maxAtoms }),
+      }),
+
+    costEstimate: (atomIds: string[], dailyDoseG = 1.0, batchSizeKg = 10.0) =>
+      request<CostEstimateResult>("/formula/cost-estimate", {
+        method: "POST",
+        body: JSON.stringify({ atom_ids: atomIds, daily_dose_g: dailyDoseG, batch_size_kg: batchSizeKg }),
+      }),
   },
 };

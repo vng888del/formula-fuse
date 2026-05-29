@@ -11,12 +11,15 @@ import { ApiKeyModal } from "@/components/ApiKeyModal";
 import { FormulaHistory } from "@/components/FormulaHistory";
 import { AnalyticsPanel } from "@/components/AnalyticsPanel";
 import { BondGraphPanel } from "@/components/BondGraphPanel";
+import { SuggestPanel } from "@/components/SuggestPanel";
+import { CostPanel } from "@/components/CostPanel";
 
 const NAV_ICONS = [
-  { icon: "⚛", label: "Studio", active: true },
-  { icon: "🔬", label: "Lab" },
+  { icon: "⚛", label: "Studio" },
+  { icon: "🎯", label: "Suggest" },
   { icon: "🕸", label: "Graph" },
   { icon: "📊", label: "Analytics" },
+  { icon: "💰", label: "Cost" },
   { icon: "📋", label: "History" },
   { icon: "⚙", label: "Settings" },
 ];
@@ -55,6 +58,15 @@ export default function StudioPage() {
         : [...prev, atom]
     );
     setFused(null); setSafety(null); setAnalysis(null); setSavedId(null);
+  };
+
+  const addAtoms = (newAtoms: Atom[]) => {
+    setSelectedAtoms(prev => {
+      const existing = new Set(prev.map(a => a.atom_id));
+      return [...prev, ...newAtoms.filter(a => !existing.has(a.atom_id))];
+    });
+    setFused(null); setSafety(null); setAnalysis(null); setSavedId(null);
+    setActiveNav(0);
   };
 
   const handleFuse = async () => {
@@ -172,18 +184,16 @@ export default function StudioPage() {
             <button
               key={i}
               onClick={() => {
-                if (i === 2) { setActiveNav(n => n === 2 ? 0 : 2); return; }
-                if (i === 3) { setActiveNav(n => n === 3 ? 0 : 3); return; }
-                if (i === 4) { setShowHistory(h => !h); return; }
-                if (i === 5) { setShowApiModal(true); return; }
-                setActiveNav(i);
+                if (i === 5) { setShowHistory(h => !h); return; }
+                if (i === 6) { setShowApiModal(true); return; }
+                setActiveNav(n => n === i ? 0 : i);
               }}
               title={item.label}
               className="w-9 h-9 flex items-center justify-center rounded-lg text-sm transition-all"
               style={{
-                background: (i === 4 && showHistory) || activeNav === i ? "rgba(79,195,247,0.12)" : "transparent",
-                color: (i === 4 && showHistory) || activeNav === i ? "var(--blue)" : "var(--text-muted)",
-                border: (i === 4 && showHistory) || activeNav === i ? "1px solid rgba(79,195,247,0.2)" : "1px solid transparent",
+                background: (i === 5 && showHistory) || activeNav === i ? "rgba(79,195,247,0.12)" : "transparent",
+                color: (i === 5 && showHistory) || activeNav === i ? "var(--blue)" : "var(--text-muted)",
+                border: (i === 5 && showHistory) || activeNav === i ? "1px solid rgba(79,195,247,0.2)" : "1px solid transparent",
               }}
             >
               {item.icon}
@@ -192,7 +202,11 @@ export default function StudioPage() {
         </div>
 
         {/* Full-screen alternate views */}
-        {activeNav === 2 ? (
+        {activeNav === 1 ? (
+          <div className="flex-1 overflow-hidden">
+            <SuggestPanel allAtoms={atoms} onAddAtoms={addAtoms} onClose={() => setActiveNav(0)} />
+          </div>
+        ) : activeNav === 2 ? (
           <div className="flex-1 overflow-hidden">
             <BondGraphPanel atoms={atoms} onClose={() => setActiveNav(0)} />
           </div>
@@ -225,16 +239,20 @@ export default function StudioPage() {
               />
             </div>
 
-            {/* AI Panel */}
+            {/* Right Panel: Cost or AI */}
             <div className="w-80 shrink-0">
-              <AIReactionPanel
-                analysis={analysis}
-                safety={safety}
-                fused={fused}
-                formulaId={savedId}
-                onSave={handleSave}
-                saving={saving}
-              />
+              {activeNav === 4 ? (
+                <CostPanel selectedAtoms={selectedAtoms} onClose={() => setActiveNav(0)} />
+              ) : (
+                <AIReactionPanel
+                  analysis={analysis}
+                  safety={safety}
+                  fused={fused}
+                  formulaId={savedId}
+                  onSave={handleSave}
+                  saving={saving}
+                />
+              )}
             </div>
           </>
         )}

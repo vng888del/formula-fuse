@@ -217,6 +217,44 @@ export interface ApiKeyConfig {
   key: string;
 }
 
+export interface SuggestedAtom {
+  atom_id: string;
+  name_ja: string;
+  name_en: string;
+  atom_type: string;
+  category: string;
+  relevance_score: number;
+  match_reasons: string[];
+  pubmed_count: number;
+  price_tier: string;
+  bond_count: number;
+}
+
+export interface SuggestResult {
+  goal: string;
+  suggested_atoms: SuggestedAtom[];
+  formula_concept: string;
+}
+
+export interface CostBreakdownItem {
+  atom_id: string;
+  name_ja: string;
+  price_tier: string;
+  cost_per_kg_range: string;
+  batch_cost_range: string;
+}
+
+export interface CostEstimateResult {
+  atom_ids: string[];
+  daily_dose_g: number;
+  batch_size_kg: number;
+  cost_breakdown: CostBreakdownItem[];
+  estimated_cost_per_kg: string;
+  estimated_cost_per_serving: string;
+  cost_tier: string;
+  notes: string[];
+}
+
 export interface BondRule {
   bond_rule_id: string;
   source_atom_type: string;

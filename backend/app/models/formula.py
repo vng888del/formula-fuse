@@ -93,3 +93,45 @@ class FormulaSaved(BaseModel):
     ai_analysis: Optional[dict] = None
     safety_result: Optional[dict] = None
     created_at: Optional[str] = None
+
+
+class SuggestRequest(BaseModel):
+    goal: str
+    max_atoms: int = 6
+    atom_types: Optional[List[str]] = None  # filter by type
+
+
+class SuggestedAtom(BaseModel):
+    atom_id: str
+    name_ja: str
+    name_en: str
+    atom_type: str
+    category: str
+    relevance_score: float
+    match_reasons: list[str]
+    pubmed_count: int
+    price_tier: str
+    bond_count: int
+
+
+class SuggestResult(BaseModel):
+    goal: str
+    suggested_atoms: list[SuggestedAtom]
+    formula_concept: str
+
+
+class CostEstimateRequest(BaseModel):
+    atom_ids: list[str]
+    daily_dose_g: float = 1.0
+    batch_size_kg: float = 10.0
+
+
+class CostEstimateResult(BaseModel):
+    atom_ids: list[str]
+    daily_dose_g: float
+    batch_size_kg: float
+    cost_breakdown: list[dict]
+    estimated_cost_per_kg: str
+    estimated_cost_per_serving: str
+    cost_tier: str
+    notes: list[str]
