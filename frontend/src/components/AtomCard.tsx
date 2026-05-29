@@ -121,7 +121,7 @@ export function AtomCard({ atom, selected, onClick, onDetailClick, size = "md" }
         >
           {atom.name_ja}
         </span>
-        {onDetailClick && (atom.compound || atom.uniprot || atom.supplier_info) && (
+        {onDetailClick && (atom.compound || atom.uniprot || atom.supplier_info || atom.usda) && (
           <button
             onClick={(e) => { e.stopPropagation(); onDetailClick(atom); }}
             className="text-[8px] leading-none opacity-0 group-hover:opacity-60 hover:opacity-100! transition-opacity"
