@@ -8,7 +8,7 @@ export function useApiKey() {
   const [config, setConfig] = useState<ApiKeyConfig>({ provider: "openai", key: "" });
 
   useEffect(() => {
-    const stored = sessionStorage.getItem(STORAGE_KEY);
+    const stored = localStorage.getItem(STORAGE_KEY);
     if (stored) {
       try {
         setConfig(JSON.parse(stored));
@@ -18,12 +18,12 @@ export function useApiKey() {
 
   const save = (c: ApiKeyConfig) => {
     setConfig(c);
-    sessionStorage.setItem(STORAGE_KEY, JSON.stringify(c));
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(c));
   };
 
   const clear = () => {
     setConfig({ provider: "openai", key: "" });
-    sessionStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem(STORAGE_KEY);
   };
 
   return { config, save, clear, hasKey: !!config.key };
