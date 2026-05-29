@@ -1,6 +1,6 @@
 # Formula Fuse Studio — 進捗レポート
 
-> 自動生成: 2026-05-29 09:06 UTC
+> 自動生成: 2026-05-29 09:24 UTC
 > `python3 scripts/generate_docs.py` を実行すると再生成されます。
 
 ---
@@ -33,12 +33,12 @@
 
 | ファイル | 件数 |
 |---|---:|
-| `food-bio-atoms.json` | 149 |
-| **合計** | **149** |
+| `food-bio-atoms.json` | 153 |
+| **合計** | **153** |
 
 | atom_type | 件数 |
 |---|---:|
-| ingredient | 70 |
+| ingredient | 74 |
 | microbe | 16 |
 | enzyme | 10 |
 | condition | 26 |
@@ -48,15 +48,15 @@
 
 | フィールド | 付与済み件数 |
 |---|---:|
-| PubChem 化合物データ (`compound`) | 52 / 149 |
-| UniProt 酵素・微生物データ (`uniprot`) | 19 / 149 |
-| FDA GRAS ステータス (`gras`) | 96 / 149 |
-| USDA 栄養データ (`usda`) | 29 / 149 |
-| PubMed 文献エビデンス (`pubmed_evidence`) | 141 / 149 |
-| サプライヤー・OEM 情報 (`supplier_info`) | 96 / 149 |
-| 特許ランドスケープ (`patent_landscape`) | 0 / 149 |
-| Google Trends 市場需要 (`market_trends`) | 85 / 149 |
-| Open Food Facts 既存製品 (`existing_products`) | 45 / 149 |
+| PubChem 化合物データ (`compound`) | 55 / 153 |
+| UniProt 酵素・微生物データ (`uniprot`) | 19 / 153 |
+| FDA GRAS ステータス (`gras`) | 100 / 153 |
+| USDA 栄養データ (`usda`) | 29 / 153 |
+| PubMed 文献エビデンス (`pubmed_evidence`) | 145 / 153 |
+| サプライヤー・OEM 情報 (`supplier_info`) | 100 / 153 |
+| 特許ランドスケープ (`patent_landscape`) | 0 / 153 |
+| Google Trends 市場需要 (`market_trends`) | 89 / 153 |
+| Open Food Facts 既存製品 (`existing_products`) | 49 / 153 |
 
 ### Risk Tags
 
@@ -68,7 +68,7 @@
 
 ### Bond Rules
 
-合計 **63** ルール
+合計 **67** ルール
 
 | bond_type | 件数 |
 |---|---:|
@@ -104,6 +104,10 @@
 | longevity_nad_synergy | 1 |
 | antioxidant_network_synergy | 1 |
 | cognitive_energy_synergy | 1 |
+| bioavailability_synergy | 1 |
+| gut_health_synergy | 1 |
+| polyphenol_antioxidant_network | 1 |
+| nrf2_antioxidant_stack | 1 |
 
 ---
 
@@ -191,5 +195,5 @@
 _このファイルは自動生成です。手動編集しても次回上書きされます。_
 _更新: `python3 scripts/generate_docs.py`　確認: `python3 scripts/generate_docs.py --check`_
 
-<!-- src-hash: f3b4759ece01 -->
-<!-- file-hashes: {"data/seed-atoms/food-bio-atoms.json":"4ce3b1111103","data/seed-atoms/risk-tags.json":"29e0b91b265e","data/seed-atoms/bond-rules.json":"383901606506","backend/app/routers/atoms.py":"909d1d265ed4","backend/app/routers/formulas.py":"7d0eaf97697a","backend/app/services/ai_router.py":"32fc17b161e8","backend/app/services/fuse_engine.py":"4db7ef8298f6","backend/app/services/risk_gate.py":"8210bbb95a47","backend/app/services/report_generator.py":"21b5e93acd3c","backend/app/db/database.py":"6b2553ce538d","docs/data-sources.md":"f49acaaa1297"} -->
+<!-- src-hash: a3fac1751c73 -->
+<!-- file-hashes: {"data/seed-atoms/food-bio-atoms.json":"dc40c569e7f3","data/seed-atoms/risk-tags.json":"29e0b91b265e","data/seed-atoms/bond-rules.json":"82ceeb2fdc9e","backend/app/routers/atoms.py":"909d1d265ed4","backend/app/routers/formulas.py":"7d0eaf97697a","backend/app/services/ai_router.py":"32fc17b161e8","backend/app/services/fuse_engine.py":"4db7ef8298f6","backend/app/services/risk_gate.py":"8210bbb95a47","backend/app/services/report_generator.py":"9f2ea58f680c","backend/app/db/database.py":"6b2553ce538d","docs/data-sources.md":"f49acaaa1297"} -->

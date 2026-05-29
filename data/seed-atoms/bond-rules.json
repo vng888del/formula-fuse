@@ -1301,5 +1301,85 @@
       "抗凝固薬との相互作用確認",
       "高血圧患者への慎重投与"
     ]
+  },
+  {
+    "bond_rule_id": "bond_piperine_bioavailability",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "bioavailability_enhancement"
+    ],
+    "target_required_tags": [
+      "antioxidant"
+    ],
+    "bond_type": "bioavailability_synergy",
+    "expected_result": "クルクミン・レスベラトロル・CoQ10等の脂溶性成分の生体利用率を大幅改善（+20〜2000%）",
+    "confidence": 0.88,
+    "risk_level": "medium",
+    "explanation": "ピペリンはCYP3A4とP糖タンパクの活性を阻害することで、多くの栄養素・薬物の腸管吸収と初回通過効果を著しく改善する。特にクルクミンとの組み合わせで90倍の吸収率向上が報告されている",
+    "required_checks": [
+      "CYP3A4阻害による薬物相互作用確認",
+      "薬物服用患者への処方指導"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_glutamine_gut_brain",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "gut_health"
+    ],
+    "target_required_tags": [
+      "prebiotic"
+    ],
+    "bond_type": "gut_health_synergy",
+    "expected_result": "腸管バリア機能の強化と腸内フローラの改善を組み合わせたトータル腸活サポート",
+    "confidence": 0.72,
+    "risk_level": "low",
+    "explanation": "L-グルタミンは腸管細胞（腸上皮細胞）の主要エネルギー源であり、タイトジャンクションタンパクの発現を促進する。プレバイオティクス・プロバイオティクスとの組み合わせで腸内環境全体をサポート",
+    "required_checks": [
+      "高用量での長期安全性確認",
+      "炎症性腸疾患患者への適用可否確認"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_egcg_polyphenol_synergy",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "antioxidant"
+    ],
+    "target_required_tags": [
+      "anti_inflammatory"
+    ],
+    "bond_type": "polyphenol_antioxidant_network",
+    "expected_result": "複数の抗酸化物質による多角的な酸化ストレス軽減とNF-κB経路の抑制",
+    "confidence": 0.74,
+    "risk_level": "low",
+    "explanation": "EGCGは最も強力な緑茶カテキンで、ビタミンC・E・αリポ酸・レスベラトロル等の抗酸化物質と組み合わせることで抗酸化ネットワークを強化。Nrf2経路の活性化を通じた内因性抗酸化酵素の誘導も期待できる",
+    "required_checks": [
+      "高用量での肝毒性リスク確認（>800mg/日EGCG）",
+      "鉄サプリメントとの摂取タイミング分離"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_nrf2_detox_synergy",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "nrf2_activation"
+    ],
+    "target_required_tags": [
+      "antioxidant"
+    ],
+    "bond_type": "nrf2_antioxidant_stack",
+    "expected_result": "Nrf2経路の活性化による内因性解毒酵素（HO-1、NQO1、GST等）の誘導と外因性抗酸化物質の相乗効果",
+    "confidence": 0.7,
+    "risk_level": "low",
+    "explanation": "スルフォラファンはNrf2の最も強力な天然活性化剤の一つ。EGCG・クルクミン・αリポ酸等と組み合わせることでNrf2依存的な内因性抗酸化経路と外因性抗酸化物質の両方で包括的な酸化ストレス防御が可能",
+    "required_checks": [
+      "甲状腺機能低下症患者への禁忌確認",
+      "癌患者への特定化学療法との相互作用確認"
+    ]
   }
 ]

@@ -22625,5 +22625,618 @@
       "inchikey": "DAYLJWODMCOQEW-TURQNECASA-N",
       "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/14180"
     }
+  },
+  {
+    "atom_id": "atom_piperine",
+    "name_ja": "ピペリン（黒コショウエキス）",
+    "name_en": "Piperine (Black pepper extract)",
+    "atom_type": "ingredient",
+    "category": "bioavailability_enhancer",
+    "domain": "food_bio",
+    "known_actions": [
+      "bioavailability_enhancement",
+      "thermogenic",
+      "anti_inflammatory"
+    ],
+    "possible_bonds": [
+      "bioavailability_synergy",
+      "absorption_enhancement",
+      "metabolic_support"
+    ],
+    "risk_tags": [
+      "drug_interaction_risk",
+      "pregnancy_caution"
+    ],
+    "evidence_keywords": [
+      "piperine bioavailability curcumin",
+      "piperine absorption enhancement",
+      "black pepper extract"
+    ],
+    "regulatory_notes": [
+      "多くの薬物の代謝（CYP3A4・P糖タンパク）を阻害。薬物服用中は要注意。"
+    ],
+    "process_keywords": [
+      "BioPerine",
+      "black pepper fruit extract",
+      "piperine standardized 95%"
+    ],
+    "supplier_keywords": [
+      "BioPerine",
+      "piperine extract",
+      "black pepper 95%"
+    ],
+    "gras": {
+      "status": "GRAS",
+      "basis": "GRAS as spice/seasoning",
+      "notes": "食品香辛料として GRAS。サプリメント用途は規制確認が必要。",
+      "jp_status": "食品（香辛料として使用可能）"
+    },
+    "compound": {
+      "pubchem_cid": 638024,
+      "molecular_formula": "C17H19NO3",
+      "molecular_weight": 285.34,
+      "smiles": "O=C(\\C=C\\C=C\\c1ccc2c(c1)OCO2)N1CCCCC1",
+      "inchikey": "MXXWOMGUGJBKIW-YPCIICBESA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/638024"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Sabinsa (BioPerine)",
+        "Synthite",
+        "Kancor Ingredients"
+      ],
+      "japan_suppliers": [
+        "長谷川香料",
+        "高砂香料工業",
+        "丸善製薬"
+      ],
+      "oem_forms": [
+        "capsule",
+        "tablet",
+        "powder"
+      ],
+      "typical_grade": "Food / Standardized Extract 95%",
+      "certifications": [
+        "Non-GMO",
+        "Kosher",
+        "Halal"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "500 g",
+      "notes": "Sabinsa社のBioPerineが業界標準。クルクミンとの配合で90%吸収率向上の論文あり。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "36720711",
+        "title": "Curcumin-piperine co-supplementation and human health: A comprehensive review of preclinical and clinical studies.",
+        "authors": [
+          "Heidari H",
+          "Bagherniya M",
+          "Majeed M"
+        ],
+        "journal": "Phytother Res",
+        "year": "2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36720711/"
+      },
+      {
+        "pmid": "30000906",
+        "title": "Turmeric.",
+        "authors": [],
+        "journal": "",
+        "year": "2006",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30000906/"
+      },
+      {
+        "pmid": "30740986",
+        "title": "A systematic review on black pepper (Piper nigrum L.): from folk uses to pharmacological applications.",
+        "authors": [
+          "Takooree H",
+          "Aumeeruddy MZ",
+          "Rengasamy KRR"
+        ],
+        "journal": "Crit Rev Food Sci Nutr",
+        "year": "2019",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30740986/"
+      },
+      {
+        "pmid": "23768180",
+        "title": "Black pepper and health claims: a comprehensive treatise.",
+        "authors": [
+          "Butt MS",
+          "Pasha I",
+          "Sultan MT"
+        ],
+        "journal": "Crit Rev Food Sci Nutr",
+        "year": "2013",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23768180/"
+      },
+      {
+        "pmid": "39165011",
+        "title": "The effect of curcumin-piperine supplementation on lipid profile, glycemic index, inflammation, and blood pressure in patients with type 2 diabetes mellitus and hypertriglyceridemia.",
+        "authors": [
+          "Hosseini H",
+          "Bagherniya M",
+          "Sahebkar A"
+        ],
+        "journal": "Phytother Res",
+        "year": "2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39165011/"
+      }
+    ],
+    "existing_products": {
+      "total_count": 2500,
+      "top_categories": [
+        "supplements",
+        "bioavailability enhancers",
+        "curcumin formulas"
+      ]
+    },
+    "market_trends": {
+      "keyword": "BioPerine piperine",
+      "avg_interest_jp": 42,
+      "avg_interest_us": 58,
+      "trend_direction": "rising"
+    }
+  },
+  {
+    "atom_id": "atom_l_glutamine",
+    "name_ja": "Lグルタミン",
+    "name_en": "L-Glutamine",
+    "atom_type": "ingredient",
+    "category": "amino_acid",
+    "domain": "food_bio",
+    "known_actions": [
+      "gut_health",
+      "immune_support",
+      "muscle_recovery",
+      "nitrogen_transport"
+    ],
+    "possible_bonds": [
+      "gut_health_support",
+      "immune_support",
+      "protein_synthesis"
+    ],
+    "risk_tags": [],
+    "evidence_keywords": [
+      "glutamine gut health intestinal barrier",
+      "glutamine immune function",
+      "glutamine muscle recovery"
+    ],
+    "regulatory_notes": [
+      "一般的に安全。高用量（>40g/日）での長期安全性データは限定的。"
+    ],
+    "process_keywords": [
+      "fermentation-derived",
+      "food grade",
+      "USP grade"
+    ],
+    "supplier_keywords": [
+      "L-glutamine powder",
+      "fermentation glutamine"
+    ],
+    "gras": {
+      "status": "GRAS",
+      "basis": "Generally Recognized as Safe as amino acid",
+      "notes": "GRAS (21 CFR 184.1272). 食品・サプリメント用途で安全。",
+      "jp_status": "食品添加物（アミノ酸）として使用可"
+    },
+    "compound": {
+      "pubchem_cid": 5961,
+      "molecular_formula": "C5H10N2O3",
+      "molecular_weight": 146.14,
+      "smiles": "N[C@@H](CCC(=O)N)C(=O)O",
+      "inchikey": "ZDXPYRJPNDTMRX-VKHMYHEASA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5961"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Ajinomoto",
+        "Kyowa Hakko Bio",
+        "Evonik Industries",
+        "Meihua Group"
+      ],
+      "japan_suppliers": [
+        "味の素",
+        "協和発酵バイオ",
+        "田辺三菱製薬"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet",
+        "stick pack"
+      ],
+      "typical_grade": "Food Grade / USP",
+      "certifications": [
+        "Non-GMO",
+        "Kosher",
+        "Halal",
+        "GMP"
+      ],
+      "price_tier": "low",
+      "lead_time_weeks": 3,
+      "min_order_qty": "5 kg",
+      "notes": "最も豊富な非必須アミノ酸。腸管バリア機能・免疫細胞のエネルギー源として重要。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "30360490",
+        "title": "Glutamine: Metabolism and Immune Function, Supplementation and Clinical Translation.",
+        "authors": [
+          "Cruzat V",
+          "Macedo Rogero M",
+          "Noel Keane K"
+        ],
+        "journal": "Nutrients",
+        "year": "2018",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30360490/"
+      },
+      {
+        "pmid": "40180691",
+        "title": "Bone Broth Benefits: How Its Nutrients Fortify Gut Barrier in Health and Disease.",
+        "authors": [
+          "Matar A",
+          "Abdelnaem N",
+          "Camilleri M"
+        ],
+        "journal": "Dig Dis Sci",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40180691/"
+      },
+      {
+        "pmid": "19301095",
+        "title": "Amino acids: metabolism, functions, and nutrition.",
+        "authors": [
+          "Wu G"
+        ],
+        "journal": "Amino Acids",
+        "year": "2009",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/19301095/"
+      },
+      {
+        "pmid": "32512833",
+        "title": "Glutamine for Amelioration of Radiation and Chemotherapy Associated Mucositis during Cancer Therapy.",
+        "authors": [
+          "Anderson PM",
+          "Lalla RV"
+        ],
+        "journal": "Nutrients",
+        "year": "2020",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32512833/"
+      },
+      {
+        "pmid": "32677037",
+        "title": "Nutritional interventions for treating foot ulcers in people with diabetes.",
+        "authors": [
+          "Moore ZE",
+          "Corcoran MA",
+          "Patton D"
+        ],
+        "journal": "Cochrane Database Syst Rev",
+        "year": "2020",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32677037/"
+      }
+    ],
+    "existing_products": {
+      "total_count": 8000,
+      "top_categories": [
+        "sports nutrition",
+        "gut health",
+        "immune support"
+      ]
+    },
+    "market_trends": {
+      "keyword": "L-glutamine supplement",
+      "avg_interest_jp": 45,
+      "avg_interest_us": 65,
+      "trend_direction": "stable"
+    }
+  },
+  {
+    "atom_id": "atom_egcg",
+    "name_ja": "エピガロカテキンガレート（EGCG）",
+    "name_en": "Epigallocatechin gallate (EGCG)",
+    "atom_type": "ingredient",
+    "category": "polyphenol",
+    "domain": "food_bio",
+    "known_actions": [
+      "antioxidant",
+      "anti_inflammatory",
+      "metabolic_support",
+      "neuroprotective",
+      "anti_cancer_potential"
+    ],
+    "possible_bonds": [
+      "antioxidant_synergy",
+      "metabolic_support",
+      "anti_stress_synergy"
+    ],
+    "risk_tags": [
+      "liver_toxicity_high_dose",
+      "drug_interaction_risk",
+      "iron_absorption_inhibition"
+    ],
+    "evidence_keywords": [
+      "EGCG epigallocatechin gallate antioxidant",
+      "green tea catechin metabolism",
+      "EGCG neuroprotection"
+    ],
+    "regulatory_notes": [
+      "高用量（>800mg/日 EGCG）で肝毒性リスクの報告あり。空腹時摂取を避ける。鉄の吸収を阻害するため食事から離して摂取。"
+    ],
+    "process_keywords": [
+      "green tea extract",
+      "decaffeinated EGCG",
+      "standardized 98% EGCG"
+    ],
+    "supplier_keywords": [
+      "EGCG 98%",
+      "green tea extract polyphenols",
+      "catechin standardized"
+    ],
+    "gras": {
+      "status": "unknown",
+      "notes": "Green tea as beverage is GRAS, but concentrated EGCG supplements have liver toxicity concern at high dose. EU has set max 800mg/day guidance.",
+      "jp_status": "食品（緑茶抽出物）として使用可能。機能性表示食品実績あり。"
+    },
+    "compound": {
+      "pubchem_cid": 65064,
+      "molecular_formula": "C22H18O11",
+      "molecular_weight": 458.37,
+      "smiles": "O=C(O[C@@H]1Cc2c(O)cc(O)cc2O[C@@H]1c1cc(O)c(O)c(O)c1)c1cc(O)c(O)c(O)c1",
+      "inchikey": "WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/65064"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Indena",
+        "Naturex (Givaudan)",
+        "Sabinsa",
+        "Taiyo International"
+      ],
+      "japan_suppliers": [
+        "伊藤園",
+        "三井農林",
+        "太陽化学"
+      ],
+      "oem_forms": [
+        "capsule",
+        "tablet",
+        "powder",
+        "softgel"
+      ],
+      "typical_grade": "Standardized Extract 98% EGCG",
+      "certifications": [
+        "Non-GMO",
+        "Organic",
+        "Kosher"
+      ],
+      "price_tier": "high",
+      "lead_time_weeks": 6,
+      "min_order_qty": "1 kg",
+      "notes": "デカフェイン処理品が多く流通。EGCG含有率・カフェイン含有率・農薬基準を要確認。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "36906146",
+        "title": "Kidney Stone Prevention.",
+        "authors": [
+          "Peerapen P",
+          "Thongboonkerd V"
+        ],
+        "journal": "Adv Nutr",
+        "year": "2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36906146/"
+      },
+      {
+        "pmid": "30000907",
+        "title": "Green Tea.",
+        "authors": [],
+        "journal": "",
+        "year": "2006",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30000907/"
+      },
+      {
+        "pmid": "40126033",
+        "title": "Impact of flavan-3-ols on blood pressure and endothelial function in diverse populations: a systematic review and meta-analysis of randomized controlled trials.",
+        "authors": [
+          "Lagou V",
+          "Greyling A",
+          "Ferruzzi MG"
+        ],
+        "journal": "Eur J Prev Cardiol",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40126033/"
+      },
+      {
+        "pmid": "33144101",
+        "title": "GABA-enriched teas as neuro-nutraceuticals.",
+        "authors": [
+          "Hinton T",
+          "Johnston GAR"
+        ],
+        "journal": "Neurochem Int",
+        "year": "2020",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33144101/"
+      },
+      {
+        "pmid": "40215650",
+        "title": "Metal ion coordinated tea polyphenol nanocoating for enhanced probiotic therapy in inflammatory bowel disease.",
+        "authors": [
+          "Gao L",
+          "Liu Y",
+          "Ye L"
+        ],
+        "journal": "Biomaterials",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40215650/"
+      }
+    ],
+    "existing_products": {
+      "total_count": 5500,
+      "top_categories": [
+        "antioxidant supplements",
+        "weight management",
+        "cognitive health"
+      ]
+    },
+    "market_trends": {
+      "keyword": "EGCG green tea extract",
+      "avg_interest_jp": 55,
+      "avg_interest_us": 60,
+      "trend_direction": "stable"
+    }
+  },
+  {
+    "atom_id": "atom_sulforaphane",
+    "name_ja": "スルフォラファン（ブロッコリースプラウト）",
+    "name_en": "Sulforaphane (Broccoli sprout extract)",
+    "atom_type": "ingredient",
+    "category": "phytochemical",
+    "domain": "food_bio",
+    "known_actions": [
+      "nrf2_activation",
+      "antioxidant",
+      "anti_inflammatory",
+      "detoxification_support",
+      "anti_cancer_potential"
+    ],
+    "possible_bonds": [
+      "antioxidant_synergy",
+      "detox_support",
+      "anti_inflammatory_synergy"
+    ],
+    "risk_tags": [
+      "thyroid_caution",
+      "drug_interaction_risk"
+    ],
+    "evidence_keywords": [
+      "sulforaphane broccoli nrf2 activation",
+      "sulforaphane anti-cancer antioxidant",
+      "glucoraphanin myrosinase"
+    ],
+    "regulatory_notes": [
+      "甲状腺疾患患者は要注意（ゴイトロゲン作用）。CYP1A2・CYP2E1を阻害する可能性あり。"
+    ],
+    "process_keywords": [
+      "broccoli sprout extract",
+      "glucoraphanin myrosinase",
+      "stabilized sulforaphane",
+      "SGS"
+    ],
+    "supplier_keywords": [
+      "sulforaphane",
+      "broccoli sprout extract",
+      "TrueBroc (glucoraphanin)"
+    ],
+    "gras": {
+      "status": "unknown",
+      "notes": "ブロッコリー食品としてはGRAS。濃縮スルフォラファンサプリは規制確認が必要。日本では機能性表示食品の実績あり。",
+      "jp_status": "機能性表示食品実績あり（2019年〜）"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Brassica Protection Products (TrueBroc)",
+        "Nutraceutix",
+        "Nexira"
+      ],
+      "japan_suppliers": [
+        "明治フードマテリア",
+        "カゴメ",
+        "ニチレイバイオサイエンス"
+      ],
+      "oem_forms": [
+        "capsule",
+        "tablet",
+        "powder",
+        "softgel"
+      ],
+      "typical_grade": "Standardized Extract (glucoraphanin)",
+      "certifications": [
+        "Non-GMO",
+        "Organic"
+      ],
+      "price_tier": "very_high",
+      "lead_time_weeks": 8,
+      "min_order_qty": "500 g",
+      "notes": "スルフォラファン自体は不安定なため、前駆体のグルコラファニンを酵素（ミロシナーゼ）と同時配合する製品が多い。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "35246237",
+        "title": "Pharmacological and dietary-supplement treatments for autism spectrum disorder: a systematic review and network meta-analysis.",
+        "authors": [
+          "Siafis S",
+          "Çıray O",
+          "Wu H"
+        ],
+        "journal": "Mol Autism",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35246237/"
+      },
+      {
+        "pmid": "38182079",
+        "title": "Hormesis determines lifespan.",
+        "authors": [
+          "Calabrese EJ",
+          "Nascarella M",
+          "Pressman P"
+        ],
+        "journal": "Ageing Res Rev",
+        "year": "2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38182079/"
+      },
+      {
+        "pmid": "37703962",
+        "title": "Sulforaphane: A nutraceutical against diabetes-related complications.",
+        "authors": [
+          "Mthembu SXH",
+          "Mazibuko-Mbeje SE",
+          "Moetlediwa MT"
+        ],
+        "journal": "Pharmacol Res",
+        "year": "2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37703962/"
+      },
+      {
+        "pmid": "39895767",
+        "title": "Sulforaphane Is Not Only a Food Supplement: It Diminishes the Intracellular Survival and Colonization of Salmonella enterica.",
+        "authors": [
+          "Danish Rizvi SM",
+          "Abu Lila AS",
+          "Moin A"
+        ],
+        "journal": "ACS Omega",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39895767/"
+      },
+      {
+        "pmid": "39490514",
+        "title": "The pediatric psychopharmacology of autism spectrum disorder: A systematic review - Part II: The future.",
+        "authors": [
+          "Persico AM",
+          "Asta L",
+          "Chehbani F"
+        ],
+        "journal": "Prog Neuropsychopharmacol Biol Psychiatry",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39490514/"
+      }
+    ],
+    "existing_products": {
+      "total_count": 1200,
+      "top_categories": [
+        "antioxidant supplements",
+        "anti-aging",
+        "detox support"
+      ]
+    },
+    "market_trends": {
+      "keyword": "sulforaphane broccoli sprout",
+      "avg_interest_jp": 48,
+      "avg_interest_us": 72,
+      "trend_direction": "rising"
+    }
   }
 ]
