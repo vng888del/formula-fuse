@@ -29,7 +29,12 @@ export function AtomLibrary({ atoms, selectedIds, onToggle }: Props) {
     return atoms.filter((a) => {
       const catOk = category === "all" || a.atom_type === category;
       const q = query.toLowerCase();
-      const textOk = !q || a.name_ja.includes(q) || a.name_en.toLowerCase().includes(q);
+      const textOk = !q ||
+        a.name_ja.includes(q) ||
+        a.name_en.toLowerCase().includes(q) ||
+        a.category.toLowerCase().includes(q) ||
+        a.known_actions.some(act => act.toLowerCase().includes(q)) ||
+        a.possible_bonds.some(b => b.toLowerCase().includes(q));
       return catOk && textOk;
     });
   }, [atoms, category, query]);
@@ -75,7 +80,7 @@ export function AtomLibrary({ atoms, selectedIds, onToggle }: Props) {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Atomを検索..."
+            placeholder="名前・機能・ボンドタイプで検索..."
             className="w-full rounded-lg px-3 py-1.5 text-xs outline-none"
             style={{ background: "rgba(255,255,255,0.05)", border: "1px solid var(--border-bright)", color: "var(--text-primary)" }}
           />

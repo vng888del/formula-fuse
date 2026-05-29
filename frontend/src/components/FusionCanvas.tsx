@@ -22,6 +22,9 @@ function getAtomPositions(count: number, radius: number): { x: number; y: number
 }
 
 const RISK_COLOR: Record<string, string> = {
+  green:  "#69f0ae",
+  yellow: "#ffd54f",
+  red:    "#ef5350",
   low:    "#69f0ae",
   medium: "#ffd54f",
   high:   "#ef5350",
