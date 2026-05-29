@@ -213,6 +213,35 @@
       "trend_direction": "rising",
       "peak_month_jp": "2026-03",
       "retrieved_at": "2026-05-28T12:14:54.244332+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Roquette",
+        "Cargill",
+        "ADM",
+        "MGP Ingredients",
+        "Manildra Group"
+      ],
+      "japan_suppliers": [
+        "日清製粉グループ",
+        "昭和産業",
+        "日本製粉"
+      ],
+      "oem_forms": [
+        "powder",
+        "isolate_powder",
+        "concentrate_powder"
+      ],
+      "typical_grade": "Food",
+      "certifications": [
+        "Non-GMO",
+        "Kosher",
+        "Halal"
+      ],
+      "price_tier": "low",
+      "lead_time_weeks": 2,
+      "min_order_qty": "25 kg",
+      "notes": "グルテン含有のため、アレルギー表示必須。小麦タンパク単体はグルテンより溶解性高い。"
     }
   },
   {
@@ -435,6 +464,33 @@
       "trend_direction": "rising",
       "peak_month_jp": "2026-04",
       "retrieved_at": "2026-05-28T12:14:54.244332+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Roquette",
+        "Cargill",
+        "ADM",
+        "Tereos",
+        "Loryma"
+      ],
+      "japan_suppliers": [
+        "日清製粉グループ",
+        "昭和産業",
+        "グリコ栄養食品"
+      ],
+      "oem_forms": [
+        "powder",
+        "vital_gluten_powder"
+      ],
+      "typical_grade": "Food",
+      "certifications": [
+        "Non-GMO",
+        "Kosher"
+      ],
+      "price_tier": "low",
+      "lead_time_weeks": 2,
+      "min_order_qty": "25 kg",
+      "notes": "バイタルグルテンは加工食品の結着・弾力付与に使用。グルテン不耐症者への注意必須。"
     }
   },
   {
@@ -16275,6 +16331,94 @@
       "lead_time_weeks": 3,
       "min_order_qty": "5 kg",
       "notes": "細胞壁破砕処理品が消化吸収に優れる。重金属・マイコトキシン検査必須。"
+    },
+    "existing_products": {
+      "search_query": "Chlorella supplement",
+      "total_count": 7,
+      "sample_products": [
+        {
+          "product_name": "Ecocesta S. alimento Dtox Chlorella Spirulina Kale",
+          "brand": "Ecocesta",
+          "categories": [
+            "Breakfasts",
+            "Dietary Supplements",
+            "Spirulina"
+          ],
+          "countries": [
+            "France",
+            "Spain"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/842/258/431/4755/front_fr.13.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/8422584314755"
+        },
+        {
+          "product_name": "Broken Cell Wall Chlorella Tablets",
+          "brand": "Sunfood superfoods",
+          "categories": [
+            "Plant Based Foods And Beverages",
+            "Plant Based Foods",
+            "Seafood"
+          ],
+          "countries": [
+            "World",
+            "Stany Zjednoczone"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/080/381/301/0637/front_en.4.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0803813010637"
+        },
+        {
+          "product_name": "Chlorella",
+          "brand": "El Granero Integral",
+          "categories": [
+            "Dietary Supplements"
+          ],
+          "countries": [
+            "Spain"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/842/258/405/8758/front_es.8.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/8422584058758"
+        },
+        {
+          "product_name": "Chlorella Food Supplements",
+          "brand": "",
+          "categories": [],
+          "countries": [
+            "United-Kingdom"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "https://images.openfoodfacts.org/images/products/458/210/845/0407/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/4582108450407"
+        },
+        {
+          "product_name": "Chlorella Supplement",
+          "brand": "Sun Chlorella",
+          "categories": [],
+          "countries": [
+            "World"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "",
+          "off_url": "https://world.openfoodfacts.org/product/0029918011113"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Plant Based Foods And Beverages",
+        "Plant Based Foods",
+        "Seafood",
+        "Breakfasts"
+      ],
+      "top_countries": [
+        "World",
+        "Spain",
+        "France",
+        "Stany Zjednoczone",
+        "United-Kingdom"
+      ],
+      "retrieved_at": "2026-05-29T07:48:02.086916+00:00"
     }
   },
   {

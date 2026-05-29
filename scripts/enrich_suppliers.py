@@ -41,6 +41,30 @@ SUPPLIER_DATABASE: dict[str, dict] = {
 
     # ── Ingredients ──────────────────────────────────────────────────────────
 
+    "Wheat protein": {
+        "major_suppliers": ["Roquette", "Cargill", "ADM", "MGP Ingredients", "Manildra Group"],
+        "japan_suppliers": ["日清製粉グループ", "昭和産業", "日本製粉"],
+        "oem_forms": ["powder", "isolate_powder", "concentrate_powder"],
+        "typical_grade": "Food",
+        "certifications": ["Non-GMO", "Kosher", "Halal"],
+        "price_tier": "low",
+        "lead_time_weeks": 2,
+        "min_order_qty": "25 kg",
+        "notes": "グルテン含有のため、アレルギー表示必須。小麦タンパク単体はグルテンより溶解性高い。",
+    },
+
+    "Gluten": {
+        "major_suppliers": ["Roquette", "Cargill", "ADM", "Tereos", "Loryma"],
+        "japan_suppliers": ["日清製粉グループ", "昭和産業", "グリコ栄養食品"],
+        "oem_forms": ["powder", "vital_gluten_powder"],
+        "typical_grade": "Food",
+        "certifications": ["Non-GMO", "Kosher"],
+        "price_tier": "low",
+        "lead_time_weeks": 2,
+        "min_order_qty": "25 kg",
+        "notes": "バイタルグルテンは加工食品の結着・弾力付与に使用。グルテン不耐症者への注意必須。",
+    },
+
     "Gamma-aminobutyric acid (GABA)": {
         "major_suppliers": ["Pharma Foods International (PFI)", "Now Foods", "Source Naturals", "KAL"],
         "japan_suppliers": ["協和発酵バイオ", "Pharma Foods International (パーマフーズ)", "白鳥製薬"],

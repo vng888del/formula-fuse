@@ -17,9 +17,9 @@
 | Phase 2: UniProt | ⚠️ 19/135 (14%) |
 | Phase 2: PubMed | ⚠️ 126/135 (93%) |
 | Phase 3: FDA GRAS + Safety Gate 強化 | ⚠️ 82/135 (60%) |
-| Phase 4: サプライヤー情報 | ⚠️ 80/135 (59%) |
+| Phase 4: サプライヤー情報 | ⚠️ 82/135 (60%) |
 | Phase 5: Google Trends | ⚠️ 83/135 (61%) |
-| Phase 5: Open Food Facts | ⚠️ 42/135 (31%) |
+| Phase 5: Open Food Facts | ⚠️ 43/135 (31%) |
 | **Formula 保存（Supabase DB）** | ✅ 本番稼働中 |
 <!-- END:current-state -->
 
