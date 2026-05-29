@@ -8711,6 +8711,101 @@
       "smiles": null,
       "inchikey": "PMMYEEVYMWASQN-DMTCNVIQSA-N",
       "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5810"
+    },
+    "existing_products": {
+      "search_query": "collagen peptide",
+      "total_count": 711,
+      "sample_products": [
+        {
+          "product_name": "COLLAGEN PEPTIDES",
+          "brand": "VITAL PROTEINS",
+          "categories": [
+            "Beverages And Beverages Preparations",
+            "Beverages",
+            "Dried Products"
+          ],
+          "countries": [
+            "United-States"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/085/727/300/8666/front_en.360.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0857273008666"
+        },
+        {
+          "product_name": "COLLAGEN PEPTIDES",
+          "brand": "orgain",
+          "categories": [
+            "Dietary Supplements",
+            "Collagen Supplement"
+          ],
+          "countries": [
+            "Ireland",
+            "United-States"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/085/177/000/8785/front_en.105.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0851770008785"
+        },
+        {
+          "product_name": "California Gold Nutrition, CollagenUP, Hydrolyzed Marine Collagen Peptides with ",
+          "brand": "California Gold Nutrition",
+          "categories": [
+            "Dietary Supplements"
+          ],
+          "countries": [
+            "Morocco",
+            "Spain"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/089/822/001/0332/front_es.19.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0898220010332"
+        },
+        {
+          "product_name": "Collagen Peptides",
+          "brand": "Vital Proteins",
+          "categories": [
+            "Dietary Supplements",
+            "Bodybuilding Supplements",
+            "Protein Powders"
+          ],
+          "countries": [
+            "United-States"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/085/001/956/8240/front_en.44.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0850019568240"
+        },
+        {
+          "product_name": "Collagen Peptides",
+          "brand": "Vital Proteins",
+          "categories": [
+            "Dietary Supplements",
+            "Suplementos Dietéticos"
+          ],
+          "countries": [
+            "France",
+            "United-States"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/085/023/200/5096/front_en.61.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0850232005096"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Bodybuilding Supplements",
+        "Protein Powders",
+        "Collagen",
+        "Beverages And Beverages Preparations"
+      ],
+      "top_countries": [
+        "United-States",
+        "France",
+        "United-Kingdom",
+        "Spain",
+        "Ireland"
+      ],
+      "retrieved_at": "2026-05-29T09:34:01.348859+00:00"
     }
   },
   {
@@ -9945,6 +10040,86 @@
         "zinc_mg": 6.31,
         "vitamin_c_mg": 0.9
       }
+    },
+    "existing_products": {
+      "search_query": "hyaluronic acid",
+      "total_count": 75,
+      "sample_products": [
+        {
+          "product_name": "California Gold Nutrition, CollagenUP, Hydrolyzed Marine Collagen Peptides with ",
+          "brand": "California Gold Nutrition",
+          "categories": [
+            "Dietary Supplements"
+          ],
+          "countries": [
+            "Morocco",
+            "Spain"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/089/822/001/0332/front_es.19.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0898220010332"
+        },
+        {
+          "product_name": "Hyaluronic Acid Complex",
+          "brand": "SOLGAR",
+          "categories": [
+            "Dietary Supplements"
+          ],
+          "countries": [
+            "Belgium"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/003/398/401/4176/front_nl.20.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0033984014176"
+        },
+        {
+          "product_name": "HYALURONIC ACID LOTION",
+          "brand": "minisu",
+          "categories": [],
+          "countries": [
+            "Colombia"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "",
+          "off_url": "https://world.openfoodfacts.org/product/6922655791703"
+        },
+        {
+          "product_name": "Super Collagen Plus with Vitamin C & Hyaluronic Acid",
+          "brand": "Neocell",
+          "categories": [],
+          "countries": [
+            "United-States"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "https://images.openfoodfacts.org/images/products/001/618/512/9580/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0016185129580"
+        },
+        {
+          "product_name": "Drink Mix protein with hyaluronic acid",
+          "brand": "Metabolic Research Center",
+          "categories": [
+            "Beverages And Beverages Preparations",
+            "Beverages"
+          ],
+          "countries": [],
+          "nutriscore": "D",
+          "image_url": "https://images.openfoodfacts.org/images/products/080/421/740/2523/front_en.14.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0804217402523"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Beverages And Beverages Preparations",
+        "Beverages"
+      ],
+      "top_countries": [
+        "United-States",
+        "France",
+        "Morocco",
+        "Spain",
+        "Belgium"
+      ],
+      "retrieved_at": "2026-05-29T09:34:10.257483+00:00"
     }
   },
   {
@@ -20734,6 +20909,99 @@
       "smiles": null,
       "inchikey": "SASUFNRGCZMRFD-LYOLWDNZSA-N",
       "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/53477765"
+    },
+    "existing_products": {
+      "search_query": "Ashwagandha supplement",
+      "total_count": 21,
+      "sample_products": [
+        {
+          "product_name": "Ashwagandha Gummies",
+          "brand": "Goli Nutrition",
+          "categories": [
+            "Dietary Supplements"
+          ],
+          "countries": [
+            "Guatemala",
+            "United-States"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/062/817/635/7409/front_en.30.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0628176357409"
+        },
+        {
+          "product_name": "Baidyanath Ashwagandha",
+          "brand": "Baidyanath",
+          "categories": [
+            "Supplements"
+          ],
+          "countries": [
+            "India"
+          ],
+          "nutriscore": "",
+          "image_url": "https://images.openfoodfacts.org/images/products/890/122/090/3015/front_en.5.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/8901220903015"
+        },
+        {
+          "product_name": "Ashwagandha",
+          "brand": "Organic India",
+          "categories": [
+            "Dietary Supplements"
+          ],
+          "countries": [
+            "United-States",
+            "World"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/085/146/900/0168/front_en.8.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0851469000168"
+        },
+        {
+          "product_name": "Turmeric Ashwagandha Herbal Tea",
+          "brand": "Vahdam",
+          "categories": [
+            "Beverages And Beverages Preparations",
+            "Plant Based Foods And Beverages",
+            "Beverages"
+          ],
+          "countries": [
+            "United-States",
+            "World"
+          ],
+          "nutriscore": "B",
+          "image_url": "https://images.openfoodfacts.org/images/products/081/000/161/0951/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0810001610951"
+        },
+        {
+          "product_name": "MyKind Organics Ashwagandha Stress & Mood",
+          "brand": "Garden of Life",
+          "categories": [
+            "Dietary Supplements",
+            "Herbal Supplement"
+          ],
+          "countries": [
+            "Germany",
+            "World"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/065/801/012/1873/front_de.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0658010121873"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Beverages And Beverages Preparations",
+        "Supplements",
+        "Plant Based Foods And Beverages",
+        "Beverages"
+      ],
+      "top_countries": [
+        "United-States",
+        "World",
+        "United-Kingdom",
+        "India",
+        "Guatemala"
+      ],
+      "retrieved_at": "2026-05-29T09:38:07.298698+00:00"
     }
   },
   {
@@ -20870,6 +21138,48 @@
         "magnesium_mg": 11.72,
         "zinc_mg": 0.745
       }
+    },
+    "existing_products": {
+      "search_query": "Lion's mane mushroom supplement",
+      "total_count": 2,
+      "sample_products": [
+        {
+          "product_name": "Lion's mane organic mushroom extract",
+          "brand": "Raw Medicine",
+          "categories": [
+            "Dietary Supplements",
+            "Mushroom Extract"
+          ],
+          "countries": [
+            "Australia"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/087/060/674/8978/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0870606748978"
+        },
+        {
+          "product_name": "Lion's Mane Extract Powder",
+          "brand": "Malama Mushrooms",
+          "categories": [
+            "Dietary Supplements"
+          ],
+          "countries": [
+            "United-States"
+          ],
+          "nutriscore": "A",
+          "image_url": "https://images.openfoodfacts.org/images/products/085/001/570/0019/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0850015700019"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Mushroom Extract"
+      ],
+      "top_countries": [
+        "Australia",
+        "United-States"
+      ],
+      "retrieved_at": "2026-05-29T09:39:44.734334+00:00"
     }
   },
   {
@@ -21010,6 +21320,99 @@
       "smiles": null,
       "inchikey": "MEJYXFHCRXAUIL-UHFFFAOYSA-N",
       "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/80116"
+    },
+    "existing_products": {
+      "search_query": "Creatine monohydrate supplement",
+      "total_count": 41,
+      "sample_products": [
+        {
+          "product_name": "Creatine monohydrate",
+          "brand": "Accelerate",
+          "categories": [
+            "Dietary Supplements",
+            "Bodybuilding Supplements"
+          ],
+          "countries": [
+            "France"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/871/997/920/4525/front_en.15.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/8719979204525"
+        },
+        {
+          "product_name": "Creatine Monohydrate",
+          "brand": "Dymatize",
+          "categories": [
+            "Dietary Supplements",
+            "Bodybuilding Supplements"
+          ],
+          "countries": [
+            "Morocco",
+            "Switzerland"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/402/967/967/6916/front_en.25.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/4029679676916"
+        },
+        {
+          "product_name": "Creatine Monohydrate",
+          "brand": "Nutricost",
+          "categories": [
+            "Dietary Supplements",
+            "Bodybuilding Supplements"
+          ],
+          "countries": [
+            "United-States"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/081/013/957/1629/front_en.98.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0810139571629"
+        },
+        {
+          "product_name": "Creatine Monohydrate",
+          "brand": "wellcore",
+          "categories": [
+            "Dietary Supplements",
+            "Bodybuilding Supplements"
+          ],
+          "countries": [
+            "India"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/893/911/143/0166/front_en.11.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/8939111430166"
+        },
+        {
+          "product_name": "Creatine Monohydrate",
+          "brand": "Sports Reserach",
+          "categories": [
+            "Dietary Supplements",
+            "Bodybuilding Supplements"
+          ],
+          "countries": [
+            "United-States",
+            "World"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/002/324/909/1813/front_en.17.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0023249091813"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Bodybuilding Supplements",
+        "Creatine",
+        "Specific Products",
+        "Products For Specific Diets"
+      ],
+      "top_countries": [
+        "United-States",
+        "France",
+        "Sweden",
+        "Spain",
+        "Morocco"
+      ],
+      "retrieved_at": "2026-05-29T09:41:26.536239+00:00"
     }
   },
   {
@@ -21425,6 +21828,34 @@
       "smiles": null,
       "inchikey": "OEYIOHPDSNJKLS-UHFFFAOYSA-N",
       "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/305"
+    },
+    "existing_products": {
+      "search_query": "Choline supplement",
+      "total_count": 1,
+      "sample_products": [
+        {
+          "product_name": "Non-Gmo Lecithin Naturally Occurring Phosphatidyl Choline & Other Phosphatides E",
+          "brand": "NOW",
+          "categories": [
+            "Dietary Supplements",
+            "Vitamins"
+          ],
+          "countries": [
+            "United-States"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "",
+          "off_url": "https://world.openfoodfacts.org/product/0733739022622"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Vitamins"
+      ],
+      "top_countries": [
+        "United-States"
+      ],
+      "retrieved_at": "2026-05-29T09:43:40.355405+00:00"
     }
   },
   {
@@ -21578,6 +22009,88 @@
       "nutrients": {
         "vitamin_e_mg": 17.3
       }
+    },
+    "existing_products": {
+      "search_query": "MCT oil supplement",
+      "total_count": 4,
+      "sample_products": [
+        {
+          "product_name": "MCT Oil",
+          "brand": "Natures aid",
+          "categories": [
+            "Plant Based Foods And Beverages",
+            "Plant Based Foods",
+            "Fats"
+          ],
+          "countries": [
+            "Spain",
+            "United-Kingdom"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/502/365/244/4508/front_en.23.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/5023652444508"
+        },
+        {
+          "product_name": "Organic MCT Oil",
+          "brand": "Nature's Way",
+          "categories": [
+            "Plant Based Foods And Beverages",
+            "Plant Based Foods",
+            "Fats"
+          ],
+          "countries": [
+            "Spain",
+            "World"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/003/367/411/7729/front_en.26.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0033674117729"
+        },
+        {
+          "product_name": "KetoDiet Protein with MCT’s",
+          "brand": "Nature's Way",
+          "categories": [
+            "Dietary Supplements",
+            "Bodybuilding Supplements",
+            "Protein Powders"
+          ],
+          "countries": [
+            "New-Zealand"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/942/190/226/2937/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/9421902262937"
+        },
+        {
+          "product_name": "Brain Awake, Focus Energy Booster Supplement with MCT Oil",
+          "brand": "",
+          "categories": [
+            "Beverages And Beverages Preparations",
+            "Beverages"
+          ],
+          "countries": [
+            "United-States"
+          ],
+          "nutriscore": "B",
+          "image_url": "https://images.openfoodfacts.org/images/products/071/036/358/3132/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0710363583132"
+        }
+      ],
+      "top_categories": [
+        "Plant Based Foods And Beverages",
+        "Plant Based Foods",
+        "Fats",
+        "Dietary Supplements",
+        "Bodybuilding Supplements"
+      ],
+      "top_countries": [
+        "Spain",
+        "United-Kingdom",
+        "World",
+        "New-Zealand",
+        "United-States"
+      ],
+      "retrieved_at": "2026-05-29T09:43:44.556926+00:00"
     }
   },
   {
@@ -21737,6 +22250,52 @@
         "magnesium_mg": 10.49,
         "zinc_mg": 0.498
       }
+    },
+    "existing_products": {
+      "search_query": "Reishi mushroom supplement",
+      "total_count": 2,
+      "sample_products": [
+        {
+          "product_name": "Chaga & Reishi Mushroom Extract",
+          "brand": "Annanda Chaga Mushrooms",
+          "categories": [
+            "Dietary Supplements"
+          ],
+          "countries": [
+            "United-States"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "https://images.openfoodfacts.org/images/products/062/845/180/7148/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0628451807148"
+        },
+        {
+          "product_name": "Adaptogen Powder Daily Stress Management Herbal Supplement",
+          "brand": "Goldmine",
+          "categories": [
+            "Beverages And Beverages Preparations",
+            "Beverage Preparations",
+            "Tea Leaves"
+          ],
+          "countries": [
+            "World"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "",
+          "off_url": "https://world.openfoodfacts.org/product/0860057001555"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Beverages And Beverages Preparations",
+        "Beverage Preparations",
+        "Tea Leaves",
+        "Tea Bags"
+      ],
+      "top_countries": [
+        "United-States",
+        "World"
+      ],
+      "retrieved_at": "2026-05-29T09:43:49.026917+00:00"
     }
   },
   {
@@ -21876,6 +22435,50 @@
       "smiles": null,
       "inchikey": "FERIUCNNQQJTOY-UHFFFAOYSA-M",
       "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/104775"
+    },
+    "existing_products": {
+      "search_query": "Butyrate supplement",
+      "total_count": 2,
+      "sample_products": [
+        {
+          "product_name": "Sodium Butyrate",
+          "brand": "Apollo's Hegemony",
+          "categories": [
+            "Dietary Supplements"
+          ],
+          "countries": [
+            "Norway"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/872/107/793/0664/front_en.13.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/8721077930664"
+        },
+        {
+          "product_name": "HMB Beta-Hydroxy Beta-Methylbutyrate",
+          "brand": "MYPROTEIN",
+          "categories": [
+            "Dietary Supplements",
+            "Bodybuilding Supplements",
+            "Hmb Supplements"
+          ],
+          "countries": [
+            "United-Kingdom"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/505/988/330/2638/front_en.16.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/5059883302638"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Bodybuilding Supplements",
+        "Hmb Supplements"
+      ],
+      "top_countries": [
+        "Norway",
+        "United-Kingdom"
+      ],
+      "retrieved_at": "2026-05-29T09:45:26.121299+00:00"
     }
   },
   {
@@ -23236,625 +23839,6 @@
       "keyword": "sulforaphane broccoli sprout",
       "avg_interest_jp": 48,
       "avg_interest_us": 72,
-      "trend_direction": "rising"
-    }
-  },
-  {
-    "atom_id": "atom_beta_alanine",
-    "name_ja": "βアラニン",
-    "name_en": "Beta-alanine",
-    "atom_type": "ingredient",
-    "category": "amino_acid",
-    "domain": "food_bio",
-    "known_actions": [
-      "carnosine_synthesis",
-      "buffering_capacity",
-      "endurance_performance",
-      "fatigue_delay"
-    ],
-    "possible_bonds": [
-      "sports_performance_synergy",
-      "energy_metabolism",
-      "muscle_recovery"
-    ],
-    "risk_tags": [
-      "paresthesia_tingling",
-      "dose_review_required"
-    ],
-    "evidence_keywords": [
-      "beta-alanine carnosine performance",
-      "beta-alanine endurance exercise",
-      "beta-alanine muscle fatigue"
-    ],
-    "regulatory_notes": [
-      "高用量(>2g/回)でピリピリ感(パレステジア)が生じる場合あり。分割摂取で軽減可能。"
-    ],
-    "process_keywords": [
-      "sustained release",
-      "CarnoSyn",
-      "time-release capsule"
-    ],
-    "supplier_keywords": [
-      "CarnoSyn beta-alanine",
-      "beta-alanine sustained release"
-    ],
-    "gras": {
-      "status": "GRAS",
-      "basis": "GRAS as amino acid",
-      "notes": "FDA GRAS. スポーツ栄養サプリとして広く使用。日本では機能性表示食品実績あり。",
-      "jp_status": "食品（アミノ酸）として使用可"
-    },
-    "compound": {
-      "pubchem_cid": 239,
-      "molecular_formula": "C3H7NO2",
-      "molecular_weight": 89.09,
-      "smiles": "NCCC(=O)O",
-      "inchikey": "UCMIRNVEIXFBKS-UHFFFAOYSA-N",
-      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/239"
-    },
-    "supplier_info": {
-      "major_suppliers": [
-        "Natural Alternatives International (CarnoSyn)",
-        "Kyowa Hakko Bio",
-        "Wuhan Grand Hoyo"
-      ],
-      "japan_suppliers": [
-        "協和発酵バイオ",
-        "味の素",
-        "太陽化学"
-      ],
-      "oem_forms": [
-        "powder",
-        "capsule",
-        "tablet",
-        "sustained_release_tablet"
-      ],
-      "typical_grade": "Food Grade / USP",
-      "certifications": [
-        "Non-GMO",
-        "Informed-Sport",
-        "Kosher"
-      ],
-      "price_tier": "medium",
-      "lead_time_weeks": 4,
-      "min_order_qty": "1 kg",
-      "notes": "Natural Alternatives International社のCarnoSynが最多臨床試験データを持つブランド品。持続放出型が副作用(パレステジア)を軽減。"
-    },
-    "pubmed_evidence": [
-      {
-        "pmid": "27797728",
-        "title": "β-alanine supplementation to improve exercise capacity and performance: a systematic review and meta-analysis.",
-        "authors": [
-          "Saunders B",
-          "Elliott-Sale K",
-          "Artioli GG"
-        ],
-        "journal": "Br J Sports Med",
-        "year": "2017",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/27797728/"
-      },
-      {
-        "pmid": "26175657",
-        "title": "International society of sports nutrition position stand: Beta-Alanine.",
-        "authors": [
-          "Trexler ET",
-          "Smith-Ryan AE",
-          "Stout JR"
-        ],
-        "journal": "J Int Soc Sports Nutr",
-        "year": "2015",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26175657/"
-      },
-      {
-        "pmid": "22270875",
-        "title": "Effects of β-alanine supplementation on exercise performance: a meta-analysis.",
-        "authors": [
-          "Hobson RM",
-          "Saunders B",
-          "Ball G"
-        ],
-        "journal": "Amino Acids",
-        "year": "2012",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/22270875/"
-      },
-      {
-        "pmid": "34503527",
-        "title": "International Society of Sports Nutrition position stand: sodium bicarbonate and exercise performance.",
-        "authors": [
-          "Grgic J",
-          "Pedisic Z",
-          "Saunders B"
-        ],
-        "journal": "J Int Soc Sports Nutr",
-        "year": "2021",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34503527/"
-      },
-      {
-        "pmid": "39064783",
-        "title": "Effects of β-Alanine Supplementation on Subjects Performing High-Intensity Functional Training.",
-        "authors": [
-          "Cimadevilla-Fernández-Pola E",
-          "Martínez-Roldán C",
-          "Maté-Muñoz JL"
-        ],
-        "journal": "Nutrients",
-        "year": "2024",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39064783/"
-      }
-    ],
-    "existing_products": {
-      "total_count": 3500,
-      "top_categories": [
-        "sports nutrition",
-        "pre-workout",
-        "endurance supplements"
-      ]
-    },
-    "market_trends": {
-      "keyword": "beta-alanine supplement",
-      "avg_interest_jp": 30,
-      "avg_interest_us": 68,
-      "trend_direction": "stable"
-    }
-  },
-  {
-    "atom_id": "atom_boswellia",
-    "name_ja": "ボスウェリア（乳香）",
-    "name_en": "Boswellia serrata (Indian frankincense)",
-    "atom_type": "ingredient",
-    "category": "plant_extract",
-    "domain": "food_bio",
-    "known_actions": [
-      "anti_inflammatory",
-      "joint_support",
-      "5_lox_inhibition",
-      "gut_anti_inflammatory"
-    ],
-    "possible_bonds": [
-      "anti_inflammatory_synergy",
-      "joint_health_support",
-      "gut_health_support"
-    ],
-    "risk_tags": [
-      "drug_interaction_risk",
-      "pregnancy_caution"
-    ],
-    "evidence_keywords": [
-      "boswellia serrata AKBA anti-inflammatory",
-      "boswellia joint pain arthritis",
-      "5-LOX inhibitor"
-    ],
-    "regulatory_notes": [
-      "妊娠中は避ける（子宮収縮作用の報告あり）。抗凝固薬との相互作用に注意。"
-    ],
-    "process_keywords": [
-      "AKBA (acetyl-11-keto-β-boswellic acid)",
-      "Aflapin",
-      "5-Loxin",
-      "boswellic acid standardized"
-    ],
-    "supplier_keywords": [
-      "Boswellia serrata extract",
-      "AKBA standardized",
-      "Aflapin",
-      "5-Loxin"
-    ],
-    "gras": {
-      "status": "unknown",
-      "notes": "Sold as dietary supplement in US. EU Novel Food申請中（一部）. 日本では食薬区分確認が必要。"
-    },
-    "supplier_info": {
-      "major_suppliers": [
-        "Sabinsa (5-Loxin)",
-        "Arjuna Natural (Aflapin)",
-        "PLT Health Solutions"
-      ],
-      "japan_suppliers": [
-        "丸善製薬",
-        "長谷川香料",
-        "日本健康医学研究所"
-      ],
-      "oem_forms": [
-        "capsule",
-        "tablet",
-        "extract_powder"
-      ],
-      "typical_grade": "Standardized Extract (AKBA 30%+)",
-      "certifications": [
-        "Non-GMO",
-        "Organic"
-      ],
-      "price_tier": "high",
-      "lead_time_weeks": 6,
-      "min_order_qty": "1 kg",
-      "notes": "Sabinsa社5-LoxinとArjuna社Aflapinが主要ブランド。AKBA含量が品質指標。クルクミンとの組み合わせで抗炎症効果の相乗が期待できる。"
-    },
-    "pubmed_evidence": [
-      {
-        "pmid": "39125311",
-        "title": "Mitigating Traumatic Brain Injury: A Narrative Review of Supplementation and Dietary Protocols.",
-        "authors": [
-          "Conti F",
-          "McCue JJ",
-          "DiTuro P"
-        ],
-        "journal": "Nutrients",
-        "year": "2024",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39125311/"
-      },
-      {
-        "pmid": "29018060",
-        "title": "Dietary supplements for treating osteoarthritis: a systematic review and meta-analysis.",
-        "authors": [
-          "Liu X",
-          "Machado GC",
-          "Eyles JP"
-        ],
-        "journal": "Br J Sports Med",
-        "year": "2018",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29018060/"
-      },
-      {
-        "pmid": "39875757",
-        "title": "Efficacy and Safety of Boswellia serrata and Apium graveolens L. Extract Against Knee Osteoarthritis and Cartilage Degeneration: A Randomized, Double-blind, Multicenter, Placebo-Controlled Clinical Tr",
-        "authors": [
-          "Vaidya N",
-          "Agarwal R",
-          "Dipankar DG"
-        ],
-        "journal": "Pharm Res",
-        "year": "2025",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39875757/"
-      },
-      {
-        "pmid": "32029141",
-        "title": "Immunomodulant feed supplement Boswellia serrata to support broiler chickens' health and dietary and technological meat quality.",
-        "authors": [
-          "Kiczorowska B",
-          "Samolińska W",
-          "Al-Yasiry A"
-        ],
-        "journal": "Poult Sci",
-        "year": "2020",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32029141/"
-      },
-      {
-        "pmid": "40806131",
-        "title": "Comparative Effectiveness of Nutritional Supplements in the Treatment of Knee Osteoarthritis: A Network Meta-Analysis.",
-        "authors": [
-          "Zhang Y",
-          "Gui Y",
-          "Adams R"
-        ],
-        "journal": "Nutrients",
-        "year": "2025",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40806131/"
-      }
-    ],
-    "existing_products": {
-      "total_count": 900,
-      "top_categories": [
-        "joint supplements",
-        "anti-inflammatory",
-        "sports recovery"
-      ]
-    },
-    "market_trends": {
-      "keyword": "boswellia supplement",
-      "avg_interest_jp": 22,
-      "avg_interest_us": 58,
-      "trend_direction": "rising"
-    }
-  },
-  {
-    "atom_id": "atom_fisetin",
-    "name_ja": "フィセチン",
-    "name_en": "Fisetin",
-    "atom_type": "ingredient",
-    "category": "polyphenol",
-    "domain": "food_bio",
-    "known_actions": [
-      "senolytic",
-      "antioxidant",
-      "neuroprotective",
-      "anti_inflammatory",
-      "longevity_support"
-    ],
-    "possible_bonds": [
-      "longevity_synergy",
-      "antioxidant_synergy",
-      "cognitive_support"
-    ],
-    "risk_tags": [
-      "drug_interaction_risk",
-      "regulatory_ambiguity"
-    ],
-    "evidence_keywords": [
-      "fisetin senolytic aging",
-      "fisetin neuroprotection memory",
-      "fisetin antioxidant flavonoid"
-    ],
-    "regulatory_notes": [
-      "セノリティック（老化細胞除去）作用のヒトRCTデータは限定的。規制上は食品成分として扱われる場合が多いが国により異なる。"
-    ],
-    "process_keywords": [
-      "strawberry extract",
-      "Japanese wax tree extract",
-      "standardized fisetin"
-    ],
-    "supplier_keywords": [
-      "fisetin extract",
-      "fisetin 98%",
-      "sumac tree extract"
-    ],
-    "gras": {
-      "status": "unknown",
-      "notes": "食品に天然に含まれるポリフェノール（イチゴ等）。濃縮サプリとしての規制は国により異なる。日本では食品として扱われることが多い。"
-    },
-    "compound": {
-      "pubchem_cid": 637775,
-      "molecular_formula": "C15H10O6",
-      "molecular_weight": 286.24,
-      "smiles": "O=c1cc(-c2ccc(O)c(O)c2)oc2cc(O)ccc12",
-      "inchikey": "UAVHIQDUNYUDRG-UHFFFAOYSA-N",
-      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/637775"
-    },
-    "supplier_info": {
-      "major_suppliers": [
-        "Chromadex",
-        "Sabinsa",
-        "Shaanxi Undersun Biomedtech"
-      ],
-      "japan_suppliers": [
-        "丸善製薬",
-        "オリザ油化",
-        "ナチュラルプロセスフーズ"
-      ],
-      "oem_forms": [
-        "capsule",
-        "tablet",
-        "powder"
-      ],
-      "typical_grade": "Standardized Extract 98%",
-      "certifications": [
-        "Non-GMO",
-        "GMP"
-      ],
-      "price_tier": "very_high",
-      "lead_time_weeks": 6,
-      "min_order_qty": "100 g",
-      "notes": "NMN・レスベラトロルと並ぶ注目の長寿成分。セノリティック研究での注目度が急上昇。価格は高め。"
-    },
-    "pubmed_evidence": [
-      {
-        "pmid": "40437670",
-        "title": "Intermittent Supplementation With Fisetin Improves Physical Function and Decreases Cellular Senescence in Skeletal Muscle With Aging: A Comparison to Genetic Clearance of Senescent Cells and Synthetic",
-        "authors": [
-          "Murray KO",
-          "Mahoney SA",
-          "Ludwig KR"
-        ],
-        "journal": "Aging Cell",
-        "year": "2025",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40437670/"
-      },
-      {
-        "pmid": "32578904",
-        "title": "Emerging use of senolytics and senomorphics against aging and chronic diseases.",
-        "authors": [
-          "Martel J",
-          "Ojcius DM",
-          "Wu CY"
-        ],
-        "journal": "Med Res Rev",
-        "year": "2020",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32578904/"
-      },
-      {
-        "pmid": "37762460",
-        "title": "Fisetin-In Search of Better Bioavailability-From Macro to Nano Modifications: A Review.",
-        "authors": [
-          "Szymczak J",
-          "Cielecka-Piontek J"
-        ],
-        "journal": "Int J Mol Sci",
-        "year": "2023",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37762460/"
-      },
-      {
-        "pmid": "35231453",
-        "title": "Harnessing the therapeutic potential of fisetin and its nanoparticles: Journey so far and road ahead.",
-        "authors": [
-          "Vishwas S",
-          "Singh SK",
-          "Gulati M"
-        ],
-        "journal": "Chem Biol Interact",
-        "year": "2022",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35231453/"
-      },
-      {
-        "pmid": "40287100",
-        "title": "Kaempferol, a widely ingested dietary flavonoid and supplement, enhances biological performance via hormesis, especially for ageing-related processes.",
-        "authors": [
-          "Calabrese EJ",
-          "Pressman P",
-          "Hayes AW"
-        ],
-        "journal": "Mech Ageing Dev",
-        "year": "2025",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40287100/"
-      }
-    ],
-    "existing_products": {
-      "total_count": 600,
-      "top_categories": [
-        "longevity supplements",
-        "anti-aging",
-        "senolytic formulas"
-      ]
-    },
-    "market_trends": {
-      "keyword": "fisetin senolytic",
-      "avg_interest_jp": 38,
-      "avg_interest_us": 65,
-      "trend_direction": "rising"
-    }
-  },
-  {
-    "atom_id": "atom_urolithin_a",
-    "name_ja": "ウロリチンA",
-    "name_en": "Urolithin A",
-    "atom_type": "ingredient",
-    "category": "longevity_compound",
-    "domain": "food_bio",
-    "known_actions": [
-      "mitophagy_activation",
-      "mitochondrial_biogenesis",
-      "muscle_endurance",
-      "anti_aging"
-    ],
-    "possible_bonds": [
-      "longevity_synergy",
-      "mitochondrial_support",
-      "sports_performance_synergy"
-    ],
-    "risk_tags": [
-      "regulatory_ambiguity"
-    ],
-    "evidence_keywords": [
-      "urolithin A mitophagy muscle aging",
-      "urolithin A pomegranate metabolite",
-      "urolithin A human clinical trial"
-    ],
-    "regulatory_notes": [
-      "EU Novel Food承認取得済み（2022年）。米国でNDI届出済み（Amazentis/Timeline）。日本では食薬区分確認が必要。"
-    ],
-    "process_keywords": [
-      "fermentation synthesis",
-      "pomegranate extract metabolite",
-      "Timeline Mitopure"
-    ],
-    "supplier_keywords": [
-      "Urolithin A",
-      "Mitopure (Amazentis)",
-      "Timeline Nutrition"
-    ],
-    "gras": {
-      "status": "unknown",
-      "jp_status": "食薬区分確認要（腸内細菌代謝産物）",
-      "notes": "EU Novel Food承認。米国NDI届出済み。自然界にはザクロ・クルミ・ベリー類から腸内細菌が産生。"
-    },
-    "compound": {
-      "pubchem_cid": 5488186,
-      "molecular_formula": "C13H8O4",
-      "molecular_weight": 228.2,
-      "smiles": "O=c1oc2ccccc2c2cc(O)ccc12",
-      "inchikey": "PVDKZBEQUHPFLP-UHFFFAOYSA-N",
-      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5488186"
-    },
-    "supplier_info": {
-      "major_suppliers": [
-        "Amazentis (Mitopure)",
-        "Sabinsa",
-        "Shaanxi Genuine Biotech"
-      ],
-      "japan_suppliers": [
-        "エーザイ",
-        "丸善製薬",
-        "ニチレイバイオサイエンス"
-      ],
-      "oem_forms": [
-        "capsule",
-        "powder",
-        "softgel",
-        "gummy"
-      ],
-      "typical_grade": "Pharmaceutical Grade / Standardized",
-      "certifications": [
-        "EU Novel Food",
-        "NDI (US)",
-        "GMP"
-      ],
-      "price_tier": "very_high",
-      "lead_time_weeks": 8,
-      "min_order_qty": "50 g",
-      "notes": "AmazentisのMitopureが唯一の大規模ヒト臨床試験データ保有ブランド。ミトファジー活性化の直接証拠あり。コスト最高水準。"
-    },
-    "pubmed_evidence": [
-      {
-        "pmid": "35050355",
-        "title": "Effect of Urolithin A Supplementation on Muscle Endurance and Mitochondrial Health in Older Adults: A Randomized Clinical Trial.",
-        "authors": [
-          "Liu S",
-          "D'Amico D",
-          "Shankland E"
-        ],
-        "journal": "JAMA Netw Open",
-        "year": "2022",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35050355/"
-      },
-      {
-        "pmid": "39060742",
-        "title": "Mitochondria as Nutritional Targets to Maintain Muscle Health and Physical Function During Ageing.",
-        "authors": [
-          "Broome SC",
-          "Whitfield J",
-          "Karagounis LG"
-        ],
-        "journal": "Sports Med",
-        "year": "2024",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39060742/"
-      },
-      {
-        "pmid": "36522127",
-        "title": "Nutraceutical activation of Sirt1: a review.",
-        "authors": [
-          "DiNicolantonio JJ",
-          "McCarty MF",
-          "O'Keefe JH"
-        ],
-        "journal": "Open Heart",
-        "year": "2022",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36522127/"
-      },
-      {
-        "pmid": "39665042",
-        "title": "Urolithin A and nicotinamide riboside differentially regulate innate immune defenses and metabolism in human microglial cells.",
-        "authors": [
-          "Madsen HB",
-          "Navarro C",
-          "Gasparini E"
-        ],
-        "journal": "Front Aging Neurosci",
-        "year": "2024",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39665042/"
-      },
-      {
-        "pmid": "41404767",
-        "title": "Distinct roles of urolithin A and spermidine in mitophagy and autophagy: implications for dietary supplementation.",
-        "authors": [
-          "Borsky P",
-          "Holmannova D",
-          "Soukup O"
-        ],
-        "journal": "Nutr Res Rev",
-        "year": "2025",
-        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41404767/"
-      }
-    ],
-    "existing_products": {
-      "total_count": 200,
-      "top_categories": [
-        "longevity supplements",
-        "sports nutrition",
-        "mitochondrial health"
-      ]
-    },
-    "market_trends": {
-      "keyword": "urolithin A supplement",
-      "avg_interest_jp": 35,
-      "avg_interest_us": 70,
       "trend_direction": "rising"
     }
   }
