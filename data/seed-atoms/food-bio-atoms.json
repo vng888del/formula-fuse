@@ -8546,46 +8546,78 @@
   {
     "atom_id": "atom_collagen_peptide",
     "name_ja": "コラーゲンペプチド",
-    "name_en": "Collagen peptide",
+    "name_en": "Collagen peptide (Hydrolyzed collagen)",
     "atom_type": "ingredient",
     "category": "protein_peptide",
     "domain": "food_bio",
     "known_actions": [
-      "skin_elasticity_support_potential",
-      "joint_support_potential",
-      "protein_source"
+      "collagen_synthesis_stimulation",
+      "skin_elasticity",
+      "joint_support"
     ],
     "possible_bonds": [
-      "collagen_synthesis",
-      "enzyme_synergy",
-      "fermentation"
+      "skin_functional_hypothesis",
+      "collagen_synthesis_cofactor",
+      "bioavailability_enhancement"
     ],
     "risk_tags": [
-      "claim_requires_evidence",
-      "insufficient_evidence"
+      "animal_derived",
+      "allergen_fish_or_bovine"
     ],
     "evidence_keywords": [
-      "collagen peptide skin",
-      "hydrolyzed collagen bioavailability",
-      "collagen supplement joint"
+      "collagen peptide skin elasticity",
+      "hydrolyzed collagen joint",
+      "collagen supplement beauty"
     ],
     "regulatory_notes": [
-      "Do not claim reversal of aging or skin disease treatment.",
-      "Bioavailability and efficacy evidence is still limited.",
-      "Skin beauty claims require validated study in target market.",
-      "Check allergen status of source (fish/bovine)."
+      "魚由来・牛由来によりアレルゲン表示が異なる。"
     ],
     "process_keywords": [
-      "hydrolysis",
-      "filtration",
-      "spray drying"
+      "fish collagen",
+      "bovine collagen",
+      "Type I collagen",
+      "hydroxyproline"
     ],
     "supplier_keywords": [
-      "fish collagen peptide",
-      "bovine collagen peptide",
-      "hydrolyzed collagen",
-      "marine collagen"
+      "marine collagen peptide",
+      "bovine collagen",
+      "Peptan",
+      "Naticol"
     ],
+    "gras": {
+      "status": "GRAS",
+      "notes": "Generally recognized as safe; widely used in food and supplements",
+      "jp_status": "食品"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Rousselot (Peptan)",
+        "GELITA",
+        "Nitta Gelatin",
+        "Copalis Sea Solutions (Naticol)"
+      ],
+      "japan_suppliers": [
+        "新田ゼラチン",
+        "宮城化学工業",
+        "東洋新薬"
+      ],
+      "oem_forms": [
+        "powder",
+        "tablet",
+        "drink",
+        "gummy"
+      ],
+      "typical_grade": "Food",
+      "certifications": [
+        "Halal",
+        "Kosher",
+        "Non-GMO"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 3,
+      "min_order_qty": "25 kg",
+      "notes": "魚由来は独自臭・牛由来より低価格。機能性表示食品での届出件数上位の素材。"
+    },
     "pubmed_evidence": [
       {
         "pmid": "34491424",
@@ -8647,147 +8679,7 @@
         "year": "2023",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37064452/"
       }
-    ],
-    "gras": {
-      "status": "GRAS",
-      "basis": "GRAS Notice No. GRN 000334 (Gelatin hydrolysate)",
-      "notes": "加水分解コラーゲンは GRAS。魚・豚由来は宗教・アレルゲン表示に注意。",
-      "jp_status": "食品"
-    },
-    "supplier_info": {
-      "major_suppliers": [
-        "Gelita (Verisol®, Fortigel®)",
-        "Rousselot (PEPTAN®)",
-        "Nitta Gelatin"
-      ],
-      "japan_suppliers": [
-        "新田ゼラチン",
-        "宮城化学工業"
-      ],
-      "oem_forms": [
-        "powder",
-        "tablet",
-        "capsule",
-        "drink",
-        "jelly"
-      ],
-      "typical_grade": "Food",
-      "certifications": [
-        "Halal",
-        "Kosher (魚由来のみ)",
-        "Non-GMO"
-      ],
-      "price_tier": "medium",
-      "lead_time_weeks": 4,
-      "min_order_qty": "25 kg",
-      "notes": "牛・豚・魚由来の区別が宗教・アレルゲン面で重要。"
-    },
-    "existing_products": {
-      "search_query": "collagen peptide",
-      "total_count": 709,
-      "sample_products": [
-        {
-          "product_name": "COLLAGEN PEPTIDES",
-          "brand": "VITAL PROTEINS",
-          "categories": [
-            "Beverages And Beverages Preparations",
-            "Beverages",
-            "Dried Products"
-          ],
-          "countries": [
-            "United-States"
-          ],
-          "nutriscore": "NOT-APPLICABLE",
-          "image_url": "https://images.openfoodfacts.org/images/products/085/727/300/8666/front_en.360.400.jpg",
-          "off_url": "https://world.openfoodfacts.org/product/0857273008666"
-        },
-        {
-          "product_name": "COLLAGEN PEPTIDES",
-          "brand": "orgain",
-          "categories": [
-            "Dietary Supplements",
-            "Collagen Supplement"
-          ],
-          "countries": [
-            "Ireland",
-            "United-States"
-          ],
-          "nutriscore": "NOT-APPLICABLE",
-          "image_url": "https://images.openfoodfacts.org/images/products/085/177/000/8785/front_en.105.400.jpg",
-          "off_url": "https://world.openfoodfacts.org/product/0851770008785"
-        },
-        {
-          "product_name": "California Gold Nutrition, CollagenUP, Hydrolyzed Marine Collagen Peptides with ",
-          "brand": "California Gold Nutrition",
-          "categories": [
-            "Dietary Supplements"
-          ],
-          "countries": [
-            "Morocco",
-            "Spain"
-          ],
-          "nutriscore": "NOT-APPLICABLE",
-          "image_url": "https://images.openfoodfacts.org/images/products/089/822/001/0332/front_es.19.400.jpg",
-          "off_url": "https://world.openfoodfacts.org/product/0898220010332"
-        },
-        {
-          "product_name": "Collagen Peptides",
-          "brand": "Vital Proteins",
-          "categories": [
-            "Dietary Supplements",
-            "Bodybuilding Supplements",
-            "Protein Powders"
-          ],
-          "countries": [
-            "United-States"
-          ],
-          "nutriscore": "NOT-APPLICABLE",
-          "image_url": "https://images.openfoodfacts.org/images/products/085/001/956/8240/front_en.44.400.jpg",
-          "off_url": "https://world.openfoodfacts.org/product/0850019568240"
-        },
-        {
-          "product_name": "Collagen Peptides",
-          "brand": "Vital Proteins",
-          "categories": [
-            "Dietary Supplements",
-            "Suplementos Dietéticos"
-          ],
-          "countries": [
-            "France",
-            "United-States"
-          ],
-          "nutriscore": "NOT-APPLICABLE",
-          "image_url": "https://images.openfoodfacts.org/images/products/085/023/200/5096/front_en.61.400.jpg",
-          "off_url": "https://world.openfoodfacts.org/product/0850232005096"
-        }
-      ],
-      "top_categories": [
-        "Dietary Supplements",
-        "Bodybuilding Supplements",
-        "Protein Powders",
-        "Collagen",
-        "Beverages And Beverages Preparations"
-      ],
-      "top_countries": [
-        "United-States",
-        "France",
-        "United-Kingdom",
-        "Spain",
-        "Ireland"
-      ],
-      "retrieved_at": "2026-05-27T08:06:41.442238+00:00"
-    },
-    "market_trends": {
-      "keyword": "Collagen peptide",
-      "geo": "JP+US+WW",
-      "timeframe": "today 12-m",
-      "avg_interest_jp": 5,
-      "avg_interest_us": 27,
-      "avg_interest_ww": 29,
-      "trend_direction": "rising",
-      "peak_month_jp": "2026-03",
-      "retrieved_at": "2026-05-28T12:14:54.244332+00:00"
-    }
+    ]
   },
   {
     "atom_id": "atom_fos",
@@ -9872,43 +9764,71 @@
   {
     "atom_id": "atom_hyaluronic_acid",
     "name_ja": "ヒアルロン酸",
-    "name_en": "Hyaluronic acid",
+    "name_en": "Hyaluronic acid (Sodium hyaluronate)",
     "atom_type": "ingredient",
     "category": "polysaccharide",
     "domain": "food_bio",
     "known_actions": [
-      "moisture_retention_support_potential",
-      "joint_lubrication_potential"
+      "moisture_retention",
+      "joint_lubrication",
+      "skin_elasticity"
     ],
     "possible_bonds": [
-      "collagen_synthesis",
-      "enzyme_interaction"
+      "skin_functional_hypothesis",
+      "bioavailability_enhancement",
+      "anti_aging"
     ],
-    "risk_tags": [
-      "claim_requires_evidence",
-      "insufficient_evidence"
-    ],
+    "risk_tags": [],
     "evidence_keywords": [
-      "hyaluronic acid skin moisture",
-      "oral hyaluronic acid joint",
-      "HA bioavailability"
+      "hyaluronic acid skin hydration",
+      "hyaluronic acid oral joint",
+      "sodium hyaluronate moisturizer"
     ],
     "regulatory_notes": [
-      "Oral bioavailability of high-MW HA is limited — specify molecular weight.",
-      "Do not claim skin rejuvenation or joint disease treatment.",
-      "Evidence for oral HA efficacy is still emerging.",
-      "Check regulatory classification in target market."
+      "経口摂取での機能性表示食品届出実績多数（日本）。"
     ],
     "process_keywords": [
-      "fermentation",
-      "purification",
-      "spray drying"
+      "microbial fermentation",
+      "molecular weight",
+      "low MW for absorption"
     ],
     "supplier_keywords": [
-      "food grade hyaluronic acid",
-      "HA sodium salt",
-      "low MW hyaluronic acid"
+      "sodium hyaluronate",
+      "Hyabest",
+      "Lifecore"
     ],
+    "gras": {
+      "status": "GRAS",
+      "notes": "GRAS for use in certain foods; widely accepted globally",
+      "jp_status": "食品"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Kewpie",
+        "Bloomage Biotech",
+        "Fidia Farmaceutici"
+      ],
+      "japan_suppliers": [
+        "キユーピー（ヒアルロン酸食品グレード）",
+        "紀文フードケミファ"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet",
+        "drink"
+      ],
+      "typical_grade": "Food",
+      "certifications": [
+        "Non-GMO",
+        "Kosher",
+        "Halal"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "1 kg",
+      "notes": "分子量により吸収性と保湿効果が異なる。機能性表示食品で「肌の潤い維持」「関節の動き」の届出が多い。"
+    },
     "pubmed_evidence": [
       {
         "pmid": "40911749",
@@ -9966,133 +9886,7 @@
         "year": "2021",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34696778/"
       }
-    ],
-    "gras": {
-      "status": "GRAS",
-      "basis": "GRAS Notice No. GRN 000443 / GRN 000796",
-      "notes": "特定食品カテゴリへの添加で GRAS no-objection 済み。",
-      "jp_status": "食品"
-    },
-    "supplier_info": {
-      "major_suppliers": [
-        "Shiseido (HYALUFIX®)",
-        "Kewpie (Hyabest®)",
-        "Bloomage Biotech",
-        "HTL Biotechnology"
-      ],
-      "japan_suppliers": [
-        "資生堂",
-        "キューピー",
-        "電気化学工業"
-      ],
-      "oem_forms": [
-        "powder",
-        "capsule",
-        "tablet",
-        "drink"
-      ],
-      "typical_grade": "Food / Cosmetic",
-      "certifications": [
-        "Non-GMO",
-        "Kosher",
-        "Halal"
-      ],
-      "price_tier": "high",
-      "lead_time_weeks": 4,
-      "min_order_qty": "1 kg",
-      "notes": "分子量で用途が異なる（高分子: 保湿、低分子: 浸透性）。発酵由来品が主流。"
-    },
-    "existing_products": {
-      "search_query": "hyaluronic acid",
-      "total_count": 75,
-      "sample_products": [
-        {
-          "product_name": "California Gold Nutrition, CollagenUP, Hydrolyzed Marine Collagen Peptides with ",
-          "brand": "California Gold Nutrition",
-          "categories": [
-            "Dietary Supplements"
-          ],
-          "countries": [
-            "Morocco",
-            "Spain"
-          ],
-          "nutriscore": "NOT-APPLICABLE",
-          "image_url": "https://images.openfoodfacts.org/images/products/089/822/001/0332/front_es.19.400.jpg",
-          "off_url": "https://world.openfoodfacts.org/product/0898220010332"
-        },
-        {
-          "product_name": "Hyaluronic Acid Complex",
-          "brand": "SOLGAR",
-          "categories": [
-            "Dietary Supplements"
-          ],
-          "countries": [
-            "Belgium"
-          ],
-          "nutriscore": "NOT-APPLICABLE",
-          "image_url": "https://images.openfoodfacts.org/images/products/003/398/401/4176/front_nl.20.400.jpg",
-          "off_url": "https://world.openfoodfacts.org/product/0033984014176"
-        },
-        {
-          "product_name": "HYALURONIC ACID LOTION",
-          "brand": "minisu",
-          "categories": [],
-          "countries": [
-            "Colombia"
-          ],
-          "nutriscore": "UNKNOWN",
-          "image_url": "",
-          "off_url": "https://world.openfoodfacts.org/product/6922655791703"
-        },
-        {
-          "product_name": "Super Collagen Plus with Vitamin C & Hyaluronic Acid",
-          "brand": "Neocell",
-          "categories": [],
-          "countries": [
-            "United-States"
-          ],
-          "nutriscore": "UNKNOWN",
-          "image_url": "https://images.openfoodfacts.org/images/products/001/618/512/9580/front_en.3.400.jpg",
-          "off_url": "https://world.openfoodfacts.org/product/0016185129580"
-        },
-        {
-          "product_name": "Drink Mix protein with hyaluronic acid",
-          "brand": "Metabolic Research Center",
-          "categories": [
-            "Beverages And Beverages Preparations",
-            "Beverages"
-          ],
-          "countries": [],
-          "nutriscore": "D",
-          "image_url": "https://images.openfoodfacts.org/images/products/080/421/740/2523/front_en.14.400.jpg",
-          "off_url": "https://world.openfoodfacts.org/product/0804217402523"
-        }
-      ],
-      "top_categories": [
-        "Dietary Supplements",
-        "Beverages And Beverages Preparations",
-        "Beverages"
-      ],
-      "top_countries": [
-        "United-States",
-        "France",
-        "Morocco",
-        "Spain",
-        "Belgium"
-      ],
-      "retrieved_at": "2026-05-27T08:08:45.560386+00:00"
-    },
-    "market_trends": {
-      "keyword": "ヒアルロン酸 サプリ",
-      "geo": "JP+US+WW",
-      "timeframe": "today 12-m",
-      "avg_interest_jp": 3,
-      "avg_interest_us": 0,
-      "avg_interest_ww": 0,
-      "trend_direction": "rising",
-      "peak_month_jp": "2026-03",
-      "retrieved_at": "2026-05-28T12:14:54.244332+00:00"
-    }
+    ]
   },
   {
     "atom_id": "atom_astaxanthin",
@@ -20728,5 +20522,1308 @@
       ],
       "uniprot_url": "https://www.uniprot.org/uniprotkb/P18173"
     }
+  },
+  {
+    "atom_id": "atom_ashwagandha",
+    "name_ja": "アシュワガンダ",
+    "name_en": "Ashwagandha (Withania somnifera)",
+    "atom_type": "ingredient",
+    "category": "adaptogen",
+    "domain": "food_bio",
+    "known_actions": [
+      "stress_reduction",
+      "cortisol_modulation",
+      "adaptogenic"
+    ],
+    "possible_bonds": [
+      "anti_stress_synergy",
+      "sleep_support",
+      "cognitive_support"
+    ],
+    "risk_tags": [
+      "drug_interaction_risk",
+      "pregnancy_caution"
+    ],
+    "evidence_keywords": [
+      "ashwagandha stress cortisol",
+      "ashwagandha adaptogen",
+      "withania somnifera"
+    ],
+    "regulatory_notes": [
+      "甲状腺疾患・自己免疫疾患患者は要注意。妊娠中は避ける。"
+    ],
+    "process_keywords": [
+      "root extract",
+      "KSM-66",
+      "Sensoril"
+    ],
+    "supplier_keywords": [
+      "KSM-66",
+      "Sensoril",
+      "ashwagandha root extract"
+    ],
+    "gras": {
+      "status": "unknown",
+      "notes": "Generally recognized as safe at food levels; regulatory status varies by country"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Ixoreal Biomed (KSM-66)",
+        "Natreon (Sensoril)",
+        "Sabinsa"
+      ],
+      "japan_suppliers": [
+        "丸善製薬",
+        "長谷川香料",
+        "オリザ油化"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet",
+        "extract"
+      ],
+      "typical_grade": "Food / Botanical",
+      "certifications": [
+        "Non-GMO",
+        "Organic",
+        "GRAS"
+      ],
+      "price_tier": "high",
+      "lead_time_weeks": 6,
+      "min_order_qty": "1 kg",
+      "notes": "KSM-66は臨床試験データが豊富なブランド抽出物。日本では機能性表示食品での使用実績あり。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "37603263",
+        "title": "Over the Counter Supplements for Memory: A Review of Available Evidence.",
+        "authors": [
+          "Hersant H",
+          "He S",
+          "Maliha P"
+        ],
+        "journal": "CNS Drugs",
+        "year": "2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37603263/"
+      },
+      {
+        "pmid": "34254920",
+        "title": "Effects of Withania somnifera (Ashwagandha) on Stress and the Stress- Related Neuropsychiatric Disorders Anxiety, Depression, and Insomnia.",
+        "authors": [
+          "Speers AB",
+          "Cabey KA",
+          "Soumyanath A"
+        ],
+        "journal": "Curr Neuropharmacol",
+        "year": "2021",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34254920/"
+      },
+      {
+        "pmid": "35311615",
+        "title": "Clinician guidelines for the treatment of psychiatric disorders with nutraceuticals and phytoceuticals: The World Federation of Societies of Biological Psychiatry (WFSBP) and Canadian Network for Mood",
+        "authors": [
+          "Sarris J",
+          "Ravindran A",
+          "Yatham LN"
+        ],
+        "journal": "World J Biol Psychiatry",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35311615/"
+      },
+      {
+        "pmid": "30000965",
+        "title": "Withania.",
+        "authors": [],
+        "journal": "",
+        "year": "2006",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30000965/"
+      },
+      {
+        "pmid": "39102266",
+        "title": "Estimated Exposure to 6 Potentially Hepatotoxic Botanicals in US Adults.",
+        "authors": [
+          "Likhitsup A",
+          "Chen VL",
+          "Fontana RJ"
+        ],
+        "journal": "JAMA Netw Open",
+        "year": "2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39102266/"
+      }
+    ]
+  },
+  {
+    "atom_id": "atom_lions_mane",
+    "name_ja": "ライオンズメイン（ヤマブシタケ）",
+    "name_en": "Lion's mane mushroom (Hericium erinaceus)",
+    "atom_type": "ingredient",
+    "category": "functional_mushroom",
+    "domain": "food_bio",
+    "known_actions": [
+      "ngf_stimulation",
+      "cognitive_support",
+      "neuroprotection"
+    ],
+    "possible_bonds": [
+      "cognitive_support",
+      "anti_stress_synergy",
+      "neuroprotective"
+    ],
+    "risk_tags": [
+      "mushroom_allergen_caution"
+    ],
+    "evidence_keywords": [
+      "lion mane hericium cognitive",
+      "NGF nerve growth factor",
+      "hericenone erinacine"
+    ],
+    "regulatory_notes": [
+      "きのこアレルギーに注意。"
+    ],
+    "process_keywords": [
+      "fruiting body extract",
+      "mycelium",
+      "beta-glucan content"
+    ],
+    "supplier_keywords": [
+      "hericium erinaceus extract",
+      "lion mane powder",
+      "dual extract"
+    ],
+    "gras": {
+      "status": "unknown",
+      "notes": "Food mushroom with long history of use in Japan; supplement doses not formally GRAS"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Nammex",
+        "Real Mushrooms",
+        "Fungi Perfecti"
+      ],
+      "japan_suppliers": [
+        "雪国まいたけ",
+        "丸善製薬",
+        "長谷川香料"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "extract",
+        "drink_mix"
+      ],
+      "typical_grade": "Food",
+      "certifications": [
+        "Non-GMO",
+        "Organic"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "1 kg",
+      "notes": "子実体エキスとマイセリウムで有効成分（ヘリセノン・エリナシン）の含量が異なる。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "32450037",
+        "title": "Effects of Extraction Conditions on Crude Polysaccharides and Antioxidant Activities of the Lion's Mane Medicinal Mushroom, Hericium erinaceus (Agaricomycetes).",
+        "authors": [
+          "Jiang S",
+          "Liu S",
+          "Qin M"
+        ],
+        "journal": "Int J Med Mushrooms",
+        "year": "2019",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32450037/"
+      },
+      {
+        "pmid": "37183918",
+        "title": "Effects of Dietary Supplementation with In Vitro-Cultivated Arboreal Medicinal Mushrooms on Long-Term Memory and Anxiety-Like Behavior of Male Mice.",
+        "authors": [
+          "Fijałkowska A",
+          "Rychlik M",
+          "Krakowska A"
+        ],
+        "journal": "Int J Med Mushrooms",
+        "year": "2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37183918/"
+      },
+      {
+        "pmid": "36118772",
+        "title": "Potential antidepressant effects of a dietary supplement from the chlorella and lion's mane mushroom complex in aged SAMP8 mice.",
+        "authors": [
+          "Chou MY",
+          "Ho JH",
+          "Huang MJ"
+        ],
+        "journal": "Front Nutr",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36118772/"
+      },
+      {
+        "pmid": "41695889",
+        "title": "Kiperin Mind Focus supplement mitigates chronic stress-induced neuroinflammation and molecular dysregulation and improves stress-related affective and exploratory behaviors in rats.",
+        "authors": [
+          "Karcioglu Batur L",
+          "Yavas C",
+          "Kilic A"
+        ],
+        "journal": "Front Integr Neurosci",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41695889/"
+      }
+    ]
+  },
+  {
+    "atom_id": "atom_creatine",
+    "name_ja": "クレアチン",
+    "name_en": "Creatine monohydrate",
+    "atom_type": "ingredient",
+    "category": "amino_acid_derivative",
+    "domain": "food_bio",
+    "known_actions": [
+      "atp_resynthesis",
+      "muscle_strength",
+      "sports_performance"
+    ],
+    "possible_bonds": [
+      "sports_synergy",
+      "energy_metabolism",
+      "muscle_support"
+    ],
+    "risk_tags": [
+      "kidney_caution_high_dose",
+      "water_retention"
+    ],
+    "evidence_keywords": [
+      "creatine monohydrate sports performance",
+      "creatine muscle strength",
+      "creatine ATP"
+    ],
+    "regulatory_notes": [
+      "腎機能障害患者は要注意。高用量での長期使用は専門家に相談を。"
+    ],
+    "process_keywords": [
+      "creatine monohydrate",
+      "micronized creatine",
+      "Creapure"
+    ],
+    "supplier_keywords": [
+      "Creapure",
+      "creatine monohydrate",
+      "creatine powder"
+    ],
+    "gras": {
+      "status": "unknown",
+      "notes": "Not formally GRAS; widely used in sports supplements; generally considered safe at recommended doses"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "AlzChem (Creapure)",
+        "Cargill",
+        "SKW"
+      ],
+      "japan_suppliers": [
+        "協和発酵バイオ",
+        "味の素"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet"
+      ],
+      "typical_grade": "Food / USP",
+      "certifications": [
+        "Informed Sport",
+        "NSF",
+        "Non-GMO"
+      ],
+      "price_tier": "low",
+      "lead_time_weeks": 2,
+      "min_order_qty": "25 kg",
+      "notes": "CreapureはAlzChem社の高純度ドイツ製クレアチン。スポーツ分野で最も研究されたサプリ成分の一つ。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "33557850",
+        "title": "Common questions and misconceptions about creatine supplementation: what does the scientific evidence really show?",
+        "authors": [
+          "Antonio J",
+          "Candow DG",
+          "Forbes SC"
+        ],
+        "journal": "J Int Soc Sports Nutr",
+        "year": "2021",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33557850/"
+      },
+      {
+        "pmid": "35267907",
+        "title": "Effects of Creatine Supplementation on Brain Function and Health.",
+        "authors": [
+          "Forbes SC",
+          "Cordingley DM",
+          "Cornish SM"
+        ],
+        "journal": "Nutrients",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35267907/"
+      },
+      {
+        "pmid": "37368234",
+        "title": "\"Heads Up\" for Creatine Supplementation and its Potential Applications for Brain Health and Function.",
+        "authors": [
+          "Candow DG",
+          "Forbes SC",
+          "Ostojic SM"
+        ],
+        "journal": "Sports Med",
+        "year": "2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37368234/"
+      },
+      {
+        "pmid": "39796530",
+        "title": "Creatine Supplementation Beyond Athletics: Benefits of Different Types of Creatine for Women, Vegans, and Clinical Populations-A Narrative Review.",
+        "authors": [
+          "Gutiérrez-Hellín J",
+          "Del Coso J",
+          "Franco-Andrés A"
+        ],
+        "journal": "Nutrients",
+        "year": "2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39796530/"
+      },
+      {
+        "pmid": "40371844",
+        "title": "Creatine in women's health: bridging the gap from menstruation through pregnancy to menopause.",
+        "authors": [
+          "Smith-Ryan AE",
+          "DelBiondo GM",
+          "Brown AF"
+        ],
+        "journal": "J Int Soc Sports Nutr",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40371844/"
+      }
+    ]
+  },
+  {
+    "atom_id": "atom_phosphatidylserine",
+    "name_ja": "ホスファチジルセリン",
+    "name_en": "Phosphatidylserine (PS)",
+    "atom_type": "ingredient",
+    "category": "phospholipid",
+    "domain": "food_bio",
+    "known_actions": [
+      "cognitive_support",
+      "cortisol_reduction",
+      "membrane_function"
+    ],
+    "possible_bonds": [
+      "cognitive_support",
+      "anti_stress_synergy",
+      "neuroprotective"
+    ],
+    "risk_tags": [
+      "blood_thinner_interaction"
+    ],
+    "evidence_keywords": [
+      "phosphatidylserine cognitive",
+      "phosphatidylserine memory",
+      "PS brain function"
+    ],
+    "regulatory_notes": [
+      "抗凝固薬との相互作用に注意。"
+    ],
+    "process_keywords": [
+      "soy-derived PS",
+      "sunflower-derived PS",
+      "softgel"
+    ],
+    "supplier_keywords": [
+      "phosphatidylserine soy",
+      "PS sunflower",
+      "Lipogen"
+    ],
+    "gras": {
+      "status": "GRAS",
+      "notes": "FDA Qualified Health Claim for cognitive decline; GRAS for certain uses"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Lipogen",
+        "Chemi Nutra",
+        "Lonza"
+      ],
+      "japan_suppliers": [
+        "日本レシチン工業",
+        "ソレイ"
+      ],
+      "oem_forms": [
+        "softgel",
+        "capsule",
+        "powder"
+      ],
+      "typical_grade": "Food / Pharmaceutical",
+      "certifications": [
+        "Non-GMO",
+        "Kosher",
+        "Halal"
+      ],
+      "price_tier": "high",
+      "lead_time_weeks": 6,
+      "min_order_qty": "1 kg",
+      "notes": "ひまわり由来PSはGMOフリーで需要増。機能性表示食品での届出実績多数（日本）。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "37603263",
+        "title": "Over the Counter Supplements for Memory: A Review of Available Evidence.",
+        "authors": [
+          "Hersant H",
+          "He S",
+          "Maliha P"
+        ],
+        "journal": "CNS Drugs",
+        "year": "2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37603263/"
+      },
+      {
+        "pmid": "39317299",
+        "title": "Effects of a food supplement containing phosphatidylserine on cognitive function in Chinese older adults with mild cognitive impairment: A randomized double-blind, placebo-controlled trial.",
+        "authors": [
+          "Duan H",
+          "Xu N",
+          "Yang T"
+        ],
+        "journal": "J Affect Disord",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39317299/"
+      },
+      {
+        "pmid": "36558392",
+        "title": "A Magtein(®), Magnesium L-Threonate, -Based Formula Improves Brain Cognitive Functions in Healthy Chinese Adults.",
+        "authors": [
+          "Zhang C",
+          "Hu Q",
+          "Li S"
+        ],
+        "journal": "Nutrients",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36558392/"
+      },
+      {
+        "pmid": "40418260",
+        "title": "Dietary Protocols to Promote and Improve Restful Sleep: A Narrative Review.",
+        "authors": [
+          "Conti F"
+        ],
+        "journal": "Nutr Rev",
+        "year": "2026",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40418260/"
+      },
+      {
+        "pmid": "41017573",
+        "title": "An Inflammation-Targeting Engineered Probiotic Escherichia coli Nissle 1917 with High Anti-TNF-α Nanobody Secretion Efficacy Alleviates Ulcerative Colitis.",
+        "authors": [
+          "Hua S",
+          "Li K",
+          "Shang P"
+        ],
+        "journal": "Adv Sci (Weinh)",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41017573/"
+      }
+    ]
+  },
+  {
+    "atom_id": "atom_melatonin",
+    "name_ja": "メラトニン",
+    "name_en": "Melatonin",
+    "atom_type": "ingredient",
+    "category": "hormone_precursor",
+    "domain": "food_bio",
+    "known_actions": [
+      "sleep_induction",
+      "circadian_rhythm_regulation",
+      "antioxidant"
+    ],
+    "possible_bonds": [
+      "sleep_support",
+      "anti_stress_synergy",
+      "antioxidant_synergy"
+    ],
+    "risk_tags": [
+      "drug_interaction_risk",
+      "hormone_caution",
+      "japan_regulatory_gray"
+    ],
+    "evidence_keywords": [
+      "melatonin sleep quality",
+      "melatonin circadian rhythm",
+      "melatonin jet lag"
+    ],
+    "regulatory_notes": [
+      "日本では食品への添加は認められていない（医薬品的効能効果）。海外では広く流通。"
+    ],
+    "process_keywords": [
+      "synthetic melatonin",
+      "plant-derived melatonin"
+    ],
+    "supplier_keywords": [
+      "melatonin powder",
+      "melatonin USP"
+    ],
+    "gras": {
+      "status": "unknown",
+      "notes": "Not GRAS in US food; available as dietary supplement. In Japan, use in food is generally not permitted.",
+      "jp_status": "医薬品的（食品不可）"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Natrol",
+        "Now Foods",
+        "Sigma-Aldrich"
+      ],
+      "japan_suppliers": [
+        "規制のため流通制限あり"
+      ],
+      "oem_forms": [
+        "tablet",
+        "capsule",
+        "gummy",
+        "sublingual"
+      ],
+      "typical_grade": "Pharmaceutical",
+      "certifications": [
+        "USP",
+        "GMP"
+      ],
+      "price_tier": "low",
+      "lead_time_weeks": 4,
+      "min_order_qty": "100 g",
+      "notes": "日本では食品への使用不可。海外向け商品開発でのみ検討可能。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "36235587",
+        "title": "Is Melatonin the \"Next Vitamin D\"?: A Review of Emerging Science, Clinical Uses, Safety, and Dietary Supplements.",
+        "authors": [
+          "Minich DM",
+          "Henning M",
+          "Darley C"
+        ],
+        "journal": "Nutrients",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36235587/"
+      },
+      {
+        "pmid": "33417003",
+        "title": "Effect of melatonin supplementation on sleep quality: a systematic review and meta-analysis of randomized controlled trials.",
+        "authors": [
+          "Fatemeh G",
+          "Sajjad M",
+          "Niloufar R"
+        ],
+        "journal": "J Neurol",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33417003/"
+      },
+      {
+        "pmid": "34970669",
+        "title": "Nutritional Supplements and Complementary Therapies in Polycystic Ovary Syndrome.",
+        "authors": [
+          "Alesi S",
+          "Ee C",
+          "Moran LJ"
+        ],
+        "journal": "Adv Nutr",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34970669/"
+      },
+      {
+        "pmid": "40278958",
+        "title": "Melatonin supplementation: new insights into health and disease.",
+        "authors": [
+          "Minari TP",
+          "Pisani LP"
+        ],
+        "journal": "Sleep Breath",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40278958/"
+      },
+      {
+        "pmid": "39125311",
+        "title": "Mitigating Traumatic Brain Injury: A Narrative Review of Supplementation and Dietary Protocols.",
+        "authors": [
+          "Conti F",
+          "McCue JJ",
+          "DiTuro P"
+        ],
+        "journal": "Nutrients",
+        "year": "2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39125311/"
+      }
+    ]
+  },
+  {
+    "atom_id": "atom_choline",
+    "name_ja": "コリン",
+    "name_en": "Choline (Choline bitartrate)",
+    "atom_type": "ingredient",
+    "category": "amino_acid_derivative",
+    "domain": "food_bio",
+    "known_actions": [
+      "acetylcholine_synthesis",
+      "liver_support",
+      "cognitive_support"
+    ],
+    "possible_bonds": [
+      "cognitive_support",
+      "energy_metabolism",
+      "neuroprotective"
+    ],
+    "risk_tags": [
+      "fishy_odor_risk_high_dose"
+    ],
+    "evidence_keywords": [
+      "choline cognitive function",
+      "choline liver fat",
+      "choline acetylcholine"
+    ],
+    "regulatory_notes": [
+      "高用量では魚臭（トリメチルアミン尿症）が生じる場合あり。"
+    ],
+    "process_keywords": [
+      "choline bitartrate",
+      "choline chloride",
+      "alpha-GPC"
+    ],
+    "supplier_keywords": [
+      "choline bitartrate",
+      "alpha-GPC",
+      "Balchem"
+    ],
+    "gras": {
+      "status": "GRAS",
+      "notes": "GRAS as a source of choline in food; essential nutrient",
+      "jp_status": "栄養機能食品（コリン含む）"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Balchem (VitaCholine)",
+        "BASF",
+        "Cargill"
+      ],
+      "japan_suppliers": [
+        "協和発酵バイオ",
+        "太陽化学"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet"
+      ],
+      "typical_grade": "Food / USP",
+      "certifications": [
+        "GRAS",
+        "Kosher",
+        "Non-GMO"
+      ],
+      "price_tier": "low",
+      "lead_time_weeks": 3,
+      "min_order_qty": "25 kg",
+      "notes": "Alpha-GPC（L-alpha-glycerylphosphorylcholine）はコリンの高生体利用能型。認知機能系サプリで需要増。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "36950691",
+        "title": "Choline supplements: An update.",
+        "authors": [
+          "Kansakar U",
+          "Trimarco V",
+          "Mone P"
+        ],
+        "journal": "Front Endocrinol (Lausanne)",
+        "year": "2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36950691/"
+      },
+      {
+        "pmid": "35365361",
+        "title": "ESPEN micronutrient guideline.",
+        "authors": [
+          "Berger MM",
+          "Shenkin A",
+          "Schweinlin A"
+        ],
+        "journal": "Clin Nutr",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35365361/"
+      },
+      {
+        "pmid": "37603263",
+        "title": "Over the Counter Supplements for Memory: A Review of Available Evidence.",
+        "authors": [
+          "Hersant H",
+          "He S",
+          "Maliha P"
+        ],
+        "journal": "CNS Drugs",
+        "year": "2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37603263/"
+      },
+      {
+        "pmid": "39125311",
+        "title": "Mitigating Traumatic Brain Injury: A Narrative Review of Supplementation and Dietary Protocols.",
+        "authors": [
+          "Conti F",
+          "McCue JJ",
+          "DiTuro P"
+        ],
+        "journal": "Nutrients",
+        "year": "2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39125311/"
+      },
+      {
+        "pmid": "27273168",
+        "title": "The role of the gut microbiota in NAFLD.",
+        "authors": [
+          "Leung C",
+          "Rivera L",
+          "Furness JB"
+        ],
+        "journal": "Nat Rev Gastroenterol Hepatol",
+        "year": "2016",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/27273168/"
+      }
+    ]
+  },
+  {
+    "atom_id": "atom_mct_oil",
+    "name_ja": "MCTオイル",
+    "name_en": "MCT oil (Medium-chain triglycerides)",
+    "atom_type": "ingredient",
+    "category": "fatty_acid",
+    "domain": "food_bio",
+    "known_actions": [
+      "ketone_production",
+      "quick_energy",
+      "fat_metabolism"
+    ],
+    "possible_bonds": [
+      "bioavailability_enhancement",
+      "energy_metabolism",
+      "fat_source"
+    ],
+    "risk_tags": [
+      "digestive_discomfort_risk"
+    ],
+    "evidence_keywords": [
+      "MCT oil ketone body",
+      "medium chain triglyceride energy",
+      "MCT cognitive"
+    ],
+    "regulatory_notes": [
+      "急激な大量摂取で消化器症状（下痢）が生じる場合あり。"
+    ],
+    "process_keywords": [
+      "C8",
+      "C10",
+      "fractionated coconut oil",
+      "palm kernel"
+    ],
+    "supplier_keywords": [
+      "MCT oil C8 C10",
+      "fractionated coconut oil",
+      "Stepan"
+    ],
+    "gras": {
+      "status": "GRAS",
+      "notes": "GRAS as food ingredient; widely used in infant formula and clinical nutrition",
+      "jp_status": "食品"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Stepan Company",
+        "IOI Oleo",
+        "Wilmar"
+      ],
+      "japan_suppliers": [
+        "日清オイリオ",
+        "太陽油脂",
+        "ADM"
+      ],
+      "oem_forms": [
+        "oil",
+        "powder",
+        "softgel",
+        "drink_mix"
+      ],
+      "typical_grade": "Food",
+      "certifications": [
+        "Kosher",
+        "Halal",
+        "Non-GMO"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 3,
+      "min_order_qty": "25 kg",
+      "notes": "C8（カプリル酸）含量が高いほど即効性が高い。ケトジェニックダイエット・スポーツ向けに需要増。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "35181994",
+        "title": "Medium chain triglycerides (MCT): State-of-the-art on chemistry, synthesis, health benefits and applications in food industry.",
+        "authors": [
+          "Nimbkar S",
+          "Leena MM",
+          "Moses JA"
+        ],
+        "journal": "Compr Rev Food Sci Food Saf",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35181994/"
+      },
+      {
+        "pmid": "35804538",
+        "title": "Oral Palatability Testing of a Medium-Chain Triglyceride Oil Supplement (MCT) in a Cohort of Healthy Dogs in a Non-Clinical Setting.",
+        "authors": [
+          "Berk BA",
+          "Packer RM",
+          "Fritz J"
+        ],
+        "journal": "Animals (Basel)",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35804538/"
+      },
+      {
+        "pmid": "39401344",
+        "title": "Eicosapentaenoic Acid and Medium-Chain Triacylglycerol Structured Lipid Supplementation Improves Muscular Endurance Exercise Performance and Reduces Muscle Fatigue in Young Healthy Male.",
+        "authors": [
+          "Tsuchiya Y",
+          "Ueda H",
+          "Shimizu T"
+        ],
+        "journal": "J Am Nutr Assoc",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39401344/"
+      },
+      {
+        "pmid": "17468085",
+        "title": "Diet supplemented with MCT oil in the management of childhood diarrhea.",
+        "authors": [
+          "Tanchoco CC",
+          "Cruz AJ",
+          "Rogaccion JM"
+        ],
+        "journal": "Asia Pac J Clin Nutr",
+        "year": "2007",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/17468085/"
+      },
+      {
+        "pmid": "40362908",
+        "title": "Synergistic Effects of Medium-Chain Triglyceride Supplementation and Resistance Training on Physical Function and Muscle Health in Post-Stroke Patients.",
+        "authors": [
+          "Yoshimura Y",
+          "Nagano F",
+          "Matsumoto A"
+        ],
+        "journal": "Nutrients",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40362908/"
+      }
+    ]
+  },
+  {
+    "atom_id": "atom_reishi",
+    "name_ja": "レイシ（霊芝）",
+    "name_en": "Reishi mushroom (Ganoderma lucidum)",
+    "atom_type": "ingredient",
+    "category": "functional_mushroom",
+    "domain": "food_bio",
+    "known_actions": [
+      "immune_modulation",
+      "adaptogenic",
+      "anti_inflammatory"
+    ],
+    "possible_bonds": [
+      "immune_support",
+      "anti_stress_synergy",
+      "antioxidant_synergy"
+    ],
+    "risk_tags": [
+      "blood_thinner_interaction",
+      "liver_caution_long_term"
+    ],
+    "evidence_keywords": [
+      "reishi ganoderma immune",
+      "ganoderma lucidum adaptogen",
+      "reishi beta-glucan"
+    ],
+    "regulatory_notes": [
+      "抗凝固薬との相互作用に注意。長期大量摂取は肝機能モニタリングを推奨。"
+    ],
+    "process_keywords": [
+      "fruiting body extract",
+      "triterpene content",
+      "spore powder"
+    ],
+    "supplier_keywords": [
+      "ganoderma lucidum extract",
+      "reishi powder",
+      "triterpene"
+    ],
+    "gras": {
+      "status": "unknown",
+      "notes": "Traditional food in Japan and China; supplement status not formally evaluated",
+      "jp_status": "食品（伝統的）"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Nammex",
+        "Mushroom Science",
+        "Real Mushrooms"
+      ],
+      "japan_suppliers": [
+        "丸善製薬",
+        "長谷川香料",
+        "太陽化学"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "extract",
+        "tablet"
+      ],
+      "typical_grade": "Food / Botanical",
+      "certifications": [
+        "Non-GMO",
+        "Organic"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "1 kg",
+      "notes": "トリテルペン含量で品質評価。日本国内では免疫機能系サプリ・健康茶で広く流通。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "36671409",
+        "title": "A Review of Ganoderma Triterpenoids and Their Bioactivities.",
+        "authors": [
+          "Galappaththi MCA",
+          "Patabendige NM",
+          "Premarathne BM"
+        ],
+        "journal": "Biomolecules",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36671409/"
+      },
+      {
+        "pmid": "34444885",
+        "title": "Health-Promoting of Polysaccharides Extracted from Ganoderma lucidum.",
+        "authors": [
+          "Seweryn E",
+          "Ziała A",
+          "Gamian A"
+        ],
+        "journal": "Nutrients",
+        "year": "2021",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34444885/"
+      },
+      {
+        "pmid": "30334243",
+        "title": "Herb-Drug Interactions in Cancer Care.",
+        "authors": [
+          "Yeung KS",
+          "Gubili J",
+          "Mao JJ"
+        ],
+        "journal": "Oncology (Williston Park)",
+        "year": "2018",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30334243/"
+      },
+      {
+        "pmid": "38800991",
+        "title": "Ganoderma lucidum dry extract supplementation modulates T lymphocyte function in older women.",
+        "authors": [
+          "Iser-Bem PN",
+          "Lobato TB",
+          "Alecrim-Zeza AL"
+        ],
+        "journal": "Br J Nutr",
+        "year": "2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38800991/"
+      },
+      {
+        "pmid": "39241163",
+        "title": "Efficacy of Lingzhi or Reishi Medicinal Mushroom Ganoderma lucidum (Agaricomycetes) Supplementation on Psychological Stress and Selective Fitness Profile Parameters in Female College Students in West ",
+        "authors": [
+          "Mitra S",
+          "Mitra M",
+          "Nandi DK"
+        ],
+        "journal": "Int J Med Mushrooms",
+        "year": "2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39241163/"
+      }
+    ]
+  },
+  {
+    "atom_id": "atom_butyrate",
+    "name_ja": "酪酸（酪酸ナトリウム）",
+    "name_en": "Butyrate (Sodium butyrate)",
+    "atom_type": "ingredient",
+    "category": "short_chain_fatty_acid",
+    "domain": "food_bio",
+    "known_actions": [
+      "gut_barrier_support",
+      "colonocyte_fuel",
+      "anti_inflammatory"
+    ],
+    "possible_bonds": [
+      "prebiotic_effect",
+      "gut_microbiome_support",
+      "anti_inflammatory"
+    ],
+    "risk_tags": [
+      "odor_issue",
+      "dose_sensitivity"
+    ],
+    "evidence_keywords": [
+      "butyrate gut health",
+      "sodium butyrate intestinal barrier",
+      "short chain fatty acid inflammation"
+    ],
+    "regulatory_notes": [
+      "特有の酪臭があり製剤工夫が必要。"
+    ],
+    "process_keywords": [
+      "sodium butyrate",
+      "microencapsulation",
+      "tributyrin"
+    ],
+    "supplier_keywords": [
+      "sodium butyrate",
+      "tributyrin",
+      "microencapsulated butyrate"
+    ],
+    "gras": {
+      "status": "GRAS",
+      "notes": "Short-chain fatty acid naturally produced by gut bacteria; GRAS as food additive",
+      "jp_status": "食品添加物（許可品目）"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Niacet",
+        "Perstorp",
+        "CorMed"
+      ],
+      "japan_suppliers": [
+        "扶桑化学工業",
+        "関東化学"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "microencapsulated_powder"
+      ],
+      "typical_grade": "Food / Pharmaceutical",
+      "certifications": [
+        "GMP",
+        "Kosher"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "5 kg",
+      "notes": "マイクロカプセル化で酪臭をマスク可能。腸活・リーキーガット対策として注目度急上昇。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "33874858",
+        "title": "Butyrate-producing human gut symbiont, Clostridium butyricum, and its role in health and disease.",
+        "authors": [
+          "Stoeva MK",
+          "Garcia-So J",
+          "Justice N"
+        ],
+        "journal": "Gut Microbes",
+        "year": "2021",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33874858/"
+      },
+      {
+        "pmid": "28164854",
+        "title": "The Microbiome-Gut-Brain Axis in Health and Disease.",
+        "authors": [
+          "Dinan TG",
+          "Cryan JF"
+        ],
+        "journal": "Gastroenterol Clin North Am",
+        "year": "2017",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28164854/"
+      },
+      {
+        "pmid": "36558392",
+        "title": "A Magtein(®), Magnesium L-Threonate, -Based Formula Improves Brain Cognitive Functions in Healthy Chinese Adults.",
+        "authors": [
+          "Zhang C",
+          "Hu Q",
+          "Li S"
+        ],
+        "journal": "Nutrients",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36558392/"
+      },
+      {
+        "pmid": "39706182",
+        "title": "Roseburia intestinalis-derived butyrate alleviates neuropathic pain.",
+        "authors": [
+          "Jiang Y",
+          "Huang Z",
+          "Sun W"
+        ],
+        "journal": "Cell Host Microbe",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39706182/"
+      },
+      {
+        "pmid": "38377332",
+        "title": "Phenibutan—an Illegal Food Supplement With Psychotropic Effects and Health Risks.",
+        "authors": [
+          "Bonnet U",
+          "Scherbaum N",
+          "Schaper A"
+        ],
+        "journal": "Dtsch Arztebl Int",
+        "year": "2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38377332/"
+      }
+    ]
+  },
+  {
+    "atom_id": "atom_pterostilbene",
+    "name_ja": "プテロスチルベン",
+    "name_en": "Pterostilbene",
+    "atom_type": "ingredient",
+    "category": "polyphenol",
+    "domain": "food_bio",
+    "known_actions": [
+      "antioxidant",
+      "sirtuin_activation",
+      "cognitive_support"
+    ],
+    "possible_bonds": [
+      "antioxidant_synergy",
+      "bioavailability_enhancement",
+      "anti_aging"
+    ],
+    "risk_tags": [
+      "drug_interaction_risk"
+    ],
+    "evidence_keywords": [
+      "pterostilbene antioxidant",
+      "pterostilbene sirtuin",
+      "pterostilbene cognitive"
+    ],
+    "regulatory_notes": [
+      "レスベラトロールのメチル化誘導体。生体利用能が高い。抗凝固薬との相互作用に注意。"
+    ],
+    "process_keywords": [
+      "blueberry extract",
+      "synthesis",
+      "pTeroPure"
+    ],
+    "supplier_keywords": [
+      "pterostilbene powder",
+      "pTeroPure",
+      "blueberry pterostilbene"
+    ],
+    "gras": {
+      "status": "GRAS",
+      "notes": "GRAS self-affirmed by ChromaDex (pTeroPure brand)",
+      "jp_status": "食品（届出不要）"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "ChromaDex (pTeroPure)",
+        "Sabinsa",
+        "Chem Faces"
+      ],
+      "japan_suppliers": [
+        "丸善製薬",
+        "長谷川香料"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule"
+      ],
+      "typical_grade": "Food",
+      "certifications": [
+        "GRAS",
+        "Non-GMO"
+      ],
+      "price_tier": "very_high",
+      "lead_time_weeks": 8,
+      "min_order_qty": "100 g",
+      "notes": "レスベラトロールより高い生体利用能・長い半減期を持つ。アンチエイジング分野で注目素材。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "37068054",
+        "title": "Dietary Supplementation With NAD+-Boosting Compounds in Humans: Current Knowledge and Future Directions.",
+        "authors": [
+          "Freeberg KA",
+          "Udovich CC",
+          "Martens CR"
+        ],
+        "journal": "J Gerontol A Biol Sci Med Sci",
+        "year": "2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37068054/"
+      },
+      {
+        "pmid": "40711451",
+        "title": "Pterostilbene enhances reproductive outcomes and oocyte quality in aged mice without adverse effects.",
+        "authors": [
+          "Okamoto N",
+          "Sato Y",
+          "Kawagoe Y"
+        ],
+        "journal": "Aging (Albany NY)",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40711451/"
+      },
+      {
+        "pmid": "35998039",
+        "title": "A randomized placebo-controlled trial of nicotinamide riboside and pterostilbene supplementation in experimental muscle injury in elderly individuals.",
+        "authors": [
+          "Jensen JB",
+          "Dollerup OL",
+          "Møller AB"
+        ],
+        "journal": "JCI Insight",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35998039/"
+      },
+      {
+        "pmid": "39449622",
+        "title": "Dietary supplementation of pterostilbene, a major component in small berries, prevents alcohol-induced liver injury associated with lipid accumulation and inflammation.",
+        "authors": [
+          "Dou JY",
+          "Liu SH",
+          "Guo J"
+        ],
+        "journal": "Food Funct",
+        "year": "2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39449622/"
+      },
+      {
+        "pmid": "40888265",
+        "title": "AMPK-Dependent Epigenetic Regulation of Metabolism Mediates the Anti-Cancer Action of Pterostilbene in Hepatocellular Carcinoma.",
+        "authors": [
+          "Boycott C",
+          "Beetch M",
+          "Lubecka-Gajewska K"
+        ],
+        "journal": "Mol Nutr Food Res",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40888265/"
+      }
+    ]
   }
 ]

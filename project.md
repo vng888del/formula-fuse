@@ -13,20 +13,20 @@
 | BYOK（Bring Your Own Key） | ✅ |
 | AtomDetailPanel（エンリッチデータ表示） | ✅ |
 | Bond 可視化（FusionCanvas） | ✅ |
-| Phase 1: PubChem エンリッチ | ⚠️ 35/135 (25%) |
-| Phase 2: UniProt | ⚠️ 19/135 (14%) |
-| Phase 2: PubMed | ⚠️ 127/135 (94%) |
-| Phase 3: FDA GRAS + Safety Gate 強化 | ⚠️ 82/135 (60%) |
-| Phase 4: サプライヤー情報 | ⚠️ 82/135 (60%) |
-| Phase 5: Google Trends | ⚠️ 83/135 (61%) |
-| Phase 5: Open Food Facts | ⚠️ 43/135 (31%) |
+| Phase 1: PubChem エンリッチ | ⚠️ 35/145 (24%) |
+| Phase 2: UniProt | ⚠️ 19/145 (13%) |
+| Phase 2: PubMed | ⚠️ 137/145 (94%) |
+| Phase 3: FDA GRAS + Safety Gate 強化 | ⚠️ 92/145 (63%) |
+| Phase 4: サプライヤー情報 | ⚠️ 92/145 (63%) |
+| Phase 5: Google Trends | ⚠️ 81/145 (55%) |
+| Phase 5: Open Food Facts | ⚠️ 41/145 (28%) |
 | **Formula 保存（Supabase DB）** | ✅ 本番稼働中 |
 <!-- END:current-state -->
 
 ## Atom Counts
 
 <!-- BEGIN:atom-counts -->
-現在 **135 Atoms**（ingredient 56 / microbe 16 / enzyme 10 / condition 26 / goal 27）
+現在 **145 Atoms**（ingredient 66 / microbe 16 / enzyme 10 / condition 26 / goal 27）
 <!-- END:atom-counts -->
 
 ## Bond Counts
