@@ -12319,7 +12319,120 @@
         "year": "2023",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37242253/"
       }
-    ]
+    ],
+    "existing_products": {
+      "search_query": "Resveratrol supplement",
+      "total_count": 4,
+      "sample_products": [
+        {
+          "product_name": "RAW Resveratrol",
+          "brand": "Garden of Life",
+          "categories": [
+            "Dietary Supplements"
+          ],
+          "countries": [
+            "United-States",
+            "World"
+          ],
+          "nutriscore": "A",
+          "image_url": "https://images.openfoodfacts.org/images/products/065/801/011/3816/front_en.9.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0658010113816"
+        },
+        {
+          "product_name": "Resveratrol Supplement",
+          "brand": "",
+          "categories": [],
+          "countries": [
+            "United-States"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "https://images.openfoodfacts.org/images/products/073/373/903/3390/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0733739033390"
+        },
+        {
+          "product_name": "Pure resveratrol",
+          "brand": "",
+          "categories": [
+            "Dietary Supplements"
+          ],
+          "countries": [
+            "United-States"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "https://images.openfoodfacts.org/images/products/065/616/599/6438/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0656165996438"
+        },
+        {
+          "product_name": "Resveratrol Y Colageno",
+          "brand": "Elite Supplements",
+          "categories": [],
+          "countries": [
+            "Colombia"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "",
+          "off_url": "https://world.openfoodfacts.org/product/7709057727818"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements"
+      ],
+      "top_countries": [
+        "United-States",
+        "World",
+        "Colombia"
+      ],
+      "retrieved_at": "2026-05-28T13:02:21.910619+00:00"
+    },
+    "compound": {
+      "pubchem_cid": 445154,
+      "molecular_formula": "C14H12O3",
+      "molecular_weight": "228.24",
+      "smiles": null,
+      "inchikey": "LUKBXSAWLPMMSZ-OWOJBTEDSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/445154"
+    },
+    "market_trends": {
+      "keyword": "Resveratrol",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Evolva",
+        "DSM",
+        "Sabinsa",
+        "Shaanxi Huike Botanical Development"
+      ],
+      "japan_suppliers": [
+        "長谷川香料",
+        "三菱商事ライフサイエンス",
+        "Evolva Japan"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "softgel",
+        "tablet"
+      ],
+      "typical_grade": "Food / Standardized Extract (98%)",
+      "certifications": [
+        "Non-GMO",
+        "Kosher",
+        "Halal",
+        "GRAS (一部)"
+      ],
+      "price_tier": "high",
+      "lead_time_weeks": 4,
+      "min_order_qty": "1 kg",
+      "notes": "ポリゴヌム・コスピダタム由来が主流。光・熱に不安定。遮光保管必須。"
+    }
   },
   {
     "atom_id": "atom_quercetin",
@@ -12421,7 +12534,54 @@
         "year": "2022",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36079777/"
       }
-    ]
+    ],
+    "compound": {
+      "pubchem_cid": 5280343,
+      "molecular_formula": "C15H10O7",
+      "molecular_weight": "302.23",
+      "smiles": null,
+      "inchikey": "REFJWTPEDVJJIY-UHFFFAOYSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280343"
+    },
+    "market_trends": {
+      "keyword": "Quercetin",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Quercegen Pharma",
+        "Sigma-Aldrich",
+        "Shaanxi Guanjie Technology",
+        "Indena"
+      ],
+      "japan_suppliers": [
+        "三菱商事ライフサイエンス",
+        "太陽化学",
+        "長谷川香料"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet"
+      ],
+      "typical_grade": "Food / Standardized Extract (95-98%)",
+      "certifications": [
+        "Non-GMO",
+        "Kosher",
+        "Halal"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "1 kg",
+      "notes": "水溶性低い。フィトソームや PLGA 封入で吸収性改善。ソフォラ・タマネギ由来。"
+    }
   },
   {
     "atom_id": "atom_alpha_lipoic_acid",
@@ -12466,9 +12626,9 @@
     "compound": {
       "pubchem_cid": 864,
       "molecular_formula": "C8H14O2S2",
-      "molecular_weight": "206.33",
-      "smiles": "OC(=O)CCCC[C@@H]1CCSS1",
-      "inchikey": "AGBQKNBQESQNJD-SSDOTTSWSA-N",
+      "molecular_weight": "206.3",
+      "smiles": null,
+      "inchikey": "AGBQKNBQESQNJD-UHFFFAOYSA-N",
       "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/864"
     },
     "pubmed_evidence": [
@@ -12537,6 +12697,47 @@
       "basis": "未確認 — 個別調査が必要",
       "notes": "本スクリプトのキュレーションデータに含まれていません。",
       "jp_status": "不明"
+    },
+    "market_trends": {
+      "keyword": "Alpha-lipoic acid",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "BASF",
+        "Evonik",
+        "Zhejiang Zhongxin Biotechnology",
+        "Biopharma"
+      ],
+      "japan_suppliers": [
+        "BASF Japan",
+        "住友ファーマフード＆ケミカル",
+        "三菱商事ライフサイエンス"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet",
+        "softgel"
+      ],
+      "typical_grade": "Food / Pharmaceutical",
+      "certifications": [
+        "USP",
+        "EP",
+        "Non-GMO",
+        "Kosher"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "5 kg",
+      "notes": "ラセミ体（R/S 混合）が一般的。R-ALA は高価だが生物活性が高い。熱に弱い。"
     }
   },
   {
@@ -12582,12 +12783,12 @@
       "jp_status": "食品添加物相当（既存添加物）"
     },
     "compound": {
-      "pubchem_cid": 10102,
+      "pubchem_cid": 10917,
       "molecular_formula": "C7H15NO3",
       "molecular_weight": "161.20",
-      "smiles": "C[N+](C)(C)CC(CC([O-])=O)O",
+      "smiles": null,
       "inchikey": "PHIQHXFUZVPYII-ZCFIWIBFSA-N",
-      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/10102"
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/10917"
     },
     "pubmed_evidence": [
       {
@@ -12650,7 +12851,138 @@
         "year": "2023",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37603263/"
       }
-    ]
+    ],
+    "existing_products": {
+      "search_query": "L-Carnitine supplement",
+      "total_count": 5,
+      "sample_products": [
+        {
+          "product_name": "vitamin water",
+          "brand": "Dr Witt",
+          "categories": [
+            "Sweeteners",
+            "Dietary Supplements",
+            "Vitamins"
+          ],
+          "countries": [
+            "Bulgaria"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/380/001/864/2929/front_bg.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/3800018642929"
+        },
+        {
+          "product_name": "L-Carnitine XS 3000 mg Liquid, Blue Razz flavor",
+          "brand": "Ronnie Coleman Signature Series",
+          "categories": [
+            "Dietary Supplements"
+          ],
+          "countries": [
+            "India"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/085/523/100/7010/front_en.4.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0855231007010"
+        },
+        {
+          "product_name": "Natural L-Carnitine Weight Loss",
+          "brand": "Irish Supplements",
+          "categories": [],
+          "countries": [
+            "United-States"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "https://images.openfoodfacts.org/images/products/018/881/021/5880/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0188810215880"
+        },
+        {
+          "product_name": "BCAA Natural Grape",
+          "brand": "Sascha Fitness",
+          "categories": [
+            "Dietary Supplements",
+            "Bodybuilding Supplements",
+            "Bcaa"
+          ],
+          "countries": [
+            "Bolivia",
+            "United-States"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/060/293/851/3661/front_en.12.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0602938513661"
+        },
+        {
+          "product_name": "L-carnitine",
+          "brand": "Iron Supplements",
+          "categories": [],
+          "countries": [
+            "Spain"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "https://images.openfoodfacts.org/images/products/843/603/796/3469/front_es.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/8436037963469"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Sweeteners",
+        "Vitamins",
+        "Bodybuilding Supplements",
+        "Bcaa"
+      ],
+      "top_countries": [
+        "United-States",
+        "Bulgaria",
+        "India",
+        "Bolivia",
+        "Spain"
+      ],
+      "retrieved_at": "2026-05-28T13:02:41.808746+00:00"
+    },
+    "market_trends": {
+      "keyword": "L-Carnitine",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Lonza (Carnipure®)",
+        "BASF",
+        "Sigma-Tau (Sigma-Aldrich)",
+        "HuangGang HuaYang"
+      ],
+      "japan_suppliers": [
+        "Lonza Japan (Carnipure®)",
+        "協和発酵バイオ",
+        "武田薬品工業"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet",
+        "drink_mix",
+        "liquid"
+      ],
+      "typical_grade": "Food / USP",
+      "certifications": [
+        "GRAS (GRN 56)",
+        "USP",
+        "JP",
+        "Halal",
+        "Kosher",
+        "Non-GMO"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "5 kg",
+      "notes": "Carnipure® ブランドが品質面で信頼性高。L-酒石酸塩形態が安定性に優れる。"
+    }
   },
   {
     "atom_id": "atom_vitamin_d",
@@ -12700,8 +13032,8 @@
       "pubchem_cid": 5280795,
       "molecular_formula": "C27H44O",
       "molecular_weight": "384.6",
-      "smiles": "C[C@H](CCCC(C)C)[C@H]1CC[C@@H]2[C@@]1(CCCC2=CC=C3C[C@@H](O)CCC3=C)C",
-      "inchikey": "QYSXJUFSXHHAJI-XFEUOLMDSA-N",
+      "smiles": null,
+      "inchikey": "QYSXJUFSXHHAJI-YRZJJWOYSA-N",
       "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280795"
     },
     "pubmed_evidence": [
@@ -12763,7 +13095,150 @@
         "year": "2024",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38337676/"
       }
-    ]
+    ],
+    "existing_products": {
+      "search_query": "Vitamin D3 supplement",
+      "total_count": 86,
+      "sample_products": [
+        {
+          "product_name": "Vitamin D3",
+          "brand": "Kirkland Signature",
+          "categories": [
+            "Dietary Supplements",
+            "Vitamins"
+          ],
+          "countries": [
+            "Spain",
+            "United-Kingdom",
+            "United-States"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/009/661/939/3916/front_en.26.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0096619393916"
+        },
+        {
+          "product_name": "Vitamin D3 1000 iu",
+          "brand": "Kirkland Signature",
+          "categories": [
+            "Dietary Supplements",
+            "Vitamins",
+            "Vitamin D"
+          ],
+          "countries": [
+            "Canada",
+            "Morocco"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/009/661/991/5958/front_en.24.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0096619915958"
+        },
+        {
+          "product_name": "Calcium + Vitamine D3",
+          "brand": "Optisana",
+          "categories": [
+            "Dietary Supplements",
+            "Vitamins"
+          ],
+          "countries": [
+            "France",
+            "Germany"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/000/002/028/9126/front_en.24.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/20289126"
+        },
+        {
+          "product_name": "Calcium Magnesium Zinc",
+          "brand": "Nature's Bounty",
+          "categories": [
+            "Specific Products",
+            "Products For Specific Diets",
+            "Products Without Gluten"
+          ],
+          "countries": [
+            "Bolivia",
+            "United-States"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/007/431/204/2904/front_en.11.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0074312042904"
+        },
+        {
+          "product_name": "Vitamine D3",
+          "brand": "Jamieson",
+          "categories": [
+            "Dietary Supplements",
+            "Vitamins"
+          ],
+          "countries": [
+            "Canada"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/006/464/209/1956/front_fr.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0064642091956"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Vitamins",
+        "Specific Products",
+        "Products For Specific Diets",
+        "Products Without Gluten"
+      ],
+      "top_countries": [
+        "United-States",
+        "France",
+        "Germany",
+        "Canada",
+        "United-Kingdom"
+      ],
+      "retrieved_at": "2026-05-28T13:02:47.857024+00:00"
+    },
+    "market_trends": {
+      "keyword": "Vitamin D3",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "DSM (ROVIMIX® D3)",
+        "BASF",
+        "Zhejiang Garden Biochemical",
+        "Fermenta Biotech"
+      ],
+      "japan_suppliers": [
+        "DSM Japan (ROVIMIX® D3)",
+        "武田薬品工業",
+        "三菱商事フードテック"
+      ],
+      "oem_forms": [
+        "powder",
+        "oil",
+        "capsule",
+        "softgel",
+        "tablet",
+        "gummy"
+      ],
+      "typical_grade": "Food / USP / EP",
+      "certifications": [
+        "USP",
+        "EP",
+        "JP",
+        "Halal",
+        "Kosher",
+        "Non-GMO"
+      ],
+      "price_tier": "low",
+      "lead_time_weeks": 3,
+      "min_order_qty": "1 kg",
+      "notes": "羊毛脂（ラノリン）由来が主流。ビーガン向けにはリケン（藻類）由来品も存在。"
+    }
   },
   {
     "atom_id": "atom_vitamin_e",
@@ -12866,7 +13341,147 @@
         "year": "2007",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/17913225/"
       }
-    ]
+    ],
+    "existing_products": {
+      "search_query": "Vitamin E supplement",
+      "total_count": 630,
+      "sample_products": [
+        {
+          "product_name": "Vitamin & Protein Bar",
+          "brand": "Fulfil",
+          "categories": [
+            "Snacks",
+            "Sweet Snacks",
+            "Cocoa And Its Products"
+          ],
+          "countries": [
+            "Belgium",
+            "France",
+            "Germany"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/539/153/212/1710/front_en.84.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/5391532121710"
+        },
+        {
+          "product_name": "Vitamin coconut bar",
+          "brand": "Sante",
+          "categories": [
+            "Snacks",
+            "Sweet Snacks",
+            "Bars"
+          ],
+          "countries": [
+            "Egypt",
+            "Germany",
+            "Morocco"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/590/061/703/4809/front_en.9.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/5900617034809"
+        },
+        {
+          "product_name": "Multi A-Z One-a-Day",
+          "brand": "innovit",
+          "categories": [
+            "Dietary Supplements",
+            "Vitamins",
+            "Multivitamin"
+          ],
+          "countries": [
+            "Belgium",
+            "France",
+            "Morocco"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/872/330/071/0746/front_en.34.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/8723300710746"
+        },
+        {
+          "product_name": "Chocolate Brownie Flavour Vitamin & Protein Bar",
+          "brand": "FULFIL",
+          "categories": [
+            "Snacks",
+            "Sweet Snacks",
+            "Cocoa And Its Products"
+          ],
+          "countries": [
+            "Belgium",
+            "France",
+            "United-Kingdom"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/539/153/212/2168/front_en.12.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/5391532122168"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Vitamins",
+        "Snacks",
+        "Sweet Snacks",
+        "Bodybuilding Supplements"
+      ],
+      "top_countries": [
+        "France",
+        "Morocco",
+        "United-Kingdom",
+        "Belgium",
+        "Germany"
+      ],
+      "retrieved_at": "2026-05-28T13:02:54.830307+00:00"
+    },
+    "compound": {
+      "pubchem_cid": 14985,
+      "molecular_formula": "C29H50O2",
+      "molecular_weight": "430.7",
+      "smiles": null,
+      "inchikey": "GVJHHUAWPYXKBD-IEOSBIPESA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/14985"
+    },
+    "market_trends": {
+      "keyword": "Vitamin E",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "DSM",
+        "BASF",
+        "Archer Daniels Midland (ADM)",
+        "Cognis"
+      ],
+      "japan_suppliers": [
+        "DSM Japan",
+        "BASF Japan",
+        "太陽化学"
+      ],
+      "oem_forms": [
+        "oil",
+        "powder",
+        "capsule",
+        "softgel",
+        "tablet"
+      ],
+      "typical_grade": "Food / USP / EP",
+      "certifications": [
+        "USP",
+        "EP",
+        "JP",
+        "Non-GMO",
+        "Natural (d-alpha)"
+      ],
+      "price_tier": "low",
+      "lead_time_weeks": 3,
+      "min_order_qty": "10 kg",
+      "notes": "天然型（d-alpha）と合成型（dl-alpha）で生物活性が約2倍異なる。"
+    }
   },
   {
     "atom_id": "atom_vitamin_b12",
@@ -12911,12 +13526,12 @@
       "jp_status": "栄養強化剤（食品添加物）"
     },
     "compound": {
-      "pubchem_cid": 44176380,
+      "pubchem_cid": 165339223,
       "molecular_formula": "C63H88CoN14O14P",
       "molecular_weight": "1355.4",
       "smiles": null,
-      "inchikey": "AGVAZMGAQJOSFJ-ZHACJKMWSA-N",
-      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/44176380"
+      "inchikey": "FDJOLVPMNUYSCM-SYUKHSAKSA-L",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/165339223"
     },
     "pubmed_evidence": [
       {
@@ -12977,7 +13592,145 @@
         "year": "2025",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40315282/"
       }
-    ]
+    ],
+    "existing_products": {
+      "search_query": "Vitamin B12 supplement",
+      "total_count": 25,
+      "sample_products": [
+        {
+          "product_name": "TUNA BOWL Vitamin B12",
+          "brand": "JOHN WEST",
+          "categories": [
+            "Seafood",
+            "Fishes And Their Products",
+            "Canned Foods"
+          ],
+          "countries": [
+            "Australia",
+            "New-Zealand"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/930/046/212/9143/front_en.36.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/9300462129143"
+        },
+        {
+          "product_name": "B-12 1000 mcg",
+          "brand": "Jamieson",
+          "categories": [
+            "Dietary Supplements",
+            "Vitamins",
+            "B 12"
+          ],
+          "countries": [
+            "Canada"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/006/464/205/7464/front_en.15.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0064642057464"
+        },
+        {
+          "product_name": "B12 Vitamin",
+          "brand": "nature made",
+          "categories": [
+            "Dietary Supplements",
+            "Vitamins"
+          ],
+          "countries": [
+            "United-States"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "",
+          "off_url": "https://world.openfoodfacts.org/product/0031604029166"
+        },
+        {
+          "product_name": "Vitamine B12",
+          "brand": "Solgar",
+          "categories": [
+            "Dietary Supplements",
+            "Vitamins",
+            "Vegan"
+          ],
+          "countries": [
+            "France",
+            "Spain",
+            "United-States"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/003/398/403/2293/front_fr.16.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0033984032293"
+        },
+        {
+          "product_name": "Liquid Vitamin B12",
+          "brand": "365 Everyday Value, Whole Foods Market",
+          "categories": [
+            "Dietary Supplements"
+          ],
+          "countries": [
+            "United-States"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "https://images.openfoodfacts.org/images/products/000/001/192/3718/front_en.8.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/11923718"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Vitamins",
+        "Seafood",
+        "Fishes And Their Products",
+        "Canned Foods"
+      ],
+      "top_countries": [
+        "United-States",
+        "United-Kingdom",
+        "Australia",
+        "France",
+        "New-Zealand"
+      ],
+      "retrieved_at": "2026-05-28T13:03:00.492658+00:00"
+    },
+    "market_trends": {
+      "keyword": "Vitamin B12",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "DSM",
+        "BASF",
+        "Hebei Huarong Pharmaceutical",
+        "Sanofi"
+      ],
+      "japan_suppliers": [
+        "DSM Japan",
+        "武田薬品工業",
+        "三菱商事フードテック"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet",
+        "sublingual"
+      ],
+      "typical_grade": "Food / USP / EP",
+      "certifications": [
+        "USP",
+        "EP",
+        "JP",
+        "Halal",
+        "Kosher"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "100 g",
+      "notes": "シアノコバラミンが安価で安定。メチルコバラミンは神経系に直接利用可能。"
+    }
   },
   {
     "atom_id": "atom_folic_acid",
@@ -13025,12 +13778,12 @@
       "jp_status": "栄養強化剤（食品添加物）"
     },
     "compound": {
-      "pubchem_cid": 6037,
+      "pubchem_cid": 135398658,
       "molecular_formula": "C19H19N7O6",
       "molecular_weight": "441.4",
-      "smiles": "Nc1nc2ncc(CNc3ccc(cc3)C(=O)N[C@@H](CCC(O)=O)C(O)=O)nc2c(=O)[nH]1",
+      "smiles": null,
       "inchikey": "OVBPIULPVIDEAO-LBPRGKRZSA-N",
-      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/6037"
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/135398658"
     },
     "pubmed_evidence": [
       {
@@ -13090,7 +13843,142 @@
         "year": "2022",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35691683/"
       }
-    ]
+    ],
+    "existing_products": {
+      "search_query": "Folic acid supplement",
+      "total_count": 9,
+      "sample_products": [
+        {
+          "product_name": "Feroglobin Gentle Iron folic acid, vit B12 CAPSULE",
+          "brand": "Vitabotics",
+          "categories": [
+            "Dietary Supplements"
+          ],
+          "countries": [
+            "France"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/502/126/522/0076/front_en.8.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/5021265220076"
+        },
+        {
+          "product_name": "B Complex",
+          "brand": "Nature's Bounty",
+          "categories": [
+            "Specific Products",
+            "Products For Specific Diets",
+            "Products Without Gluten"
+          ],
+          "countries": [
+            "Bolivia",
+            "United-States"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "https://images.openfoodfacts.org/images/products/007/431/213/1684/front_en.11.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0074312131684"
+        },
+        {
+          "product_name": "Vitamine B9 (acide Folique) 400µG - 100 Tablettes - Solgar",
+          "brand": "Solgar",
+          "categories": [
+            "Dietary Supplements",
+            "Folic Acid"
+          ],
+          "countries": [
+            "France"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/003/398/401/0802/front_fr.8.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0033984010802"
+        },
+        {
+          "product_name": "Folic Acid",
+          "brand": "NOW",
+          "categories": [
+            "Dietary Supplements"
+          ],
+          "countries": [
+            "Spain"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/073/373/900/4765/front_en.10.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0733739004765"
+        },
+        {
+          "product_name": "Folic Acid + Vitamin D",
+          "brand": "Boots",
+          "categories": [
+            "Dietary Supplements",
+            "Vitamins",
+            "Supplements"
+          ],
+          "countries": [
+            "United-Kingdom"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/804/233/957/9194/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/8042339579194"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Vitamins",
+        "Folic Acid",
+        "Specific Products",
+        "Products For Specific Diets"
+      ],
+      "top_countries": [
+        "France",
+        "United-States",
+        "United-Kingdom",
+        "Bolivia",
+        "Spain"
+      ],
+      "retrieved_at": "2026-05-28T13:03:38.744615+00:00"
+    },
+    "market_trends": {
+      "keyword": "Folic acid",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "DSM (QUALI-FOLIC®)",
+        "BASF",
+        "Zhejiang Shengda Bio-pharm",
+        "Jiangxi Tianxin Pharmaceutical"
+      ],
+      "japan_suppliers": [
+        "DSM Japan",
+        "武田薬品工業",
+        "三菱商事フードテック"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet",
+        "premix"
+      ],
+      "typical_grade": "Food / USP / EP",
+      "certifications": [
+        "USP",
+        "EP",
+        "JP",
+        "Halal",
+        "Kosher",
+        "Non-GMO"
+      ],
+      "price_tier": "low",
+      "lead_time_weeks": 3,
+      "min_order_qty": "1 kg",
+      "notes": "葉酸（Folic acid）と5-MTHF（活性型）で代謝経路が異なる。MTHFR 遺伝子変異者には活性型が有効。"
+    }
   },
   {
     "atom_id": "atom_calcium",
@@ -13142,7 +14030,7 @@
       "pubchem_cid": 5460341,
       "molecular_formula": "Ca",
       "molecular_weight": "40.08",
-      "smiles": "[Ca]",
+      "smiles": null,
       "inchikey": "OYPRJOBELJOOCE-UHFFFAOYSA-N",
       "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5460341"
     },
@@ -13205,7 +14093,149 @@
         "year": "2021",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34662692/"
       }
-    ]
+    ],
+    "existing_products": {
+      "search_query": "Calcium supplement",
+      "total_count": 54,
+      "sample_products": [
+        {
+          "product_name": "Calcium + Vitamine D3",
+          "brand": "Optisana",
+          "categories": [
+            "Dietary Supplements",
+            "Vitamins"
+          ],
+          "countries": [
+            "France",
+            "Germany"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/000/002/028/9126/front_en.24.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/20289126"
+        },
+        {
+          "product_name": "Calcium",
+          "brand": "altapharma (ROSSMANN)",
+          "categories": [
+            "Dietary Supplements",
+            "Vitamins"
+          ],
+          "countries": [
+            "Germany"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/430/561/561/4335/front_en.14.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/4305615614335"
+        },
+        {
+          "product_name": "Calcium Magnesium Zinc",
+          "brand": "Nature's Bounty",
+          "categories": [
+            "Specific Products",
+            "Products For Specific Diets",
+            "Products Without Gluten"
+          ],
+          "countries": [
+            "Bolivia",
+            "United-States"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/007/431/204/2904/front_en.11.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0074312042904"
+        },
+        {
+          "product_name": "Calcium Citrate Magnesium and Zinc",
+          "brand": "Kirkland Signature",
+          "categories": [
+            "Specific Products",
+            "Products For Specific Diets",
+            "Products Without Gluten"
+          ],
+          "countries": [
+            "Bolivia",
+            "France",
+            "United-States"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/009/661/958/8152/front_en.10.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0096619588152"
+        },
+        {
+          "product_name": "Calcium & Vitamin D",
+          "brand": "MinaVit",
+          "categories": [
+            "Dietary Supplements",
+            "Vitamins",
+            "Calcium"
+          ],
+          "countries": [
+            "Ireland",
+            "United-Kingdom"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/405/648/943/7741/front_en.33.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/4056489437741"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Vitamins",
+        "Specific Products",
+        "Products For Specific Diets",
+        "Products Without Gluten"
+      ],
+      "top_countries": [
+        "United-States",
+        "France",
+        "Germany",
+        "Bolivia",
+        "United-Kingdom"
+      ],
+      "retrieved_at": "2026-05-28T13:03:44.432536+00:00"
+    },
+    "market_trends": {
+      "keyword": "Calcium",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "ICL Group",
+        "Omya",
+        "Huber Engineered Materials",
+        "Balchem (TRAACS®)"
+      ],
+      "japan_suppliers": [
+        "太陽化学",
+        "富田製薬",
+        "林純薬工業"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet",
+        "gummy",
+        "chewable"
+      ],
+      "typical_grade": "Food / USP / JP",
+      "certifications": [
+        "USP",
+        "JP",
+        "Halal",
+        "Kosher",
+        "Non-GMO"
+      ],
+      "price_tier": "low",
+      "lead_time_weeks": 2,
+      "min_order_qty": "25 kg",
+      "notes": "炭酸Ca・クエン酸Ca・乳酸Caで吸収率が異なる。ビタミンD3との配合が吸収促進に有効。"
+    }
   },
   {
     "atom_id": "atom_selenium",
@@ -13309,7 +14339,106 @@
         "year": "2007",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/17913229/"
       }
-    ]
+    ],
+    "existing_products": {
+      "search_query": "Selenium supplement",
+      "total_count": 2,
+      "sample_products": [
+        {
+          "product_name": "marinox selenium ace",
+          "brand": "",
+          "categories": [
+            "Supplement"
+          ],
+          "countries": [
+            "Indonesia"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "https://images.openfoodfacts.org/images/products/007/431/201/8909/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0074312018909"
+        },
+        {
+          "product_name": "BIOSYNERGYX LABS & PHARMACEUTICALS LTD",
+          "brand": "IKORO ANAOCHA GROUP, PURE-OLIVE BLEND IN",
+          "categories": [
+            "**Product Name:** Biovital Multivitamins**Price:** $29.99**Specification:**  **Serving Size:** 1 Tablet  **Servings Per Container:** 60  **Active Ingredients:** Vitamin A",
+            "Biotin",
+            "Calcium"
+          ],
+          "countries": [
+            "Nigeria",
+            "United-Kingdom",
+            "United-States"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "https://images.openfoodfacts.org/images/products/615/696/669/8747/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/6156966698747"
+        }
+      ],
+      "top_categories": [
+        "Supplement",
+        "**Product Name:** Biovital Multivitamins**Price:** $29.99**Specification:**  **Serving Size:** 1 Tablet  **Servings Per Container:** 60  **Active Ingredients:** Vitamin A",
+        "Biotin",
+        "Calcium",
+        "Folic Acid"
+      ],
+      "top_countries": [
+        "Indonesia",
+        "Nigeria",
+        "United-Kingdom",
+        "United-States"
+      ],
+      "retrieved_at": "2026-05-28T13:03:50.906944+00:00"
+    },
+    "compound": {
+      "pubchem_cid": 6326970,
+      "molecular_formula": "Se",
+      "molecular_weight": "78.97",
+      "smiles": null,
+      "inchikey": "BUGBHKTXTAQXES-UHFFFAOYSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/6326970"
+    },
+    "market_trends": {
+      "keyword": "Selenium",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Alltech (Sel-Plex®)",
+        "Lallemand (Selemax®)",
+        "Sabinsa",
+        "DSM"
+      ],
+      "japan_suppliers": [
+        "Alltech Japan",
+        "三菱商事ライフサイエンス",
+        "太陽化学"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet",
+        "yeast"
+      ],
+      "typical_grade": "Food / Pharmaceutical",
+      "certifications": [
+        "GRAS",
+        "Non-GMO",
+        "Halal",
+        "Kosher"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "1 kg",
+      "notes": "酵母セレン（有機セレン）が吸収性・安全性で優位。上限量（400μg/日）に注意。"
+    }
   },
   {
     "atom_id": "atom_beta_glucan",
@@ -13409,7 +14538,90 @@
         "year": "2024",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39216713/"
       }
-    ]
+    ],
+    "existing_products": {
+      "search_query": "Beta-glucan supplement",
+      "total_count": 1,
+      "sample_products": [
+        {
+          "product_name": "High Energy Banana",
+          "brand": "Sponser",
+          "categories": [
+            "Snacks",
+            "Sweet Snacks",
+            "Bars"
+          ],
+          "countries": [
+            "Bolivia",
+            "Switzerland"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/761/117/415/0281/front_en.7.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/7611174150281"
+        }
+      ],
+      "top_categories": [
+        "Snacks",
+        "Sweet Snacks",
+        "Bars",
+        "Cereal Bars",
+        "Dietary Supplements"
+      ],
+      "top_countries": [
+        "Bolivia",
+        "Switzerland"
+      ],
+      "retrieved_at": "2026-05-28T13:03:57.943239+00:00"
+    },
+    "compound": {
+      "pubchem_cid": 439262,
+      "molecular_formula": "C18H32O16",
+      "molecular_weight": "504.4",
+      "smiles": null,
+      "inchikey": "FYGDTMLNYKFZSV-URKRLVJHSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/439262"
+    },
+    "market_trends": {
+      "keyword": "Beta-glucan",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Koninklijke DSM",
+        "Cargill (OatWell®)",
+        "Naturex",
+        "Kerry Group"
+      ],
+      "japan_suppliers": [
+        "日本製粉",
+        "太陽化学",
+        "三菱商事ライフサイエンス"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet",
+        "functional_food"
+      ],
+      "typical_grade": "Food",
+      "certifications": [
+        "GRAS",
+        "Non-GMO",
+        "Kosher",
+        "Halal"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "5 kg",
+      "notes": "オーツ由来（β1,3/1,4型）と酵母由来（β1,3/1,6型）で免疫・コレステロール作用が異なる。"
+    }
   },
   {
     "atom_id": "atom_gos",
@@ -13512,7 +14724,54 @@
         "year": "2019",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29731182/"
       }
-    ]
+    ],
+    "compound": {
+      "pubchem_cid": 871,
+      "molecular_formula": "C18H32O16",
+      "molecular_weight": "504.4",
+      "smiles": null,
+      "inchikey": "FYGDTMLNYKFZSV-UHFFFAOYSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/871"
+    },
+    "market_trends": {
+      "keyword": "Galactooligosaccharides",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Clasado (Bimuno®)",
+        "Yakult Pharmaceutical",
+        "FrieslandCampina (Vivinal® GOS)"
+      ],
+      "japan_suppliers": [
+        "ヤクルト薬品工業",
+        "太陽化学",
+        "雪印メグミルク"
+      ],
+      "oem_forms": [
+        "powder",
+        "syrup",
+        "capsule"
+      ],
+      "typical_grade": "Food",
+      "certifications": [
+        "GRAS (GRN 236)",
+        "Non-GMO",
+        "Kosher",
+        "Halal"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "5 kg",
+      "notes": "乳糖からラクターゼにより酵素合成。ビフィズス菌選択的増殖。粉末型が安定。"
+    }
   },
   {
     "atom_id": "atom_soy_isoflavone",
@@ -13618,7 +14877,54 @@
         "year": "2008",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/18492864/"
       }
-    ]
+    ],
+    "compound": {
+      "pubchem_cid": 70267806,
+      "molecular_formula": "C46H32O14",
+      "molecular_weight": "808.7",
+      "smiles": null,
+      "inchikey": "XCQOGAANCNLODU-UHFFFAOYSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/70267806"
+    },
+    "market_trends": {
+      "keyword": "Soy isoflavones",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Natunola",
+        "Archer Daniels Midland (ADM)",
+        "Solae",
+        "Indena"
+      ],
+      "japan_suppliers": [
+        "不二製油",
+        "太陽化学",
+        "三菱商事フードテック"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet"
+      ],
+      "typical_grade": "Food / Standardized Extract (40-80%)",
+      "certifications": [
+        "Non-GMO (認証品あり)",
+        "Kosher",
+        "Halal"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "1 kg",
+      "notes": "ゲニステイン・ダイゼイン・グリシテイン混合。エストロゲン様作用に注意（ホルモン感受性疾患）。"
+    }
   },
   {
     "atom_id": "atom_lactoferrin",
@@ -13725,7 +15031,55 @@
         "year": "2024",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38732615/"
       }
-    ]
+    ],
+    "compound": {
+      "pubchem_cid": 126456119,
+      "molecular_formula": "C141H226N46O29S3",
+      "molecular_weight": "3125.8",
+      "smiles": null,
+      "inchikey": "CSSYQJWUGATIHM-IKGCZBKSSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/126456119"
+    },
+    "market_trends": {
+      "keyword": "Lactoferrin",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "FrieslandCampina (Lactoferrin)",
+        "Morinaga Milk Industry",
+        "Tatua"
+      ],
+      "japan_suppliers": [
+        "森永乳業 (ラクトフェリン)",
+        "雪印メグミルク",
+        "太陽化学"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet",
+        "functional_food"
+      ],
+      "typical_grade": "Food / Pharmaceutical",
+      "certifications": [
+        "GRAS (GRN 672)",
+        "Non-GMO",
+        "Kosher",
+        "Halal"
+      ],
+      "price_tier": "very_high",
+      "lead_time_weeks": 6,
+      "min_order_qty": "500 g",
+      "notes": "牛乳由来タンパク（抗菌・免疫）。熱に弱いため低温加工必須。腸溶コーティングが有効。"
+    }
   },
   {
     "atom_id": "atom_casein",
@@ -13834,7 +15188,141 @@
         "year": "2024",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38039960/"
       }
-    ]
+    ],
+    "existing_products": {
+      "search_query": "Casein supplement",
+      "total_count": 41,
+      "sample_products": [
+        {
+          "product_name": "Golden Ice Cream Casein Protein Custard",
+          "brand": "muscle nation",
+          "categories": [
+            "Dietary Supplements",
+            "Bodybuilding Supplements",
+            "Protein Powders"
+          ],
+          "countries": [
+            "Australia"
+          ],
+          "nutriscore": "D",
+          "image_url": "https://images.openfoodfacts.org/images/products/935/905/400/0032/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/9359054000032"
+        },
+        {
+          "product_name": "mixitka brownie a protein",
+          "brand": "mixit",
+          "categories": [
+            "Dietary Supplements",
+            "Bodybuilding Supplements",
+            "Protein Bars"
+          ],
+          "countries": [
+            "Czech-Republic"
+          ],
+          "nutriscore": "C",
+          "image_url": "https://images.openfoodfacts.org/images/products/859/568/520/6547/front_cs.4.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/8595685206547"
+        },
+        {
+          "product_name": "Casein Protein Micellar Casein",
+          "brand": "nutricost",
+          "categories": [
+            "Dietary Supplements",
+            "Bodybuilding Supplements",
+            "Protein Powders"
+          ],
+          "countries": [
+            "United-States"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/081/001/467/0102/front_en.15.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0810014670102"
+        },
+        {
+          "product_name": "Ultra Casein Complex",
+          "brand": "Yamamoto",
+          "categories": [
+            "Specific Products",
+            "Products For Specific Diets",
+            "Dietary Supplements"
+          ],
+          "countries": [
+            "Italy"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/802/374/203/1608/front_it.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/8023742031608"
+        },
+        {
+          "product_name": "Pasture-raised Micellar Casein / Dutch Chocolate",
+          "brand": "Promix",
+          "categories": [
+            "Dietary Supplements",
+            "Bodybuilding Supplements"
+          ],
+          "countries": [
+            "United-States"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/074/248/823/9236/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0742488239236"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Bodybuilding Supplements",
+        "Protein Powders",
+        "Protein Bars",
+        "Specific Products"
+      ],
+      "top_countries": [
+        "United-States",
+        "France",
+        "Australia",
+        "Czech-Republic",
+        "Italy"
+      ],
+      "retrieved_at": "2026-05-28T13:06:20.457051+00:00"
+    },
+    "market_trends": {
+      "keyword": "Casein",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "FrieslandCampina",
+        "Fonterra",
+        "Tatua",
+        "Arla Foods Ingredients"
+      ],
+      "japan_suppliers": [
+        "森永乳業",
+        "雪印メグミルク",
+        "太陽化学"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "functional_food"
+      ],
+      "typical_grade": "Food",
+      "certifications": [
+        "Non-GMO",
+        "Kosher",
+        "Halal"
+      ],
+      "price_tier": "low",
+      "lead_time_weeks": 3,
+      "min_order_qty": "25 kg",
+      "notes": "ミセルカゼイン（MCC）が消化ゆっくりで就寝前摂取に最適。乳アレルゲン表示必須。"
+    }
   },
   {
     "atom_id": "atom_lutein",
@@ -13882,8 +15370,8 @@
       "pubchem_cid": 5281243,
       "molecular_formula": "C40H56O2",
       "molecular_weight": "568.9",
-      "smiles": "OC1CC(=C(/C=C/C(=C/C=C/C(=C/C=C/C=C(\\C)/C=C/C=C(\\C)/C=C/[C@@H]2CC(O)CC(C)(C)2)\\C)\\C)C(C)(C)CC1",
-      "inchikey": "KBPHJBAIARWVSC-RGWQACMPSA-N",
+      "smiles": null,
+      "inchikey": "KBPHJBAIARWVSC-RGZFRNHPSA-N",
       "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5281243"
     },
     "pubmed_evidence": [
@@ -13943,7 +15431,110 @@
         "year": "2013",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23674808/"
       }
-    ]
+    ],
+    "existing_products": {
+      "search_query": "Lutein supplement",
+      "total_count": 3,
+      "sample_products": [
+        {
+          "product_name": "Lutein with Zeaxanthin Softgels",
+          "brand": "Wellness by London Drugs",
+          "categories": [
+            "Dietary Supplements",
+            "Vitamins",
+            "Free From Artificial Colours Sweeteners And Preservatives And From Gluten Lactose Starch And Yeast."
+          ],
+          "countries": [
+            "Canada"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/006/815/605/6050/front_en.16.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0068156056050"
+        },
+        {
+          "product_name": "Multivitamin plus Lutein",
+          "brand": "Life Spectrum Forte • Shopper’s DM • Lob",
+          "categories": [
+            "Dietary Supplements",
+            "Vitamins",
+            "Muti Vitamin + Lutein"
+          ],
+          "countries": [
+            "Canada",
+            "United-States"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "https://images.openfoodfacts.org/images/products/005/780/004/4222/front_en.4.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0057800044222"
+        },
+        {
+          "product_name": "what's up eye health zeaxanthin & lutein gummies",
+          "brand": "what's up",
+          "categories": [
+            "Dietary Supplements",
+            "Vitamin Mineral Combinations"
+          ],
+          "countries": [
+            "India"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "https://images.openfoodfacts.org/images/products/890/801/636/3008/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/8908016363008"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Vitamins",
+        "Free From Artificial Colours Sweeteners And Preservatives And From Gluten Lactose Starch And Yeast.",
+        "Muti Vitamin + Lutein",
+        "Vitamin Mineral Combinations"
+      ],
+      "top_countries": [
+        "Canada",
+        "United-States",
+        "India"
+      ],
+      "retrieved_at": "2026-05-28T13:06:58.289913+00:00"
+    },
+    "market_trends": {
+      "keyword": "Lutein",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Kemin Industries (FloraGLO®)",
+        "OmniActive Health Technologies (LuteMax®)",
+        "Naturex"
+      ],
+      "japan_suppliers": [
+        "太陽化学 (FloraGLO®)",
+        "三菱商事ライフサイエンス"
+      ],
+      "oem_forms": [
+        "powder",
+        "softgel",
+        "capsule",
+        "tablet"
+      ],
+      "typical_grade": "Food / Standardized Extract (5-20%)",
+      "certifications": [
+        "GRAS (GRN 140)",
+        "Non-GMO",
+        "Kosher",
+        "Halal"
+      ],
+      "price_tier": "high",
+      "lead_time_weeks": 4,
+      "min_order_qty": "1 kg",
+      "notes": "マリーゴールド花由来。脂溶性のためオイル懸濁液や乳化製剤が吸収に有利。"
+    }
   },
   {
     "atom_id": "atom_nattokinase",
@@ -14051,7 +15642,44 @@
         "year": "2025",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40573100/"
       }
-    ]
+    ],
+    "market_trends": {
+      "keyword": "Nattokinase",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Japan Bio Science Laboratory (JBSL)",
+        "Contek Life Science",
+        "Daiwa Pharmaceutical"
+      ],
+      "japan_suppliers": [
+        "大和薬品 (NK ナットウキナーゼ)",
+        "日本バイオサイエンスラボラトリー"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet"
+      ],
+      "typical_grade": "Food / Standardized (FU/g)",
+      "certifications": [
+        "Non-GMO",
+        "Kosher",
+        "Halal"
+      ],
+      "price_tier": "high",
+      "lead_time_weeks": 4,
+      "min_order_qty": "500 g",
+      "notes": "活性単位（FU: フィブリン溶解単位）で規格化。ワルファリン服用者は禁忌。腸溶コーティング推奨。"
+    }
   },
   {
     "atom_id": "atom_spirulina",
@@ -14161,7 +15789,141 @@
         "year": "2015",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26262693/"
       }
-    ]
+    ],
+    "existing_products": {
+      "search_query": "Spirulina supplement",
+      "total_count": 93,
+      "sample_products": [
+        {
+          "product_name": "Spiruline Bio",
+          "brand": "Hoope",
+          "categories": [
+            "Dietary Supplements",
+            "Spirulina"
+          ],
+          "countries": [
+            "France"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/376/028/646/0420/front_fr.9.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/3760286460420"
+        },
+        {
+          "product_name": "Spirulina from France",
+          "brand": "Aroma-zone",
+          "categories": [
+            "Dietary Supplements",
+            "Spirulina"
+          ],
+          "countries": [
+            "France",
+            "United-States"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/000/000/000/4419/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/00004419"
+        },
+        {
+          "product_name": "Ecocesta S. alimento Dtox Chlorella Spirulina Kale",
+          "brand": "Ecocesta",
+          "categories": [
+            "Breakfasts",
+            "Dietary Supplements",
+            "Spirulina"
+          ],
+          "countries": [
+            "France",
+            "Spain"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/842/258/431/4755/front_fr.13.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/8422584314755"
+        },
+        {
+          "product_name": "Certified Organic Spirulina Tablets",
+          "brand": "NOW®",
+          "categories": [
+            "Dietary Supplements",
+            "Spirulina"
+          ],
+          "countries": [
+            "France",
+            "World"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "",
+          "off_url": "https://world.openfoodfacts.org/product/0733739027009"
+        },
+        {
+          "product_name": "Spiruline",
+          "brand": "Oemine",
+          "categories": [
+            "Dietary Supplements",
+            "Spirulina"
+          ],
+          "countries": [
+            "France"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/376/023/429/2691/front_fr.11.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/3760234292691"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Spirulina",
+        "Breakfasts",
+        "Food Complement",
+        "Beverages And Beverages Preparations"
+      ],
+      "top_countries": [
+        "France",
+        "United-States",
+        "Spain",
+        "World",
+        "United-Kingdom"
+      ],
+      "retrieved_at": "2026-05-28T13:08:41.970226+00:00"
+    },
+    "market_trends": {
+      "keyword": "Spirulina",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "DIC (Spirulina)",
+        "Earthrise Nutritionals",
+        "Cyanotech (Hawaiian Spirulina®)"
+      ],
+      "japan_suppliers": [
+        "DIC (スピルリナ)",
+        "タマ生化学",
+        "東洋新薬"
+      ],
+      "oem_forms": [
+        "powder",
+        "tablet",
+        "capsule"
+      ],
+      "typical_grade": "Food",
+      "certifications": [
+        "Organic (一部)",
+        "Non-GMO",
+        "Kosher",
+        "Halal"
+      ],
+      "price_tier": "low",
+      "lead_time_weeks": 3,
+      "min_order_qty": "5 kg",
+      "notes": "重金属汚染リスクあり。生産地・検査証明書の確認必須。藻臭が強い。"
+    }
   },
   {
     "atom_id": "atom_chlorella",
@@ -14265,7 +16027,46 @@
         "year": "2014",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/24402174/"
       }
-    ]
+    ],
+    "market_trends": {
+      "keyword": "Chlorella",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Sun Chlorella",
+        "Taiwan Chlorella Manufacturing",
+        "Yaeyama Shokusan"
+      ],
+      "japan_suppliers": [
+        "サン・クロレラ",
+        "八重山殖産",
+        "クロレラ工業"
+      ],
+      "oem_forms": [
+        "powder",
+        "tablet",
+        "capsule"
+      ],
+      "typical_grade": "Food",
+      "certifications": [
+        "Organic (一部)",
+        "Non-GMO",
+        "Kosher",
+        "Halal"
+      ],
+      "price_tier": "low",
+      "lead_time_weeks": 3,
+      "min_order_qty": "5 kg",
+      "notes": "細胞壁破砕処理品が消化吸収に優れる。重金属・マイコトキシン検査必須。"
+    }
   },
   {
     "atom_id": "atom_gla",
@@ -14364,7 +16165,52 @@
         "year": "1998",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/9732298/"
       }
-    ]
+    ],
+    "compound": {
+      "pubchem_cid": 5280933,
+      "molecular_formula": "C18H30O2",
+      "molecular_weight": "278.4",
+      "smiles": null,
+      "inchikey": "VZCCETWTMQHEPK-QNEBEIHSSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5280933"
+    },
+    "market_trends": {
+      "keyword": "Gamma-linolenic acid",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Efamol (EPO)",
+        "Natunola (Borage oil)",
+        "Camelina Gold"
+      ],
+      "japan_suppliers": [
+        "太陽化学",
+        "三菱商事ライフサイエンス"
+      ],
+      "oem_forms": [
+        "oil",
+        "softgel",
+        "capsule"
+      ],
+      "typical_grade": "Food",
+      "certifications": [
+        "Non-GMO",
+        "Kosher",
+        "Halal"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "5 kg",
+      "notes": "月見草・ボラージ・黒スグリ由来。酸化しやすいため不活性ガス充填・遮光保管必須。"
+    }
   },
   {
     "atom_id": "atom_black_ginger",
@@ -14466,7 +16312,73 @@
         "year": "2021",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34064950/"
       }
-    ]
+    ],
+    "existing_products": {
+      "search_query": "Black ginger supplement",
+      "total_count": 1,
+      "sample_products": [
+        {
+          "product_name": "Tumeric with ginger and black pepper",
+          "brand": "",
+          "categories": [
+            "Dietary Supplements",
+            "Gummy"
+          ],
+          "countries": [
+            "United-States"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/085/002/806/2920/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0850028062920"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Gummy"
+      ],
+      "top_countries": [
+        "United-States"
+      ],
+      "retrieved_at": "2026-05-28T13:11:01.289540+00:00"
+    },
+    "market_trends": {
+      "keyword": "Black ginger",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Sabinsa (KaempMax™)",
+        "Oryza Oil & Fat Chemical",
+        "Thai Herbs"
+      ],
+      "japan_suppliers": [
+        "オリザ油化 (ブラックジンジャー)",
+        "太陽化学",
+        "東洋新薬"
+      ],
+      "oem_forms": [
+        "powder",
+        "extract",
+        "capsule",
+        "tablet"
+      ],
+      "typical_grade": "Food / Standardized Extract",
+      "certifications": [
+        "Non-GMO",
+        "Halal"
+      ],
+      "price_tier": "high",
+      "lead_time_weeks": 6,
+      "min_order_qty": "1 kg",
+      "notes": "タイ産が品質安定。ポリメトキシフラボノイド含量で規格化。"
+    }
   },
   {
     "atom_id": "atom_nac",
@@ -14511,8 +16423,8 @@
     "compound": {
       "pubchem_cid": 12035,
       "molecular_formula": "C5H9NO3S",
-      "molecular_weight": "163.19",
-      "smiles": "CC(=O)N[C@@H](CS)C(O)=O",
+      "molecular_weight": "163.20",
+      "smiles": null,
       "inchikey": "PWKSKIMOESPYIA-BYPYZUCNSA-N",
       "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/12035"
     },
@@ -14583,6 +16495,47 @@
       "basis": "未確認 — 個別調査が必要",
       "notes": "本スクリプトのキュレーションデータに含まれていません。",
       "jp_status": "不明"
+    },
+    "market_trends": {
+      "keyword": "N-Acetyl Cysteine",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "BASF",
+        "Zambon",
+        "Nippon Rika",
+        "Shandong Biochemical"
+      ],
+      "japan_suppliers": [
+        "BASF Japan",
+        "日本理化薬品",
+        "三菱商事ライフサイエンス"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet",
+        "effervescent"
+      ],
+      "typical_grade": "Food / USP / EP",
+      "certifications": [
+        "USP",
+        "EP",
+        "Kosher",
+        "Halal"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "5 kg",
+      "notes": "硫黄臭があり製剤化に工夫が必要。FDAが一部サプリ用途に懸念（要確認）。酸化防止剤として使用可。"
     }
   },
   {
@@ -14630,7 +16583,7 @@
       "pubchem_cid": 2353,
       "molecular_formula": "C20H18NO4+",
       "molecular_weight": "336.4",
-      "smiles": "COc1ccc2CC3=CC=C(OC)C(=O)C3=c2c1OC",
+      "smiles": null,
       "inchikey": "YBHILYKTIRIUTE-UHFFFAOYSA-N",
       "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/2353"
     },
@@ -14697,6 +16650,77 @@
       "basis": "未確認 — 個別調査が必要",
       "notes": "本スクリプトのキュレーションデータに含まれていません。",
       "jp_status": "不明"
+    },
+    "existing_products": {
+      "search_query": "Berberine supplement",
+      "total_count": 2,
+      "sample_products": [
+        {
+          "product_name": "Berberine 400mg dietary supplement",
+          "brand": "Swanson",
+          "categories": [],
+          "countries": [
+            "United-States"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "",
+          "off_url": "https://world.openfoodfacts.org/product/1205517104831"
+        },
+        {
+          "product_name": "5x Berberine w/ Ceylon Cinnamon",
+          "brand": "Black Forest Supplements",
+          "categories": [],
+          "countries": [
+            "United-States"
+          ],
+          "nutriscore": "UNKNOWN",
+          "image_url": "",
+          "off_url": "https://world.openfoodfacts.org/product/0860008610546"
+        }
+      ],
+      "top_categories": [],
+      "top_countries": [
+        "United-States"
+      ],
+      "retrieved_at": "2026-05-28T13:11:44.892345+00:00"
+    },
+    "market_trends": {
+      "keyword": "Berberine",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Shaanxi Huike Botanical Development",
+        "Xi'an Sgonek Biological Technology",
+        "Natupharma"
+      ],
+      "japan_suppliers": [
+        "東洋新薬",
+        "太陽化学",
+        "長谷川香料"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet"
+      ],
+      "typical_grade": "Food / Standardized Extract (97-98%)",
+      "certifications": [
+        "Non-GMO",
+        "Kosher",
+        "Halal"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "1 kg",
+      "notes": "薬物相互作用（CYP3A4）に注意。日本では医薬品扱いの場合あり（要規制確認）。"
     }
   },
   {
@@ -14806,7 +16830,140 @@
         "year": "2021",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33737146/"
       }
-    ]
+    ],
+    "existing_products": {
+      "search_query": "Psyllium husk supplement",
+      "total_count": 21,
+      "sample_products": [
+        {
+          "product_name": "Psyllium Husk Fibre Capsules",
+          "brand": "Solgar",
+          "categories": [
+            "Plant Based Foods And Beverages",
+            "Plant Based Foods",
+            "Breakfasts"
+          ],
+          "countries": [
+            "United-Kingdom"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/003/398/402/3154/front_en.11.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0033984023154"
+        },
+        {
+          "product_name": "Organic psyllium husk powder",
+          "brand": "Viva Naturals",
+          "categories": [
+            "Dietary Supplements",
+            "Psyllium Husk Powder"
+          ],
+          "countries": [
+            "United-States",
+            "World"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/070/172/274/7876/front_en.98.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0701722747876"
+        },
+        {
+          "product_name": "Psyllium Husk",
+          "brand": "macro wholefoods market",
+          "categories": [
+            "Natural Fiber Additive",
+            "Supplement"
+          ],
+          "countries": [
+            "Australia"
+          ],
+          "nutriscore": "A",
+          "image_url": "https://images.openfoodfacts.org/images/products/930/063/356/6920/front_en.19.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/9300633566920"
+        },
+        {
+          "product_name": "3-IN-1 DAILY FIBER Psyllium Fiber Supplement",
+          "brand": "Metamucil",
+          "categories": [
+            "Psyllium Husks In Gelatine Capsules"
+          ],
+          "countries": [
+            "United-States"
+          ],
+          "nutriscore": "D",
+          "image_url": "https://images.openfoodfacts.org/images/products/003/700/043/4870/front_en.12.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0037000434870"
+        },
+        {
+          "product_name": "Psyllium husk powder",
+          "brand": "NOW®",
+          "categories": [
+            "Dietary Supplements"
+          ],
+          "countries": [
+            "United-States",
+            "World"
+          ],
+          "nutriscore": "NOT-APPLICABLE",
+          "image_url": "https://images.openfoodfacts.org/images/products/073/373/905/9789/front_en.3.400.jpg",
+          "off_url": "https://world.openfoodfacts.org/product/0733739059789"
+        }
+      ],
+      "top_categories": [
+        "Dietary Supplements",
+        "Plant Based Foods And Beverages",
+        "Plant Based Foods",
+        "Cooking Helpers",
+        "Psyllium"
+      ],
+      "top_countries": [
+        "United-States",
+        "United-Kingdom",
+        "World",
+        "Australia",
+        "Mauritius"
+      ],
+      "retrieved_at": "2026-05-28T13:11:50.653216+00:00"
+    },
+    "market_trends": {
+      "keyword": "Psyllium husk",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Psyllium Labs",
+        "Emetris (India)",
+        "NOW Foods (raw material)",
+        "ICP (India)"
+      ],
+      "japan_suppliers": [
+        "太陽化学",
+        "三菱商事ライフサイエンス",
+        "日清ファルマ"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "functional_food"
+      ],
+      "typical_grade": "Food / USP",
+      "certifications": [
+        "USP",
+        "Non-GMO",
+        "Kosher",
+        "Halal",
+        "Organic (一部)"
+      ],
+      "price_tier": "low",
+      "lead_time_weeks": 3,
+      "min_order_qty": "25 kg",
+      "notes": "インド産が主流（世界供給の85%）。水分で膨張するため十分な水分と共に摂取。"
+    }
   },
   {
     "atom_id": "atom_trehalose",
@@ -14854,8 +17011,8 @@
       "pubchem_cid": 7427,
       "molecular_formula": "C12H22O11",
       "molecular_weight": "342.30",
-      "smiles": "OC[C@H]1O[C@@](CO)(O[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O)[C@@H](O)[C@@H]1O",
-      "inchikey": "HDTRYLNUVZCQOY-WSWWMNSNSA-N",
+      "smiles": null,
+      "inchikey": "HDTRYLNUVZCQOY-LIZSDCNHSA-N",
       "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/7427"
     },
     "pubmed_evidence": [
@@ -14916,7 +17073,44 @@
         "year": "2011",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/21620505/"
       }
-    ]
+    ],
+    "market_trends": {
+      "keyword": "Trehalose",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Hayashibara (TREHA®)",
+        "Cargill"
+      ],
+      "japan_suppliers": [
+        "林原 (TREHA®)",
+        "三菱商事フードテック"
+      ],
+      "oem_forms": [
+        "powder",
+        "granule",
+        "syrup"
+      ],
+      "typical_grade": "Food",
+      "certifications": [
+        "GRAS (GRN 36)",
+        "Halal",
+        "Kosher",
+        "Non-GMO"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 3,
+      "min_order_qty": "10 kg",
+      "notes": "林原が世界最大サプライヤー。食品保護・乾燥保護用途。日本での普及率高い。"
+    }
   },
   {
     "atom_id": "atom_ergothioneine",
@@ -15018,7 +17212,52 @@
         "year": "2025",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40922697/"
       }
-    ]
+    ],
+    "compound": {
+      "pubchem_cid": 5351619,
+      "molecular_formula": "C9H15N3O2S",
+      "molecular_weight": "229.30",
+      "smiles": null,
+      "inchikey": "SSISHJJTAXXQAX-ZETCQYMHSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5351619"
+    },
+    "market_trends": {
+      "keyword": "Ergothioneine",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Tetrahedron (EGT)",
+        "Mironova Labs",
+        "Blue California"
+      ],
+      "japan_suppliers": [
+        "三菱ケミカル",
+        "キリンホールディングス (キリン EGT)"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet"
+      ],
+      "typical_grade": "Food",
+      "certifications": [
+        "GRAS (GRN 702)",
+        "Non-GMO",
+        "Kosher"
+      ],
+      "price_tier": "very_high",
+      "lead_time_weeks": 8,
+      "min_order_qty": "100 g",
+      "notes": "酵母・菌類由来。長寿ビタミン候補として注目。非常に高価。発酵生産品が増加中。"
+    }
   },
   {
     "atom_id": "atom_spermidine",
@@ -15122,7 +17361,51 @@
         "year": "2024",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37326367/"
       }
-    ]
+    ],
+    "compound": {
+      "pubchem_cid": 1102,
+      "molecular_formula": "C7H19N3",
+      "molecular_weight": "145.25",
+      "smiles": null,
+      "inchikey": "ATHGHQPFGPMSJY-UHFFFAOYSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/1102"
+    },
+    "market_trends": {
+      "keyword": "Spermidine",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Longevity Labs (spermidineLIFE®)",
+        "Zhejiang Shengda",
+        "TCI Chemicals"
+      ],
+      "japan_suppliers": [
+        "長寿研究所",
+        "三菱商事ライフサイエンス"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet"
+      ],
+      "typical_grade": "Food",
+      "certifications": [
+        "Non-GMO",
+        "Kosher"
+      ],
+      "price_tier": "very_high",
+      "lead_time_weeks": 6,
+      "min_order_qty": "100 g",
+      "notes": "小麦胚芽由来が一般的。オートファジー誘導で注目。非常に高価。"
+    }
   },
   {
     "atom_id": "atom_lb_acidophilus",
@@ -15229,7 +17512,38 @@
         "year": "2018",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/30264211/"
       }
-    ]
+    ],
+    "supplier_info": {
+      "major_suppliers": [
+        "Chr. Hansen",
+        "DuPont (Danisco)",
+        "Lallemand",
+        "IFF Health"
+      ],
+      "japan_suppliers": [
+        "協和発酵バイオ",
+        "森永乳業",
+        "Lallemand Japan"
+      ],
+      "oem_forms": [
+        "powder (freeze-dried)",
+        "capsule",
+        "tablet",
+        "sachet"
+      ],
+      "typical_grade": "Food / Probiotic",
+      "certifications": [
+        "GRAS",
+        "QPS (EFSA)",
+        "Non-GMO",
+        "Halal",
+        "Kosher"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "500 g",
+      "notes": "CFU/g で規格化。保存条件（冷蔵 or 室温）の選択が重要。酸耐性・胆汁耐性が菌株で異なる。"
+    }
   },
   {
     "atom_id": "atom_lb_rhamnosus",
@@ -15335,7 +17649,33 @@
         "year": "2024",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38929180/"
       }
-    ]
+    ],
+    "supplier_info": {
+      "major_suppliers": [
+        "IFF Health (ATCC 53103)",
+        "Chr. Hansen",
+        "Valio"
+      ],
+      "japan_suppliers": [
+        "IFF Japan",
+        "太陽化学"
+      ],
+      "oem_forms": [
+        "powder (freeze-dried)",
+        "capsule",
+        "sachet"
+      ],
+      "typical_grade": "Food / Probiotic",
+      "certifications": [
+        "GRAS (GRN 679)",
+        "QPS (EFSA)",
+        "Non-GMO"
+      ],
+      "price_tier": "high",
+      "lead_time_weeks": 6,
+      "min_order_qty": "100 g",
+      "notes": "世界最多研究菌株のひとつ。特許保護あり（IFF）。腸管定着性が高い。"
+    }
   },
   {
     "atom_id": "atom_bf_longum",
@@ -15442,7 +17782,37 @@
         "year": "2017",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28861074/"
       }
-    ]
+    ],
+    "supplier_info": {
+      "major_suppliers": [
+        "Chr. Hansen",
+        "DuPont (Danisco)",
+        "Morinaga Milk Industry",
+        "IFF Health"
+      ],
+      "japan_suppliers": [
+        "森永乳業 (BB536)",
+        "協和発酵バイオ",
+        "ヤクルト薬品工業"
+      ],
+      "oem_forms": [
+        "powder (freeze-dried)",
+        "capsule",
+        "sachet"
+      ],
+      "typical_grade": "Food / Probiotic",
+      "certifications": [
+        "GRAS",
+        "QPS (EFSA)",
+        "Non-GMO",
+        "Halal",
+        "Kosher"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "500 g",
+      "notes": "森永BB536が世界的に有名。腸内での生存率が高い。乳幼児腸内菌叢の主要菌。"
+    }
   },
   {
     "atom_id": "atom_lb_casei",
@@ -15548,7 +17918,28 @@
         "year": "2011",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/21521545/"
       }
-    ]
+    ],
+    "supplier_info": {
+      "major_suppliers": [
+        "Yakult Honsha (独占)"
+      ],
+      "japan_suppliers": [
+        "ヤクルト本社"
+      ],
+      "oem_forms": [
+        "fermented_milk (ヤクルト)",
+        "liquid"
+      ],
+      "typical_grade": "Food / Probiotic",
+      "certifications": [
+        "GRAS (申請中)",
+        "Non-GMO"
+      ],
+      "price_tier": "high",
+      "lead_time_weeks": 8,
+      "min_order_qty": "要問合せ",
+      "notes": "ヤクルト本社が独占管理。OEM原料供給は限定的。代替菌株の検討が現実的。"
+    }
   },
   {
     "atom_id": "atom_clostridium_butyricum",
@@ -15654,7 +18045,27 @@
         "year": "2025",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39892707/"
       }
-    ]
+    ],
+    "supplier_info": {
+      "major_suppliers": [
+        "Miyarisan Pharmaceutical (宮入菌)"
+      ],
+      "japan_suppliers": [
+        "宮入製薬"
+      ],
+      "oem_forms": [
+        "capsule (宮入菌製剤)",
+        "tablet"
+      ],
+      "typical_grade": "Food / Pharmaceutical",
+      "certifications": [
+        "JP (腸内細菌製剤として)"
+      ],
+      "price_tier": "high",
+      "lead_time_weeks": 6,
+      "min_order_qty": "要問合せ",
+      "notes": "宮入製薬が独占。酪酸産生菌として腸管上皮保護に有効。芽胞形成で安定性高い。"
+    }
   },
   {
     "atom_id": "atom_pediococcus",
@@ -15757,7 +18168,32 @@
         "year": "2025",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40994456/"
       }
-    ]
+    ],
+    "supplier_info": {
+      "major_suppliers": [
+        "Lallemand",
+        "Chr. Hansen",
+        "DuPont (Danisco)"
+      ],
+      "japan_suppliers": [
+        "Lallemand Japan",
+        "太陽化学"
+      ],
+      "oem_forms": [
+        "powder (freeze-dried)",
+        "capsule"
+      ],
+      "typical_grade": "Food / Probiotic",
+      "certifications": [
+        "GRAS",
+        "QPS (EFSA)",
+        "Non-GMO"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "500 g",
+      "notes": "バクテリオシン（ペジオシン）産生で抗菌作用。発酵食品スターターとしても使用。"
+    }
   },
   {
     "atom_id": "atom_bacillus_coagulans",
@@ -15863,7 +18299,36 @@
         "year": "2025",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39775822/"
       }
-    ]
+    ],
+    "supplier_info": {
+      "major_suppliers": [
+        "Ganeden (GanedenBC30®)",
+        "Sabinsa (LactoSpore®)",
+        "Unique Biotech"
+      ],
+      "japan_suppliers": [
+        "太陽化学 (GanedenBC30®)",
+        "三菱商事ライフサイエンス (LactoSpore®)"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet",
+        "functional_food",
+        "beverage"
+      ],
+      "typical_grade": "Food / Probiotic",
+      "certifications": [
+        "GRAS (GRN 399)",
+        "Non-GMO",
+        "Kosher",
+        "Halal"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "500 g",
+      "notes": "芽胞形成菌で熱・酸・製造プロセスに強い。常温保管可能。食品添加が容易。"
+    }
   },
   {
     "atom_id": "cond_uv_irradiation",
@@ -16551,7 +19016,18 @@
         "year": "2023",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37492342/"
       }
-    ]
+    ],
+    "market_trends": {
+      "keyword": "Blood sugar management",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    }
   },
   {
     "atom_id": "goal_cognitive",
@@ -16649,7 +19125,18 @@
         "year": "2024",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39183960/"
       }
-    ]
+    ],
+    "market_trends": {
+      "keyword": "Cognitive function support",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    }
   },
   {
     "atom_id": "goal_blood_pressure",
@@ -16749,7 +19236,18 @@
         "year": "1993",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23946963/"
       }
-    ]
+    ],
+    "market_trends": {
+      "keyword": "Blood pressure support",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    }
   },
   {
     "atom_id": "goal_liver_support",
@@ -16846,7 +19344,18 @@
         "year": "2024",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38705759/"
       }
-    ]
+    ],
+    "market_trends": {
+      "keyword": "Liver function support",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    }
   },
   {
     "atom_id": "goal_weight_management",
@@ -16944,7 +19453,18 @@
         "year": "2014",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/24076059/"
       }
-    ]
+    ],
+    "market_trends": {
+      "keyword": "Weight management support",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    }
   },
   {
     "atom_id": "goal_allergy_reduction",
@@ -17044,7 +19564,18 @@
         "year": "2023",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36854953/"
       }
-    ]
+    ],
+    "market_trends": {
+      "keyword": "Allergen reduction",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    }
   },
   {
     "atom_id": "goal_antimicrobial",
@@ -17141,7 +19672,18 @@
         "year": "2025",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38520117/"
       }
-    ]
+    ],
+    "market_trends": {
+      "keyword": "Antimicrobial",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    }
   },
   {
     "atom_id": "goal_eye_health",
@@ -17235,7 +19777,18 @@
         "year": "2016",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26799652/"
       }
-    ]
+    ],
+    "market_trends": {
+      "keyword": "Eye health support",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    }
   },
   {
     "atom_id": "goal_energy_vitality",
@@ -17297,7 +19850,18 @@
         "year": "2011",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/21586417/"
       }
-    ]
+    ],
+    "market_trends": {
+      "keyword": "Energy and vitality support",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    }
   },
   {
     "atom_id": "goal_prebiotic_synbiotic",
@@ -17393,7 +19957,18 @@
         "year": "2025",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40431410/"
       }
-    ]
+    ],
+    "market_trends": {
+      "keyword": "Synbiotic formulation",
+      "geo": "JP+US+WW",
+      "timeframe": "today 12-m",
+      "avg_interest_jp": 0,
+      "avg_interest_us": 0,
+      "avg_interest_ww": 0,
+      "trend_direction": "stable",
+      "peak_month_jp": "",
+      "retrieved_at": "2026-05-28T13:16:46.945902+00:00"
+    }
   },
   {
     "atom_id": "enzyme_pectinase",
@@ -17498,7 +20073,36 @@
         "year": "2016",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/25844554/"
       }
-    ]
+    ],
+    "supplier_info": {
+      "major_suppliers": [
+        "Novozymes",
+        "DSM (Rapidase®)",
+        "AB Enzymes",
+        "Amano Enzyme"
+      ],
+      "japan_suppliers": [
+        "天野エンザイム (Amano Enzyme)",
+        "ノボザイムズジャパン",
+        "DSM Japan"
+      ],
+      "oem_forms": [
+        "liquid",
+        "powder",
+        "granule"
+      ],
+      "typical_grade": "Food",
+      "certifications": [
+        "GRAS",
+        "Kosher",
+        "Halal",
+        "Non-GMO"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "1 kg",
+      "notes": "果汁清澄・植物細胞壁分解に使用。最適pH・温度が製品によって異なる。"
+    }
   },
   {
     "atom_id": "enzyme_glucose_oxidase",
@@ -17603,6 +20207,43 @@
         "year": "2014",
         "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/24875443/"
       }
-    ]
+    ],
+    "compound": {
+      "pubchem_cid": 64689,
+      "molecular_formula": "C6H12O6",
+      "molecular_weight": "180.16",
+      "smiles": null,
+      "inchikey": "WQZGKKKJIJFFOK-VFUOTHLCSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/64689"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Novozymes",
+        "AB Enzymes",
+        "Amano Enzyme",
+        "Shin Nihon Chemical"
+      ],
+      "japan_suppliers": [
+        "天野エンザイム",
+        "新日本化学工業",
+        "ノボザイムズジャパン"
+      ],
+      "oem_forms": [
+        "powder",
+        "liquid",
+        "granule"
+      ],
+      "typical_grade": "Food",
+      "certifications": [
+        "GRAS",
+        "Kosher",
+        "Halal",
+        "Non-GMO"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "1 kg",
+      "notes": "製パンでのグルテン強化・除酸素剤として使用。過酸化水素が副産物（カタラーゼ併用推奨）。"
+    }
   }
 ]
