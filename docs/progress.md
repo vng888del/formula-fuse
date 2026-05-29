@@ -1,6 +1,6 @@
 # Formula Fuse Studio — 進捗レポート
 
-> 自動生成: 2026-05-29 09:38 UTC
+> 自動生成: 2026-05-29 10:01 UTC
 > `python3 scripts/generate_docs.py` を実行すると再生成されます。
 
 ---
@@ -33,12 +33,12 @@
 
 | ファイル | 件数 |
 |---|---:|
-| `food-bio-atoms.json` | 157 |
-| **合計** | **157** |
+| `food-bio-atoms.json` | 153 |
+| **合計** | **153** |
 
 | atom_type | 件数 |
 |---|---:|
-| ingredient | 78 |
+| ingredient | 74 |
 | microbe | 16 |
 | enzyme | 10 |
 | condition | 26 |
@@ -48,15 +48,15 @@
 
 | フィールド | 付与済み件数 |
 |---|---:|
-| PubChem 化合物データ (`compound`) | 58 / 157 |
-| UniProt 酵素・微生物データ (`uniprot`) | 19 / 157 |
-| FDA GRAS ステータス (`gras`) | 104 / 157 |
-| USDA 栄養データ (`usda`) | 29 / 157 |
-| PubMed 文献エビデンス (`pubmed_evidence`) | 149 / 157 |
-| サプライヤー・OEM 情報 (`supplier_info`) | 104 / 157 |
-| 特許ランドスケープ (`patent_landscape`) | 0 / 157 |
-| Google Trends 市場需要 (`market_trends`) | 93 / 157 |
-| Open Food Facts 既存製品 (`existing_products`) | 53 / 157 |
+| PubChem 化合物データ (`compound`) | 55 / 153 |
+| UniProt 酵素・微生物データ (`uniprot`) | 19 / 153 |
+| FDA GRAS ステータス (`gras`) | 100 / 153 |
+| USDA 栄養データ (`usda`) | 29 / 153 |
+| PubMed 文献エビデンス (`pubmed_evidence`) | 145 / 153 |
+| サプライヤー・OEM 情報 (`supplier_info`) | 100 / 153 |
+| 特許ランドスケープ (`patent_landscape`) | 0 / 153 |
+| Google Trends 市場需要 (`market_trends`) | 89 / 153 |
+| Open Food Facts 既存製品 (`existing_products`) | 58 / 153 |
 
 ### Risk Tags
 
@@ -119,7 +119,7 @@
 
 ### API エンドポイント
 
-合計 **13** ルート
+合計 **17** ルート
 
 | Method | Path | Router |
 |---|---|---|
@@ -136,6 +136,10 @@
 | `GET` | `/history` | formulas.py |
 | `GET` | `/history/{formula_id}` | formulas.py |
 | `GET` | `/history/{formula_id}/report` | formulas.py |
+| `POST` | `/suggest` | formulas.py |
+| `POST` | `/cost-estimate` | formulas.py |
+| `POST` | `/dose-guide` | formulas.py |
+| `POST` | `/regulatory-check` | formulas.py |
 
 ### Services
 
@@ -167,10 +171,14 @@
 - ✅ `AtomDetailPanel.tsx`
 - ✅ `AtomLibrary.tsx`
 - ✅ `BondGraphPanel.tsx`
+- ✅ `CostPanel.tsx`
+- ✅ `DosePanel.tsx`
 - ✅ `FormulaCanvas.tsx`
 - ✅ `FormulaHistory.tsx`
 - ✅ `FusionCanvas.tsx`
+- ✅ `RegulatoryPanel.tsx`
 - ✅ `SafetyBadge.tsx`
+- ✅ `SuggestPanel.tsx`
 
 ### Hooks
 
@@ -199,5 +207,5 @@
 _このファイルは自動生成です。手動編集しても次回上書きされます。_
 _更新: `python3 scripts/generate_docs.py`　確認: `python3 scripts/generate_docs.py --check`_
 
-<!-- src-hash: 07b1a82aa483 -->
-<!-- file-hashes: {"data/seed-atoms/food-bio-atoms.json":"ab20d11c6533","data/seed-atoms/risk-tags.json":"29e0b91b265e","data/seed-atoms/bond-rules.json":"4babe428d128","backend/app/routers/atoms.py":"909d1d265ed4","backend/app/routers/formulas.py":"7d0eaf97697a","backend/app/services/ai_router.py":"32fc17b161e8","backend/app/services/fuse_engine.py":"4db7ef8298f6","backend/app/services/risk_gate.py":"97e31176f0dd","backend/app/services/report_generator.py":"9f2ea58f680c","backend/app/db/database.py":"6b2553ce538d","docs/data-sources.md":"f49acaaa1297"} -->
+<!-- src-hash: 62d2732ddae2 -->
+<!-- file-hashes: {"data/seed-atoms/food-bio-atoms.json":"57fb4c1971f2","data/seed-atoms/risk-tags.json":"29e0b91b265e","data/seed-atoms/bond-rules.json":"4babe428d128","backend/app/routers/atoms.py":"909d1d265ed4","backend/app/routers/formulas.py":"c03f995c9dbd","backend/app/services/ai_router.py":"32fc17b161e8","backend/app/services/fuse_engine.py":"4db7ef8298f6","backend/app/services/risk_gate.py":"97e31176f0dd","backend/app/services/report_generator.py":"9f2ea58f680c","backend/app/db/database.py":"6b2553ce538d","docs/data-sources.md":"f49acaaa1297"} -->

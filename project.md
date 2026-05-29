@@ -13,42 +13,26 @@
 | BYOK（Bring Your Own Key） | ✅ |
 | AtomDetailPanel（エンリッチデータ表示） | ✅ |
 | Bond 可視化（FusionCanvas） | ✅ |
-| BondGraphPanel（ネットワークグラフ） | ✅ |
-| AnalyticsPanel（統計・マーケット分析） | ✅ |
-| **逆引き検索 SuggestPanel（目的→Atom提案）** | ✅ |
-| **原価シミュレーター CostPanel** | ✅ |
-| **配合量ガイド DosePanel（臨床推奨量）** | ✅ |
-| **規制チェックリスト RegulatoryPanel** | ✅ |
-| Phase 1: PubChem エンリッチ | ⚠️ ~52/74 ingredient (70%) |
-| Phase 2: UniProt | ⚠️ 19/157 (12%) |
-| Phase 2: PubMed | ✅ 74/74 ingredient (100%) |
-| Phase 3: FDA GRAS + Safety Gate 強化 | ✅ 74/74 ingredient (100%) |
-| Phase 4: サプライヤー情報 | ✅ 74/74 ingredient (100%) |
-| Phase 5: Google Trends | ⚠️ ~62/74 ingredient (83%) |
-| Phase 5: Open Food Facts | ⚠️ 進行中（503 rate limit） |
+| Phase 1: PubChem エンリッチ | ⚠️ 55/153 (35%) |
+| Phase 2: UniProt | ⚠️ 19/153 (12%) |
+| Phase 2: PubMed | ⚠️ 145/153 (94%) |
+| Phase 3: FDA GRAS + Safety Gate 強化 | ⚠️ 100/153 (65%) |
+| Phase 4: サプライヤー情報 | ⚠️ 100/153 (65%) |
+| Phase 5: Google Trends | ⚠️ 89/153 (58%) |
+| Phase 5: Open Food Facts | ⚠️ 58/153 (37%) |
 | **Formula 保存（Supabase DB）** | ✅ 本番稼働中 |
 <!-- END:current-state -->
 
 ## Atom Counts
 
 <!-- BEGIN:atom-counts -->
-現在 **157 Atoms**（ingredient 74 / microbe 16 / enzyme 10 / condition 26 / goal 31）
-
-最近追加した ingredient（12件）:
-rhodiola、panax ginseng、cordyceps、NMN、piperine、L-glutamine、EGCG、sulforaphane、beta-alanine、boswellia、fisetin、urolithin-A
+現在 **153 Atoms**（ingredient 74 / microbe 16 / enzyme 10 / condition 26 / goal 27）
 <!-- END:atom-counts -->
 
 ## Bond Counts
 
 <!-- BEGIN:bond-counts -->
 現在 **71 Bond Rules**。Risk Tags **26** 件（red 5 / yellow 21）。
-
-最近追加したBond Rules（13件）:
-adaptogen_ginseng_rhodiola、mushroom_immune_performance、nmn_longevity_stack、
-ala_antioxidant_network、ginseng_cognitive_stack、piperine_bioavailability、
-glutamine_gut_brain、egcg_polyphenol_synergy、nrf2_detox_synergy、
-beta_alanine_sports_stack、boswellia_anti_inflammatory、senolytic_longevity_stack、
-urolithin_mitophagy_stack
 <!-- END:bond-counts -->
 
 ## Backend Endpoints
@@ -92,12 +76,12 @@ urolithin_mitophagy_stack
 <!-- BEGIN:data-phases -->
 | Phase | 内容 | 状態 |
 |---|---|---|
-| 0 | 手動シード Atom | ✅ 完了（157 atoms） |
-| 1 | PubChem / USDA API 連携 | ⚠️ PubChem 70%・USDA 39%（サプリは対象外） |
-| 2 | UniProt / PubMed | ✅ PubMed 100%（ingredient）/ UniProt 12% |
-| 3 | FDA GRAS / Safety Gate 強化 | ✅ 完了（ingredient 100%） |
-| 4 | サプライヤー / Lens.org 特許 | ⚠️ サプライヤー 100%・Lens.org APIキー待ち |
-| 5 | Google Trends / Open Food Facts | ⚠️ Trends 83%・OFF 進行中（rate limit） |
+| 0 | 手動シード Atom | ✅ 完了 |
+| 1 | PubChem / MEXT / USDA API 連携 | ⚠️ 一部完了（PubChem のみ・MEXT未） |
+| 2 | UniProt / PubMed | ✅ 完了 |
+| 3 | FDA GRAS / Safety Gate 強化 | ✅ 完了 |
+| 4 | サプライヤー / Lens.org 特許 | ⚠️ 一部完了（Lens.org 特許未取得） |
+| 5 | Google Trends / Open Food Facts | ⚠️ 完了（Trends は rate limit あり） |
 <!-- END:data-phases -->
 
 ## Security Constraints
@@ -123,11 +107,9 @@ urolithin_mitophagy_stack
 
 <!-- BEGIN:next-steps -->
 1. **Open Food Facts 完了後に Supabase 再同期**
-   - `python3 scripts/seed_supabase.py` でDB更新
+   - `python3 scripts/sync_atoms_supabase.py`
 2. **Lens.org API キー取得** → `python3 scripts/enrich_patents_lens.py`
-   - 無料登録: https://www.lens.org/
-   - トラッキングID: d66a994c-7f38-4312-b533-9723d4959930
+   - 無料登録: https://www.lens.org/ (トラッキングID: d66a994c-7f38-4312-b533-9723d4959930)
 3. **フォーミュラ比較モード** — 保存済みフォーミュラをサイドバイサイド比較
 4. **フォーミュラ共有** — URLシェア or QRコード生成
-5. **配合比率AI提案** — AIによる最適配合比の提案（BYOK利用）
 <!-- END:next-steps -->

@@ -63,29 +63,28 @@
 - Disclaimer付き出力
 - エクスポート用データ整形
 
-## APIエンドポイント（MVP）
+## APIエンドポイント（現在）
 
 ```
-GET    /atoms                  # Atom一覧
-GET    /atoms/{id}             # Atom詳細
-POST   /atoms                  # Atom登録
-GET    /atoms/search?q=        # 検索
-GET    /atoms/category/{cat}   # カテゴリ絞り込み
+GET    /atoms                         # Atom一覧
+GET    /atoms/{id}                    # Atom詳細
+GET    /atoms/search?q=               # 検索
+GET    /atoms/category/{cat}          # カテゴリ絞り込み
+GET    /atoms/meta/bond-rules         # Bond Rule一覧
+GET    /atoms/meta/risk-tags          # Risk Tag一覧
 
-POST   /formula/fuse           # Fuse実行（Bond Rule評価）
-POST   /formula/analyze        # AI解析（BYOK）
-POST   /formula/safety-gate    # Safety Gate判定
-POST   /formula/experiment     # 実験計画生成
-POST   /formula/patent-brief   # Patent Brief生成
-POST   /formula/productize     # 商品化提案生成
+POST   /formula/fuse                  # Fuse実行（Bond Rule評価）
+POST   /formula/safety-gate          # Safety Gate判定（Green/Yellow/Red/Black）
+POST   /formula/analyze              # AI解析（BYOK: X-AI-Provider-Key ヘッダー）
+POST   /formula/save                 # Formula保存
+GET    /formula/history              # Formula履歴一覧
+GET    /formula/history/{id}         # Formula詳細
+GET    /formula/history/{id}/report  # Markdownレポート出力
 
-GET    /formulas               # Formula履歴一覧
-GET    /formulas/{id}          # Formula詳細
-POST   /formulas               # Formula保存
-GET    /formulas/{id}/report   # Markdownレポート出力
-
-GET    /bond-rules             # Bond Rule一覧
-GET    /risk-tags              # Risk Tag一覧
+POST   /formula/suggest              # 逆引き検索（目的→Atom提案）
+POST   /formula/cost-estimate        # 原価シミュレーター
+POST   /formula/dose-guide           # 配合量ガイド（臨床推奨量）
+POST   /formula/regulatory-check     # 規制チェックリスト（JP/US/ALL）
 ```
 
 ## データフロー
