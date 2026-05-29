@@ -1381,5 +1381,86 @@
       "甲状腺機能低下症患者への禁忌確認",
       "癌患者への特定化学療法との相互作用確認"
     ]
+  },
+  {
+    "bond_rule_id": "bond_beta_alanine_sports_stack",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "carnosine_synthesis"
+    ],
+    "target_required_tags": [
+      "energy_metabolism"
+    ],
+    "bond_type": "sports_endurance_stack",
+    "expected_result": "筋肉内カルノシン蓄積による酸性化緩衝 + エネルギー代謝サポートでの持久力・高強度パフォーマンス向上",
+    "confidence": "high",
+    "risk_level": "green",
+    "explanation": "βアラニンはカルノシン合成を促進し筋肉のpH緩衝能を高める。クレアチン・カフェイン・BCA等のスポーツ栄養素と組み合わせることで複合的なパフォーマンス向上効果が期待できる",
+    "required_checks": [
+      "パレステジア(ピリピリ感)対策に分割投与推奨",
+      "腎機能障害患者への大量投与注意"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_boswellia_anti_inflammatory",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "5_lox_inhibition"
+    ],
+    "target_required_tags": [
+      "anti_inflammatory"
+    ],
+    "bond_type": "multi_pathway_anti_inflammatory",
+    "expected_result": "5-LOX経路(ボスウェリア)とCOX-2経路(クルクミン等)の両方を抑制する多角的な抗炎症効果",
+    "confidence": "high",
+    "risk_level": "yellow",
+    "explanation": "ボスウェリアはAKBAによる5-LOX阻害、クルクミン・オメガ3はCOX-2経路を抑制し、異なる炎症経路を同時にブロックすることで、NSAIDs様の副作用なしに包括的な炎症管理が可能",
+    "required_checks": [
+      "抗凝固薬との相互作用確認",
+      "NSAIDs服用中患者への重複投与確認"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_senolytic_longevity_stack",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "senolytic"
+    ],
+    "target_required_tags": [
+      "longevity_support"
+    ],
+    "bond_type": "longevity_cellular_renewal",
+    "expected_result": "老化細胞の除去(セノリシス)とNAD+/ミトコンドリア機能回復の組み合わせによる包括的アンチエイジング",
+    "confidence": "medium",
+    "risk_level": "yellow",
+    "explanation": "フィセチン・クエルセチンなどのセノリティクスは老化細胞(ゾンビ細胞)を除去し、NMN・ウロリチンAなどの長寿化合物はミトコンドリア機能を回復させる。両者を組み合わせることで老化の多角的アプローチが可能",
+    "required_checks": [
+      "ヒト臨床試験エビデンスはまだ限定的",
+      "長期安全性データが不十分",
+      "癌患者への特殊注意"
+    ]
+  },
+  {
+    "bond_rule_id": "bond_urolithin_mitophagy_stack",
+    "source_atom_type": "ingredient",
+    "target_atom_type": "ingredient",
+    "source_required_tags": [
+      "mitophagy_activation"
+    ],
+    "target_required_tags": [
+      "mitochondrial_support"
+    ],
+    "bond_type": "mitochondrial_renewal_stack",
+    "expected_result": "ミトファジー(機能不全ミトコンドリアの選択的除去)と新規ミトコンドリア生合成の同時促進による細胞エネルギー産生の根本的改善",
+    "confidence": "medium",
+    "risk_level": "yellow",
+    "explanation": "ウロリチンAはミトファジーを活性化して古いミトコンドリアを除去し、NMNはNAD+を補充して新しいミトコンドリアの機能を最大化する。CoQ10との組み合わせでPGC-1α経路を通じたミトコンドリア生合成も促進される可能性がある",
+    "required_checks": [
+      "ウロリチンAのヒト試験エビデンスは限定的（2022年Cell Reports Medicine）",
+      "EU Novel Food/NDI規制確認"
+    ]
   }
 ]

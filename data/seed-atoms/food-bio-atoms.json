@@ -23238,5 +23238,624 @@
       "avg_interest_us": 72,
       "trend_direction": "rising"
     }
+  },
+  {
+    "atom_id": "atom_beta_alanine",
+    "name_ja": "βアラニン",
+    "name_en": "Beta-alanine",
+    "atom_type": "ingredient",
+    "category": "amino_acid",
+    "domain": "food_bio",
+    "known_actions": [
+      "carnosine_synthesis",
+      "buffering_capacity",
+      "endurance_performance",
+      "fatigue_delay"
+    ],
+    "possible_bonds": [
+      "sports_performance_synergy",
+      "energy_metabolism",
+      "muscle_recovery"
+    ],
+    "risk_tags": [
+      "paresthesia_tingling",
+      "dose_review_required"
+    ],
+    "evidence_keywords": [
+      "beta-alanine carnosine performance",
+      "beta-alanine endurance exercise",
+      "beta-alanine muscle fatigue"
+    ],
+    "regulatory_notes": [
+      "高用量(>2g/回)でピリピリ感(パレステジア)が生じる場合あり。分割摂取で軽減可能。"
+    ],
+    "process_keywords": [
+      "sustained release",
+      "CarnoSyn",
+      "time-release capsule"
+    ],
+    "supplier_keywords": [
+      "CarnoSyn beta-alanine",
+      "beta-alanine sustained release"
+    ],
+    "gras": {
+      "status": "GRAS",
+      "basis": "GRAS as amino acid",
+      "notes": "FDA GRAS. スポーツ栄養サプリとして広く使用。日本では機能性表示食品実績あり。",
+      "jp_status": "食品（アミノ酸）として使用可"
+    },
+    "compound": {
+      "pubchem_cid": 239,
+      "molecular_formula": "C3H7NO2",
+      "molecular_weight": 89.09,
+      "smiles": "NCCC(=O)O",
+      "inchikey": "UCMIRNVEIXFBKS-UHFFFAOYSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/239"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Natural Alternatives International (CarnoSyn)",
+        "Kyowa Hakko Bio",
+        "Wuhan Grand Hoyo"
+      ],
+      "japan_suppliers": [
+        "協和発酵バイオ",
+        "味の素",
+        "太陽化学"
+      ],
+      "oem_forms": [
+        "powder",
+        "capsule",
+        "tablet",
+        "sustained_release_tablet"
+      ],
+      "typical_grade": "Food Grade / USP",
+      "certifications": [
+        "Non-GMO",
+        "Informed-Sport",
+        "Kosher"
+      ],
+      "price_tier": "medium",
+      "lead_time_weeks": 4,
+      "min_order_qty": "1 kg",
+      "notes": "Natural Alternatives International社のCarnoSynが最多臨床試験データを持つブランド品。持続放出型が副作用(パレステジア)を軽減。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "27797728",
+        "title": "β-alanine supplementation to improve exercise capacity and performance: a systematic review and meta-analysis.",
+        "authors": [
+          "Saunders B",
+          "Elliott-Sale K",
+          "Artioli GG"
+        ],
+        "journal": "Br J Sports Med",
+        "year": "2017",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/27797728/"
+      },
+      {
+        "pmid": "26175657",
+        "title": "International society of sports nutrition position stand: Beta-Alanine.",
+        "authors": [
+          "Trexler ET",
+          "Smith-Ryan AE",
+          "Stout JR"
+        ],
+        "journal": "J Int Soc Sports Nutr",
+        "year": "2015",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26175657/"
+      },
+      {
+        "pmid": "22270875",
+        "title": "Effects of β-alanine supplementation on exercise performance: a meta-analysis.",
+        "authors": [
+          "Hobson RM",
+          "Saunders B",
+          "Ball G"
+        ],
+        "journal": "Amino Acids",
+        "year": "2012",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/22270875/"
+      },
+      {
+        "pmid": "34503527",
+        "title": "International Society of Sports Nutrition position stand: sodium bicarbonate and exercise performance.",
+        "authors": [
+          "Grgic J",
+          "Pedisic Z",
+          "Saunders B"
+        ],
+        "journal": "J Int Soc Sports Nutr",
+        "year": "2021",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34503527/"
+      },
+      {
+        "pmid": "39064783",
+        "title": "Effects of β-Alanine Supplementation on Subjects Performing High-Intensity Functional Training.",
+        "authors": [
+          "Cimadevilla-Fernández-Pola E",
+          "Martínez-Roldán C",
+          "Maté-Muñoz JL"
+        ],
+        "journal": "Nutrients",
+        "year": "2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39064783/"
+      }
+    ],
+    "existing_products": {
+      "total_count": 3500,
+      "top_categories": [
+        "sports nutrition",
+        "pre-workout",
+        "endurance supplements"
+      ]
+    },
+    "market_trends": {
+      "keyword": "beta-alanine supplement",
+      "avg_interest_jp": 30,
+      "avg_interest_us": 68,
+      "trend_direction": "stable"
+    }
+  },
+  {
+    "atom_id": "atom_boswellia",
+    "name_ja": "ボスウェリア（乳香）",
+    "name_en": "Boswellia serrata (Indian frankincense)",
+    "atom_type": "ingredient",
+    "category": "plant_extract",
+    "domain": "food_bio",
+    "known_actions": [
+      "anti_inflammatory",
+      "joint_support",
+      "5_lox_inhibition",
+      "gut_anti_inflammatory"
+    ],
+    "possible_bonds": [
+      "anti_inflammatory_synergy",
+      "joint_health_support",
+      "gut_health_support"
+    ],
+    "risk_tags": [
+      "drug_interaction_risk",
+      "pregnancy_caution"
+    ],
+    "evidence_keywords": [
+      "boswellia serrata AKBA anti-inflammatory",
+      "boswellia joint pain arthritis",
+      "5-LOX inhibitor"
+    ],
+    "regulatory_notes": [
+      "妊娠中は避ける（子宮収縮作用の報告あり）。抗凝固薬との相互作用に注意。"
+    ],
+    "process_keywords": [
+      "AKBA (acetyl-11-keto-β-boswellic acid)",
+      "Aflapin",
+      "5-Loxin",
+      "boswellic acid standardized"
+    ],
+    "supplier_keywords": [
+      "Boswellia serrata extract",
+      "AKBA standardized",
+      "Aflapin",
+      "5-Loxin"
+    ],
+    "gras": {
+      "status": "unknown",
+      "notes": "Sold as dietary supplement in US. EU Novel Food申請中（一部）. 日本では食薬区分確認が必要。"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Sabinsa (5-Loxin)",
+        "Arjuna Natural (Aflapin)",
+        "PLT Health Solutions"
+      ],
+      "japan_suppliers": [
+        "丸善製薬",
+        "長谷川香料",
+        "日本健康医学研究所"
+      ],
+      "oem_forms": [
+        "capsule",
+        "tablet",
+        "extract_powder"
+      ],
+      "typical_grade": "Standardized Extract (AKBA 30%+)",
+      "certifications": [
+        "Non-GMO",
+        "Organic"
+      ],
+      "price_tier": "high",
+      "lead_time_weeks": 6,
+      "min_order_qty": "1 kg",
+      "notes": "Sabinsa社5-LoxinとArjuna社Aflapinが主要ブランド。AKBA含量が品質指標。クルクミンとの組み合わせで抗炎症効果の相乗が期待できる。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "39125311",
+        "title": "Mitigating Traumatic Brain Injury: A Narrative Review of Supplementation and Dietary Protocols.",
+        "authors": [
+          "Conti F",
+          "McCue JJ",
+          "DiTuro P"
+        ],
+        "journal": "Nutrients",
+        "year": "2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39125311/"
+      },
+      {
+        "pmid": "29018060",
+        "title": "Dietary supplements for treating osteoarthritis: a systematic review and meta-analysis.",
+        "authors": [
+          "Liu X",
+          "Machado GC",
+          "Eyles JP"
+        ],
+        "journal": "Br J Sports Med",
+        "year": "2018",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29018060/"
+      },
+      {
+        "pmid": "39875757",
+        "title": "Efficacy and Safety of Boswellia serrata and Apium graveolens L. Extract Against Knee Osteoarthritis and Cartilage Degeneration: A Randomized, Double-blind, Multicenter, Placebo-Controlled Clinical Tr",
+        "authors": [
+          "Vaidya N",
+          "Agarwal R",
+          "Dipankar DG"
+        ],
+        "journal": "Pharm Res",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39875757/"
+      },
+      {
+        "pmid": "32029141",
+        "title": "Immunomodulant feed supplement Boswellia serrata to support broiler chickens' health and dietary and technological meat quality.",
+        "authors": [
+          "Kiczorowska B",
+          "Samolińska W",
+          "Al-Yasiry A"
+        ],
+        "journal": "Poult Sci",
+        "year": "2020",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32029141/"
+      },
+      {
+        "pmid": "40806131",
+        "title": "Comparative Effectiveness of Nutritional Supplements in the Treatment of Knee Osteoarthritis: A Network Meta-Analysis.",
+        "authors": [
+          "Zhang Y",
+          "Gui Y",
+          "Adams R"
+        ],
+        "journal": "Nutrients",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40806131/"
+      }
+    ],
+    "existing_products": {
+      "total_count": 900,
+      "top_categories": [
+        "joint supplements",
+        "anti-inflammatory",
+        "sports recovery"
+      ]
+    },
+    "market_trends": {
+      "keyword": "boswellia supplement",
+      "avg_interest_jp": 22,
+      "avg_interest_us": 58,
+      "trend_direction": "rising"
+    }
+  },
+  {
+    "atom_id": "atom_fisetin",
+    "name_ja": "フィセチン",
+    "name_en": "Fisetin",
+    "atom_type": "ingredient",
+    "category": "polyphenol",
+    "domain": "food_bio",
+    "known_actions": [
+      "senolytic",
+      "antioxidant",
+      "neuroprotective",
+      "anti_inflammatory",
+      "longevity_support"
+    ],
+    "possible_bonds": [
+      "longevity_synergy",
+      "antioxidant_synergy",
+      "cognitive_support"
+    ],
+    "risk_tags": [
+      "drug_interaction_risk",
+      "regulatory_ambiguity"
+    ],
+    "evidence_keywords": [
+      "fisetin senolytic aging",
+      "fisetin neuroprotection memory",
+      "fisetin antioxidant flavonoid"
+    ],
+    "regulatory_notes": [
+      "セノリティック（老化細胞除去）作用のヒトRCTデータは限定的。規制上は食品成分として扱われる場合が多いが国により異なる。"
+    ],
+    "process_keywords": [
+      "strawberry extract",
+      "Japanese wax tree extract",
+      "standardized fisetin"
+    ],
+    "supplier_keywords": [
+      "fisetin extract",
+      "fisetin 98%",
+      "sumac tree extract"
+    ],
+    "gras": {
+      "status": "unknown",
+      "notes": "食品に天然に含まれるポリフェノール（イチゴ等）。濃縮サプリとしての規制は国により異なる。日本では食品として扱われることが多い。"
+    },
+    "compound": {
+      "pubchem_cid": 637775,
+      "molecular_formula": "C15H10O6",
+      "molecular_weight": 286.24,
+      "smiles": "O=c1cc(-c2ccc(O)c(O)c2)oc2cc(O)ccc12",
+      "inchikey": "UAVHIQDUNYUDRG-UHFFFAOYSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/637775"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Chromadex",
+        "Sabinsa",
+        "Shaanxi Undersun Biomedtech"
+      ],
+      "japan_suppliers": [
+        "丸善製薬",
+        "オリザ油化",
+        "ナチュラルプロセスフーズ"
+      ],
+      "oem_forms": [
+        "capsule",
+        "tablet",
+        "powder"
+      ],
+      "typical_grade": "Standardized Extract 98%",
+      "certifications": [
+        "Non-GMO",
+        "GMP"
+      ],
+      "price_tier": "very_high",
+      "lead_time_weeks": 6,
+      "min_order_qty": "100 g",
+      "notes": "NMN・レスベラトロルと並ぶ注目の長寿成分。セノリティック研究での注目度が急上昇。価格は高め。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "40437670",
+        "title": "Intermittent Supplementation With Fisetin Improves Physical Function and Decreases Cellular Senescence in Skeletal Muscle With Aging: A Comparison to Genetic Clearance of Senescent Cells and Synthetic",
+        "authors": [
+          "Murray KO",
+          "Mahoney SA",
+          "Ludwig KR"
+        ],
+        "journal": "Aging Cell",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40437670/"
+      },
+      {
+        "pmid": "32578904",
+        "title": "Emerging use of senolytics and senomorphics against aging and chronic diseases.",
+        "authors": [
+          "Martel J",
+          "Ojcius DM",
+          "Wu CY"
+        ],
+        "journal": "Med Res Rev",
+        "year": "2020",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32578904/"
+      },
+      {
+        "pmid": "37762460",
+        "title": "Fisetin-In Search of Better Bioavailability-From Macro to Nano Modifications: A Review.",
+        "authors": [
+          "Szymczak J",
+          "Cielecka-Piontek J"
+        ],
+        "journal": "Int J Mol Sci",
+        "year": "2023",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37762460/"
+      },
+      {
+        "pmid": "35231453",
+        "title": "Harnessing the therapeutic potential of fisetin and its nanoparticles: Journey so far and road ahead.",
+        "authors": [
+          "Vishwas S",
+          "Singh SK",
+          "Gulati M"
+        ],
+        "journal": "Chem Biol Interact",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35231453/"
+      },
+      {
+        "pmid": "40287100",
+        "title": "Kaempferol, a widely ingested dietary flavonoid and supplement, enhances biological performance via hormesis, especially for ageing-related processes.",
+        "authors": [
+          "Calabrese EJ",
+          "Pressman P",
+          "Hayes AW"
+        ],
+        "journal": "Mech Ageing Dev",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40287100/"
+      }
+    ],
+    "existing_products": {
+      "total_count": 600,
+      "top_categories": [
+        "longevity supplements",
+        "anti-aging",
+        "senolytic formulas"
+      ]
+    },
+    "market_trends": {
+      "keyword": "fisetin senolytic",
+      "avg_interest_jp": 38,
+      "avg_interest_us": 65,
+      "trend_direction": "rising"
+    }
+  },
+  {
+    "atom_id": "atom_urolithin_a",
+    "name_ja": "ウロリチンA",
+    "name_en": "Urolithin A",
+    "atom_type": "ingredient",
+    "category": "longevity_compound",
+    "domain": "food_bio",
+    "known_actions": [
+      "mitophagy_activation",
+      "mitochondrial_biogenesis",
+      "muscle_endurance",
+      "anti_aging"
+    ],
+    "possible_bonds": [
+      "longevity_synergy",
+      "mitochondrial_support",
+      "sports_performance_synergy"
+    ],
+    "risk_tags": [
+      "regulatory_ambiguity"
+    ],
+    "evidence_keywords": [
+      "urolithin A mitophagy muscle aging",
+      "urolithin A pomegranate metabolite",
+      "urolithin A human clinical trial"
+    ],
+    "regulatory_notes": [
+      "EU Novel Food承認取得済み（2022年）。米国でNDI届出済み（Amazentis/Timeline）。日本では食薬区分確認が必要。"
+    ],
+    "process_keywords": [
+      "fermentation synthesis",
+      "pomegranate extract metabolite",
+      "Timeline Mitopure"
+    ],
+    "supplier_keywords": [
+      "Urolithin A",
+      "Mitopure (Amazentis)",
+      "Timeline Nutrition"
+    ],
+    "gras": {
+      "status": "unknown",
+      "jp_status": "食薬区分確認要（腸内細菌代謝産物）",
+      "notes": "EU Novel Food承認。米国NDI届出済み。自然界にはザクロ・クルミ・ベリー類から腸内細菌が産生。"
+    },
+    "compound": {
+      "pubchem_cid": 5488186,
+      "molecular_formula": "C13H8O4",
+      "molecular_weight": 228.2,
+      "smiles": "O=c1oc2ccccc2c2cc(O)ccc12",
+      "inchikey": "PVDKZBEQUHPFLP-UHFFFAOYSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5488186"
+    },
+    "supplier_info": {
+      "major_suppliers": [
+        "Amazentis (Mitopure)",
+        "Sabinsa",
+        "Shaanxi Genuine Biotech"
+      ],
+      "japan_suppliers": [
+        "エーザイ",
+        "丸善製薬",
+        "ニチレイバイオサイエンス"
+      ],
+      "oem_forms": [
+        "capsule",
+        "powder",
+        "softgel",
+        "gummy"
+      ],
+      "typical_grade": "Pharmaceutical Grade / Standardized",
+      "certifications": [
+        "EU Novel Food",
+        "NDI (US)",
+        "GMP"
+      ],
+      "price_tier": "very_high",
+      "lead_time_weeks": 8,
+      "min_order_qty": "50 g",
+      "notes": "AmazentisのMitopureが唯一の大規模ヒト臨床試験データ保有ブランド。ミトファジー活性化の直接証拠あり。コスト最高水準。"
+    },
+    "pubmed_evidence": [
+      {
+        "pmid": "35050355",
+        "title": "Effect of Urolithin A Supplementation on Muscle Endurance and Mitochondrial Health in Older Adults: A Randomized Clinical Trial.",
+        "authors": [
+          "Liu S",
+          "D'Amico D",
+          "Shankland E"
+        ],
+        "journal": "JAMA Netw Open",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35050355/"
+      },
+      {
+        "pmid": "39060742",
+        "title": "Mitochondria as Nutritional Targets to Maintain Muscle Health and Physical Function During Ageing.",
+        "authors": [
+          "Broome SC",
+          "Whitfield J",
+          "Karagounis LG"
+        ],
+        "journal": "Sports Med",
+        "year": "2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39060742/"
+      },
+      {
+        "pmid": "36522127",
+        "title": "Nutraceutical activation of Sirt1: a review.",
+        "authors": [
+          "DiNicolantonio JJ",
+          "McCarty MF",
+          "O'Keefe JH"
+        ],
+        "journal": "Open Heart",
+        "year": "2022",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36522127/"
+      },
+      {
+        "pmid": "39665042",
+        "title": "Urolithin A and nicotinamide riboside differentially regulate innate immune defenses and metabolism in human microglial cells.",
+        "authors": [
+          "Madsen HB",
+          "Navarro C",
+          "Gasparini E"
+        ],
+        "journal": "Front Aging Neurosci",
+        "year": "2024",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39665042/"
+      },
+      {
+        "pmid": "41404767",
+        "title": "Distinct roles of urolithin A and spermidine in mitophagy and autophagy: implications for dietary supplementation.",
+        "authors": [
+          "Borsky P",
+          "Holmannova D",
+          "Soukup O"
+        ],
+        "journal": "Nutr Res Rev",
+        "year": "2025",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41404767/"
+      }
+    ],
+    "existing_products": {
+      "total_count": 200,
+      "top_categories": [
+        "longevity supplements",
+        "sports nutrition",
+        "mitochondrial health"
+      ]
+    },
+    "market_trends": {
+      "keyword": "urolithin A supplement",
+      "avg_interest_jp": 35,
+      "avg_interest_us": 70,
+      "trend_direction": "rising"
+    }
   }
 ]

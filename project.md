@@ -13,26 +13,26 @@
 | BYOK（Bring Your Own Key） | ✅ |
 | AtomDetailPanel（エンリッチデータ表示） | ✅ |
 | Bond 可視化（FusionCanvas） | ✅ |
-| Phase 1: PubChem エンリッチ | ⚠️ 55/153 (35%) |
-| Phase 2: UniProt | ⚠️ 19/153 (12%) |
-| Phase 2: PubMed | ⚠️ 145/153 (94%) |
-| Phase 3: FDA GRAS + Safety Gate 強化 | ⚠️ 100/153 (65%) |
-| Phase 4: サプライヤー情報 | ⚠️ 100/153 (65%) |
-| Phase 5: Google Trends | ⚠️ 89/153 (58%) |
-| Phase 5: Open Food Facts | ⚠️ 49/153 (32%) |
+| Phase 1: PubChem エンリッチ | ⚠️ 58/157 (36%) |
+| Phase 2: UniProt | ⚠️ 19/157 (12%) |
+| Phase 2: PubMed | ⚠️ 149/157 (94%) |
+| Phase 3: FDA GRAS + Safety Gate 強化 | ⚠️ 104/157 (66%) |
+| Phase 4: サプライヤー情報 | ⚠️ 104/157 (66%) |
+| Phase 5: Google Trends | ⚠️ 93/157 (59%) |
+| Phase 5: Open Food Facts | ⚠️ 53/157 (33%) |
 | **Formula 保存（Supabase DB）** | ✅ 本番稼働中 |
 <!-- END:current-state -->
 
 ## Atom Counts
 
 <!-- BEGIN:atom-counts -->
-現在 **153 Atoms**（ingredient 74 / microbe 16 / enzyme 10 / condition 26 / goal 27）
+現在 **157 Atoms**（ingredient 78 / microbe 16 / enzyme 10 / condition 26 / goal 27）
 <!-- END:atom-counts -->
 
 ## Bond Counts
 
 <!-- BEGIN:bond-counts -->
-現在 **67 Bond Rules**。Risk Tags **26** 件（red 5 / yellow 21）。
+現在 **71 Bond Rules**。Risk Tags **26** 件（red 5 / yellow 21）。
 <!-- END:bond-counts -->
 
 ## Data Phases
