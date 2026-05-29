@@ -22,15 +22,28 @@ _risk_tags_cache: Optional[list] = None
 
 def _load_atoms() -> list[dict]:
     global _atoms_cache
-    if _atoms_cache is None:
-        atoms: list[dict] = []
-        # seed-atoms/ 内の全 *-atoms.json を結合（追加ファイルを置くだけで自動ロード）
-        for path in sorted(DATA_DIR.glob("*-atoms.json")):
-            if path.name.startswith(".") or path.name.startswith("._"):
-                continue
-            with open(path, encoding="utf-8") as f:
-                atoms.extend(json.load(f))
-        _atoms_cache = atoms
+    if _atoms_cache is not None:
+        return _atoms_cache
+
+    # Supabase から読み込む（利用可能な場合）
+    sb = _get_supabase()
+    if sb:
+        try:
+            result = sb.table("atoms").select("data").execute()
+            if result.data:
+                _atoms_cache = [row["data"] for row in result.data]
+                return _atoms_cache
+        except Exception as e:
+            print(f"[DB] Supabase atoms 読み込み失敗、JSONフォールバック: {e}")
+
+    # JSON フォールバック
+    atoms: list[dict] = []
+    for path in sorted(DATA_DIR.glob("*-atoms.json")):
+        if path.name.startswith(".") or path.name.startswith("._"):
+            continue
+        with open(path, encoding="utf-8") as f:
+            atoms.extend(json.load(f))
+    _atoms_cache = atoms
     return _atoms_cache
 
 
