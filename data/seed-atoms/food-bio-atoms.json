@@ -1477,6 +1477,22 @@
       "smiles": null,
       "inchikey": "JYJIGFIDKWBXDU-MNNPPOADSA-N",
       "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/24763"
+    },
+    "usda": {
+      "fdc_id": 2003601,
+      "description": "Inulin",
+      "food_category": "Dietary Fiber",
+      "data_type": "Foundation",
+      "usda_url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/2003601/nutrients",
+      "nutrients": {
+        "energy_kcal": 168.0,
+        "protein_g": 0.0,
+        "fat_g": 0.0,
+        "carb_g": 95.0,
+        "fiber_g": 90.0,
+        "calcium_mg": 0.0,
+        "iron_mg": 0.0
+      }
     }
   },
   {
@@ -2531,6 +2547,14 @@
         "magnesium_mg": 1.0,
         "zinc_mg": 0.01
       }
+    },
+    "compound": {
+      "pubchem_cid": 65064,
+      "molecular_formula": "C22H18O11",
+      "molecular_weight": "458.4",
+      "smiles": null,
+      "inchikey": "WMBWREPUVVBILR-WIYYLYMNSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/65064"
     }
   },
   {
@@ -3152,16 +3176,30 @@
       "retrieved_at": "2026-05-28T12:14:54.244332+00:00"
     },
     "usda": {
-      "fdc_id": 173576,
-      "description": "Oil, oat",
-      "food_category": "Fats and Oils",
+      "fdc_id": 9359,
+      "description": "Oats",
+      "food_category": "Breakfast Cereals",
       "data_type": "SR Legacy",
-      "usda_url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/173576/nutrients",
+      "usda_url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/9359/nutrients",
       "nutrients": {
-        "energy_kcal": 884.0,
-        "fat_g": 100.0,
-        "vitamin_e_mg": 14.4
+        "energy_kcal": 389.0,
+        "protein_g": 16.9,
+        "fat_g": 6.9,
+        "carb_g": 66.3,
+        "fiber_g": 10.6,
+        "calcium_mg": 54.0,
+        "iron_mg": 4.72,
+        "magnesium_mg": 177.0,
+        "zinc_mg": 3.97
       }
+    },
+    "compound": {
+      "pubchem_cid": 439262,
+      "molecular_formula": "C18H32O16",
+      "molecular_weight": "504.4",
+      "smiles": null,
+      "inchikey": "FYGDTMLNYKFZSV-URKRLVJHSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/439262"
     }
   },
   {
@@ -8953,6 +8991,14 @@
       "trend_direction": "rising",
       "peak_month_jp": "",
       "retrieved_at": "2026-05-28T12:14:54.244332+00:00"
+    },
+    "compound": {
+      "pubchem_cid": 440080,
+      "molecular_formula": "C18H32O16",
+      "molecular_weight": "504.4",
+      "smiles": null,
+      "inchikey": "VAWYEUIPHLMNNF-OESPXIITSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/440080"
     }
   },
   {
@@ -9647,6 +9693,14 @@
       "trend_direction": "stable",
       "peak_month_jp": "",
       "retrieved_at": "2026-05-28T12:14:54.244332+00:00"
+    },
+    "compound": {
+      "pubchem_cid": 122738,
+      "molecular_formula": "C30H26O12",
+      "molecular_weight": "578.5",
+      "smiles": null,
+      "inchikey": "XFZJEEAOWLFHDH-NFJBMHMQSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/122738"
     }
   },
   {
@@ -18034,6 +18088,19 @@
       "lead_time_weeks": 4,
       "min_order_qty": "500 g",
       "notes": "CFU/g で規格化。保存条件（冷蔵 or 室温）の選択が重要。酸耐性・胆汁耐性が菌株で異なる。"
+    },
+    "uniprot": {
+      "taxonomy_id": 1579,
+      "organism": "Lactobacillus acidophilus",
+      "lineage": [
+        "Bacteria",
+        "Firmicutes",
+        "Bacilli",
+        "Lactobacillales",
+        "Lactobacillaceae",
+        "Lactobacillus"
+      ],
+      "uniprot_url": "https://www.uniprot.org/taxonomy/1579"
     }
   },
   {
@@ -18166,6 +18233,19 @@
       "lead_time_weeks": 6,
       "min_order_qty": "100 g",
       "notes": "世界最多研究菌株のひとつ。特許保護あり（IFF）。腸管定着性が高い。"
+    },
+    "uniprot": {
+      "taxonomy_id": 47715,
+      "organism": "Lactobacillus rhamnosus",
+      "lineage": [
+        "Bacteria",
+        "Firmicutes",
+        "Bacilli",
+        "Lactobacillales",
+        "Lactobacillaceae",
+        "Lactobacillus"
+      ],
+      "uniprot_url": "https://www.uniprot.org/taxonomy/47715"
     }
   },
   {
@@ -18303,6 +18383,18 @@
       "lead_time_weeks": 4,
       "min_order_qty": "500 g",
       "notes": "森永BB536が世界的に有名。腸内での生存率が高い。乳幼児腸内菌叢の主要菌。"
+    },
+    "uniprot": {
+      "taxonomy_id": 216816,
+      "organism": "Bifidobacterium longum",
+      "lineage": [
+        "Bacteria",
+        "Actinobacteria",
+        "Bifidobacteriales",
+        "Bifidobacteriaceae",
+        "Bifidobacterium"
+      ],
+      "uniprot_url": "https://www.uniprot.org/taxonomy/216816"
     }
   },
   {
@@ -18430,6 +18522,19 @@
       "lead_time_weeks": 8,
       "min_order_qty": "要問合せ",
       "notes": "ヤクルト本社が独占管理。OEM原料供給は限定的。代替菌株の検討が現実的。"
+    },
+    "uniprot": {
+      "taxonomy_id": 1582,
+      "organism": "Lactobacillus casei",
+      "lineage": [
+        "Bacteria",
+        "Firmicutes",
+        "Bacilli",
+        "Lactobacillales",
+        "Lactobacillaceae",
+        "Lactobacillus"
+      ],
+      "uniprot_url": "https://www.uniprot.org/taxonomy/1582"
     }
   },
   {
@@ -18556,6 +18661,19 @@
       "lead_time_weeks": 6,
       "min_order_qty": "要問合せ",
       "notes": "宮入製薬が独占。酪酸産生菌として腸管上皮保護に有効。芽胞形成で安定性高い。"
+    },
+    "uniprot": {
+      "taxonomy_id": 1492,
+      "organism": "Clostridium butyricum",
+      "lineage": [
+        "Bacteria",
+        "Firmicutes",
+        "Clostridia",
+        "Clostridiales",
+        "Clostridiaceae",
+        "Clostridium"
+      ],
+      "uniprot_url": "https://www.uniprot.org/taxonomy/1492"
     }
   },
   {
@@ -18684,6 +18802,19 @@
       "lead_time_weeks": 4,
       "min_order_qty": "500 g",
       "notes": "バクテリオシン（ペジオシン）産生で抗菌作用。発酵食品スターターとしても使用。"
+    },
+    "uniprot": {
+      "taxonomy_id": 1254,
+      "organism": "Pediococcus acidilactici",
+      "lineage": [
+        "Bacteria",
+        "Firmicutes",
+        "Bacilli",
+        "Lactobacillales",
+        "Lactobacillaceae",
+        "Pediococcus"
+      ],
+      "uniprot_url": "https://www.uniprot.org/taxonomy/1254"
     }
   },
   {
@@ -18819,6 +18950,19 @@
       "lead_time_weeks": 4,
       "min_order_qty": "500 g",
       "notes": "芽胞形成菌で熱・酸・製造プロセスに強い。常温保管可能。食品添加が容易。"
+    },
+    "uniprot": {
+      "taxonomy_id": 1398,
+      "organism": "Bacillus coagulans",
+      "lineage": [
+        "Bacteria",
+        "Firmicutes",
+        "Bacilli",
+        "Bacillales",
+        "Bacillaceae",
+        "Bacillus"
+      ],
+      "uniprot_url": "https://www.uniprot.org/taxonomy/1398"
     }
   },
   {
@@ -21180,6 +21324,14 @@
         "United-States"
       ],
       "retrieved_at": "2026-05-29T09:39:44.734334+00:00"
+    },
+    "compound": {
+      "pubchem_cid": 10410568,
+      "molecular_formula": "C25H36O6",
+      "molecular_weight": "432.5",
+      "smiles": null,
+      "inchikey": "LPPCHLAEVDUIIW-NLLUTMDRSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/10410568"
     }
   },
   {
@@ -22765,6 +22917,14 @@
       "avg_interest_jp": 35,
       "avg_interest_us": 52,
       "trend_direction": "rising"
+    },
+    "compound": {
+      "pubchem_cid": 159278,
+      "molecular_formula": "C14H20O7",
+      "molecular_weight": "300.30",
+      "smiles": null,
+      "inchikey": "ILRCGYURZSFMEG-RKQHYHRCSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/159278"
     }
   },
   {
@@ -22915,6 +23075,14 @@
       "avg_interest_jp": 68,
       "avg_interest_us": 55,
       "trend_direction": "stable"
+    },
+    "compound": {
+      "pubchem_cid": 9898279,
+      "molecular_formula": "C54H92O23",
+      "molecular_weight": "1109.3",
+      "smiles": null,
+      "inchikey": "GZYPWOGIYAIIPV-JBDTYSNRSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/9898279"
     }
   },
   {
@@ -23067,6 +23235,14 @@
       "avg_interest_jp": 28,
       "avg_interest_us": 62,
       "trend_direction": "rising"
+    },
+    "compound": {
+      "pubchem_cid": 6303,
+      "molecular_formula": "C10H13N5O3",
+      "molecular_weight": "251.24",
+      "smiles": null,
+      "inchikey": "OFEZSBMBBKLLBJ-BAJZRUMYSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/6303"
     }
   },
   {
@@ -23840,6 +24016,14 @@
       "avg_interest_jp": 48,
       "avg_interest_us": 72,
       "trend_direction": "rising"
+    },
+    "compound": {
+      "pubchem_cid": 5350,
+      "molecular_formula": "C6H11NOS2",
+      "molecular_weight": "177.3",
+      "smiles": null,
+      "inchikey": "SUVMJBTUFCVSAD-UHFFFAOYSA-N",
+      "pubchem_url": "https://pubchem.ncbi.nlm.nih.gov/compound/5350"
     }
   }
 ]

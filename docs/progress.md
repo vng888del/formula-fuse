@@ -1,6 +1,6 @@
 # Formula Fuse Studio — 進捗レポート
 
-> 自動生成: 2026-05-29 11:16 UTC
+> 自動生成: 2026-05-30 15:59 UTC
 > `python3 scripts/generate_docs.py` を実行すると再生成されます。
 
 ---
@@ -50,10 +50,10 @@
 
 | フィールド | 付与済 / 対象 | カバレッジ | 完了基準 |
 |---|---:|---:|---:|
-| PubChem 化合物データ | 52 / 74 | 70% | ⚠️ ≥80% |
-| UniProt 酵素・微生物データ | 19 / 100 | 19% | ⚠️ ≥70% |
+| PubChem 化合物データ | 61 / 74 | 82% | ✅ ≥80% |
+| UniProt 酵素・微生物データ | 26 / 26 | 100% | ✅ ≥70% |
 | FDA GRAS ステータス | 74 / 74 | 100% | ✅ ≥90% |
-| USDA 栄養データ | 29 / 74 | 39% | ⚠️ ≥40% |
+| USDA 栄養データ | 30 / 74 | 41% | ✅ ≥40% |
 | PubMed 文献エビデンス | 74 / 74 | 100% | ✅ ≥95% |
 | サプライヤー・OEM 情報 | 74 / 74 | 100% | ✅ ≥90% |
 | 特許ランドスケープ | 0 / 100 | 0% | ⬜ ≥50% |
@@ -199,8 +199,8 @@
 | Phase | 内容 | 状態 |
 |---|---|---|
 | 0 | 手動シード Atom | ✅ 完了 — シードJSON存在 |
-| 1 | PubChem / MEXT / USDA API 連携 | ⚠️ 進行中 — PubChem 70% / USDA 39%（基準: PubChem ≥ 80%） |
-| 2 | UniProt / PubMed | ✅ 完了 — PubMed 100% / UniProt 19%（基準: PubMed ≥ 95%） |
+| 1 | PubChem / MEXT / USDA API 連携 | ✅ 完了 — PubChem 82% / USDA 41%（基準: PubChem ≥ 80%） |
+| 2 | UniProt / PubMed | ✅ 完了 — PubMed 100% / UniProt 100%（基準: PubMed ≥ 95% & UniProt ≥ 70%） |
 | 3 | FDA GRAS / Safety Gate 強化 | ✅ 完了 — GRAS 100%（基準: ingredient ≥ 90%） |
 | 4 | サプライヤー / Lens.org 特許 | ⚠️ 進行中 — Supplier 100% / Patent 0%（基準: Supplier ≥ 90% & Patent ≥ 50%） |
 | 5 | Google Trends / Open Food Facts | ✅ 完了 — Trends 84% / OpenFoodFacts 78%（基準: Trends ≥ 80% & OFF ≥ 70%） |
@@ -210,5 +210,5 @@
 _このファイルは自動生成です。手動編集しても次回上書きされます。_
 _更新: `python3 scripts/generate_docs.py`　確認: `python3 scripts/generate_docs.py --check`_
 
-<!-- src-hash: f36dd81a27ad -->
-<!-- file-hashes: {"data/seed-atoms/food-bio-atoms.json":"57fb4c1971f2","data/seed-atoms/risk-tags.json":"29e0b91b265e","data/seed-atoms/bond-rules.json":"4babe428d128","backend/app/routers/atoms.py":"909d1d265ed4","backend/app/routers/formulas.py":"c03f995c9dbd","backend/app/services/ai_router.py":"32fc17b161e8","backend/app/services/fuse_engine.py":"4db7ef8298f6","backend/app/services/risk_gate.py":"97e31176f0dd","backend/app/services/report_generator.py":"9f2ea58f680c","backend/app/db/database.py":"6b2553ce538d","docs/data-sources.md":"9bdc1c078aa5"} -->
+<!-- src-hash: 3a2d2d12a78b -->
+<!-- file-hashes: {"data/seed-atoms/food-bio-atoms.json":"e8676f643098","data/seed-atoms/risk-tags.json":"29e0b91b265e","data/seed-atoms/bond-rules.json":"4babe428d128","backend/app/routers/atoms.py":"909d1d265ed4","backend/app/routers/formulas.py":"c03f995c9dbd","backend/app/services/ai_router.py":"32fc17b161e8","backend/app/services/fuse_engine.py":"4db7ef8298f6","backend/app/services/risk_gate.py":"97e31176f0dd","backend/app/services/report_generator.py":"9f2ea58f680c","backend/app/db/database.py":"6b2553ce538d","docs/data-sources.md":"9bdc1c078aa5"} -->

@@ -80,7 +80,7 @@ def coverage(atoms: list, field: str, types) -> tuple[int, int]:
 ENRICH_SPEC = [
     # (field, label, target_types, 完了閾値%)
     ("compound",          "PubChem 化合物データ",         "ingredient",                        80),
-    ("uniprot",           "UniProt 酵素・微生物データ",    {"ingredient", "microbe", "enzyme"}, 70),
+    ("uniprot",           "UniProt 酵素・微生物データ",    {"microbe", "enzyme"},               70),
     ("gras",              "FDA GRAS ステータス",           "ingredient",                        90),
     ("usda",              "USDA 栄養データ",               "ingredient",                        40),
     ("pubmed_evidence",   "PubMed 文献エビデンス",          "ingredient",                        95),
@@ -110,10 +110,10 @@ def phase_done(phase_id: int, atoms: list) -> tuple[bool, str]:
         note = f"PubChem {pc:.0f}% / USDA {ud:.0f}%（基準: PubChem ≥ 80%）"
         return done, note
     if phase_id == 2:
-        un = _pct(atoms, "uniprot", {"ingredient", "microbe", "enzyme"})
+        un = _pct(atoms, "uniprot", {"microbe", "enzyme"})
         pm = _pct(atoms, "pubmed_evidence", "ingredient")
-        done = pm >= 95
-        note = f"PubMed {pm:.0f}% / UniProt {un:.0f}%（基準: PubMed ≥ 95%）"
+        done = pm >= 95 and un >= 70
+        note = f"PubMed {pm:.0f}% / UniProt {un:.0f}%（基準: PubMed ≥ 95% & UniProt ≥ 70%）"
         return done, note
     if phase_id == 3:
         gr = _pct(atoms, "gras", "ingredient")
@@ -481,7 +481,7 @@ def update_project_md(atoms: list, bonds: list, tags: list, mvp_results: list) -
     enrich_rows = [
         ("compound",          "Phase 1: PubChem",             "ingredient",                        80),
         ("usda",              "Phase 1: USDA 栄養データ",      "ingredient",                        40),
-        ("uniprot",           "Phase 2: UniProt",              {"ingredient", "microbe", "enzyme"}, 70),
+        ("uniprot",           "Phase 2: UniProt",              {"microbe", "enzyme"},               70),
         ("pubmed_evidence",   "Phase 2: PubMed",               "ingredient",                        95),
         ("gras",              "Phase 3: FDA GRAS/Safety Gate", "ingredient",                        90),
         ("supplier_info",     "Phase 4: サプライヤー情報",      "ingredient",                        90),

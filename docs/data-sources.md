@@ -5,18 +5,20 @@
 ### 1. USDA FoodData Central
 - **用途**：食品・栄養素データ
 - **取るもの**：食品名、栄養素、100gあたり成分（kcal, protein, fat, carb, fiber, minerals, vitamins）
-- **Atom化**：Ingredient Atom の `usda` フィールドに付与
-- **API**：https://api.nal.usda.gov/fdc/ （無料・要APIキー）
-- **スクリプト**：`python3 scripts/import_usda.py --api-key YOUR_KEY`
+- **Atom化**：Ingredient Atom の `usda` フィールドに付与し、`canonical_ids.usda_fdc_id` / `source_databases` も更新
+- **API**：https://api.nal.usda.gov/fdc/ （無料・要APIキー、既定 1,000 req/hour）
+- **スクリプト**：`USDA_API_KEY=YOUR_KEY python3 scripts/import_usda.py`
+- **ライセンス**：CC0 / public domain。出典として FoodData Central を保持
 - **状態**：✅ スクリプト完成（APIキー取得後すぐ実行可能）
 - **優先度**：最優先
 
 ### 2. 日本食品標準成分表 / 文科省 食品成分データベース
 - **用途**：日本市場向け食品成分
 - **取るもの**：日本語食品名、栄養素、ビタミン、ミネラル、アミノ酸、脂肪酸
-- **Atom化**：`data/seed-atoms/mext-atoms.json` として独立ファイルで追加
-- **スクリプト**：`python3 scripts/import_mext.py <Excel ファイルパス>`
-- **状態**：✅ スクリプト完成（mext.go.jp から Excel DL 後すぐ実行可能）
+- **Atom化**：`data/seed-atoms/mext-atoms.json` として独立ファイルで追加し、`mext` / `canonical_ids.mext_food_id` / `source_databases` を付与
+- **スクリプト**：`PYTHONPATH="backend/.venv/lib/python3.9/site-packages" python3 scripts/import_mext.py --download-latest`
+- **ライセンス/引用**：二次利用可。出典として「日本食品標準成分表（八訂）増補2023年から引用（又は出典）」を保持
+- **状態**：✅ スクリプト完成（MEXT公式ページから最新 Excel を自動取得可能）
 - **優先度**：最優先
 
 ### 3. PubChem

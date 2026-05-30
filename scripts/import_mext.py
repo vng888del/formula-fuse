@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
+from __future__ import annotations
 """
 import_mext.py — 日本食品標準成分表（文部科学省）→ Atom JSON 変換スクリプト
 
 【準備】
-1. 以下のページから Excel ファイルをダウンロード
-   https://www.mext.go.jp/a_menu/syokuhinseibun/mext_01110.html
-   「日本食品標準成分表2020年版（八訂）」→「成分表本表Excel」
+1. 文部科学省の公式 Excel を取得
+   python3 scripts/import_mext.py --download-latest
 
-2. このスクリプトを実行
+2. すでに Excel を持っている場合
    python3 scripts/import_mext.py <ダウンロードしたExcelファイルのパス>
 
    例:
@@ -18,12 +18,20 @@ import_mext.py — 日本食品標準成分表（文部科学省）→ Atom JSON
 """
 
 import json
+import argparse
 import re
 import sys
+import tempfile
+import urllib.parse
+import urllib.request
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
 OUT_FILE = ROOT / "data" / "seed-atoms" / "mext-atoms.json"
+MEXT_PAGE_URL = "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html"
+MEXT_SOURCE_NAME = "日本食品標準成分表（八訂）増補2023年"
+MEXT_LICENSE_NOTE = "出典表記: 日本食品標準成分表（八訂）増補2023年から引用（又は出典）"
 
 # ── 食品群コード → category マッピング ───────────────────────────────────────
 FOOD_GROUP_MAP = {
@@ -100,8 +108,8 @@ def _detect_header_row(ws) -> tuple[int, dict[str, int]]:
     食品番号が '01001' のような 5 桁数字のセルを探す。
     """
     for row_idx, row in enumerate(ws.iter_rows(values_only=True), start=1):
-        first = str(row[0]).strip() if row[0] is not None else ""
-        if re.match(r"^\d{5}$", first):
+        cells = [str(v).strip() if v is not None else "" for v in row[:4]]
+        if any(re.match(r"^\d{5}$", cell) for cell in cells):
             # この行がデータの最初の行
             # ヘッダーはその前の行を探す
             header_row_idx = row_idx - 1
@@ -193,6 +201,9 @@ def _build_atom(row: tuple, col: dict[str, int | None]) -> dict | None:
         if "dose_review_required" not in risk_tags:
             risk_tags.append("dose_review_required")
 
+    source_url = MEXT_PAGE_URL
+    retrieved_at = datetime.now(timezone.utc).isoformat()
+
     atom = {
         "atom_id":   f"mext_{food_no}",
         "name_ja":   name_ja,
@@ -200,10 +211,24 @@ def _build_atom(row: tuple, col: dict[str, int | None]) -> dict | None:
         "atom_type": "ingredient",
         "category":  category,
         "domain":    "food_bio",
+        "source_databases": ["MEXT"],
+        "canonical_ids": {
+            "mext_food_id": food_no,
+        },
         "source": {
-            "name":       "日本食品標準成分表2020年版（八訂）",
+            "name":       MEXT_SOURCE_NAME,
             "food_no":    food_no,
-            "url":        "https://fooddb.mext.go.jp/",
+            "url":        source_url,
+        },
+        "mext": {
+            "canonical_id":     f"mext:{food_no}",
+            "source_id":        food_no,
+            "source_name":      MEXT_SOURCE_NAME,
+            "source_url":       source_url,
+            "source_priority":  1,
+            "license_note":     MEXT_LICENSE_NOTE,
+            "retrieved_at":     retrieved_at,
+            "nutrients":        nutrition,
         },
         "nutrition_per_100g": nutrition,
         "known_actions":  list(dict.fromkeys(known_actions)),
@@ -215,6 +240,35 @@ def _build_atom(row: tuple, col: dict[str, int | None]) -> dict | None:
         "supplier_keywords": [],
     }
     return atom
+
+
+def _find_latest_excel_url() -> str:
+    req = urllib.request.Request(MEXT_PAGE_URL, headers={"User-Agent": "FormulaFuseStudio/1.0"})
+    with urllib.request.urlopen(req, timeout=20) as resp:
+        html = resp.read().decode("utf-8", errors="replace")
+
+    candidates = re.findall(r'href="([^"]+\.xls[xm]?)"', html, flags=re.IGNORECASE)
+    if not candidates:
+        raise RuntimeError("MEXT ページから Excel リンクを検出できませんでした。")
+
+    # 第2章（データ）の本表 Excel を最優先。ページ上では最初の Excel が本表。
+    url = candidates[0]
+    return urllib.parse.urljoin(MEXT_PAGE_URL, url)
+
+
+def download_latest_excel(download_dir: Path | None = None) -> Path:
+    url = _find_latest_excel_url()
+    out_dir = download_dir or Path(tempfile.gettempdir())
+    out_dir.mkdir(parents=True, exist_ok=True)
+    filename = Path(urllib.parse.urlparse(url).path).name or "mext-latest.xlsx"
+    out_path = out_dir / filename
+
+    print(f"⬇️  MEXT Excel を取得: {url}")
+    req = urllib.request.Request(url, headers={"User-Agent": "FormulaFuseStudio/1.0"})
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        out_path.write_bytes(resp.read())
+    print(f"💾 ダウンロード: {out_path}")
+    return out_path
 
 
 def _derive_bonds(actions: list[str], category: str) -> list[str]:
@@ -239,9 +293,12 @@ def _build_col_map_from_headers(ws, data_start_row: int) -> dict[str, int | None
     ヘッダー行群を結合して列マップを作る。
     MEXT Excel は複数行ヘッダーなので、セルが空の場合は上の行から引き継ぐ。
     """
-    # data_start_row の直前2行をヘッダーとして扱う
+    def norm(value: str) -> str:
+        return re.sub(r"\s+", "", value.replace("\u3000", ""))
+
+    # MEXT Excel は 10 行前後の複数行ヘッダーを持つため、データ開始直前までを結合する
     header_rows = []
-    for r in range(max(1, data_start_row - 2), data_start_row):
+    for r in range(1, data_start_row):
         header_rows.append([str(c.value or "").strip() for c in ws[r]])
 
     # 列ごとに "有効な名前" を結合
@@ -281,32 +338,68 @@ def _build_col_map_from_headers(ws, data_start_row: int) -> dict[str, int | None
     ALIASES = {
         "食品番号":      ["食品番号"],
         "食品名":        ["食品名"],
-        "エネルギー_kcal": ["エネルギー_kcal", "エネルギー（kcal）", "エネルギー(kcal)", "kcal"],
-        "水分":          ["水分"],
-        "たんぱく質":    ["たんぱく質", "タンパク質"],
-        "脂質":          ["脂質"],
-        "炭水化物":      ["炭水化物"],
-        "食物繊維総量":  ["食物繊維総量", "食物繊維"],
-        "灰分":          ["灰分"],
-        "ナトリウム":    ["ナトリウム"],
-        "カリウム":      ["カリウム"],
-        "カルシウム":    ["カルシウム"],
-        "マグネシウム":  ["マグネシウム"],
-        "リン":          ["リン"],
-        "鉄":            ["鉄"],
-        "亜鉛":          ["亜鉛"],
-        "ビタミンC":     ["ビタミンC", "ビタミン C", "ﾋﾞﾀﾐﾝC"],
-        "ビタミンD":     ["ビタミンD", "ビタミン D"],
-        "ビタミンB12":   ["ビタミンB12", "ビタミン B12"],
+        "エネルギー_kcal": ["エネルギー_kcal", "エネルギー（kcal）", "エネルギー(kcal)", "kcal", "ENERC_KCAL"],
+        "水分":          ["水分", "WATER"],
+        "たんぱく質":    ["たんぱく質", "タンパク質", "PROT-"],
+        "脂質":          ["脂質", "FAT-"],
+        "炭水化物":      ["炭水化物", "CHOCDF-", "CHOAVLDF-"],
+        "食物繊維総量":  ["食物繊維総量", "食物繊維", "FIB-"],
+        "灰分":          ["灰分", "ASH"],
+        "ナトリウム":    ["ナトリウム", "NA"],
+        "カリウム":      ["カリウム", "K"],
+        "カルシウム":    ["カルシウム", "CA"],
+        "マグネシウム":  ["マグネシウム", "MG"],
+        "リン":          ["リン", "P"],
+        "鉄":            ["鉄", "FE"],
+        "亜鉛":          ["亜鉛", "ZN"],
+        "ビタミンC":     ["ビタミンC", "ビタミン C", "ﾋﾞﾀﾐﾝC", "VITC"],
+        "ビタミンD":     ["ビタミンD", "ビタミン D", "VITD"],
+        "ビタミンB12":   ["ビタミンB12", "ビタミン B12", "VITB12"],
     }
 
+    identifier_map = {
+        "ENERC_KCAL": "エネルギー_kcal",
+        "WATER": "水分",
+        "PROT-": "たんぱく質",
+        "FAT-": "脂質",
+        "CHOCDF-": "炭水化物",
+        "FIB-": "食物繊維総量",
+        "ASH": "灰分",
+        "NA": "ナトリウム",
+        "K": "カリウム",
+        "CA": "カルシウム",
+        "MG": "マグネシウム",
+        "P": "リン",
+        "FE": "鉄",
+        "ZN": "亜鉛",
+        "VITC": "ビタミンC",
+        "VITD": "ビタミンD",
+        "VITB12": "ビタミンB12",
+    }
+    identifier_row = [str(c.value or "").strip() for c in ws[data_start_row - 1]]
+    for ci, identifier in enumerate(identifier_row):
+        canonical = identifier_map.get(identifier)
+        if canonical and col_map[canonical] is None:
+            col_map[canonical] = ci
+
     for ci, raw_name in enumerate(col_names):
+        raw_norm = norm(raw_name)
         for canonical, aliases in ALIASES.items():
             if col_map[canonical] is None:
                 for alias in aliases:
-                    if alias in raw_name or raw_name in alias:
+                    alias_norm = norm(alias)
+                    if (
+                        raw_norm == alias_norm
+                        or (len(alias_norm) > 3 and alias_norm in raw_norm)
+                    ):
                         col_map[canonical] = ci
                         break
+
+    # 八訂2023の本表では列1=食品番号、列3=食品名、行12=成分識別子。
+    if col_map["食品番号"] is None:
+        col_map["食品番号"] = 1
+    if col_map["食品名"] is None:
+        col_map["食品名"] = 3
 
     return col_map
 
@@ -330,8 +423,8 @@ def convert(xlsx_path: Path, limit: int = 0) -> list[dict]:
     # データ開始行を検出
     data_start_row = None
     for row_idx, row in enumerate(ws.iter_rows(min_row=1, max_row=30, values_only=True), start=1):
-        first = str(row[0] or "").strip()
-        if re.match(r"^\d{5}$", first):
+        cells = [str(v or "").strip() for v in row[:4]]
+        if any(re.match(r"^\d{5}$", cell) for cell in cells):
             data_start_row = row_idx
             break
 
@@ -367,16 +460,31 @@ def convert(xlsx_path: Path, limit: int = 0) -> list[dict]:
 
 
 def main():
-    if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
-        print(__doc__)
+    parser = argparse.ArgumentParser(
+        description="日本食品標準成分表（文部科学省）Excel を Atom JSON に変換",
+        epilog=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    parser.add_argument("xlsx_path", nargs="?", help="MEXT Excel ファイルパス")
+    parser.add_argument("legacy_limit", nargs="?", type=int, help="旧形式: 件数上限")
+    parser.add_argument("--download-latest", action="store_true", help="MEXT 公式ページから最新 Excel を自動取得")
+    parser.add_argument("--limit", type=int, default=0, help="変換する件数上限（テスト用）")
+    parser.add_argument("--out", default=str(OUT_FILE), help="出力 JSON パス")
+    args = parser.parse_args()
+
+    if args.download_latest:
+        xlsx_path = download_latest_excel()
+    elif args.xlsx_path:
+        xlsx_path = Path(args.xlsx_path)
+    else:
+        parser.print_help()
         sys.exit(0)
 
-    xlsx_path = Path(sys.argv[1])
     if not xlsx_path.exists():
         print(f"ERROR: ファイルが見つかりません: {xlsx_path}")
         sys.exit(1)
 
-    limit = int(sys.argv[2]) if len(sys.argv) >= 3 else 0
+    limit = args.limit or args.legacy_limit or 0
 
     atoms = convert(xlsx_path, limit=limit)
     print(f"\n✅ 変換完了: {len(atoms)} Atom")
@@ -387,11 +495,12 @@ def main():
     for cat, cnt in cats.most_common(10):
         print(f"   {cat}: {cnt}")
 
-    OUT_FILE.write_text(
+    out_file = Path(args.out)
+    out_file.write_text(
         json.dumps(atoms, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
-    print(f"\n💾 保存: {OUT_FILE}  ({OUT_FILE.stat().st_size // 1024} KB)")
+    print(f"\n💾 保存: {out_file}  ({out_file.stat().st_size // 1024} KB)")
     print("\n次のステップ:")
     print("  python3 scripts/generate_docs.py  # progress.md を更新")
 

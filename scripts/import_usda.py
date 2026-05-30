@@ -25,24 +25,30 @@ food-bio-atoms.json の ingredient Atom に栄養データを付与する。
   python3 scripts/import_usda.py --api-key YOUR_KEY
   python3 scripts/import_usda.py --api-key YOUR_KEY --dry-run
   python3 scripts/import_usda.py --api-key YOUR_KEY --atom-id ING_001
+  USDA_API_KEY=YOUR_KEY python3 scripts/import_usda.py
 
 【出力】
   food-bio-atoms.json を上書き（バックアップを .bak に保存）
+  Atom には usda / canonical_ids.usda_fdc_id / source_databases を付与する。
 """
 
 import json
 import sys
 import time
 import argparse
+import os
 import urllib.request
 import urllib.error
 import urllib.parse
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
 ROOT = Path(__file__).parent.parent
 ATOMS_FILE = ROOT / "data" / "seed-atoms" / "food-bio-atoms.json"
 BASE_URL = "https://api.nal.usda.gov/fdc/v1"
+USDA_SOURCE_NAME = "USDA FoodData Central"
+USDA_LICENSE = "CC0 1.0 Universal / public domain; cite USDA FoodData Central"
 
 TARGET_TYPES = {"ingredient"}
 
@@ -78,13 +84,13 @@ NUTRIENT_MAP = {
 DATA_TYPE_PRIORITY = ["Foundation", "SR Legacy", "Survey (FNDDS)", "Branded"]
 
 
-def usda_search(name: str, api_key: str) -> Optional[dict]:
+def usda_search(name: str, api_key: str, data_types: str) -> Optional[dict]:
     """
     USDA FDC で食品名を検索し、最適なヒットの情報を返す。
     """
     params = urllib.parse.urlencode({
         "query": name,
-        "dataType": "Foundation,SR Legacy",
+        "dataType": data_types,
         "pageSize": 5,
         "api_key": api_key,
     })
@@ -120,13 +126,21 @@ def usda_search(name: str, api_key: str) -> Optional[dict]:
 
         nutrients = _extract_nutrients(detail.get("foodNutrients", []))
 
+        source_url = f"https://fdc.nal.usda.gov/fdc-app.html#/food-details/{fdc_id}/nutrients"
         return {
             "fdc_id":        fdc_id,
             "description":   best.get("description", ""),
             "food_category": best.get("foodCategory", ""),
             "data_type":     best.get("dataType", ""),
-            "usda_url":      f"https://fdc.nal.usda.gov/fdc-app.html#/food-details/{fdc_id}/nutrients",
+            "usda_url":      source_url,
             "nutrients":     nutrients,
+            "canonical_id":   f"usda:{fdc_id}",
+            "source_id":      str(fdc_id),
+            "source_name":    USDA_SOURCE_NAME,
+            "source_url":     source_url,
+            "source_priority": 2,
+            "license_note":   USDA_LICENSE,
+            "retrieved_at":   datetime.now(timezone.utc).isoformat(),
         }
 
     except urllib.error.HTTPError as e:
@@ -161,7 +175,8 @@ def _extract_nutrients(food_nutrients: list) -> dict:
 
 def main():
     parser = argparse.ArgumentParser(description="USDA FDC 栄養データを Atom に付与")
-    parser.add_argument("--api-key", required=True, help="USDA FDC API キー")
+    parser.add_argument("--api-key", default=os.getenv("USDA_API_KEY"), help="USDA FDC API キー（または USDA_API_KEY）")
+    parser.add_argument("--data-types", default="Foundation,SR Legacy", help="検索対象 dataType（例: 'Foundation,SR Legacy,Survey (FNDDS)'）")
     parser.add_argument("--dry-run", action="store_true", help="API を叩かず対象一覧を表示")
     parser.add_argument("--atom-id", help="特定の atom_id のみ処理（デバッグ用）")
     parser.add_argument("--force", action="store_true", help="既に usda フィールドがある Atom も再取得")
@@ -186,6 +201,11 @@ def main():
             print(f"  • {a['atom_id']}  {a['name_en']}")
         return
 
+    if not args.api_key:
+        print("ERROR: USDA API キーが必要です。--api-key または USDA_API_KEY を指定してください。")
+        print("  取得: https://fdc.nal.usda.gov/api-key-signup")
+        sys.exit(1)
+
     # バックアップ
     bak = ATOMS_FILE.with_suffix(".json.bak")
     bak.write_bytes(ATOMS_FILE.read_bytes())
@@ -201,10 +221,16 @@ def main():
         search_name = name.split("(")[0].split("/")[0].strip()
 
         print(f"[{i:>2}/{len(targets)}] {search_name} ...", end=" ", flush=True)
-        result = usda_search(search_name, args.api_key)
+        result = usda_search(search_name, args.api_key, args.data_types)
 
         if result:
-            atom_index[target["atom_id"]]["usda"] = result
+            atom = atom_index[target["atom_id"]]
+            atom["usda"] = result
+            canonical_ids = atom.setdefault("canonical_ids", {})
+            canonical_ids["usda_fdc_id"] = result["fdc_id"]
+            source_databases = atom.setdefault("source_databases", [])
+            if "USDA" not in source_databases:
+                source_databases.append("USDA")
             nutrients = result["nutrients"]
             kcal = nutrients.get("energy_kcal", "-")
             protein = nutrients.get("protein_g", "-")

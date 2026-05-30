@@ -118,6 +118,21 @@ formula-fuse/
 - **GRAS/安全性**: ingredient 100%
 - **Google Trends**: ingredient ~83%
 
+### MEXT / USDA 栄養データ取得
+
+```bash
+# MEXT: 公式ページから日本食品標準成分表 Excel を取得して mext-atoms.json を生成
+PYTHONPATH="backend/.venv/lib/python3.9/site-packages" python3 scripts/import_mext.py --download-latest
+
+# USDA: FoodData Central API で既存 ingredient Atom に usda フィールドを付与
+USDA_API_KEY=YOUR_KEY python3 scripts/import_usda.py
+
+# 進捗ドキュメントを更新
+python3 scripts/generate_docs.py
+```
+
+MEXT は `mext` / `canonical_ids.mext_food_id`、USDA は `usda` / `canonical_ids.usda_fdc_id` に source metadata を保持する。
+
 ---
 
 ## 免責事項

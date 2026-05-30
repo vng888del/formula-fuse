@@ -17,9 +17,9 @@
 | 原価シミュレーター CostPanel | ✅ |
 | 配合量ガイド DosePanel | ✅ |
 | 規制チェックリスト RegulatoryPanel | ✅ |
-| Phase 1: PubChem | ⚠️ 52/74 (70%) — 目標80% |
-| Phase 1: USDA 栄養データ | ⚠️ 29/74 (39%) — 目標40% |
-| Phase 2: UniProt | ⚠️ 19/100 (19%) — 目標70% |
+| Phase 1: PubChem | ✅ 61/74 (82%) — 完了基準達成 |
+| Phase 1: USDA 栄養データ | ✅ 30/74 (41%) — 完了基準達成 |
+| Phase 2: UniProt | ✅ 26/26 (100%) — 完了基準達成 |
 | Phase 2: PubMed | ✅ 74/74 (100%) — 完了基準達成 |
 | Phase 3: FDA GRAS/Safety Gate | ✅ 74/74 (100%) — 完了基準達成 |
 | Phase 4: サプライヤー情報 | ✅ 74/74 (100%) — 完了基準達成 |
@@ -83,8 +83,8 @@
 | Phase | 内容 | 状態 | 詳細 |
 |---|---|---|---|
 | 0 | 手動シード Atom | ✅ 完了 | シードJSON存在 |
-| 1 | PubChem / MEXT / USDA API 連携 | ⚠️ 進行中 | PubChem 70% / USDA 39%（基準: PubChem ≥ 80%） |
-| 2 | UniProt / PubMed | ✅ 完了 | PubMed 100% / UniProt 19%（基準: PubMed ≥ 95%） |
+| 1 | PubChem / MEXT / USDA API 連携 | ✅ 完了 | PubChem 82% / USDA 41%（基準: PubChem ≥ 80%） |
+| 2 | UniProt / PubMed | ✅ 完了 | PubMed 100% / UniProt 100%（基準: PubMed ≥ 95% & UniProt ≥ 70%） |
 | 3 | FDA GRAS / Safety Gate 強化 | ✅ 完了 | GRAS 100%（基準: ingredient ≥ 90%） |
 | 4 | サプライヤー / Lens.org 特許 | ⚠️ 進行中 | Supplier 100% / Patent 0%（基準: Supplier ≥ 90% & Patent ≥ 50%） |
 | 5 | Google Trends / Open Food Facts | ✅ 完了 | Trends 84% / OpenFoodFacts 78%（基準: Trends ≥ 80% & OFF ≥ 70%） |
@@ -170,16 +170,11 @@
 ## Next Steps
 
 <!-- BEGIN:next-steps -->
-1. **[P1] PubChem エンリッチ** — ingredient 70% → 目標 80%
-   - `python3 scripts/enrich_pubchem.py --missing`
-2. **[P2] USDA 栄養データ** — ingredient 39% → 目標 40%
-   - `USDA_API_KEY=YOUR_KEY python3 scripts/import_usda.py`
-   - 無料取得: https://api.nal.usda.gov/
-3. **[P2] UniProt エンリッチ** — bio-atoms 19% → 目標 70%
+1. **[P2] UniProt エンリッチ** — bio-atoms 26% → 目標 70%
    - `python3 scripts/enrich_uniprot.py --missing`
-4. **[P3] Lens.org 特許エンリッチ** — 0% → 目標 50%
+2. **[P3] Lens.org 特許エンリッチ** — 0% → 目標 50%
    - `python3 scripts/enrich_patents_lens.py`
    - 無料登録: https://www.lens.org/ (tracking: d66a994c-7f38-4312-b533-9723d4959930)
-5. **[機能] フォーミュラ比較モード** — 保存済みフォーミュラのサイドバイサイド比較
-6. **[機能] フォーミュラ共有** — URLシェア or QRコード生成
+3. **[機能] フォーミュラ比較モード** — 保存済みフォーミュラのサイドバイサイド比較
+4. **[機能] フォーミュラ共有** — URLシェア or QRコード生成
 <!-- END:next-steps -->

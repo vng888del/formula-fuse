@@ -44,11 +44,25 @@ SKIP_KEYWORDS = {
     "Wheat protein", "Gluten", "Soy protein", "Cow's milk", "Whey protein",
     "Dietary fiber", "Green tea", "Germinated brown rice", "Oats",
     "Black vinegar (Kurozu)", "Grape seed proanthocyanidins (OPC)",
-    "Collagen peptide", "Fructooligosaccharides (FOS)", "Pectin",
-    "Hyaluronic acid",
+    "Collagen peptide", "Pectin", "Hyaluronic acid",
+    "Chlorella", "Psyllium husk",
     # 酵素・タンパク質（高分子 → PubChem では正しく検索できない）
     "Protease", "Lactase (beta-galactosidase)", "Amylase", "Lipase",
     "Phytase", "Asparaginase", "Cellulase", "Transglutaminase (TGase)",
+    "Nattokinase", "Casein",
+}
+
+# 代表的バイオアクティブ化合物で検索するオーバーライド (atom_id → PubChem検索名)
+# エキス・ハーブなど「単一化合物ではないが代表化合物がある」Atom に使用
+SEARCH_OVERRIDES: dict[str, str] = {
+    "atom_fos":            "1-Kestose",                    # FOS の代表的三糖
+    "atom_rhodiola":       "Salidroside",                  # ロジオラの主要バイオアクティブ
+    "atom_panax_ginseng":  "Ginsenoside Rb1",              # 人参の主要ジンセノサイド
+    "atom_cordyceps":      "Cordycepin",                   # コルジセプスの代表活性成分
+    "atom_lions_mane":     "Erinacine A",                  # 山伏茸の代表バイオアクティブ
+    "atom_grape_polyphenol": "Procyanidin B2",             # OPCの代表的二量体
+    "atom_oat_fiber":      "beta-D-glucan",                # オーツの主要食物繊維
+    "atom_green_tea":      "Epigallocatechin gallate",     # 緑茶の主要カテキン
 }
 
 
@@ -84,17 +98,27 @@ def main():
     dry_run = "--dry-run" in sys.argv
 
     atoms = json.loads(ATOMS_FILE.read_text(encoding="utf-8"))
-    targets = [
+    # override対象 + 通常対象を結合
+    override_targets = [
+        a for a in atoms
+        if a["atom_id"] in SEARCH_OVERRIDES and not a.get("compound")
+    ]
+    normal_targets = [
         a for a in atoms
         if a.get("atom_type") in TARGET_TYPES
         and a.get("name_en") not in SKIP_KEYWORDS
-        and "pubchem_cid" not in a          # 既に付与済みはスキップ
+        and a["atom_id"] not in SEARCH_OVERRIDES
+        and not a.get("compound")             # 既に付与済みはスキップ
     ]
+    targets = override_targets + normal_targets
 
-    print(f"🔬 PubChem エンリッチ対象: {len(targets)} Atom")
+    print(f"🔬 PubChem エンリッチ対象: {len(targets)} Atom"
+          f"（override {len(override_targets)} / 通常 {len(normal_targets)}）")
     if dry_run:
         for a in targets:
-            print(f"  • {a['atom_id']}  {a['name_en']}")
+            override = SEARCH_OVERRIDES.get(a["atom_id"], "")
+            suffix = f"  [override: {override}]" if override else ""
+            print(f"  • {a['atom_id']}  {a['name_en']}{suffix}")
         return
 
     # バックアップ
@@ -107,13 +131,16 @@ def main():
     miss = 0
 
     for i, target in enumerate(targets, 1):
-        name = target["name_en"]
-        # 括弧内の補足・スラッシュ区切りを除去して検索
-        # 例: "Lactase (beta-galactosidase)" → "Lactase"
-        # 例: "DHA / EPA (Omega-3 fatty acids)" → "DHA"
-        search_name = name.split("(")[0].split("/")[0].strip()
+        aid = target["atom_id"]
+        if aid in SEARCH_OVERRIDES:
+            search_name = SEARCH_OVERRIDES[aid]
+        else:
+            name = target["name_en"]
+            # 括弧内の補足・スラッシュ区切りを除去して検索
+            search_name = name.split("(")[0].split("/")[0].strip()
 
-        print(f"[{i:>2}/{len(targets)}] {search_name} ...", end=" ", flush=True)
+        label = target["name_en"]
+        print(f"[{i:>2}/{len(targets)}] {label} ({search_name}) ...", end=" ", flush=True)
         result = pubchem_search(search_name)
 
         if result:

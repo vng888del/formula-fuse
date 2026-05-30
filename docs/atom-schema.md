@@ -49,6 +49,26 @@ FormulaのビルディングブロックとなるデータユニットをAtomと
     "amino_acids": {},
     "fatty_acids": {}
   },
+  "usda": {
+    "canonical_id": "usda:170283",
+    "source_id": "170283",
+    "source_name": "USDA FoodData Central",
+    "source_url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/170283/nutrients",
+    "source_priority": 2,
+    "license_note": "CC0 1.0 Universal / public domain; cite USDA FoodData Central",
+    "retrieved_at": null,
+    "nutrients": {}
+  },
+  "mext": {
+    "canonical_id": "mext:01001",
+    "source_id": "01001",
+    "source_name": "日本食品標準成分表（八訂）増補2023年",
+    "source_url": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html",
+    "source_priority": 1,
+    "license_note": "出典表記: 日本食品標準成分表（八訂）増補2023年から引用（又は出典）",
+    "retrieved_at": null,
+    "nutrients": {}
+  },
   "known_actions": ["protein_source"],
   "possible_bonds": [
     "protein_degradation",
@@ -95,6 +115,8 @@ FormulaのビルディングブロックとなるデータユニットをAtomと
 | `regulatory_notes` | string[] | - | 規制上の注意（AI出力ガイド） |
 | `canonical_ids` | object | - | 外部DB ID（Phase 1以降） |
 | `nutrients` | object | - | 栄養素データ（Phase 1以降） |
+| `usda` | object | - | USDA FoodData Central の栄養素・source metadata |
+| `mext` | object | - | 日本食品標準成分表の栄養素・source metadata |
 
 ## Evidence Level 定義
 

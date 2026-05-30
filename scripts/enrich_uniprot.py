@@ -69,6 +69,14 @@ QUERY_OVERRIDES = {
     "atom_leuconostoc":            "taxonomy_id:1243",
     "atom_acetobacter":            "taxonomy_id:435",
     "atom_streptococcus_thermophilus": "taxonomy_id:1308",
+    # プロバイオティクス追加株
+    "atom_lb_acidophilus":    "taxonomy_id:1579",
+    "atom_lb_rhamnosus":      "taxonomy_id:47715",
+    "atom_bf_longum":         "taxonomy_id:216816",
+    "atom_lb_casei":          "taxonomy_id:1582",
+    "atom_clostridium_butyricum": "taxonomy_id:1492",
+    "atom_pediococcus":       "taxonomy_id:1254",
+    "atom_bacillus_coagulans": "taxonomy_id:1398",
 }
 
 # 微生物の Taxonomy ID → 正式学名・系統
@@ -82,6 +90,14 @@ MICROBE_TAXONOMY = {
     "atom_leuconostoc":            {"taxonomy_id": 1243,  "organism": "Leuconostoc mesenteroides",   "lineage": ["Bacteria", "Firmicutes", "Bacilli", "Lactobacillales", "Leuconostocaceae", "Leuconostoc"]},
     "atom_acetobacter":            {"taxonomy_id": 435,   "organism": "Acetobacter aceti",           "lineage": ["Bacteria", "Proteobacteria", "Alphaproteobacteria", "Rhodospirillales", "Acetobacteraceae", "Acetobacter"]},
     "atom_streptococcus_thermophilus": {"taxonomy_id": 1308, "organism": "Streptococcus thermophilus", "lineage": ["Bacteria", "Firmicutes", "Bacilli", "Lactobacillales", "Streptococcaceae", "Streptococcus"]},
+    # プロバイオティクス追加株
+    "atom_lb_acidophilus":    {"taxonomy_id": 1579,   "organism": "Lactobacillus acidophilus",    "lineage": ["Bacteria", "Firmicutes", "Bacilli", "Lactobacillales", "Lactobacillaceae", "Lactobacillus"]},
+    "atom_lb_rhamnosus":      {"taxonomy_id": 47715,  "organism": "Lactobacillus rhamnosus",      "lineage": ["Bacteria", "Firmicutes", "Bacilli", "Lactobacillales", "Lactobacillaceae", "Lactobacillus"]},
+    "atom_bf_longum":         {"taxonomy_id": 216816, "organism": "Bifidobacterium longum",       "lineage": ["Bacteria", "Actinobacteria", "Bifidobacteriales", "Bifidobacteriaceae", "Bifidobacterium"]},
+    "atom_lb_casei":          {"taxonomy_id": 1582,   "organism": "Lactobacillus casei",          "lineage": ["Bacteria", "Firmicutes", "Bacilli", "Lactobacillales", "Lactobacillaceae", "Lactobacillus"]},
+    "atom_clostridium_butyricum": {"taxonomy_id": 1492, "organism": "Clostridium butyricum",     "lineage": ["Bacteria", "Firmicutes", "Clostridia", "Clostridiales", "Clostridiaceae", "Clostridium"]},
+    "atom_pediococcus":       {"taxonomy_id": 1254,   "organism": "Pediococcus acidilactici",    "lineage": ["Bacteria", "Firmicutes", "Bacilli", "Lactobacillales", "Lactobacillaceae", "Pediococcus"]},
+    "atom_bacillus_coagulans": {"taxonomy_id": 1398,  "organism": "Bacillus coagulans",          "lineage": ["Bacteria", "Firmicutes", "Bacilli", "Bacillales", "Bacillaceae", "Bacillus"]},
 }
 
 
